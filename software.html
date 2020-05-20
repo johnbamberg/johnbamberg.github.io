@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <style type="text/css">
+/* +++ master +++ */
+html {
+    /* the line height value of 1.9 is fixed for a line height multiple of 1.4 in the text view */
+    font: normal 118.8%/1.9 serif;
+}
+
+body {
+    font-family: 'AvenirNext-Regular', Helvetica, Georgia, serif;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    overflow:hidden;
+    background-color: #f2f2f2;
+    color: #3c3c3c;
+}
+
+/**
+ *
+    Wrappers
+ *
+ */
+
+#wrapper {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+#content {
+    width: auto;
+    padding: 8px 8px 8px 8px;
+}
+
+/**
+ *
+    Headings
+ *
+ */
+
+h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizeLegibility;
+    line-height: 1;
+    margin: 0.5rem 0;
+}
+
+h1, 
+h2, 
+h3 { margin-bottom: 1rem; }
+
+h1 { font-size: 2.75rem; }
+h2 { font-size: 2.25rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.00rem; }
+h6 { font-size: 0.85rem; }
+
+/**
+ *
+    Paragraphs
+ *
+ */
+
+p {
+    margin: 0 0 1.5em;
+}
+
+/**
+ *
+    Block quotes
+ *
+ */
+
+blockquote {
+    margin: 0 0 1.5em;
+    width: 96%;
+    padding: 0 10px;
+    border-left: 3px solid #ddd;
+    color: #777;
+}
+
+/**
+ *
+    Code Blocks
+ *
+ */
+
+pre code {
+    word-wrap: normal;
+    white-space: pre-wrap;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    -webkit-border-radius: 0;
+}
+
+pre {
+    white-space: pre-wrap;
+    width: 96%;
+    margin-bottom: 24px;
+    overflow: hidden;
+    padding: 3px 10px;
+    -webkit-border-radius: 3px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+
+code {
+    white-space: nowrap;
+    font-family: monospace;
+    padding: 2px;
+    -webkit-border-radius: 3px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+
+small {
+    font-size: 65%;
+}
+
+/**
+ *
+    Dictionary Definition
+ *
+ */
+
+dt {
+    display: inline;
+    font-weight:bold;
+}
+
+dd {
+    display: block;
+}
+
+/**
+ *
+    Anchors
+ *
+ */
+
+a {
+    color: #308bd8;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/**
+ *
+    Horizontal rules
+ *
+ */
+
+hr {
+    width: 100%;
+    margin: 3em auto;
+    border: 0;
+    color: #eee;
+    background-color: #ccc;
+    height: 1px;
+    -webkit-box-shadow:0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+/**
+ *
+    Lists
+ *
+ */
+
+ol, ul {
+    list-style-position: outside;
+    padding-left: 0;
+    margin-left: 1.5em;
+}
+
+ol li, ul li {
+    text-align: -webkit-match-parent;
+}
+
+li p {
+    margin: 0.5em 0 0.5em;
+}
+
+ol ol, ol ul, ul ul, ul ol {
+    padding-left: 1.5em;
+}
+
+/**
+ *
+    Tables
+ *
+ */
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-spacing: 0;
+}
+
+table th {
+    padding: 3px 10px;
+    background-color: #eee;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+table tr {
+}
+
+table td {
+    padding: 3px 10px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+/**
+ *
+    Images
+ *
+ */
+
+img {
+    border: none;
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;
+}
+
+/**
+ *
+    Marks
+ *
+ */
+
+mark {
+    background: #fefec0;
+    padding:1px 3px;
+}
+
+/**
+ *
+    Footnotes
+ *
+ */
+.footnote {
+    font-size: 0.8rem;
+    vertical-align: super;
+}
+.footnotes ol {
+    font-weight: bold;
+}
+.footnotes ol li {
+    text-align: -webkit-match-parent;
+}
+
+.footnotes ol li p {
+    font-weight: normal;
+}
+
+/**
+ *
+    Figures and Captions
+ *
+ */
+caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+figure {
+    display: block;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+/**
+ *
+    Custom classes
+ *
+ */
+
+.shadow {
+    -webkit-box-shadow: 0 2px 4px #999;
+}
+
+.source {
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    margin: -40px auto;
+}
+
+/* --- master --- */
+/* +++ overrides +++ */
+#wrapper {
+    position: fixed;
+    width: 99.9%;
+}
+
+#content {
+    width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:0;
+    padding-bottom:0;
+}
+
+/* Mobile support */
+@media only screen and (max-device-width:1024px) {
+    html {
+        overflow: auto;
+    }
+
+    #wrapper {
+        overflow: auto;
+        position: relative;
+    }
+}
+/* --- overrides --- */
+
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="content">
+<h1>Software</h1>
+
+<p>One of my side projects is to develop packages for the computer algebra software <a href="http://www.gap-system.org">GAP</a>.</p>
+
+<h2>Forms</h2>
+
+<p>is a package, developed by me and <a href="http://cage.ugent.be/~jdebeule/">Jan De Beule</a>. It can be used for work with sesquilinear and quadratic forms, objects that are used to describe polar spaces and classical groups. The package also deals with the recognition of certain matrix groups preserving a sesquilinear or quadratic form. The main features of forms are its facility with creating sesquilinear and quadratic forms via matrices and polynomials, and in changing forms (creation of isometries).</p>
+
+<p><a href="http://gap-system.org/Packages/forms.html">GAP webpage for &#8216;Forms&#8217;</a><br>
+<a href="http://cage.ugent.be/geometry/forms.php">Primary webpage for &#8216;Forms&#8217;</a></p>
+
+<h2>FinInG</h2>
+
+<p>is a package that provides users with the basic tools to work in various areas of finite incidence geometry, from the realms of projective spaces to the flat lands of generalised polygons. It uses the algebraic power of GAP, particularly its implementation of matrix and permutation groups. If you would like to try the package, don&#8217;t hesitate to contact me, or any other member of the development team. </p>
+
+<img src="fining_window.png" alt="picture alt" />
+
+
+<p><a href="http://cage.ugent.be/fining">Webpage for &#8216;FinInG&#8217;</a></p>
+    </div>
+  </div> <!-- End wrapper -->
+</body>
+</html>
