@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <style type="text/css">
+/* +++ master +++ */
+html {
+    /* the line height value of 1.9 is fixed for a line height multiple of 1.4 in the text view */
+    font: normal 100.0%/1.9 serif;
+}
+
+body {
+    font-family: 'AvenirNext-Regular', Helvetica, Georgia, serif;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    overflow:hidden;
+    background-color: #f2f2f2;
+    color: #3c3c3c;
+}
+
+/**
+ *
+    Wrappers
+ *
+ */
+
+#wrapper {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+#content {
+    width: auto;
+    padding: 8px 8px 8px 8px;
+}
+
+/**
+ *
+    Headings
+ *
+ */
+
+h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizeLegibility;
+    line-height: 1;
+    margin: 0.5rem 0;
+}
+
+h1, 
+h2, 
+h3 { margin-bottom: 1rem; }
+
+h1 { font-size: 2.75rem; }
+h2 { font-size: 2.25rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.00rem; }
+h6 { font-size: 0.85rem; }
+
+/**
+ *
+    Paragraphs
+ *
+ */
+
+p {
+    margin: 0 0 1.5em;
+}
+
+/**
+ *
+    Block quotes
+ *
+ */
+
+blockquote {
+    margin: 0 0 1.5em;
+    width: 96%;
+    padding: 0 10px;
+    border-left: 3px solid #ddd;
+    color: #777;
+}
+
+/**
+ *
+    Code Blocks
+ *
+ */
+
+pre code {
+    word-wrap: normal;
+    white-space: pre-wrap;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    -webkit-border-radius: 0;
+}
+
+pre {
+    white-space: pre-wrap;
+    width: 96%;
+    margin-bottom: 24px;
+    overflow: hidden;
+    padding: 3px 10px;
+    -webkit-border-radius: 3px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+
+code {
+    white-space: nowrap;
+    font-family: monospace;
+    padding: 2px;
+    -webkit-border-radius: 3px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+
+small {
+    font-size: 65%;
+}
+
+/**
+ *
+    Dictionary Definition
+ *
+ */
+
+dt {
+    display: inline;
+    font-weight:bold;
+}
+
+dd {
+    display: block;
+}
+
+/**
+ *
+    Anchors
+ *
+ */
+
+a {
+    color: #308bd8;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/**
+ *
+    Horizontal rules
+ *
+ */
+
+hr {
+    width: 100%;
+    margin: 3em auto;
+    border: 0;
+    color: #eee;
+    background-color: #ccc;
+    height: 1px;
+    -webkit-box-shadow:0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+/**
+ *
+    Lists
+ *
+ */
+
+ol, ul {
+    list-style-position: outside;
+    padding-left: 0;
+    margin-left: 1.5em;
+}
+
+ol li, ul li {
+    text-align: -webkit-match-parent;
+}
+
+li p {
+    margin: 0.5em 0 0.5em;
+}
+
+ol ol, ol ul, ul ul, ul ol {
+    padding-left: 1.5em;
+}
+
+/**
+ *
+    Tables
+ *
+ */
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-spacing: 0;
+}
+
+table th {
+    padding: 3px 10px;
+    background-color: #eee;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+table tr {
+}
+
+table td {
+    padding: 3px 10px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+/**
+ *
+    Images
+ *
+ */
+
+img {
+    border: none;
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;
+}
+
+/**
+ *
+    Marks
+ *
+ */
+
+mark {
+    background: #fefec0;
+    padding:1px 3px;
+}
+
+/**
+ *
+    Footnotes
+ *
+ */
+.footnote {
+    font-size: 0.8rem;
+    vertical-align: super;
+}
+.footnotes ol {
+    font-weight: bold;
+}
+.footnotes ol li {
+    text-align: -webkit-match-parent;
+}
+
+.footnotes ol li p {
+    font-weight: normal;
+}
+
+/**
+ *
+    Figures and Captions
+ *
+ */
+caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+figure {
+    display: block;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+/**
+ *
+    Custom classes
+ *
+ */
+
+.shadow {
+    -webkit-box-shadow: 0 2px 4px #999;
+}
+
+.source {
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    margin: -40px auto;
+}
+
+/* --- master --- */
+/* +++ overrides +++ */
+#wrapper {
+    position: fixed;
+    width: 99.9%;
+}
+
+#content {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:0;
+    padding-bottom:0;
+}
+
+/* Mobile support */
+@media only screen and (max-device-width:1024px) {
+    html {
+        overflow: auto;
+    }
+
+    #wrapper {
+        overflow: auto;
+        position: relative;
+    }
+}
+/* --- overrides --- */
+
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="content">
+<h1>MATH1601 Mathematics: from the Renaissance to Modern Day</h1>
+
+<p><a href="http://school.maths.uwa.edu.au/~bamberg/MATH1601promo.mp4">Here</a> is a short video about MATH1601. In particular, this unit is suitable for a student that</p>
+
+<ul>
+<li>is interested in the historical and cultural backdrop to mathematics;</li>
+<li>is interested in learning beautiful mathematics</li>
+<li>has not done much mathematics in the senior level of secondary school</li>
+</ul>
+
+<p>There are no prerequisites for MATH1601, and it makes an ideal broadening unit for any of the degrees at UWA. </p>
+
+<p>For 2019, the content of MATH1601 will comprise of the following subjects</p>
+
+<h2>The Mathematics of Perspective Art</h2>
+
+<ul>
+<li>A brief history of mathematics, Euclid&#8217;s Elements</li>
+<li>Arabic maths, Florence, Intro to perspective</li>
+<li>Humanism (esp. Petrarch), Leon Battista Alberti and &#8220;Della Pittura&#8221;</li>
+<li>The Invention of the Observer, Alberti&#8217;s visual pyramid, Alberti&#8217;s rule &#8220;costruzione legittima&#8221; , one-point perspective</li>
+<li>Orthogonals, transversals, properties of central projection</li>
+<li>The vanishing point, convergence of parallel lines, pavemento</li>
+<li>Perspective projection</li>
+<li>Piero della Francesca, anamorphosis</li>
+<li>Guidobaldo del Monte, Vanishing Point Theorem, Main Theorem on Perspective</li>
+<li>Kepler, Desargues, conic sections, points at infinity, cross-ratio</li>
+</ul>
+
+<p><strong>Recommended text:</strong> J. V. Field, &#8220;The Invention of Infinity: Mathematics and Art in the Renaissance&#8221;, 1997.</p>
+
+<h2>Classical Game Theory From Von Neumann to Nash</h2>
+
+<ul>
+<li>Non-cooperative static games, normal form (bimatrix), zero-sum games</li>
+<li>More games, saddle points, Prisoner&#8217;s Dilemma, dominant strategies,</li>
+<li>Iterated Elimination of Dominated Strategies</li>
+<li>Mixed strategies (for zero-sum), Guaranteed payoff (security level) of a mixed strategy, The Guarantee Theorem</li>
+<li>Expected payoff, von Neumann&#8217;s Minimax Theorem, iterated Prisoner&#8217;s Dilemma</li>
+<li>Best response, Nash equilibria, Nash&#8217;s Theorem, evolutionary biology examples</li>
+<li>Dominant strategies and Nash equilibria</li>
+</ul>
+
+<p><strong>Recommended texts:</strong>
+1. E. Prisner, &#8220;Game theory through examples&#8221;, 2014;
+2. M. DeVos and D. A. Kent, &#8220;Game Theory: A Playful Introduction&#8221;, 2016.</p>
+
+<h2>Combinatorial Game Theory: an Introduction to Mathematical Modelling</h2>
+
+<ul>
+<li>Combinatorial games, examples, winning strategy, game graph, value of a position</li>
+<li>Sums of games, equivalence of games, Mex, Nim arithmetic</li>
+<li>Examples of games, Nim as a sum of games, Bouton&#8217;s Theorem, Fundamental Theorem of CGT, Corollary on Equivalence of Games, Sprague-Grundy Theorem</li>
+</ul>
+
+<p><strong>Recommended text:</strong> A. N. Siegel, &#8220;Combinatorial game theory&#8221;, (2013).</p>
+
+<h2>Cryptography</h2>
+
+<ul>
+<li>Introduction to cryptography, public-key cryptography</li>
+<li>Multiplicative inverses mod m, Diffie-Hellman key exchange, Discrete log</li>
+<li>Extended Euclidean Algortihm, modular arithmetic</li>
+<li>Post-quantum cryptography, RSA</li>
+</ul>
+
+<p><strong>Recommended text:</strong> F. Piper and S. Murphy,&#8220;Cryptography: A Very Short Introduction&#8221; (2002)</p>
+    </div>
+  </div> <!-- End wrapper -->
+</body>
+</html>
