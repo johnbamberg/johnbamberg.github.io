@@ -16,8 +16,8 @@ I am a mathematician in the [Centre for the Mathematics of Symmetry and Computat
 
 ## Editorial
 
-- Interim Editor, [Combinatorial Theory](https://www.combinatorial-theory.org/)
-- Editor, [Advances in Geometry](https://www.degruyter.com/view/journals/advg/advg-overview.xml?tab_body=toc-68871)
+- Handling Editor, [Combinatorial Theory](https://escholarship.org/uc/combinatorial_theory)
+- Editor, [Advances in Geometry](https://www.degruyter.com/journal/key/ADVG/html)
 - Managing Editor, [Electronic Journal of Combinatorics](https://www.combinatorics.org)
 
 ---
