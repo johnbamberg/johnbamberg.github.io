@@ -171,13 +171,12 @@ with Arun Ram and Jon Xu.
 - No almost simple sporadic group acts primitively on the points of a generalised quadrangle,  
 Discrete Mathematics 344 (2021), no. 4, 112291.  
 with James Evans.
-
+- A classification of finite locally 2-transitive generalized quadrangles,  
+Transactions of the American Mathematical Society 374 (2021), no. 3, 1535 -- 1578.  
+with Cai-Heng Li and Eric Swartz.
 
 ## To appear
 
-- A classification of finite locally 2-transitive generalized quadrangles,  
-Transactions of the American Mathematical Society,  
-with Cai-Heng Li and Eric Swartz. [doi](https://doi.org/10.1090/tran/8236) 
 
 
 Submitted
