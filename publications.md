@@ -179,6 +179,9 @@ with Cai-Heng Li and Eric Swartz.
 
 - Partial linear spaces with a rank 3 affine primitive group of automorphisms,  
 with Alice Devillers, Joanna B. Fawcett, Cheryl E. Praeger.
+- Pseudo-ovals of elliptic quadrics as Delsarte designs of association schemes, 
+Linear Algbera and its Applications,     
+with Giusy Monzillo and Alessandro Siciliano.
 
 Submitted
 ---------
@@ -187,8 +190,6 @@ Submitted
 with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavrauw.
 - The minimum degree of minimal Ramsey graphs for cliques,  
 with Anurag Bishnoi and Thomas Lesgourges. 
-- Pseudo-ovals of elliptic quadrics as Delsarte designs of association schemes,    
-with Giusy Monzillo and Alessandro Siciliano.
 - Orbits of Sylow subgroups of finite permutation groups,  
 with Alexander Bors, Alice Devillers, Michael Giudici, Cheryl Praeger, and Gordon Royle.
 
@@ -196,6 +197,8 @@ with Alexander Bors, Alice Devillers, Michael Giudici, Cheryl Praeger, and Gordo
 In preparation
 --------------
 
+- Separating primitive groups of diagonal type exist,  
+with Michael Giudici, Jesse Lansdown, Gordon Royle.
 - Vanishing Krein parameters for finite polar spaces,  
 with Jesse Lansdown.
 - Symplectic neighbour-transitive codes in Johnson graphs,    
