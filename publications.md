@@ -192,13 +192,13 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 with Anurag Bishnoi and Thomas Lesgourges. 
 - Orbits of Sylow subgroups of finite permutation groups,  
 with Alexander Bors, Alice Devillers, Michael Giudici, Cheryl Praeger, and Gordon Royle.
+- Synchronising primitive groups of diagonal type exist,  
+with Michael Giudici, Jesse Lansdown, Gordon Royle.
 
 
 In preparation
 --------------
 
-- Separating primitive groups of diagonal type exist,  
-with Michael Giudici, Jesse Lansdown, Gordon Royle.
 - Vanishing Krein parameters for finite polar spaces,  
 with Jesse Lansdown.
 - Symplectic neighbour-transitive codes in Johnson graphs,    
