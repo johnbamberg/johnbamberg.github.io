@@ -178,8 +178,9 @@ with Cai-Heng Li and Eric Swartz.
 ## To appear
 
 - Partial linear spaces with a rank 3 affine primitive group of automorphisms,  
+Proceedings of the London Mathematical Society,  
 with Alice Devillers, Joanna B. Fawcett, Cheryl E. Praeger.
-- Pseudo-ovals of elliptic quadrics as Delsarte designs of association schemes, 
+- Pseudo-ovals of elliptic quadrics as Delsarte designs of association schemes,  
 Linear Algbera and its Applications,     
 with Giusy Monzillo and Alessandro Siciliano.
 
