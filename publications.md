@@ -174,15 +174,16 @@ with James Evans.
 - A classification of finite locally 2-transitive generalized quadrangles,  
 Transactions of the American Mathematical Society 374 (2021), no. 3, 1535 -- 1578.  
 with Cai-Heng Li and Eric Swartz.
+- Pseudo-ovals of elliptic quadrics as Delsarte designs of association schemes,  
+Linear Algebra and its Applications 624 (2021), pp. 281--317,  
+with Giusy Monzillo and Alessandro Siciliano.
+
 
 ## To appear
 
 - Partial linear spaces with a rank 3 affine primitive group of automorphisms,  
 Proceedings of the London Mathematical Society,  
 with Alice Devillers, Joanna B. Fawcett, Cheryl E. Praeger.
-- Pseudo-ovals of elliptic quadrics as Delsarte designs of association schemes,  
-Linear Algbera and its Applications,     
-with Giusy Monzillo and Alessandro Siciliano.
 
 Submitted
 ---------
