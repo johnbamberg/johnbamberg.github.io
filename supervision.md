@@ -34,8 +34,9 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 ###Current students
 
+- Ann Linehan, Honours, *TBA*, co-supervised by Jesse Lansdown, 2021.
+- Darryl Teo, Honours, *TBA*, 2021.
 - Calin Borceanu, PhD, *TBA*, co-supervised by Gordon Royle, 2018 --
-- Hefu Yu, Honours, *TBA*, 2020 -- 2021
 
 ###Past students
 
@@ -59,6 +60,7 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 #### Honours Students ####
 
+- Hefu Yu, Honours, *The quest to classify finite flag-transitive projective planes*, 2020 -- 2021
 - Dominique Douglas-Smith, Honours, *Skew Projection*, co-supervised by Jesse Lansdown, 2020
 - James Evans, Honours, *Generalised polygons and their symmetries*, co-supervised by Emilio Pierro, 2019.
 - Jacob Morhall, Honours, *Eigenvalue bounds on cliques and cocliques*, co-supervised by Gordon Royle, 2018.

@@ -184,6 +184,10 @@ with Giusy Monzillo and Alessandro Siciliano.
 - Partial linear spaces with a rank 3 affine primitive group of automorphisms,  
 Proceedings of the London Mathematical Society,  
 with Alice Devillers, Joanna B. Fawcett, Cheryl E. Praeger.
+- Orbits of Sylow subgroups of finite permutation groups,  
+Journal of Algebra,  
+with Alexander Bors, Alice Devillers, Michael Giudici, Cheryl Praeger, and Gordon Royle.
+
 
 Submitted
 ---------
@@ -192,8 +196,6 @@ Submitted
 with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavrauw.
 - The minimum degree of minimal Ramsey graphs for cliques,  
 with Anurag Bishnoi and Thomas Lesgourges. 
-- Orbits of Sylow subgroups of finite permutation groups,  
-with Alexander Bors, Alice Devillers, Michael Giudici, Cheryl Praeger, and Gordon Royle.
 - Synchronising primitive groups of diagonal type exist,  
 with Michael Giudici, Jesse Lansdown, Gordon Royle.
 
