@@ -3,12 +3,6 @@ layout: default
 title: Home Page
 ---
 
-<header>
-<title>John Bamberg's Home Page</title>
-</header>
-
-# John Bamberg's Home Page
-
 ![Me](john31.png)
 ![Poncelet's Porism](ponceletporism.gif)
 
