@@ -1,6 +1,6 @@
 ---
-layout: null
-title: John Bamberg's Home Page
+layout: default
+title: Home Page
 ---
 
 <header>
