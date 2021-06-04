@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: null
 title: John Bamberg's Home Page
 ---
 
