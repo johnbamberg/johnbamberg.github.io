@@ -1,3 +1,8 @@
+---
+layout: default
+title: Errata
+---
+
 # Errata and Addenda
 
 > Experience is the name everyone gives to their mistakes.  
