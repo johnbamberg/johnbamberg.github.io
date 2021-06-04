@@ -1,3 +1,8 @@
+---
+layout: null
+title: Supervision
+---
+
 # Research projects
 
 One of the things I most like about my job is supervising students in research projects. From [AMSI](https://amsi.org.au) Vacation Scholarship students to honours students to PhD students, I enjoy collaborating with a student that is seeing a dedicated research problem for the first time, and then becoming a master of their subject.
