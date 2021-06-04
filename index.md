@@ -1,3 +1,8 @@
+---
+layout: post
+title: John Bamberg's Home Page
+---
+
 <header>
 <title>John Bamberg's Home Page</title>
 </header>
