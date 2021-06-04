@@ -1,3 +1,7 @@
+---
+layout: null
+title: Publications
+---
 # Publications
 
 Some of the following appear on the open preprint server [arxiv.org](http://arxiv.org/find/math/1/au:+Bamberg_J/0/1/0/all/0/1).

@@ -1,3 +1,7 @@
+---
+layout: null
+title: About me
+---
 # About Me
 
 Most of my life, I have lived in Victoria ([Kinglake area](http://en.wikipedia.org/wiki/Kinglake,_Victoria)), Australia, completing my undergraduate degree at La Trobe University (in 1999). My honours thesis was on combinatorial group theory and was supervised by [Grant Cairns](http://grantcairns.ltumathstats.com). I then relocated to Perth, Western Australia for my PhD under the auspices of [Cheryl Praeger](http://www.uwa.edu.au/people/cheryl.praeger) and [Tim Penttila](http://www.math.colostate.edu/~penttila). My PhD thesis was titled _Innately Transitive Groups_ which was a study of finite permutation groups which contain a transitive minimal normal subgroup (a kind of generalisation of the O’Nan-Scott theory for primitive and quasiprimitive groups). 
