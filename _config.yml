@@ -1,4 +1,5 @@
-theme: jekyll-theme-minima
+theme: minima
+markdown: CommonMarkGhPages
 title: John Bamberg
 description: " "
 
