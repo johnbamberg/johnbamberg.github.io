@@ -23,6 +23,7 @@ Please let me know if you find a mistake in one of my papers. Here is a list of 
 	- for n=24, we miss 2184, 2340, 2640, 2730, 2772, 3080, 3960, 4620, 5040
 	
 	For more information, see N.J.A. Sloane's On-Line Encyclopaedia of Integer 	Sequence,entries A080736-A080742.
+	
 ### Transitive eggs,
 *Innovations in Incidence Geometry 4 (2006), 1–12.  
     with Tim Penttila.*
