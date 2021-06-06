@@ -2,7 +2,6 @@ theme: minima
 markdown: CommonMarkGhPages
 title: John Bamberg
 description: " "
-footer: " "
 header_pages:
   - index.md
   - about.md
