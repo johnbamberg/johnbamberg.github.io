@@ -37,13 +37,13 @@ First a disclaimer: I am not a number theorist, and I cannot pretend to be at th
 ## Students I have supervised
 I have been enormously lucky to have supervised some remarkable students. Here is a list of the students and their projects.
 
-###Current students
+### Current students
 
 - Ann Linehan, Honours, *TBA*, co-supervised by Jesse Lansdown, 2021.
 - Darryl Teo, Honours, *TBA*, 2021.
 - Calin Borceanu, PhD, *TBA*, co-supervised by Gordon Royle, 2018 --
 
-###Past students
+### Past students
 
 #### PhD Students ####
 
