@@ -186,29 +186,27 @@ with Giusy Monzillo and Alessandro Siciliano.
 ## To appear
 
 - Partial linear spaces with a rank 3 affine primitive group of automorphisms,  
-Proceedings of the London Mathematical Society,  
-with Alice Devillers, Joanna B. Fawcett, Cheryl E. Praeger.
+Journal of the London Mathematical Society,  
+with Alice Devillers, Joanna B. Fawcett, Cheryl E. Praeger. [doi](https://doi.org/10.1112/jlms.12454)
 - Orbits of Sylow subgroups of finite permutation groups,  
 Journal of Algebra,  
-with Alexander Bors, Alice Devillers, Michael Giudici, Cheryl Praeger, and Gordon Royle.
+with Alexander Bors, Alice Devillers, Michael Giudici, Cheryl Praeger, and Gordon Royle. [doi](https://doi.org/10.1016/j.jalgebra.2021.06.017)
 
 
-Submitted
----------
+## Submitted
 
-- FinInG: a package for finite incidence geometry,   
-with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavrauw.
 - The minimum degree of minimal Ramsey graphs for cliques,  
 with Anurag Bishnoi and Thomas Lesgourges. 
 - Synchronising primitive groups of diagonal type exist,  
 with Michael Giudici, Jesse Lansdown, Gordon Royle.
-
-
-In preparation
---------------
-
-- Vanishing Krein parameters for finite polar spaces,  
+- Implications of vanishing Krein parameters on Delsarte designs, with applications in finite geometry,  
 with Jesse Lansdown.
+- FinInG: a package for finite incidence geometry,   
+with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavrauw.
+
+
+## In preparation
+
 - Symplectic neighbour-transitive codes in Johnson graphs,    
 with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger.
 - Euclidean geometry is incidence geometry,  

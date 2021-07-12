@@ -3,6 +3,8 @@ layout: default
 title: Supervision
 ---
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 # Research projects
 
 One of the things I most like about my job is supervising students in research projects. From [AMSI](https://amsi.org.au) Vacation Scholarship students to honours students to PhD students, I enjoy collaborating with a student that is seeing a dedicated research problem for the first time, and then becoming a master of their subject.
@@ -65,23 +67,23 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 #### Honours Students ####
 
-- Hefu Yu, Honours, *The quest to classify finite flag-transitive projective planes*, 2020 -- 2021
-- Dominique Douglas-Smith, Honours, *Skew Projection*, co-supervised by Jesse Lansdown, 2020
-- James Evans, Honours, *Generalised polygons and their symmetries*, co-supervised by Emilio Pierro, 2019.
-- Jacob Morhall, Honours, *Eigenvalue bounds on cliques and cocliques*, co-supervised by Gordon Royle, 2018.
-- Timothy Harris, Honours, *Abstract ovals*, 2017.
-- Calin Borceanu, Honours, *Breaking symmetry in backtrack algorithms*, 2016.
-- Saul Freedman, Honours, *Maximally symmetric p-groups*, co-supervised by Luke Morgan, 2016.
-- Jesse Lansdown, Honours, *Metric coset geometries*, co-supervised by Joanna Fawcett, 2014/2015.
-- Melissa Lee, Honours, *Relative hemisystems on the Hermitian Surface*, co-supervised by Eric Swartrz, 2014.
-- Blake Segler, Honours, *Fault-tolerant quantum computation*, co-supervised by Jingbo Wang, 2013.
-- Murray Smith, Honours, *A generalised clique-coclique bound*, 2012.
-- Mark Ioppolo, Honours, *A classification of rational 2-tangles via coset spaces*, 2011-2012.
-- David Raithel, Honours, *The 24-cell*, co-supervised by Cheryl Praeger, 2011-2012.
-- Daniel Skates, Honours, *Sets of type (m,n) in projective planes*, co-supervised by Gordon, 2011.
-- Adrian Dudek, Honours, *Expander graphs*, co-supervised by Gordon Royle, 2010.  
-- Andrew Cannon, Honours, *Graphs of the Johnson schemes*, co-supervised by Cheryl Praeger, 2009 -- 2010.
-- Claire Collier, Honours, *The norm of a group*, co-supervised by Maska Law, 2006.
-- Michael Pauley, Honours, *Flag-transitive linear spaces and spreads of projective space*, 2005/2006.
-- Jonathan Cohen, Honours, *Small base groups, large base groups and the case of the giants*, co-supervised by Alice Niemeyer, 2004.
-- Geoffrey Pearce, Honours, *Products of groups and graphs*, co-supervised by Cheryl Praeger, 2003.
+- Hefu Yu, *The quest to classify finite flag-transitive projective planes*, 2020 -- 2021
+- Dominique Douglas-Smith, *Skew Projection*, co-supervised by Jesse Lansdown, 2020
+- James Evans, *Generalised polygons and their symmetries*, co-supervised by Emilio Pierro, 2019.
+- Jacob Morhall, *Eigenvalue bounds on cliques and cocliques*, co-supervised by Gordon Royle, 2018.
+- Timothy Harris, *Abstract ovals*, 2017.
+- Calin Borceanu, *Breaking symmetry in backtrack algorithms*, 2016.
+- Saul Freedman, *Maximally symmetric p-groups*, co-supervised by Luke Morgan, 2016.
+- Jesse Lansdown, *Metric coset geometries*, co-supervised by Joanna Fawcett, 2014/2015.
+- Melissa Lee, *Relative hemisystems on the Hermitian Surface*, co-supervised by Eric Swartrz, 2014.
+- Blake Segler, *Fault-tolerant quantum computation*, co-supervised by Jingbo Wang, 2013.
+- Murray Smith, *A generalised clique-coclique bound*, 2012.
+- Mark Ioppolo, *A classification of rational 2-tangles via coset spaces*, 2011-2012.
+- David Raithel, *The 24-cell*, co-supervised by Cheryl Praeger, 2011-2012.
+- Daniel Skates, *Sets of type (m,n) in projective planes*, co-supervised by Gordon, 2011.
+- Adrian Dudek, *Expander graphs*, co-supervised by Gordon Royle, 2010.  
+- Andrew Cannon, *Graphs of the Johnson schemes*, co-supervised by Cheryl Praeger, 2009 -- 2010.
+- Claire Collier, *The norm of a group*, co-supervised by Maska Law, 2006.
+- Michael Pauley, *Flag-transitive linear spaces and spreads of projective space*, 2005/2006.
+- Jonathan Cohen, *Small base groups, large base groups and the case of the giants*, co-supervised by Alice Niemeyer, 2004.
+- Geoffrey Pearce, *Products of groups and graphs*, co-supervised by Cheryl Praeger, 2003.
