@@ -41,8 +41,8 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 ### Current students
 
-- Ann Linehan, Honours, *TBA*, co-supervised by Jesse Lansdown, 2021.
-- Darryl Teo, Honours, *TBA*, 2021.
+- Ann Linehan, Honours, *Between Pappus and Little Pappus*, co-supervised by Jesse Lansdown, 2021.
+- Darryl Teo, Honours, *On intersection multiplicity of plane curves*, 2021.
 - Calin Borceanu, PhD, *TBA*, co-supervised by Gordon Royle, 2018 --
 
 ### Past students

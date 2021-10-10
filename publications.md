@@ -163,22 +163,25 @@ with Tomasz Popiel and Cheryl Praeger.
 53. On intriguing sets of the Penttila-Williford association scheme,  
 Linear Algebra and its Applications 582 (2019), no. 1 (December), 327 -- 345.  
 with Klaus Metsch.
-54. Permutations with orders coprime to a given integer,  
+54. Corrigendum to "Maximal linear groups induced on the Frattini quotient of a p-group'' [J. Pure Appl. Algebra 222 (10) (2018) 2931–2951].  
+Journal of Pure and Applied Algebra 223 (2019), no. 12, 5428 -- 5429.  
+with S. P. Glasby, Luke Morgan, Alice C. Niemeyer. 
+55. Permutations with orders coprime to a given integer,  
 Electronic Journal of Combinatorics, 27 (2020), #P1.6,  
 with Stephen Glasby, Scott Harper, Cheryl E. Praeger.
-55. On $p$-groups with automorphism groups related to the Chevalley group $G_2(p)$,  
+56. On $p$-groups with automorphism groups related to the Chevalley group $G_2(p)$,  
 Journal of the Australian Mathematical Society 108 (2020), no. 3, pp. 321 -- 331.    
 with Saul D. Freedman and Luke Morgan.
-56. The thickness of Schubert cells as incidence structures,  
+57. The thickness of Schubert cells as incidence structures,  
 Journal of the Australian Mathematical Society 109 (2020), no. 2, pp. 145 -- 156.  
 with Arun Ram and Jon Xu.
-57. No almost simple sporadic group acts primitively on the points of a generalised quadrangle,  
+58. No almost simple sporadic group acts primitively on the points of a generalised quadrangle,  
 Discrete Mathematics 344 (2021), no. 4, 112291.  
 with James Evans.
-58. A classification of finite locally 2-transitive generalized quadrangles,  
+59. A classification of finite locally 2-transitive generalized quadrangles,  
 Transactions of the American Mathematical Society 374 (2021), no. 3, 1535 -- 1578.  
 with Cai-Heng Li and Eric Swartz.
-59. Pseudo-ovals of elliptic quadrics as Delsarte designs of association schemes,  
+60. Pseudo-ovals of elliptic quadrics as Delsarte designs of association schemes,  
 Linear Algebra and its Applications 624 (2021), pp. 281--317,  
 with Giusy Monzillo and Alessandro Siciliano.
 
@@ -191,14 +194,15 @@ with Alice Devillers, Joanna B. Fawcett, Cheryl E. Praeger. [doi](https://doi.or
 - Orbits of Sylow subgroups of finite permutation groups,  
 Journal of Algebra,  
 with Alexander Bors, Alice Devillers, Michael Giudici, Cheryl Praeger, and Gordon Royle. [doi](https://doi.org/10.1016/j.jalgebra.2021.06.017)
+- Synchronising primitive groups of diagonal type exist,  
+Bulletin of the London Mathematical Society,   
+with Michael Giudici, Jesse Lansdown, Gordon Royle.
 
 
 ## Submitted
 
 - The minimum degree of minimal Ramsey graphs for cliques,  
 with Anurag Bishnoi and Thomas Lesgourges. 
-- Synchronising primitive groups of diagonal type exist,  
-with Michael Giudici, Jesse Lansdown, Gordon Royle.
 - Implications of vanishing Krein parameters on Delsarte designs, with applications in finite geometry,  
 with Jesse Lansdown.
 - FinInG: a package for finite incidence geometry,   
@@ -207,7 +211,7 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 
 ## In preparation
 
-- Symplectic neighbour-transitive codes in Johnson graphs,    
+- Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
 with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger.
 - Euclidean geometry is incidence geometry,  
 with Tim Penttila.

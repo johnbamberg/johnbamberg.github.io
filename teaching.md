@@ -5,6 +5,11 @@ title: Teaching
 
 # Teaching
 
+### 2022 ###
+
+- [MATH1601](http://handbooks.uwa.edu.au/unitdetails?code=MATH1601) (Mathematics: from the Renaissance to modern day), Semester 1.
+- [MATH1720](http://handbooks.uwa.edu.au/unitdetails?code=MATH1720) (Mathematics Fundamentals), Semester 1
+
 ### 2021 ###
 
 - [MATH1601](http://handbooks.uwa.edu.au/unitdetails?code=MATH1601) (Mathematics: from the Renaissance to modern day), Semester 1.
