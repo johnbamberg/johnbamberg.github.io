@@ -41,15 +41,13 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 ### Current students
 
-- Ann Linehan, Honours, *Between Pappus and Little Pappus*, co-supervised by Jesse Lansdown, 2021.
-- Darryl Teo, Honours, *On intersection multiplicity of plane curves*, 2021.
 - Calin Borceanu, PhD, *TBA*, co-supervised by Gordon Royle, 2018 --
 
 ### Past students
 
 #### PhD Students ####
 
- - Jesse Lansdown, PhD, *Designs in finite geometry*, co-supervised by Gordon Royle and Alice Niemeyer (cotutelle with Aachen), 2015 -- 2020
+ 1. Jesse Lansdown, PhD, *Designs in finite geometry*, co-supervised by Gordon Royle and Alice Niemeyer (cotutelle with Aachen), 2015 -- 2020
  - Mark Ioppolo, PhD, *Codes in Johnson graphs associated with quadratic forms over $\mathbb{F}_2$*,  co-supervised by Cheryl Praeger and Alice Devillers, 2012 -- 2020.
  - Jon Xu, PhD, *Chevalley groups, Schubert varieties, and finite geometry*, co-supervised by Arun Ram, 2012 -- 2017.
  - Sayeed Hassan Alavi, PhD, *Triple factorisations of groups*, co-supervised by Cheryl Praeger, 2008 -- 2011.
@@ -58,7 +56,7 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 #### Masters/MPhil Students ####
 
-- Saul Freedman, MPhil, *p-groups related to exceptional groups of Lie type*, co-supervised by Luke Morgan, 2017 -- 2018.
+1. Saul Freedman, MPhil, *p-groups related to exceptional groups of Lie type*, co-supervised by Luke Morgan, 2017 -- 2018.
 - Melissa Lee, MPhil, *The m-covers and m-ovoids of generalised quadrangles and related structures*, co-supervised by Michael Giudici, 2015/2016.
 - Sylvia Morris, MPhil, *Symplectic translation planes, pseudo-ovals, and maximal 4-arcs*, co-supervised by Michael Giudici, 2011 -- 2013.
 - Guang Rao, Masters, *Symmetric translation planes of square order*, 2009/2010.
@@ -67,6 +65,8 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 #### Honours Students ####
 
+1. Darryl Teo, Honours, *On intersection multiplicity of plane curves*, 2021.
+- Ann Linehan, Honours, *Relationships Between Geometric Propositions which Characterise Projective Planes*, co-supervised by Jesse Lansdown, 2021.
 - Hefu Yu, *The quest to classify finite flag-transitive projective planes*, 2020 -- 2021
 - Dominique Douglas-Smith, *Skew Projection*, co-supervised by Jesse Lansdown, 2020
 - James Evans, *Generalised polygons and their symmetries*, co-supervised by Emilio Pierro, 2019.
