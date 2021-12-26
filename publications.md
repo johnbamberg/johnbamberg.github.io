@@ -132,58 +132,58 @@ Portugaliae Mathematica 74 (2017), no. 3, pp. 213 -- 232.
 with Mohammed Aljohani and Peter J. Cameron.
 43. A classification of finite antiflag-transitive generalized quadrangles,  
 Transactions of the American Mathematical Society 370 (2018), no. 3, pp. 1551 -- 1601,  
-with Cai-Heng Li and Eric Swartz.  
+with Cai-Heng Li and Eric Swartz. [doi](https://doi.org/10.1090/tran/6984) 
 44. Bruck nets and partial Sherk planes,  
 Journal of the Australian Mathematical Society 104 (2018), no. 1, pp. 1 -- 12.  
-with Joanna B. Fawcett and Jesse Lansdown.
+with Joanna B. Fawcett and Jesse Lansdown. [doi](https://doi.org/10.1017/S144678871700009X)
 45. A new infinite family of hemisystems of the Hermitian surface,  
 Combinatorica 38 (2018), no. 1, pp. 43 -- 66.  
-with Melissa Lee, Koji Momihara, Qing Xiang.
+with Melissa Lee, Koji Momihara, Qing Xiang. [doi](https://doi.org/10.1007/s00493-016-3525-4)
 46. On _m_-ovoids of regular near polygons,   
 Designs, Codes & Cryptography 86 (2018), no. 5, pp. 997 -- 1006.  
-with Jesse Lansdown and Melissa Lee.
+with Jesse Lansdown and Melissa Lee. [doi](https://doi.org/10.1007/s10623-017-0373-1)
 47. On regular induced subgraphs of bipartite cages,   
 Journal of Combinatorial Theory Series A 158 (2018), pp. 254 -- 275.  
-with Anurag Bishnoi and Gordon Royle.
+with Anurag Bishnoi and Gordon Royle. [doi](https://doi.org/10.1016/j.jcta.2018.03.015)
 48. Maximal linear groups induced on the Frattini quotient of a _p_-group,   
-Journal of Pure and Applied Algebra 222 (2018), no. 10, pp. 2931 -- 2951,  
+Journal of Pure and Applied Algebra 222 (2018), no. 10, pp. 2931 -- 2951, [doi](https://doi.org/10.1016/j.jpaa.2017.11.006) 
 with S. P. Glasby, Luke Morgan, and Alice Niemeyer.
 49. On the circular altitude of a graph,  
 Australasian Journal of Combinatorics 72 (2018), no. 2, pp. 357 -- 368,  
 with Brian Corr, Alice Devillers, Daniel Hawtin, Irene Pivotto, and Eric Swartz.
 50. On abstract ovals with Pascalian secant lines,   
 Journal of Group Theory 21 (2018), no. 6, 1051 -- 1064,    
-with Tim Harris and Tim Penttila.
+with Tim Harris and Tim Penttila. [doi](https://doi.org/10.1515/jgth-2018-0028)
 51. The covering radii of the 2-transitive unitary, Suzuki, and Ree groups,  
 Journal of Group Theory 22 (2019), no. 1, 103 -- 117,  
-with Cheryl E. Praeger and Binzhou Xia.
+with Cheryl E. Praeger and Binzhou Xia. [doi](https://doi.org/10.1515/jgth-2018-0039)
 52. Simple groups, product actions, and generalized quadrangles,   
 Nagoya Mathematical Journal 234 (2019), 87 -- 126.  
-with Tomasz Popiel and Cheryl Praeger.
+with Tomasz Popiel and Cheryl Praeger. [doi](https://doi.org/10.1017/nmj.2017.35)
 53. On intriguing sets of the Penttila-Williford association scheme,  
 Linear Algebra and its Applications 582 (2019), no. 1 (December), 327 -- 345.  
-with Klaus Metsch.
+with Klaus Metsch. [doi](https://doi.org/10.1016/j.laa.2019.08.005)
 54. Corrigendum to "Maximal linear groups induced on the Frattini quotient of a p-group'' [J. Pure Appl. Algebra 222 (10) (2018) 2931–2951].  
 Journal of Pure and Applied Algebra 223 (2019), no. 12, 5428 -- 5429.  
 with S. P. Glasby, Luke Morgan, Alice C. Niemeyer. 
 55. Permutations with orders coprime to a given integer,  
 Electronic Journal of Combinatorics, 27 (2020), #P1.6,  
-with Stephen Glasby, Scott Harper, Cheryl E. Praeger.
+with Stephen Glasby, Scott Harper, Cheryl E. Praeger. [doi](https://doi.org/10.37236/8678)
 56. On $p$-groups with automorphism groups related to the Chevalley group $G_2(p)$,  
-Journal of the Australian Mathematical Society 108 (2020), no. 3, pp. 321 -- 331.    
+Journal of the Australian Mathematical Society 108 (2020), no. 3, pp. 321 -- 331. [doi](https://doi.org/10.1017/S1446788719000466)   
 with Saul D. Freedman and Luke Morgan.
 57. The thickness of Schubert cells as incidence structures,  
 Journal of the Australian Mathematical Society 109 (2020), no. 2, pp. 145 -- 156.  
-with Arun Ram and Jon Xu.
+with Arun Ram and Jon Xu. [doi](https://doi.org/10.1017/S1446788719000363)
 58. No almost simple sporadic group acts primitively on the points of a generalised quadrangle,  
 Discrete Mathematics 344 (2021), no. 4, 112291.  
-with James Evans.
+with James Evans. [doi](https://doi.org/10.1016/j.disc.2021.112291)
 59. A classification of finite locally 2-transitive generalized quadrangles,  
-Transactions of the American Mathematical Society 374 (2021), no. 3, 1535 -- 1578.  
-with Cai-Heng Li and Eric Swartz.
+Transactions of the American Mathematical Society 374 (2021), no. 3, 1535 -- 1578. [doi](https://doi.org/10.1090/tran/8236)  
+with Cai-Heng Li and Eric Swartz. 
 60. Pseudo-ovals of elliptic quadrics as Delsarte designs of association schemes,  
 Linear Algebra and its Applications 624 (2021), pp. 281--317,  
-with Giusy Monzillo and Alessandro Siciliano.
+with Giusy Monzillo and Alessandro Siciliano. [doi](https://doi.org/10.1016/j.laa.2021.04.014)
 61. Partial linear spaces with a rank 3 affine primitive group of automorphisms,  
 Journal of the London Mathematical Society 104 (2021), no. 3, pp. 1011--1084,    
 with Alice Devillers, Joanna B. Fawcett, Cheryl E. Praeger. [doi](https://doi.org/10.1112/jlms.12454)
@@ -196,12 +196,16 @@ with Alexander Bors, Alice Devillers, Michael Giudici, Cheryl Praeger, and Gordo
 - Synchronising primitive groups of diagonal type exist,  
 Bulletin of the London Mathematical Society,   
 with Michael Giudici, Jesse Lansdown, Gordon Royle.
+- The minimum degree of minimal Ramsey graphs for cliques,  
+Bulletin of the London Mathematical Society,   
+with Anurag Bishnoi and Thomas Lesgourges. 
+
 
 
 ## Submitted
 
-- The minimum degree of minimal Ramsey graphs for cliques,  
-with Anurag Bishnoi and Thomas Lesgourges. 
+- Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
+with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger.
 - Implications of vanishing Krein parameters on Delsarte designs, with applications in finite geometry,  
 with Jesse Lansdown.
 - FinInG: a package for finite incidence geometry,   
@@ -210,8 +214,6 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 
 ## In preparation
 
-- Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
-with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger.
 - Euclidean geometry is incidence geometry,  
 with Tim Penttila.
 - Simpler foundations for the hyperbolic plane,  

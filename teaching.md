@@ -9,6 +9,9 @@ title: Teaching
 
 - [MATH1601](http://handbooks.uwa.edu.au/unitdetails?code=MATH1601) (Mathematics: from the Renaissance to modern day), Semester 1.
 - [MATH1720](http://handbooks.uwa.edu.au/unitdetails?code=MATH1720) (Mathematics Fundamentals), Semester 1
+- [MATH4033](http://handbooks.uwa.edu.au/unitdetails?code=MATH4033)  (Advanced Topics in Pure Mathematics), Semester 2
+
+MATH4033 will be on algebraic graph theory and association schemes, this year.
 
 ### 2021 ###
 
