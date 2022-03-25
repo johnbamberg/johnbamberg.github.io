@@ -203,7 +203,7 @@ Bulletin of the London Mathematical Society,
 with Michael Giudici, Jesse Lansdown, Gordon Royle. [doi](https://doi.org/10.1112/blms.12619)
 - The minimum degree of minimal Ramsey graphs for cliques,  
 Bulletin of the London Mathematical Society,   
-with Anurag Bishnoi and Thomas Lesgourges. 
+with Anurag Bishnoi and Thomas Lesgourges. [doi](https://doi.orb/10.1112/blms.12658)
 
 
 
