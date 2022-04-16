@@ -203,7 +203,7 @@ Bulletin of the London Mathematical Society,
 with Michael Giudici, Jesse Lansdown, Gordon Royle. [doi](https://doi.org/10.1112/blms.12619)
 - The minimum degree of minimal Ramsey graphs for cliques,  
 Bulletin of the London Mathematical Society,   
-with Anurag Bishnoi and Thomas Lesgourges. [doi](https://doi.orb/10.1112/blms.12658)
+with Anurag Bishnoi and Thomas Lesgourges. [doi](https://doi.org/10.1112/blms.12658)
 
 
 
@@ -218,10 +218,10 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 
 ## In preparation
 
-- Euclidean geometry is incidence geometry,  
+- Rank 3 separating graphs, with Michael Giudici, Jesse Lansdown, and Gordon Royle.
+- Euclidean geometry is incidence geometry, 
 with Tim Penttila.
-- Simpler foundations for the hyperbolic plane,  
-with Tim Penttila.
+- Simpler foundations for the hyperbolic plane, with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons
 - Triple factorisations of classical groups by maximal parabolic subgroups and their associated geometries, with Seyed Hassan Alavi and Cheryl E. Praeger.
 - On the elation group of the dual of the $H(4,q^2)$ generalised quadrangle, with Michel Lavrauw and Tim Penttila.
