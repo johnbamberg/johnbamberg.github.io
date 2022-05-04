@@ -204,6 +204,10 @@ with Michael Giudici, Jesse Lansdown, Gordon Royle. [doi](https://doi.org/10.111
 - The minimum degree of minimal Ramsey graphs for cliques,  
 Bulletin of the London Mathematical Society,   
 with Anurag Bishnoi and Thomas Lesgourges. [doi](https://doi.org/10.1112/blms.12658)
+- Implications of vanishing Krein parameters on Delsarte designs, with applications in finite geometry, 
+Algebraic Combinatorics,   
+with Jesse Lansdown.
+
 
 
 
@@ -211,8 +215,6 @@ with Anurag Bishnoi and Thomas Lesgourges. [doi](https://doi.org/10.1112/blms.12
 
 - Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
 with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger.
-- Implications of vanishing Krein parameters on Delsarte designs, with applications in finite geometry,  
-with Jesse Lansdown.
 - FinInG: a package for finite incidence geometry,   
 with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavrauw.
 
