@@ -192,12 +192,13 @@ with Giusy Monzillo and Alessandro Siciliano. [doi](https://doi.org/10.1016/j.la
 61. Partial linear spaces with a rank 3 affine primitive group of automorphisms,  
 Journal of the London Mathematical Society 104 (2021), no. 3, pp. 1011--1084,    
 with Alice Devillers, Joanna B. Fawcett, Cheryl E. Praeger. [doi](https://doi.org/10.1112/jlms.12454)
+- Orbits of Sylow subgroups of finite permutation groups,  
+Journal of Algebra 607 (2022), Part A, pp. 107--133,  
+with Alexander Bors, Alice Devillers, Michael Giudici, Cheryl Praeger, and Gordon Royle. [doi](https://doi.org/10.1016/j.jalgebra.2021.06.017)
+
 
 ## To appear
 
-- Orbits of Sylow subgroups of finite permutation groups,  
-Journal of Algebra,  
-with Alexander Bors, Alice Devillers, Michael Giudici, Cheryl Praeger, and Gordon Royle. [doi](https://doi.org/10.1016/j.jalgebra.2021.06.017)
 - Synchronising primitive groups of diagonal type exist,  
 Bulletin of the London Mathematical Society,   
 with Michael Giudici, Jesse Lansdown, Gordon Royle. [doi](https://doi.org/10.1112/blms.12619)
