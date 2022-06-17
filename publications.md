@@ -192,7 +192,10 @@ with Giusy Monzillo and Alessandro Siciliano. [doi](https://doi.org/10.1016/j.la
 61. Partial linear spaces with a rank 3 affine primitive group of automorphisms,  
 Journal of the London Mathematical Society 104 (2021), no. 3, pp. 1011--1084,    
 with Alice Devillers, Joanna B. Fawcett, Cheryl E. Praeger. [doi](https://doi.org/10.1112/jlms.12454)
-62. Orbits of Sylow subgroups of finite permutation groups,  
+62. Correction to: New non-Existence proofs for ovoids of Hermitian polar spaces and hyperbolic quadrics.  
+Annals of Combinatorics 25 (2021), pp. 1095--1097,   
+with Jan De Beule and Ferdinand Ihringer [doi](https://doi.org/10.1007/s00026-021-00533-8)
+63. Orbits of Sylow subgroups of finite permutation groups,  
 Journal of Algebra 607 (2022), Part A, pp. 107--133,  
 with Alexander Bors, Alice Devillers, Michael Giudici, Cheryl Praeger, and Gordon Royle. [doi](https://doi.org/10.1016/j.jalgebra.2021.06.017)
 
