@@ -6,14 +6,14 @@ title: Chapter 4
 
 ### 4.6 
 We simply apply the *cocycle identity* of cross-ratio:
-$$\\require{textcomp}
+$\\require{textcomp}
 \begin{aligned}
 \textrecipe(A,B;E,C)&=\CrossRatio(A,B;D,C)\CrossRatio(A,B;E,D)\\
 &=-\CrossRatio(A,B;E,D)\\
 &=-\CrossRatio(A',C';B',D)&\text{via projection from }O'\\
 &=-\CrossRatio(A,C;B,D)&\text{via projection from }O\\
 &=-(1-\CrossRatio(A,C;B,D))&\text{by Lemma }\ref{permutecrossratio}\\
-&=-2.\end{aligned}$$
+&=-2.\end{aligned}$
 
 ### 4.8 
 First, $\ratio(A,H,C)=1/4$, so if $Q$ is the point at infinity on
@@ -79,9 +79,8 @@ $$\begin{aligned}
 $$\ratio(D,B,A)=\frac{8}{15}=\frac{d(D,C)+14}{d(D,C)+35},$$ giving
 $d(D,C)=10$. (This exercise was adapted from [@Duffin:1993vt p. 42]).
 
-###4.13 
-By the Chasles-Steiner Theorem [\[cs\]](#cs){reference-type="ref"
-reference="cs"}, since $P$, $Q$, $R_1$, $R_2$, $R_3$, $R_4$ are points
+### 4.13 
+By the Chasles-Steiner Theorem, since $P$, $Q$, $R_1$, $R_2$, $R_3$, $R_4$ are points
 on a conic,
 $$\CrossRatio(PR_1,PR_2;PR_3,PR_4)=\CrossRatio(QR_1,QR_2;QR_3,QR_4),$$
 but $\CrossRatio(PR_1,PR_2;PR_3,PR_4)=\CrossRatio(PS,PT;PU,PV)$ and
@@ -89,4 +88,4 @@ $$\CrossRatio(QR_1,QR_2;QR_3,QR_4)=\CrossRatio(QT,QS;QV,QU)=\CrossRatio(QS,QT;QU
 so $\CrossRatio(PS,PT;PU,PV)=\CrossRatio(QS,QT;QU,QV)$. Therefore, by
 the Chasles-Steiner Theorem, $P$, $Q$, $S$, $T$, $U$, $V$ are points on
 a conic.
-:::
+
