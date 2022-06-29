@@ -8,6 +8,9 @@ title: Publications
 
 Tim Penttila and I are currently finishing our new book on projective geometry (over the real numbers) that will be published by [Cambridge University Press](https://www.cambridge.org/).
 
+[Solutions to selected exercises](projectivegeometrybooksolutions.html)
+
+
 ## Published papers
 Some of the following appear on the open preprint server [arxiv.org](http://arxiv.org/find/math/1/au:+Bamberg_J/0/1/0/all/0/1).
 

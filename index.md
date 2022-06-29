@@ -18,7 +18,6 @@ I am a mathematician in the [Centre for the Mathematics of Symmetry and Computat
 
 - Editor, [Combinatorial Theory](https://escholarship.org/uc/combinatorial_theory)
 - Editor, [Advances in Geometry](https://www.degruyter.com/journal/key/ADVG/html)
-- Managing Editor, [Electronic Journal of Combinatorics](https://www.combinatorics.org)
 
 ---
 
