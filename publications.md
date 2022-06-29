@@ -2,7 +2,6 @@
 layout: page
 title: Publications
 ---
-# Publications
 
 ## Exciting news!
 
