@@ -1,6 +1,6 @@
 ---
 layout: default
-usemath: true
+use_math: true
 title: Chapter 1
 ---
 
