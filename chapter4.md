@@ -18,7 +18,7 @@ $$
 &=-2.\end{aligned}$$
 
 ### 4.8 
-First, $\ratio(A,H,C)=1/4$, so if $Q$ is the point at infinity on
+First, $\mathrm{ratio}(A,H,C)=1/4$, so if $Q$ is the point at infinity on
 $AC$, then $\CrossRatio(A,H;C,Q)=1/4$. Hence $\CrossRatio(Q,H;A,C)=4/3$.
 Choose $n$ on $C$ such that $d(n \cap PH,n \cap PA)=d(n \cap PH, C)$.
 (That is, take the line $g$ parallel to $PA$ through $C$, and then take
