@@ -5,15 +5,17 @@ title: Chapter 4
 ---
 
 ### 4.6 
+
+\(\require{textcomp}\)
 We simply apply the *cocycle identity* of cross-ratio:
-$\require{textcomp}
+$$
 \begin{aligned}
 \textrecipe(A,B;E,C)&=\CrossRatio(A,B;D,C)\CrossRatio(A,B;E,D)\\
 &=-\CrossRatio(A,B;E,D)\\
 &=-\CrossRatio(A',C';B',D)&\text{via projection from }O'\\
 &=-\CrossRatio(A,C;B,D)&\text{via projection from }O\\
 &=-(1-\CrossRatio(A,C;B,D))&\text{by Lemma }\ref{permutecrossratio}\\
-&=-2.\end{aligned}$
+&=-2.\end{aligned}$$
 
 ### 4.8 
 First, $\ratio(A,H,C)=1/4$, so if $Q$ is the point at infinity on
