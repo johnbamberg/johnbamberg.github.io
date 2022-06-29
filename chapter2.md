@@ -24,19 +24,16 @@ $\mathsf{PG}(2,\mathbb{R})$).
 
 ### 2.4
 
-(a) (We assume that the product of two central collineations is a
-    central collineation). First, notice that $\phi\psi$ fixes the point
-    $C$ as $C^{\phi\psi}=(C^\phi)^\psi=C^\psi=C$. Now let $\ell$ be a
-    line incident with $C$. Then $\phi$ fixes $\ell$ and $\psi$ fixes
-    $\ell$. Therefore, $\phi\psi$ fixes $\ell$. So $\phi\psi$ is an
-    elation with centre $C$.
+(a) (We assume that the product of two central collineations is a central collineation). First, notice that $\phi\psi$ fixes the point $C$ as $C^{\phi\psi}=(C^\phi)^\psi=C^\psi=C$. Now let $\ell$ be a line incident with $C$. Then $\phi$ fixes $\ell$ and $\psi$ fixes $\ell$. Therefore, $\phi\psi$ fixes $\ell$. So $\phi\psi$ is an elation with centre $C$.
 
-(b) Let $u$ be the line on the two points $a\cap m^\tau$ and
-    $b\cap m^\sigma$. Now $m^\tau$ is the line joining $b\cap m$ and
-    $a\cap u$. So $$\begin{aligned}
+(b) Let $u$ be the line on the two points $a\cap m^\tau$ and $b\cap m^\sigma$. Now $m^\tau$ is the line joining $b\cap m$ and $a\cap u$. So 
+$$
+\begin{align*}
     m^{\tau\sigma} &=(b\cap m)^\sigma(a\cap u)^\sigma\\
     &=(b\cap m^\sigma)(a\cap u^\sigma)\\
-    &=u,\end{aligned}$$ as $a\cap u^\sigma=a\cap u$. Similarly,
+    &=u,\end{align*}
+$$ 
+as $a\cap u^\sigma=a\cap u$. Similarly,
     $m^{\sigma\tau}=u$ and hence $m^{\sigma\tau}=m^{\tau\sigma}$.
 
 (c) Let $\psi$ and $\phi$ be two elations sharing a common centre $C$.
