@@ -1,18 +1,15 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-{% if page.use_math %}
-{% include mathjax_support.html %}
-{% endif %}
-  </head>
-  <body>
-  	{% include header.html %}
-	<main>
-    YES THIS LOADED
-            {{ content }}
-    </main>
-  </body>
-</html>
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
 
