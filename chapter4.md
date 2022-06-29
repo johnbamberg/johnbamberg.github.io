@@ -6,7 +6,7 @@ title: Chapter 4
 
 ### 4.6 
 We simply apply the *cocycle identity* of cross-ratio:
-$$\require{textcomp}
+$$\\require{textcomp}
 \begin{aligned}
 \textrecipe(A,B;E,C)&=\CrossRatio(A,B;D,C)\CrossRatio(A,B;E,D)\\
 &=-\CrossRatio(A,B;E,D)\\
@@ -41,8 +41,7 @@ $d(n \cap \ell',n \cap PH)=d(n \cap PA, C)$.
     \CrossRatio(C,B;P,A)+\CrossRatio(D,B;P,A)&=\frac{(p-c)(a-b)}{(p-b)(a-c)}+\frac{(p-d)(a-b)}{(p-b)(a-d)}\\
     &=\frac{a-b}{p-b}\left( \frac{p-c}{a-c}+\frac{p-d}{a-d}\right)\\
     &=\frac{d(A,B)}{d(P,B)}\left( \frac{d(P,C)}{d(A,C)}+\frac{d(P,D)}{d(A,D)}\right)\end{aligned}$$
-
-    Now $d(P,C)=d(P,A)+d(A,C)$, and $d(P,D)=d(P,A)+d(A,D)$, and so
+Now $d(P,C)=d(P,A)+d(A,C)$, and $d(P,D)=d(P,A)+d(A,D)$, and so
     $$\begin{aligned}
     \CrossRatio(C,B;P,A)+\CrossRatio(D,B;P,A)
     &=\frac{d(A,B)}{d(P,B)}\left( \frac{d(P,A)}{d(A,C)}+\frac{d(P,A)}{d(A,D)}+2\right)\\
