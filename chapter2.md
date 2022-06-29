@@ -4,31 +4,117 @@ usemath: true
 title: Chapter 2
 ---
 
-### 1.1 
-Consider the following correspondence from one and two-dimensional subspaces of $\mathbb{R}^3$ (i.e., the points and lines of $\mathsf{PG}(2,\mathbb{R})$) with the elements of $(\mathcal{P},\mathcal{L})$, induced by intersection with $S^2$:
+### 2.3
+We will use the fact that the collineation group of $\PG(2,\mathbb{R})$ acts
+transitively on pairs $(P,\ell)$ where $P$ and $\ell$ are a point and
+line that are not incident (see Exercise
+[\[ex:flagtransitive\]](#ex:flagtransitive){reference-type="ref"
+reference="ex:flagtransitive"}). This allows us to suppose without loss
+of generality that $C=(0,0,1)$ and $\ell:z=0$. It is a routine
+calculation that the subgroup of $\PGL(3,\mathbb{R})$ fixing $C$ line-wise and
+$\ell$ point-wise consist of collineations induced by the matrices of
+the form $$\begin{bmatrix}
+1&0&0\\
+0&1&0\\
+0&0&\gamma
+\end{bmatrix},\quad \gamma\in \mathbb{R}\backslash\{0\}.$$ Clearly this group is
+isomorphic to $\mathbb{R}\backslash\{0\}$ under multiplication, which is
+abelian. So two homologies with centre $C$ and axis $\ell$ lie in this
+group and thus commute.
 
-| | $\mathsf{PG}(2,\mathbb{R})$   |  $(\mathcal{P},\mathcal{L})$ |
-| :---- | :---- | :---- |
-  points |  1-dim. space $\langle v\rangle$  |    $\langle v\rangle\cap S^2$
-  lines | 2-dim. space $\langle u, v\rangle$  | $\langle u,v\rangle\cap S^2$
+(We remark that this proof can also be done synthetically, but one needs
+to use the fact that Pappus' Theorem
+[\[pappus\]](#pappus){reference-type="ref" reference="pappus"} holds in
+$\PG(2,\mathbb{R})$).
 
-First of all, this mapping is well-defined since a one-dimensional
-subspace of $\mathbb{R}^3$ intersects $S^2$ in a pair of antipodal
-points, and a two-dimensional subspace of $\mathbb{R}^3$ intersects
-$S^2$ in a great circle. Moreover, it is a bijection because the inverse
-map takes antipodal points to the subspace they span, and a great circle
-spans a plane of $\mathbb{R}^3$ passing through the origin. The
-incidence relation for $(\mathcal{P},\mathcal{L})$ is inherited from the
-natural incidence relation for subspaces, so we indeed have an
-isomorphism of geometries.
+### 2.4
 
-### 1.2 
-Solving for $(x_1,y_1,z_1)\cdot [a,b,c]=0$ and
-$(x_2,y_2,z_2)\cdot [a,b,c]=0$ is the same problem as finding the normal
-to two vectors in $\mathbb{R}^3$, and hence we can find $[a,b,c]$ by
-computing $(x_1,y_1,z_1)\times (x_2,y_2,z_2)$ and replacing round
-brackets with square ones.
+(a) (We assume that the product of two central collineations is a
+    central collineation). First, notice that $\phi\psi$ fixes the point
+    $C$ as $C^{\phi\psi}=(C^\phi)^\psi=C^\psi=C$. Now let $\ell$ be a
+    line incident with $C$. Then $\phi$ fixes $\ell$ and $\psi$ fixes
+    $\ell$. Therefore, $\phi\psi$ fixes $\ell$. So $\phi\psi$ is an
+    elation with centre $C$.
 
-### 1.3 
-A quadrilateral is a set of four lines, no three concurrent.
+(b) Let $u$ be the line on the two points $a\cap m^\tau$ and
+    $b\cap m^\sigma$. Now $m^\tau$ is the line joining $b\cap m$ and
+    $a\cap u$. So $$\begin{aligned}
+    m^{\tau\sigma} &=(b\cap m)^\sigma(a\cap u)^\sigma\\
+    &=(b\cap m^\sigma)(a\cap u^\sigma)\\
+    &=u,\end{aligned}$$ as $a\cap u^\sigma=a\cap u$. Similarly,
+    $m^{\sigma\tau}=u$ and hence $m^{\sigma\tau}=m^{\tau\sigma}$.
 
+(c) Let $\psi$ and $\phi$ be two elations sharing a common centre $C$.
+    From (a), $\psi\phi$ and $\phi\psi$ are both elations with centre
+    $C$. Let $\ell$ be the axis of $\psi\phi$ and let $X$ be a point
+    incident with $\ell$. Let $m$ be a line. If $m$ is incident with
+    $C$, then $m^{\psi\phi}=m=m^{\phi\psi}$. Otherwise, if $m$ is not
+    incident with $C$, then by (b), we also have
+    $m^{\psi\phi}=m=m^{\phi\psi}$. Therefore,
+    $\psi\phi \psi^{-1}\phi^{-1}$ fixes every line of the projective
+    plane and so is equal to the identity.
+
+### 2.11 
+Apply Pappus' Theorem [\[pappus\]](#pappus){reference-type="ref"
+reference="pappus"} to $A$, $m_1\cap n_2$, $m_1\cap n_3$, $A'$,
+$n_1 \cap m_3$, $n_1 \cap m_2$. Then $A(n_1 \cap m_2)=m_2$,
+$A'(m_1 \cap n_3)=n_3$, $A(n_1 \cap m_3)=n_1$, $A'(m_1\cap n_2)=n_2$. So
+$(m_1\cap n_2)(m_2 \cap n_1)$, $(m_3 \cap n_1)(m_1 \cap n_3)$ and
+$(m_3 \cap n_2)(m_2 \cap n_3)$ are concurrent.
+
+### 2.12 
+Apply Pappus' Theorem [\[pappus\]](#pappus){reference-type="ref"
+reference="pappus"} to $AB \cap CD$, $F$, $G$, $AD \cap BC$, $H$, $I$.
+Then $(AB \cap CD)H=AB$, $(AD \cap BC)F=BC$ and these lines meet at $B$.
+So $(AB \cap CD)I=CD$ and $(AD \cap BC)G=AD$, and these lines meet at
+$D$. Hence $B$, $D$ and $FI \cap GH$ are collinear.
+
+### 2.14 
+The triangles $AFH$, $UCG$ have $AF \cap UC=D$, $AH \cap UG=V$,
+$FH \cap CG=B$, with $D$, $V$, $B$ collinear, so, by the dual of
+Desargues' Theorem [\[desargues\]](#desargues){reference-type="ref"
+reference="desargues"}, $AU$, $FC$ and $HG$ are concurrent.
+
+### 2.15 
+The triangles $XYZ$, $DCB$ are in perspective from $A$ (and $XYZ$
+is a triangle by Fano's axiom), so, by Desargues' Theorem
+[\[desargues\]](#desargues){reference-type="ref" reference="desargues"},
+the intersections $L$, $M$, $N$ of corresponding sides are collinear.
+
+### 2.16 
+Apply Desargues' Theorem to the triangles $AED$ and $BFC$, which
+are in perspective from $P$. This shows that the intersection points of
+the diagonals of quadrilaterals $ABCD$, $ABEF$ and $CDFE$ lie on a line.
+Now apply Desargues' Theorem
+[\[desargues\]](#desargues){reference-type="ref" reference="desargues"}
+to the triangles $AFC$ and $BED$, which are in perspective from $P$.
+This shows that the diagonals of quadrilaterals $ABCD$ and $CDFE$ and
+$Q$ are collinear.
+
+### 2.17 
+We have $B'D\parallel AF \parallel A'E$ and
+$BD \parallel B'F \parallel EC'$ and $AE \parallel FA' \parallel DC'$.
+Now work in $\PG(2,\mathbb{R})$. Let $A''$ be the point at infinity on $FA'$,
+$B''$ be the point at infinity on $FB'$ and $C''$ be the point at
+infinity on $DB'$. Then $A"F \cap C"E=A'$, $B"F  \cap C"D=B'$,
+$A"D \cap B"E=C'$. So, by Pappus' Theorem
+[\[pappus\]](#pappus){reference-type="ref" reference="pappus"}, $A'$,
+$B'$, $C'$ are collinear.
+
+### 2.18 
+The six lines $a_1:=BC$, $a_2:=AG$, $a_3:=EF$ and $b_1:=AB$,
+$b_2:=GF$, $b_3:=DC$ form two parallel triples, so the dual of Pappus'
+Theorem [\[pappus\]](#pappus){reference-type="ref" reference="pappus"}
+applies: $\langle a_1 \cap b_2, a_2 \cap b_1\mathbb{R}angle=HA$,
+$\langle a_1 \cap b_3,a_3 \cap b_1\mathbb{R}angle=CE$ and
+$\langle a_2 \cap b_3,a_3 \cap b_2\mathbb{R}angle=DF$ are concurrent.
+
+### 2.19 
+Let the diagonals of quadrilaterals $ABCD$, $ABEF$ and $CDFE$
+intersect respectively at $R,S$ and $T$. Triangles $ACF$ and $BDE$ are
+in perspective from $P$, so, by Desargues' Theorem
+[\[desargues\]](#desargues){reference-type="ref" reference="desargues"},
+$R$, $S$ and $T$ are collinear. Triangles $ADE$ and $BCF$ are in
+perspective from $P$, so, by Desargues' Theorem
+[\[desargues\]](#desargues){reference-type="ref" reference="desargues"},
+$Q$, $S$ and $T$ are collinear.
