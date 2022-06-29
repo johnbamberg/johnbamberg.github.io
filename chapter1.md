@@ -1,5 +1,8 @@
-::: Solution
-1.1 Consider the following correspondence from one and two-dimensional subspaces of $\mathbb{R}^3$ (i.e., the points and lines of $\mathsf{PG}(2,\mathbb{R})$) with the elements of $(\mathcal{P},\mathcal{L})$, induced by intersection with $S^2$:
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
+### 1.1 
+Consider the following correspondence from one and two-dimensional subspaces of $\mathbb{R}^3$ (i.e., the points and lines of $\mathsf{PG}(2,\mathbb{R})$) with the elements of $(\mathcal{P},\mathcal{L})$, induced by intersection with $S^2$:
 
 | | $\mathsf{PG}(2,\mathbb{R})$   |  $(\mathcal{P},\mathcal{L})$ |
 | :---- | :---- | :---- |
@@ -15,16 +18,14 @@ spans a plane of $\mathbb{R}^3$ passing through the origin. The
 incidence relation for $(\mathcal{P},\mathcal{L})$ is inherited from the
 natural incidence relation for subspaces, so we indeed have an
 isomorphism of geometries.
-:::
 
-::: Solution
-1.2 Solving for $(x_1,y_1,z_1)\cdot [a,b,c]=0$ and
+### 1.2 
+Solving for $(x_1,y_1,z_1)\cdot [a,b,c]=0$ and
 $(x_2,y_2,z_2)\cdot [a,b,c]=0$ is the same problem as finding the normal
 to two vectors in $\mathbb{R}^3$, and hence we can find $[a,b,c]$ by
 computing $(x_1,y_1,z_1)\times (x_2,y_2,z_2)$ and replacing round
 brackets with square ones.
-:::
 
-::: Solution
-1.3 A quadrilateral is a set of four lines, no three concurrent.
-:::
+### 1.3 
+A quadrilateral is a set of four lines, no three concurrent.
+
