@@ -1,0 +1,1 @@
+# "Analytic Projective Geometry": solutions to selected exercises
