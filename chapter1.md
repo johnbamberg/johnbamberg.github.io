@@ -1,6 +1,6 @@
 ---
 layout: page
-use_math: true
+usemath: true
 title: Chapter 1
 ---
 
