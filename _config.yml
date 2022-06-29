@@ -10,3 +10,4 @@ header_pages:
   - supervision.md
   - software.md
   - errata.md
+use_math: true
