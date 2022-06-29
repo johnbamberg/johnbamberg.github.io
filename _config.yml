@@ -1,5 +1,5 @@
 theme: minima
-markdown: CommonMarkGhPages
+markdown: kramdown
 title: John Bamberg
 description: " "
 header_pages:

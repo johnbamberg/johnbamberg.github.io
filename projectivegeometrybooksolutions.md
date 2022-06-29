@@ -1,6 +1,6 @@
 ---
 layout: default
-usemath: true
+use_math: true
 title: Analytic Projective Geometry: solutions to selected exercises
 ---
 
