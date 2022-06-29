@@ -13,8 +13,8 @@ $$\begin{bmatrix}
 0&1&0\\
 0&0&\gamma
 \end{bmatrix},$$
-where $\gamma\in\mathbb{R}\backslash\{0\}$.
-Clearly this group is isomorphic to $\mathbb{R}\backslash\{0\}$ under multiplication, which is
+where $\gamma\in\mathbb{R}\backslash\\{0\\}$.
+Clearly this group is isomorphic to $\mathbb{R}\backslash\\{0\\}$ under multiplication, which is
 abelian. So two homologies with centre $C$ and axis $\ell$ lie in this
 group and thus commute.
 
@@ -29,22 +29,15 @@ $\mathsf{PG}(2,\mathbb{R})$).
 (b) Let $u$ be the line on the two points $a\cap m^\tau$ and $b\cap m^\sigma$. Now $m^\tau$ is the line joining $b\cap m$ and $a\cap u$. So 
 $$
 \begin{align*}
-    m^{\tau\sigma} &=(b\cap m)^\sigma(a\cap u)^\sigma\\
+    m^{\tau\sigma}&=(b\cap m)^\sigma(a\cap u)^\sigma\\
     &=(b\cap m^\sigma)(a\cap u^\sigma)\\
     &=u,\end{align*}
 $$ 
-as $a\cap u^\sigma=a\cap u$. Similarly,
-    $m^{\sigma\tau}=u$ and hence $m^{\sigma\tau}=m^{\tau\sigma}$.
+as $a\cap u^\sigma=a\cap u$. Similarly, $m^{\sigma\tau}=u$ and hence $m^{\sigma\tau}=m^{\tau\sigma}$.
 
-(c) Let $\psi$ and $\phi$ be two elations sharing a common centre $C$.
-    From (a), $\psi\phi$ and $\phi\psi$ are both elations with centre
-    $C$. Let $\ell$ be the axis of $\psi\phi$ and let $X$ be a point
-    incident with $\ell$. Let $m$ be a line. If $m$ is incident with
-    $C$, then $m^{\psi\phi}=m=m^{\phi\psi}$. Otherwise, if $m$ is not
-    incident with $C$, then by (b), we also have
-    $m^{\psi\phi}=m=m^{\phi\psi}$. Therefore,
-    $\psi\phi \psi^{-1}\phi^{-1}$ fixes every line of the projective
-    plane and so is equal to the identity.
+(c) Let $\psi$ and $\phi$ be two elations sharing a common centre $C$. From (a), $\psi\phi$ and $\phi\psi$ are both elations with centre
+    $C$. Let $\ell$ be the axis of $\psi\phi$ and let $X$ be a point incident with $\ell$. Let $m$ be a line. If $m$ is incident with $C$, then $m^{\psi\phi}=m=m^{\phi\psi}$. Otherwise, if $m$ is not incident with $C$, then by (b), we also have $m^{\psi\phi}=m=m^{\phi\psi}$. Therefore, $\psi\phi \psi^{-1}\phi^{-1}$ fixes every line of the projective
+plane and so is equal to the identity.
 
 ### 2.11 
 Apply Pappus' Theorem to $A$, $m_1\cap n_2$, $m_1\cap n_3$, $A'$,
@@ -60,14 +53,10 @@ So $(AB \cap CD)I=CD$ and $(AD \cap BC)G=AD$, and these lines meet at
 $D$. Hence $B$, $D$ and $FI \cap GH$ are collinear.
 
 ### 2.14 
-The triangles $AFH$, $UCG$ have $AF \cap UC=D$, $AH \cap UG=V$,
-$FH \cap CG=B$, with $D$, $V$, $B$ collinear, so, by the dual of
-Desargues' Theorem, $AU$, $FC$ and $HG$ are concurrent.
+The triangles $AFH$, $UCG$ have $AF \cap UC=D$, $AH \cap UG=V$, $FH \cap CG=B$, with $D$, $V$, $B$ collinear, so, by the dual of Desargues' Theorem, $AU$, $FC$ and $HG$ are concurrent.
 
 ### 2.15 
-The triangles $XYZ$, $DCB$ are in perspective from $A$ (and $XYZ$
-is a triangle by Fano's axiom), so, by Desargues' Theorem,
-the intersections $L$, $M$, $N$ of corresponding sides are collinear.
+The triangles $XYZ$, $DCB$ are in perspective from $A$ (and $XYZ$ is a triangle by Fano's axiom), so, by Desargues' Theorem, the intersections $L$, $M$, $N$ of corresponding sides are collinear.
 
 ### 2.16 
 Apply Desargues' Theorem to the triangles $AED$ and $BFC$, which
@@ -90,14 +79,11 @@ $B'$, $C'$ are collinear.
 ### 2.18 
 The six lines $a_1:=BC$, $a_2:=AG$, $a_3:=EF$ and $b_1:=AB$,
 $b_2:=GF$, $b_3:=DC$ form two parallel triples, so the dual of Pappus'
-Theorem applies: $\langle a_1 \cap b_2, a_2 \cap b_1\mathbb{R}angle=HA$,
-$\langle a_1 \cap b_3,a_3 \cap b_1\mathbb{R}angle=CE$ and
-$\langle a_2 \cap b_3,a_3 \cap b_2\mathbb{R}angle=DF$ are concurrent.
+Theorem applies: $\langle a_1 \cap b_2, a_2 \cap b_1\rangle=HA$,
+$\langle a_1 \cap b_3,a_3 \cap b_1\rangle=CE$ and
+$\langle a_2 \cap b_3,a_3 \cap b_2\rangle=DF$ are concurrent.
 
 ### 2.19 
-Let the diagonals of quadrilaterals $ABCD$, $ABEF$ and $CDFE$
-intersect respectively at $R,S$ and $T$. Triangles $ACF$ and $BDE$ are
+Let the diagonals of quadrilaterals $ABCD$, $ABEF$ and $CDFE$ intersect respectively at $R,S$ and $T$. Triangles $ACF$ and $BDE$ are
 in perspective from $P$, so, by Desargues' Theorem,
-$R$, $S$ and $T$ are collinear. Triangles $ADE$ and $BCF$ are in
-perspective from $P$, so, by Desargues' Theorem,
-$Q$, $S$ and $T$ are collinear.
+$R$, $S$ and $T$ are collinear. Triangles $ADE$ and $BCF$ are in perspective from $P$, so, by Desargues' Theorem, $Q$, $S$ and $T$ are collinear.
