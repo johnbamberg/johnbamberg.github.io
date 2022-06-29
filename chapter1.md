@@ -1,4 +1,8 @@
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+---
+layout: default
+usemath: true
+title: Chapter 1
+---
 
 
 ### 1.1 
