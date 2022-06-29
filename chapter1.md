@@ -4,6 +4,12 @@ use_math: true
 title: Chapter 1
 ---
 
+<script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+        });
+      </script>
+<script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 ### 1.1 
 Consider the following correspondence from one and two-dimensional subspaces of $\mathbb{R}^3$ (i.e., the points and lines of $\mathsf{PG}(2,\mathbb{R})$) with the elements of $(\mathcal{P},\mathcal{L})$, induced by intersection with $S^2$:
