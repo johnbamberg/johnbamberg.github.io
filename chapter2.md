@@ -48,16 +48,14 @@ $\mathsf{PG}(2,\mathbb{R})$).
     plane and so is equal to the identity.
 
 ### 2.11 
-Apply Pappus' Theorem [\[pappus\]](#pappus){reference-type="ref"
-reference="pappus"} to $A$, $m_1\cap n_2$, $m_1\cap n_3$, $A'$,
+Apply Pappus' Theorem to $A$, $m_1\cap n_2$, $m_1\cap n_3$, $A'$,
 $n_1 \cap m_3$, $n_1 \cap m_2$. Then $A(n_1 \cap m_2)=m_2$,
 $A'(m_1 \cap n_3)=n_3$, $A(n_1 \cap m_3)=n_1$, $A'(m_1\cap n_2)=n_2$. So
 $(m_1\cap n_2)(m_2 \cap n_1)$, $(m_3 \cap n_1)(m_1 \cap n_3)$ and
 $(m_3 \cap n_2)(m_2 \cap n_3)$ are concurrent.
 
 ### 2.12 
-Apply Pappus' Theorem [\[pappus\]](#pappus){reference-type="ref"
-reference="pappus"} to $AB \cap CD$, $F$, $G$, $AD \cap BC$, $H$, $I$.
+Apply Pappus' Theorem to $AB \cap CD$, $F$, $G$, $AD \cap BC$, $H$, $I$.
 Then $(AB \cap CD)H=AB$, $(AD \cap BC)F=BC$ and these lines meet at $B$.
 So $(AB \cap CD)I=CD$ and $(AD \cap BC)G=AD$, and these lines meet at
 $D$. Hence $B$, $D$ and $FI \cap GH$ are collinear.
@@ -65,13 +63,11 @@ $D$. Hence $B$, $D$ and $FI \cap GH$ are collinear.
 ### 2.14 
 The triangles $AFH$, $UCG$ have $AF \cap UC=D$, $AH \cap UG=V$,
 $FH \cap CG=B$, with $D$, $V$, $B$ collinear, so, by the dual of
-Desargues' Theorem [\[desargues\]](#desargues){reference-type="ref"
-reference="desargues"}, $AU$, $FC$ and $HG$ are concurrent.
+Desargues' Theorem, $AU$, $FC$ and $HG$ are concurrent.
 
 ### 2.15 
 The triangles $XYZ$, $DCB$ are in perspective from $A$ (and $XYZ$
-is a triangle by Fano's axiom), so, by Desargues' Theorem
-[\[desargues\]](#desargues){reference-type="ref" reference="desargues"},
+is a triangle by Fano's axiom), so, by Desargues' Theorem,
 the intersections $L$, $M$, $N$ of corresponding sides are collinear.
 
 ### 2.16 
@@ -79,7 +75,6 @@ Apply Desargues' Theorem to the triangles $AED$ and $BFC$, which
 are in perspective from $P$. This shows that the intersection points of
 the diagonals of quadrilaterals $ABCD$, $ABEF$ and $CDFE$ lie on a line.
 Now apply Desargues' Theorem
-[\[desargues\]](#desargues){reference-type="ref" reference="desargues"}
 to the triangles $AFC$ and $BED$, which are in perspective from $P$.
 This shows that the diagonals of quadrilaterals $ABCD$ and $CDFE$ and
 $Q$ are collinear.
@@ -90,24 +85,20 @@ $BD \parallel B'F \parallel EC'$ and $AE \parallel FA' \parallel DC'$.
 Now work in $\mathsf{PG}(2,\mathbb{R})$. Let $A''$ be the point at infinity on $FA'$,
 $B''$ be the point at infinity on $FB'$ and $C''$ be the point at
 infinity on $DB'$. Then $A"F \cap C"E=A'$, $B"F  \cap C"D=B'$,
-$A"D \cap B"E=C'$. So, by Pappus' Theorem
-[\[pappus\]](#pappus){reference-type="ref" reference="pappus"}, $A'$,
+$A"D \cap B"E=C'$. So, by Pappus' Theorem, $A'$,
 $B'$, $C'$ are collinear.
 
 ### 2.18 
 The six lines $a_1:=BC$, $a_2:=AG$, $a_3:=EF$ and $b_1:=AB$,
 $b_2:=GF$, $b_3:=DC$ form two parallel triples, so the dual of Pappus'
-Theorem [\[pappus\]](#pappus){reference-type="ref" reference="pappus"}
-applies: $\langle a_1 \cap b_2, a_2 \cap b_1\mathbb{R}angle=HA$,
+Theorem applies: $\langle a_1 \cap b_2, a_2 \cap b_1\mathbb{R}angle=HA$,
 $\langle a_1 \cap b_3,a_3 \cap b_1\mathbb{R}angle=CE$ and
 $\langle a_2 \cap b_3,a_3 \cap b_2\mathbb{R}angle=DF$ are concurrent.
 
 ### 2.19 
 Let the diagonals of quadrilaterals $ABCD$, $ABEF$ and $CDFE$
 intersect respectively at $R,S$ and $T$. Triangles $ACF$ and $BDE$ are
-in perspective from $P$, so, by Desargues' Theorem
-[\[desargues\]](#desargues){reference-type="ref" reference="desargues"},
+in perspective from $P$, so, by Desargues' Theorem,
 $R$, $S$ and $T$ are collinear. Triangles $ADE$ and $BCF$ are in
-perspective from $P$, so, by Desargues' Theorem
-[\[desargues\]](#desargues){reference-type="ref" reference="desargues"},
+perspective from $P$, so, by Desargues' Theorem,
 $Q$, $S$ and $T$ are collinear.
