@@ -6,7 +6,7 @@ title: Chapter 4
 
 ### 4.6 
 We simply apply the *cocycle identity* of cross-ratio:
-$\\require{textcomp}
+$\require{textcomp}
 \begin{aligned}
 \textrecipe(A,B;E,C)&=\CrossRatio(A,B;D,C)\CrossRatio(A,B;E,D)\\
 &=-\CrossRatio(A,B;E,D)\\
