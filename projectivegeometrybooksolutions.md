@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 use_math: true
 title: Analytic Projective Geometry: solutions to selected exercises
 ---
