@@ -12,7 +12,8 @@ $$\begin{bmatrix}
 1&0&0\\
 0&1&0\\
 0&0&\gamma
-\end{bmatrix},\quad \gamma\in \mathbb{R}\backslash\{0\}.$$
+\end{bmatrix},$$
+where $\gamma\in\mathbb{R}\backslash\{0\}$.
 Clearly this group is isomorphic to $\mathbb{R}\backslash\{0\}$ under multiplication, which is
 abelian. So two homologies with centre $C$ and axis $\ell$ lie in this
 group and thus commute.
