@@ -8,11 +8,11 @@ title: Chapter 2
 We will use the fact that the collineation group of $\mathsf{PG}(2,\mathbb{R})$ acts
 transitively on pairs $(P,\ell)$ where $P$ and $\ell$ are a point and line that are not incident. This allows us to suppose without loss of generality that $C=(0,0,1)$ and $\ell:z=0$. It is a routine calculation that the subgroup of $\mathsf{PGL}(3,\mathbb{R})$ fixing $C$ line-wise and $\ell$ point-wise consist of collineations induced by the matrices of
 the form 
-\[\begin{bmatrix}
+$$\begin{bmatrix}
 1&0&0\\
 0&1&0\\
 0&0&\gamma
-\end{bmatrix},\quad \gamma\in \mathbb{R}\backslash\{0\}.\] 
+\end{bmatrix},\quad \gamma\in \mathbb{R}\backslash\{0\}.$$
 Clearly this group is isomorphic to $\mathbb{R}\backslash\{0\}$ under multiplication, which is
 abelian. So two homologies with centre $C$ and axis $\ell$ lie in this
 group and thus commute.
