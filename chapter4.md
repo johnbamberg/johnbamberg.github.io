@@ -6,7 +6,7 @@ title: Chapter 4
 
 ### 4.6 
 
-\(\require{textcomp}\)
+$\require{textcomp}$
 We simply apply the *cocycle identity* of cross-ratio:
 $$
 \begin{aligned}
