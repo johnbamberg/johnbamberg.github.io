@@ -8,5 +8,7 @@ Here is a dynamic page listing solutions to selected exercises in _Analytic Proj
 
 - [Chapter 1](chapter1.html)
 - [Chapter 2](chapter2.html)
+- [Chapter 3](chapter3.html)
+
 
 

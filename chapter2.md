@@ -5,13 +5,13 @@ title: Chapter 2
 ---
 
 ### 2.3
-We will use the fact that the collineation group of $\PG(2,\mathbb{R})$ acts
+We will use the fact that the collineation group of $\mathsf{PG}(2,\mathbb{R})$ acts
 transitively on pairs $(P,\ell)$ where $P$ and $\ell$ are a point and
 line that are not incident (see Exercise
 [\[ex:flagtransitive\]](#ex:flagtransitive){reference-type="ref"
 reference="ex:flagtransitive"}). This allows us to suppose without loss
 of generality that $C=(0,0,1)$ and $\ell:z=0$. It is a routine
-calculation that the subgroup of $\PGL(3,\mathbb{R})$ fixing $C$ line-wise and
+calculation that the subgroup of $\mathsf{PG}L(3,\mathbb{R})$ fixing $C$ line-wise and
 $\ell$ point-wise consist of collineations induced by the matrices of
 the form $$\begin{bmatrix}
 1&0&0\\
@@ -25,7 +25,7 @@ group and thus commute.
 (We remark that this proof can also be done synthetically, but one needs
 to use the fact that Pappus' Theorem
 [\[pappus\]](#pappus){reference-type="ref" reference="pappus"} holds in
-$\PG(2,\mathbb{R})$).
+$\mathsf{PG}(2,\mathbb{R})$).
 
 ### 2.4
 
@@ -94,7 +94,7 @@ $Q$ are collinear.
 ### 2.17 
 We have $B'D\parallel AF \parallel A'E$ and
 $BD \parallel B'F \parallel EC'$ and $AE \parallel FA' \parallel DC'$.
-Now work in $\PG(2,\mathbb{R})$. Let $A''$ be the point at infinity on $FA'$,
+Now work in $\mathsf{PG}(2,\mathbb{R})$. Let $A''$ be the point at infinity on $FA'$,
 $B''$ be the point at infinity on $FB'$ and $C''$ be the point at
 infinity on $DB'$. Then $A"F \cap C"E=A'$, $B"F  \cap C"D=B'$,
 $A"D \cap B"E=C'$. So, by Pappus' Theorem
