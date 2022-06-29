@@ -7,7 +7,8 @@ title: Chapter 2
 ### 2.3
 We will use the fact that the collineation group of $\mathsf{PG}(2,\mathbb{R})$ acts
 transitively on pairs $(P,\ell)$ where $P$ and $\ell$ are a point and line that are not incident. This allows us to suppose without loss of generality that $C=(0,0,1)$ and $\ell:z=0$. It is a routine calculation that the subgroup of $\mathsf{PGL}(3,\mathbb{R})$ fixing $C$ line-wise and $\ell$ point-wise consist of collineations induced by the matrices of
-the form \[\begin{bmatrix}
+the form 
+\[\begin{bmatrix}
 1&0&0\\
 0&1&0\\
 0&0&\gamma
