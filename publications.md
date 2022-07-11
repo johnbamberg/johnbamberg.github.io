@@ -200,13 +200,14 @@ with Jan De Beule and Ferdinand Ihringer [doi](https://doi.org/10.1007/s00026-02
 63. Orbits of Sylow subgroups of finite permutation groups,  
 Journal of Algebra 607 (2022), Part A, pp. 107--133,  
 with Alexander Bors, Alice Devillers, Michael Giudici, Cheryl Praeger, and Gordon Royle. [doi](https://doi.org/10.1016/j.jalgebra.2021.06.017)
+64. Synchronising primitive groups of diagonal type exist,  
+Bulletin of the London Mathematical Society 54 (2022), pp. 1131–1144,  
+with Michael Giudici, Jesse Lansdown, Gordon Royle. [doi](https://doi.org/10.1112/blms.12619)
 
 
 ## To appear
 
-- Synchronising primitive groups of diagonal type exist,  
-Bulletin of the London Mathematical Society,   
-with Michael Giudici, Jesse Lansdown, Gordon Royle. [doi](https://doi.org/10.1112/blms.12619)
+
 - The minimum degree of minimal Ramsey graphs for cliques,  
 Bulletin of the London Mathematical Society,   
 with Anurag Bishnoi and Thomas Lesgourges. [doi](https://doi.org/10.1112/blms.12658)
