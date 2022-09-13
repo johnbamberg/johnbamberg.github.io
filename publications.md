@@ -222,6 +222,8 @@ with Jesse Lansdown.
 
 - Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
 with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger.
+- Simpler foundations for the hyperbolic plane,  
+with Tim Penttila.
 - FinInG: a package for finite incidence geometry,   
 with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavrauw.
 
@@ -230,7 +232,6 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 - Rank 3 separating graphs, with Michael Giudici, Jesse Lansdown, and Gordon Royle.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
-- Simpler foundations for the hyperbolic plane, with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons
 - Triple factorisations of classical groups by maximal parabolic subgroups and their associated geometries, with Seyed Hassan Alavi and Cheryl E. Praeger.
 - On the elation group of the dual of the $H(4,q^2)$ generalised quadrangle, with Michel Lavrauw and Tim Penttila.
