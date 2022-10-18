@@ -203,18 +203,19 @@ with Alexander Bors, Alice Devillers, Michael Giudici, Cheryl Praeger, and Gordo
 64. Synchronising primitive groups of diagonal type exist,  
 Bulletin of the London Mathematical Society 54 (2022), pp. 1131–1144,  
 with Michael Giudici, Jesse Lansdown, Gordon Royle. [doi](https://doi.org/10.1112/blms.12619)
+65. The minimum degree of minimal Ramsey graphs for cliques,  
+Bulletin of the London Mathematical Society 54 (2022), pp. 1827-1838,   
+with Anurag Bishnoi and Thomas Lesgourges. [doi](https://doi.org/10.1112/blms.12658)
+
 
 
 ## To appear
 
 
-- The minimum degree of minimal Ramsey graphs for cliques,  
-Bulletin of the London Mathematical Society,   
-with Anurag Bishnoi and Thomas Lesgourges. [doi](https://doi.org/10.1112/blms.12658)
 - Implications of vanishing Krein parameters on Delsarte designs, with applications in finite geometry, 
-Algebraic Combinatorics,   
+Algebraic Combinatorics,  
 with Jesse Lansdown.
-
+  <!--- https://doi.org/10.5802/alco.250 ? --> 
 
 
 
@@ -229,7 +230,7 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 
 ## In preparation
 
-- Rank 3 separating graphs, with Michael Giudici, Jesse Lansdown, and Gordon Royle.
+- Separating rank 3 graphs, with Michael Giudici, Jesse Lansdown, and Gordon Royle.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons
