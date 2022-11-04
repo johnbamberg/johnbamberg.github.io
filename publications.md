@@ -225,12 +225,13 @@ with Jesse Lansdown.
 with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger.
 - Simpler foundations for the hyperbolic plane,  
 with Tim Penttila.
+- Separating rank 3 graphs,  
+with Michael Giudici, Jesse Lansdown, and Gordon Royle.
 - FinInG: a package for finite incidence geometry,   
 with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavrauw.
 
 ## In preparation
 
-- Separating rank 3 graphs, with Michael Giudici, Jesse Lansdown, and Gordon Royle.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons
