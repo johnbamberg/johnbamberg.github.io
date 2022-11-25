@@ -5,6 +5,13 @@ title: Teaching
 
 # Teaching
 
+### 2023 ###
+
+I will be on sabbatical in the first semester of 2023. For second semester, I'll be teaching the following:
+
+- [MATH1014](http://handbooks.uwa.edu.au/unitdetails?code=MATH1014) (Algebra), Semester 2
+- [MATH4033](http://handbooks.uwa.edu.au/unitdetails?code=MATH4033)  (Advanced Topics in Pure Mathematics), Semester 2
+
 ### 2022 ###
 
 - [MATH1601](http://handbooks.uwa.edu.au/unitdetails?code=MATH1601) (Mathematics: from the Renaissance to modern day), Semester 1.

@@ -213,9 +213,8 @@ with Anurag Bishnoi and Thomas Lesgourges. [doi](https://doi.org/10.1112/blms.12
 
 
 - Implications of vanishing Krein parameters on Delsarte designs, with applications in finite geometry, 
-Algebraic Combinatorics,  
+Algebraic Combinatorics (January 2023),  
 with Jesse Lansdown.
-  <!--- https://doi.org/10.5802/alco.250 ? --> 
 
 
 

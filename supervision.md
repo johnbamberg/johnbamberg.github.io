@@ -65,7 +65,8 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 #### Honours Students ####
 
-1. Darryl Teo, Honours, *On intersection multiplicity of plane curves*, 2021.
+1. Jacob Smith, *Non-regular 2-closed permutation groups that are not automorphism groups of digraphs*, co-supervised by Michael Giudici, 2022.
+2. Darryl Teo, Honours, *On intersection multiplicity of plane curves*, 2021.
 2. Ann Linehan, Honours, *Relationships Between Geometric Propositions which Characterise Projective Planes*, co-supervised by Jesse Lansdown, 2021.
 3. Hefu Yu, *The quest to classify finite flag-transitive projective planes*, 2020 -- 2021
 4. Dominique Douglas-Smith, *Skew Projection*, co-supervised by Jesse Lansdown, 2020
