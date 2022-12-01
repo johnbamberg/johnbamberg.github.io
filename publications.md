@@ -226,6 +226,8 @@ with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger.
 with Tim Penttila.
 - Separating rank 3 graphs,  
 with Michael Giudici, Jesse Lansdown, and Gordon Royle.
+- Affine vector space partitions,  
+with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz.
 - FinInG: a package for finite incidence geometry,   
 with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavrauw.
 
