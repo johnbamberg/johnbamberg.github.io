@@ -5,9 +5,10 @@ title: Publications
 
 ## Exciting news!
 
-Tim Penttila and I are currently finishing our new book on projective geometry (over the real numbers) that will be published by [Cambridge University Press](https://www.cambridge.org/).
+A new book __Analytic Projective Geometry__ (by Tim Penttila and I) will be available in late 2023 and will be published by  [Cambridge University Press](https://www.cambridge.org/au/academic/subjects/mathematics/geometry-and-topology/analytic-projective-geometry?format=HB).
 
-[Solutions to selected exercises](projectivegeometrybooksolutions.html)
+<!---
+[Solutions to selected exercises](projectivegeometrybooksolutions.html)--->
 
 
 ## Published papers
@@ -206,26 +207,27 @@ with Michael Giudici, Jesse Lansdown, Gordon Royle. [doi](https://doi.org/10.111
 65. The minimum degree of minimal Ramsey graphs for cliques,  
 Bulletin of the London Mathematical Society 54 (2022), pp. 1827-1838,   
 with Anurag Bishnoi and Thomas Lesgourges. [doi](https://doi.org/10.1112/blms.12658)
+66. Implications of vanishing Krein parameters on Delsarte designs, with applications in finite geometry, 
+Algebraic Combinatorics 6 (2023), no. 1, pp. .  
+with Jesse Lansdown.
+
 
 
 
 ## To appear
 
-
-- Implications of vanishing Krein parameters on Delsarte designs, with applications in finite geometry, 
-Algebraic Combinatorics (January 2023),  
-with Jesse Lansdown.
-
+- Simpler foundations for the hyperbolic plane,  
+Forum Mathematicum,  
+with Tim Penttila.
+- Separating rank 3 graphs,  
+European Journal of Combinatorics,   
+with Michael Giudici, Jesse Lansdown, and Gordon Royle.
 
 
 ## Submitted
 
 - Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
 with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger.
-- Simpler foundations for the hyperbolic plane,  
-with Tim Penttila.
-- Separating rank 3 graphs,  
-with Michael Giudici, Jesse Lansdown, and Gordon Royle.
 - Affine vector space partitions,  
 with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz.
 - FinInG: a package for finite incidence geometry,   
@@ -233,6 +235,8 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 
 ## In preparation
 
+- On finite spreading permutation groups, with Michael Giudici, Jesse Lansdown, Gordon Royle.
+- On Bruen chains, with Jesse Lansdown, Gordon Royle, and Geertrui Van de Voorde.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons

@@ -41,14 +41,16 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 ### Current students
 
-- Vishnu Arumugam, MPhil, *TBA*, co-supervised by Michael Giudici, 2022 --
+- Vishnu Arumugam, MPhil, *TBA*, co-supervised with Michael Giudici, 2022 --
+- Jacob Smith, PhD, *TBA*, co-supervised with Michael Giudici, 2023 --
+
 
 ### Past students
 
 #### PhD Students ####
 
  1. Jesse Lansdown, PhD, *Designs in finite geometry*, co-supervised by Gordon Royle and Alice Niemeyer (cotutelle with Aachen), 2015 -- 2020
- 2. Mark Ioppolo, PhD, *Codes in Johnson graphs associated with quadratic forms over $\mathbb{F}_2$*,  co-supervised by Cheryl Praeger and Alice Devillers, 2012 -- 2020.
+ 2. Mark Ioppolo, PhD, *Codes in Johnson graphs associated with quadratic forms over $\mathbb{F}_2$*,  co-supervised with Cheryl Praeger and Alice Devillers, 2012 -- 2020.
  3. Jon Xu, PhD, *Chevalley groups, Schubert varieties, and finite geometry*, co-supervised by Arun Ram, 2012 -- 2017.
  4. Sayeed Hassan Alavi, PhD, *Triple factorisations of groups*, co-supervised by Cheryl Praeger, 2008 -- 2011.
  5. Frédéric Vanhove, PhD, *Incidence geometry from an algebraic graph theory point of view*, co-supervised by Frank De Clerck, 2007 -- 2011.
