@@ -208,7 +208,7 @@ with Michael Giudici, Jesse Lansdown, Gordon Royle. [doi](https://doi.org/10.111
 Bulletin of the London Mathematical Society 54 (2022), pp. 1827-1838,   
 with Anurag Bishnoi and Thomas Lesgourges. [doi](https://doi.org/10.1112/blms.12658)
 66. Implications of vanishing Krein parameters on Delsarte designs, with applications in finite geometry, 
-Algebraic Combinatorics 6 (2023), no. 1, pp. .  
+Algebraic Combinatorics 6 (2023), no. 1, pp. 197-212,  
 with Jesse Lansdown.
 
 
