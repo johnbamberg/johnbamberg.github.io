@@ -209,7 +209,7 @@ Bulletin of the London Mathematical Society 54 (2022), pp. 1827-1838,
 with Anurag Bishnoi and Thomas Lesgourges. [doi](https://doi.org/10.1112/blms.12658)
 66. Implications of vanishing Krein parameters on Delsarte designs, with applications in finite geometry, 
 Algebraic Combinatorics 6 (2023), no. 1, pp. 197-212,  
-with Jesse Lansdown.
+with Jesse Lansdown. [doi](http://doi.org/10.5802/alco.246)
 
 
 
@@ -236,7 +236,7 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 ## In preparation
 
 - On finite spreading permutation groups, with Michael Giudici, Jesse Lansdown, Gordon Royle.
-- On Bruen chains, with Jesse Lansdown, Gordon Royle, and Geertrui Van de Voorde.
+- On Bruen chains, with Jesse Lansdown and Geertrui Van de Voorde.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons
