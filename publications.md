@@ -218,7 +218,7 @@ with Jesse Lansdown. [doi](http://doi.org/10.5802/alco.246)
 
 - Simpler foundations for the hyperbolic plane,  
 Forum Mathematicum,  
-with Tim Penttila.
+with Tim Penttila. [doi](https://doi.org/10.1515/forum-2022-0268)
 - Separating rank 3 graphs,  
 European Journal of Combinatorics,   
 with Michael Giudici, Jesse Lansdown, and Gordon Royle.
