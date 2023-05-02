@@ -230,13 +230,16 @@ with Michael Giudici, Jesse Lansdown, and Gordon Royle.
 with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger.
 - Affine vector space partitions,  
 with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz.
+- On the $430$-cap of $PG(6,4)$ having two intersection sizes with respect to hyperplanes.
+- On Bruen chains, with Jesse Lansdown and Geertrui Van de Voorde.
 - FinInG: a package for finite incidence geometry,   
 with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavrauw.
 
 ## In preparation
 
 - On finite spreading permutation groups, with Michael Giudici, Jesse Lansdown, Gordon Royle.
-- On Bruen chains, with Jesse Lansdown and Geertrui Van de Voorde.
+- 2-closed groups that are not automorphism
+groups of digraphs, with Michael Giudici and Jacob Smith.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons
