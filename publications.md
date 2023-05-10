@@ -210,6 +210,9 @@ with Anurag Bishnoi and Thomas Lesgourges. [doi](https://doi.org/10.1112/blms.12
 66. Implications of vanishing Krein parameters on Delsarte designs, with applications in finite geometry, 
 Algebraic Combinatorics 6 (2023), no. 1, pp. 197-212,  
 with Jesse Lansdown. [doi](http://doi.org/10.5802/alco.246)
+67. Separating rank 3 graphs,  
+European Journal of Combinatorics 117 (2023), 103732,   
+with Michael Giudici, Jesse Lansdown, and Gordon Royle. [doi](https://doi.org/10.1016/j.ejc.2023.103732)
 
 
 
@@ -219,9 +222,6 @@ with Jesse Lansdown. [doi](http://doi.org/10.5802/alco.246)
 - Simpler foundations for the hyperbolic plane,  
 Forum Mathematicum,  
 with Tim Penttila. [doi](https://doi.org/10.1515/forum-2022-0268)
-- Separating rank 3 graphs,  
-European Journal of Combinatorics,   
-with Michael Giudici, Jesse Lansdown, and Gordon Royle.
 
 
 ## Submitted
