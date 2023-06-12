@@ -5,6 +5,8 @@ title: Publications
 
 ## Exciting news!
 
+![Analytic Projective Geometry](frontcover_small.pdf)
+
 A new book __Analytic Projective Geometry__ (by Tim Penttila and I) will be available in late 2023 and will be published by  [Cambridge University Press](https://www.cambridge.org/au/academic/subjects/mathematics/geometry-and-topology/analytic-projective-geometry?format=HB).
 
 <!---
@@ -222,14 +224,15 @@ with Michael Giudici, Jesse Lansdown, and Gordon Royle. [doi](https://doi.org/10
 - Simpler foundations for the hyperbolic plane,  
 Forum Mathematicum,  
 with Tim Penttila. [doi](https://doi.org/10.1515/forum-2022-0268)
+- Affine vector space partitions,  
+Designs, Codes and Cryptography,  
+with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz.
 
 
 ## Submitted
 
 - Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
 with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger.
-- Affine vector space partitions,  
-with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz.
 - On the $430$-cap of $PG(6,4)$ having two intersection sizes with respect to hyperplanes.
 - On Bruen chains, with Jesse Lansdown and Geertrui Van de Voorde.
 - FinInG: a package for finite incidence geometry,   
