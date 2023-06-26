@@ -226,7 +226,7 @@ Forum Mathematicum,
 with Tim Penttila. [doi](https://doi.org/10.1515/forum-2022-0268)
 - Affine vector space partitions,  
 Designs, Codes and Cryptography,  
-with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz.
+with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz. [doi](https://doi.org/10.1007/s10623-023-01263-z)
 
 
 ## Submitted
