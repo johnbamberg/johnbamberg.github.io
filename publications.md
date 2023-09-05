@@ -215,15 +215,15 @@ with Jesse Lansdown. [doi](http://doi.org/10.5802/alco.246)
 67. Separating rank 3 graphs,  
 European Journal of Combinatorics 117 (2023), 103732,   
 with Michael Giudici, Jesse Lansdown, and Gordon Royle. [doi](https://doi.org/10.1016/j.ejc.2023.103732)
+68. Simpler foundations for the hyperbolic plane,  
+Forum Mathematicum, vol. 35, no. 5, 2023, pp. 1301-1325.  [doi](https://doi.org/10.1515/forum-2022-0268)  
+with Tim Penttila. 
 
 
 
 
 ## To appear
 
-- Simpler foundations for the hyperbolic plane,  
-Forum Mathematicum,  
-with Tim Penttila. [doi](https://doi.org/10.1515/forum-2022-0268)
 - Affine vector space partitions,  
 Designs, Codes and Cryptography,  
 with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz. [doi](https://doi.org/10.1007/s10623-023-01263-z)
