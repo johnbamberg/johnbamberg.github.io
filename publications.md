@@ -7,7 +7,7 @@ title: Publications
 
 ![Analytic Projective Geometry](frontcover_small.pdf)
 
-A new book __Analytic Projective Geometry__ (by Tim Penttila and I) will be available in late 2023 and will be published by  [Cambridge University Press](https://www.cambridge.org/au/academic/subjects/mathematics/geometry-and-topology/analytic-projective-geometry?format=HB).
+A new book __Analytic Projective Geometry__ (by Tim Penttila and I) has been published by  [Cambridge University Press](https://www.cambridge.org/core/books/analytic-projective-geometry/EB6914257387757DA046B524FCA8305C).
 
 <!---
 [Solutions to selected exercises](projectivegeometrybooksolutions.html)--->
@@ -219,11 +219,15 @@ with Michael Giudici, Jesse Lansdown, and Gordon Royle. [doi](https://doi.org/10
 Forum Mathematicum, vol. 35, no. 5, 2023, pp. 1301-1325.  [doi](https://doi.org/10.1515/forum-2022-0268)  
 with Tim Penttila. 
 
+## Books
 
+1. Analytic projective geometry, 
+Cambridge University Press, 2023, [doi](https://doi.org/10.1017/9781009260626)
 
 
 ## To appear
 
+- On the $430$-cap of $PG(6,4)$ having two intersection sizes with respect to hyperplanes.
 - Affine vector space partitions,  
 Designs, Codes and Cryptography,  
 with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz. [doi](https://doi.org/10.1007/s10623-023-01263-z)
@@ -233,7 +237,6 @@ with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz. [doi](https://doi.org/10
 
 - Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
 with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger.
-- On the $430$-cap of $PG(6,4)$ having two intersection sizes with respect to hyperplanes.
 - On Bruen chains, with Jesse Lansdown and Geertrui Van de Voorde.
 - FinInG: a package for finite incidence geometry,   
 with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavrauw.
