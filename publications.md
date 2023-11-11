@@ -222,12 +222,14 @@ with Tim Penttila.
 ## Books
 
 1. Analytic projective geometry, 
-Cambridge University Press, 2023, [doi](https://doi.org/10.1017/9781009260626)
+Cambridge University Press, 2023, [doi](https://doi.org/10.1017/9781009260626).  
+with Tim Penttila
 
 
 ## To appear
 
-- On the $430$-cap of $PG(6,4)$ having two intersection sizes with respect to hyperplanes.
+- On the $430$-cap of $\mathrm{PG}(6,4)$ having two intersection sizes with respect to hyperplanes. [doi](10.1007/s10623-023-01318-1
+)
 - Affine vector space partitions,  
 Designs, Codes and Cryptography,  
 with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz. [doi](https://doi.org/10.1007/s10623-023-01263-z)
@@ -235,6 +237,11 @@ with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz. [doi](https://doi.org/10
 
 ## Submitted
 
+- New 2-closed groups that are not automorphism
+groups of digraphs,   
+with Michael Giudici and Jacob Smith.
+- Spreading primitive groups of diagonal type do not exist,  
+with Saul D. Freedman and Michael Giudici.
 - Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
 with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger.
 - On Bruen chains, with Jesse Lansdown and Geertrui Van de Voorde.
@@ -243,9 +250,7 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 
 ## In preparation
 
-- On finite spreading permutation groups, with Michael Giudici, Jesse Lansdown, Gordon Royle.
-- 2-closed groups that are not automorphism
-groups of digraphs, with Michael Giudici and Jacob Smith.
+- Classical spreading permutation groups, with Michael Giudici, Jesse Lansdown, Gordon Royle.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons
