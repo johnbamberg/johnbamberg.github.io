@@ -6,7 +6,7 @@ title: Home Page
 ![Me](john31.png)
 ![Poncelet's Porism](ponceletporism.gif)
 
-I am a mathematician in the [Centre for the Mathematics of Symmetry and Computation](http://cmsc.io) within the [Department of Mathematics and Statistics](https://www.uwa.edu.au/ems/schools/physics-mathematics-and-computing/mathematics-and-stats) at the University of Western Australia.
+I am a mathematician in the [Centre for the Mathematics of Symmetry and Computation](http://cmsc.io) within the [Department of Mathematics and Statistics](https://www.uwa.edu.au/schools/physics-mathematics-computing/mathematics-and-stats) at the University of Western Australia.
 
 ## Main research interests
 
@@ -16,8 +16,10 @@ I am a mathematician in the [Centre for the Mathematics of Symmetry and Computat
 
 ## Editorial
 
-- Editor, [Combinatorial Theory](https://escholarship.org/uc/combinatorial_theory)
-- Editor, [Advances in Geometry](https://www.degruyter.com/journal/key/ADVG/html)
+- Handling editor, [Combinatorial Theory](https://escholarship.org/uc/combinatorial_theory)
+- Handling editor, [Advances in Geometry](https://www.degruyter.com/journal/key/ADVG/html)
+- Editorial board, [Electronic Journal of Combinatorics](https://www.combinatorics.org)
+- Editorial board, [Journal of Combinatorial Designs](https://onlinelibrary.wiley.com/journal/15206610)
 
 ---
 
