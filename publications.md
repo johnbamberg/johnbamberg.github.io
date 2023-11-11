@@ -228,7 +228,8 @@ with Tim Penttila
 
 ## To appear
 
-- On the $430$-cap of $\mathrm{PG}(6,4)$ having two intersection sizes with respect to hyperplanes. [doi](10.1007/s10623-023-01318-1
+- On the $430$-cap of $\mathrm{PG}(6,4)$ having two intersection sizes with respect to hyperplanes.  
+Designs, Codes and Cryptography [doi](10.1007/s10623-023-01318-1
 )
 - Affine vector space partitions,  
 Designs, Codes and Cryptography,  
@@ -250,7 +251,8 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 
 ## In preparation
 
-- Classical spreading permutation groups, with Michael Giudici, Jesse Lansdown, Gordon Royle.
+- The synchronisation hierarchy for coherent configurations, with Jesse Lansdown.
+- Tactical decompositions in finite polar spaces and non-spreading classical group actions, with Michael Giudici, Jesse Lansdown, Gordon Royle.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons
