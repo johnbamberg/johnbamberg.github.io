@@ -229,7 +229,7 @@ with Tim Penttila
 ## To appear
 
 - On the $430$-cap of $\mathrm{PG}(6,4)$ having two intersection sizes with respect to hyperplanes.  
-Designs, Codes and Cryptography [doi](10.1007/s10623-023-01318-1
+Designs, Codes and Cryptography [doi](https://doi.org/10.1007/s10623-023-01318-1
 )
 - Affine vector space partitions,  
 Designs, Codes and Cryptography,  
