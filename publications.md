@@ -218,6 +218,9 @@ with Michael Giudici, Jesse Lansdown, and Gordon Royle. [doi](https://doi.org/10
 68. Simpler foundations for the hyperbolic plane,  
 Forum Mathematicum, vol. 35, no. 5, 2023, pp. 1301-1325.  [doi](https://doi.org/10.1515/forum-2022-0268)  
 with Tim Penttila. 
+69. On the $430$-cap of $\mathrm{PG}(6,4)$ having two intersection sizes with respect to hyperplanes.  
+Designs, Codes and Cryptography 92 (2024), 495-503. [doi](https://doi.org/10.1007/s10623-023-01318-1
+)
 
 ## Books
 
@@ -228,12 +231,12 @@ with Tim Penttila
 
 ## To appear
 
-- On the $430$-cap of $\mathrm{PG}(6,4)$ having two intersection sizes with respect to hyperplanes.  
-Designs, Codes and Cryptography [doi](https://doi.org/10.1007/s10623-023-01318-1
-)
 - Affine vector space partitions,  
 Designs, Codes and Cryptography,  
 with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz. [doi](https://doi.org/10.1007/s10623-023-01263-z)
+- Spreading primitive groups of diagonal type do not exist,  
+Proceedings A of the Royal Society of Edinburgh,  
+with Saul D. Freedman and Michael Giudici.
 
 
 ## Submitted
@@ -241,8 +244,6 @@ with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz. [doi](https://doi.org/10
 - New 2-closed groups that are not automorphism
 groups of digraphs,   
 with Michael Giudici and Jacob Smith.
-- Spreading primitive groups of diagonal type do not exist,  
-with Saul D. Freedman and Michael Giudici.
 - Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
 with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger.
 - On Bruen chains, with Jesse Lansdown and Geertrui Van de Voorde.
