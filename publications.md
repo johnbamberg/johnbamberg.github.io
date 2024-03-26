@@ -241,6 +241,8 @@ with Saul D. Freedman and Michael Giudici.
 
 ## Submitted
 
+- Tactical decompositions in finite polar spaces and non-spreading classical group actions,  
+with Michael Giudici, Jesse Lansdown, Gordon Royle.
 - New 2-closed groups that are not automorphism
 groups of digraphs,   
 with Michael Giudici and Jacob Smith.
@@ -252,8 +254,8 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 
 ## In preparation
 
+- Partial $m$-ovoids of polar spaces and Ramsey numbers, with Anurag Bishnoi and Ferdinand Ihringer.
 - The synchronisation hierarchy for coherent configurations, with Jesse Lansdown.
-- Tactical decompositions in finite polar spaces and non-spreading classical group actions, with Michael Giudici, Jesse Lansdown, Gordon Royle.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons
