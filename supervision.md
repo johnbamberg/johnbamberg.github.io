@@ -43,6 +43,9 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 - Vishnu Arumugam, MPhil, *TBA*, co-supervised with Michael Giudici, 2022 --
 - Jacob Smith, PhD, *TBA*, co-supervised with Michael Giudici, 2023 --
+- Jolyon Joyce, Honours, *TBA*, 2024
+- Jeff Saunders, Honours, *TBA*, 2024
+- Huxley Berry, Honours, *TBA*, co-supervised with Luke Morgan, 2024
 
 
 ### Past students
