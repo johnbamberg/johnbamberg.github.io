@@ -7,7 +7,7 @@ title: Publications
 
 ![Analytic Projective Geometry](frontcover_small.pdf)
 
-A new book __Analytic Projective Geometry__ (by Tim Penttila and I) has been published by  [Cambridge University Press](https://www.cambridge.org/core/books/analytic-projective-geometry/EB6914257387757DA046B524FCA8305C).
+A new book __Analytic Projective Geometry__ (by Tim Penttila and me) has been published by  [Cambridge University Press](https://www.cambridge.org/core/books/analytic-projective-geometry/EB6914257387757DA046B524FCA8305C).
 
 <!---
 [Solutions to selected exercises](projectivegeometrybooksolutions.html)--->
@@ -255,6 +255,7 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 ## In preparation
 
 - Partial $m$-ovoids of polar spaces and Ramsey numbers, with Anurag Bishnoi and Ferdinand Ihringer.
+- Groups of Lie type acting on finite generalised quadrangles, with Vishnuram Arumugam and Michael Giudici
 - The synchronisation hierarchy for coherent configurations, with Jesse Lansdown.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
