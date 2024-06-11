@@ -242,8 +242,10 @@ with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.202
 
 ## Submitted
 
+- Ramsey numbers and extremal structures in polar spaces,  
+with Anurag Bishnoi and Ferdinand Ihringer.
 - Low rank groups of Lie type acting point and line-primitively on finite generalised quadrangles,  
-with Vishnuram Arumugam and Michael Giudici
+with Vishnuram Arumugam and Michael Giudici.
 - Tactical decompositions in finite polar spaces and non-spreading classical group actions,  
 with Michael Giudici, Jesse Lansdown, Gordon Royle.
 - New 2-closed groups that are not automorphism
@@ -251,13 +253,13 @@ groups of digraphs,
 with Michael Giudici and Jacob Smith.
 - Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
 with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger.
-- On Bruen chains, with Jesse Lansdown and Geertrui Van de Voorde.
+- On Bruen chains,  
+with Jesse Lansdown and Geertrui Van de Voorde.
 - FinInG: a package for finite incidence geometry,   
 with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavrauw.
 
 ## In preparation
 
-- Partial $m$-ovoids of polar spaces and Ramsey numbers, with Anurag Bishnoi and Ferdinand Ihringer.
 - The synchronisation hierarchy for coherent configurations, with Jesse Lansdown.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
