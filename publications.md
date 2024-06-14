@@ -260,7 +260,7 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 
 ## In preparation
 
-- The synchronisation hierarchy for coherent configurations, with Jesse Lansdown.
+- The synchronisation hierarchy via coherent configurations, with Jesse Lansdown.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons
