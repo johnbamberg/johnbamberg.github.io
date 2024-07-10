@@ -237,20 +237,24 @@ with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz. [doi](https://doi.org/10
 - Spreading primitive groups of diagonal type do not exist,  
 Proceedings A of the Royal Society of Edinburgh,  
 with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.2024.53)
+- Tactical decompositions in finite polar spaces and non-spreading classical group actions,  
+Designs, Codes, and Cryptography,  
+with Michael Giudici, Jesse Lansdown, Gordon Royle.
+- New 2-closed groups that are not automorphism
+groups of digraphs,   
+Algebraic Combinatorics,  
+with Michael Giudici and Jacob Smith.
 
 
 
 ## Submitted
 
+- The synchronisation hierarchy via coherent configurations,  
+with Jesse Lansdown.
 - Ramsey numbers and extremal structures in polar spaces,  
 with Anurag Bishnoi and Ferdinand Ihringer.
 - Low rank groups of Lie type acting point and line-primitively on finite generalised quadrangles,  
 with Vishnuram Arumugam and Michael Giudici.
-- Tactical decompositions in finite polar spaces and non-spreading classical group actions,  
-with Michael Giudici, Jesse Lansdown, Gordon Royle.
-- New 2-closed groups that are not automorphism
-groups of digraphs,   
-with Michael Giudici and Jacob Smith.
 - Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
 with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger.
 - On Bruen chains,  
@@ -260,7 +264,6 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 
 ## In preparation
 
-- The synchronisation hierarchy via coherent configurations, with Jesse Lansdown.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons
