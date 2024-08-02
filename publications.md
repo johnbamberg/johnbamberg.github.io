@@ -244,6 +244,10 @@ with Michael Giudici, Jesse Lansdown, Gordon Royle.
 groups of digraphs,   
 Algebraic Combinatorics,  
 with Michael Giudici and Jacob Smith.
+- On Bruen chains,  
+Finite Fields and their Applications,  
+with Jesse Lansdown and Geertrui Van de Voorde.
+
 
 
 
@@ -257,8 +261,6 @@ with Anurag Bishnoi and Ferdinand Ihringer.
 with Vishnuram Arumugam and Michael Giudici.
 - Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
 with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger.
-- On Bruen chains,  
-with Jesse Lansdown and Geertrui Van de Voorde.
 - FinInG: a package for finite incidence geometry,   
 with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavrauw.
 
