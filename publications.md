@@ -221,6 +221,10 @@ with Tim Penttila.
 69. On the $430$-cap of $\mathrm{PG}(6,4)$ having two intersection sizes with respect to hyperplanes.  
 Designs, Codes and Cryptography 92 (2024), 495-503. [doi](https://doi.org/10.1007/s10623-023-01318-1
 )
+70. On Bruen chains,  
+Finite Fields and their Applications 99 (2024), Paper No. 102491,  
+with Jesse Lansdown and Geertrui Van de Voorde. [doi](https://doi.org/10.1016/j.ffa.2024.102491)
+
 
 ## Books
 
@@ -244,9 +248,6 @@ with Michael Giudici, Jesse Lansdown, Gordon Royle.
 groups of digraphs,   
 Algebraic Combinatorics,  
 with Michael Giudici and Jacob Smith.
-- On Bruen chains,  
-Finite Fields and their Applications,  
-with Jesse Lansdown and Geertrui Van de Voorde.
 
 
 
@@ -266,6 +267,7 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 
 ## In preparation
 
+- Exploiting degeneracy in projective geometric algebra, with Jeff Saunders.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons
