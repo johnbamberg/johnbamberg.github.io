@@ -254,6 +254,8 @@ with Michael Giudici and Jacob Smith.
 
 ## Submitted
 
+- Exploiting degeneracy in projective geometric algebra,  
+with Jeff Saunders.
 - The synchronisation hierarchy via coherent configurations,  
 with Jesse Lansdown.
 - Ramsey numbers and extremal structures in polar spaces,  
@@ -267,7 +269,7 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 
 ## In preparation
 
-- Exploiting degeneracy in projective geometric algebra, with Jeff Saunders.
+
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons
