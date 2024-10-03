@@ -243,7 +243,7 @@ Proceedings A of the Royal Society of Edinburgh,
 with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.2024.53)
 - Tactical decompositions in finite polar spaces and non-spreading classical group actions,  
 Designs, Codes, and Cryptography,  
-with Michael Giudici, Jesse Lansdown, Gordon Royle.
+with Michael Giudici, Jesse Lansdown, Gordon Royle. [doi](https://doi.org/10.1007/s10623-024-01490-y)
 - New 2-closed groups that are not automorphism
 groups of digraphs,   
 Algebraic Combinatorics,  
