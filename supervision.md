@@ -21,7 +21,7 @@ As for research areas, here is how I describe them for a student:
 
 ### Group theory
 
-I am mainly interested in finite permutation groups, but I sometimes offer a project where my curiosity has taken me beyond the finite realm. The project is likely to be an abstract investigation and be co-supervised by another member of our research group; the [Centre for the Mathematics of Symmetry and Computation](www.cmsc.io) are world-renown for their strengths in finite group theory.
+I am mainly interested in finite permutation groups, but I sometimes offer a project where my curiosity has taken me beyond the finite realm. The project is likely to be an abstract investigation and be co-supervised with another member of our research group; the [Centre for the Mathematics of Symmetry and Computation](www.cmsc.io) are world-renown for their strengths in finite group theory.
 
 ### Geometry
 
@@ -49,47 +49,47 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 #### PhD Students ####
 
- 1. Jesse Lansdown, PhD, *Designs in finite geometry*, co-supervised by Gordon Royle and Alice Niemeyer (cotutelle with Aachen), 2015 -- 2020
+ 1. Jesse Lansdown, PhD, *Designs in finite geometry*, co-supervised with Gordon Royle and Alice Niemeyer (cotutelle with Aachen), 2015 -- 2020
  2. Mark Ioppolo, PhD, *Codes in Johnson graphs associated with quadratic forms over $\mathbb{F}_2$*,  co-supervised with Cheryl Praeger and Alice Devillers, 2012 -- 2020.
- 3. Jon Xu, PhD, *Chevalley groups, Schubert varieties, and finite geometry*, co-supervised by Arun Ram, 2012 -- 2017.
- 4. Sayeed Hassan Alavi, PhD, *Triple factorisations of groups*, co-supervised by Cheryl Praeger, 2008 -- 2011.
- 5. Frédéric Vanhove, PhD, *Incidence geometry from an algebraic graph theory point of view*, co-supervised by Frank De Clerck, 2007 -- 2011.
- 6. Geoffrey Pearce, PhD, *Transitive factorisations of graphs*, co-supervised by Cheryl Praeger, 2004 -- 2007.
+ 3. Jon Xu, PhD, *Chevalley groups, Schubert varieties, and finite geometry*, co-supervised with Arun Ram, 2012 -- 2017.
+ 4. Sayeed Hassan Alavi, PhD, *Triple factorisations of groups*, co-supervised with Cheryl Praeger, 2008 -- 2011.
+ 5. Frédéric Vanhove, PhD, *Incidence geometry from an algebraic graph theory point of view*, co-supervised with Frank De Clerck, 2007 -- 2011.
+ 6. Geoffrey Pearce, PhD, *Transitive factorisations of graphs*, co-supervised with Cheryl Praeger, 2004 -- 2007.
 
 #### Masters/MPhil Students ####
 
-1. Saul Freedman, MPhil, *p-groups related to exceptional groups of Lie type*, co-supervised by Luke Morgan, 2017 -- 2018.
-2. Melissa Lee, MPhil, *The m-covers and m-ovoids of generalised quadrangles and related structures*, co-supervised by Michael Giudici, 2015/2016.
-3. Sylvia Morris, MPhil, *Symplectic translation planes, pseudo-ovals, and maximal 4-arcs*, co-supervised by Michael Giudici, 2011 -- 2013.
+1. Saul Freedman, MPhil, *p-groups related to exceptional groups of Lie type*, co-supervised with Luke Morgan, 2017 -- 2018.
+2. Melissa Lee, MPhil, *The m-covers and m-ovoids of generalised quadrangles and related structures*, co-supervised with Michael Giudici, 2015/2016.
+3. Sylvia Morris, MPhil, *Symplectic translation planes, pseudo-ovals, and maximal 4-arcs*, co-supervised with Michael Giudici, 2011 -- 2013.
 4. Guang Rao, Masters, *Symmetric translation planes of square order*, 2009/2010.
-5. Cedric Raemdonck and Els Quintelier, Masters, *Databanken en websites voor wiskundig onderzoek*, co-supervised by Leo Storme, Michel Lavrauw, Geert Vernaeve, 2008.
-6. Frédéric Vanhove, Masters, *Een studie van m-systemen en aanverwante incidentiestructuren*, co-supervised by Frank De Clerck, 2006/2007.
+5. Cedric Raemdonck and Els Quintelier, Masters, *Databanken en websites voor wiskundig onderzoek*, co-supervised with Leo Storme, Michel Lavrauw, Geert Vernaeve, 2008.
+6. Frédéric Vanhove, Masters, *Een studie van m-systemen en aanverwante incidentiestructuren*, co-supervised with Frank De Clerck, 2006/2007.
 
 #### Honours Students ####
 
-1. Jolyon Joyce, *The incidence-based foundation of hyperbolic planes over arbitrary and Euclidean ordered fields*, 2024
-2. Jeff Saunders, *Affine geometric algebra*, 2024
-3. Huxley Berry, *Finite abstract ovals*, co-supervised with Luke Morgan, 2024
+1. Jolyon Joyce, *The incidence-based foundation of hyperbolic planes over arbitrary and Euclidean ordered fields*, 2024.
+2. Jeff Saunders, *Affine geometric algebra*, 2024.
+3. Huxley Berry, *Finite abstract ovals*, co-supervised with Luke Morgan, 2024.
 4. Jacob Smith, *Non-regular 2-closed permutation groups that are not automorphism groups of digraphs*, co-supervised with Michael Giudici, 2022.
-2. Darryl Teo, Honours, *On intersection multiplicity of plane curves*, 2021.
-2. Ann Linehan, Honours, *Relationships Between Geometric Propositions which Characterise Projective Planes*, co-supervised with Jesse Lansdown, 2021.
+2. Darryl Teo, *On intersection multiplicity of plane curves*, 2021.
+2. Ann Linehan, *Relationships Between Geometric Propositions which Characterise Projective Planes*, co-supervised with Jesse Lansdown, 2021.
 3. Hefu Yu, *The quest to classify finite flag-transitive projective planes*, 2020 -- 2021
-4. Dominique Douglas-Smith, *Skew Projection*, co-supervised by Jesse Lansdown, 2020
-5. James Evans, *Generalised polygons and their symmetries*, co-supervised by Emilio Pierro, 2019.
-6. Jacob Morhall, *Eigenvalue bounds on cliques and cocliques*, co-supervised by Gordon Royle, 2018.
+4. Dominique Douglas-Smith, *Skew Projection*, co-supervised with Jesse Lansdown, 2020
+5. James Evans, *Generalised polygons and their symmetries*, co-supervised with Emilio Pierro, 2019.
+6. Jacob Morhall, *Eigenvalue bounds on cliques and cocliques*, co-supervised with Gordon Royle, 2018.
 7. Timothy Harris, *Abstract ovals*, 2017.
 8. Calin Borceanu, *Breaking symmetry in backtrack algorithms*, 2016.
-9. Saul Freedman, *Maximally symmetric p-groups*, co-supervised by Luke Morgan, 2016.
-10. Jesse Lansdown, *Metric coset geometries*, co-supervised by Joanna Fawcett, 2014/2015.
-11. Melissa Lee, *Relative hemisystems on the Hermitian Surface*, co-supervised by Eric Swartrz, 2014.
-12. Blake Segler, *Fault-tolerant quantum computation*, co-supervised by Jingbo Wang, 2013.
+9. Saul Freedman, *Maximally symmetric p-groups*, co-supervised with Luke Morgan, 2016.
+10. Jesse Lansdown, *Metric coset geometries*, co-supervised with Joanna Fawcett, 2014/2015.
+11. Melissa Lee, *Relative hemisystems on the Hermitian Surface*, co-supervised with Eric Swartrz, 2014.
+12. Blake Segler, *Fault-tolerant quantum computation*, co-supervised with Jingbo Wang, 2013.
 13. Murray Smith, *A generalised clique-coclique bound*, 2012.
 14. Mark Ioppolo, *A classification of rational 2-tangles via coset spaces*, 2011-2012.
-15. David Raithel, *The 24-cell*, co-supervised by Cheryl Praeger, 2011-2012.
-16. Daniel Skates, *Sets of type (m,n) in projective planes*, co-supervised by Gordon, 2011.
-17. Adrian Dudek, *Expander graphs*, co-supervised by Gordon Royle, 2010.  
-18. Andrew Cannon, *Graphs of the Johnson schemes*, co-supervised by Cheryl Praeger, 2009 -- 2010.
-19. Claire Collier, *The norm of a group*, co-supervised by Maska Law, 2006.
+15. David Raithel, *The 24-cell*, co-supervised with Cheryl Praeger, 2011-2012.
+16. Daniel Skates, *Sets of type (m,n) in projective planes*, co-supervised with Gordon, 2011.
+17. Adrian Dudek, *Expander graphs*, co-supervised with Gordon Royle, 2010.  
+18. Andrew Cannon, *Graphs of the Johnson schemes*, co-supervised with Cheryl Praeger, 2009 -- 2010.
+19. Claire Collier, *The norm of a group*, co-supervised with Maska Law, 2006.
 20. Michael Pauley, *Flag-transitive linear spaces and spreads of projective space*, 2005/2006.
-21. Jonathan Cohen, *Small base groups, large base groups and the case of the giants*, co-supervised by Alice Niemeyer, 2004.
-22. Geoffrey Pearce, *Products of groups and graphs*, co-supervised by Cheryl Praeger, 2003.
+21. Jonathan Cohen, *Small base groups, large base groups and the case of the giants*, co-supervised with Alice Niemeyer, 2004.
+22. Geoffrey Pearce, *Products of groups and graphs*, co-supervised with Cheryl Praeger, 2003.
