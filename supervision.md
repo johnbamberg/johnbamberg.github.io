@@ -41,11 +41,8 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 ### Current students
 
-- Vishnu Arumugam, MPhil, *TBA*, co-supervised with Michael Giudici, 2022 --
+- Vishnu Arumugam, PhD, *Groups of Lie Type Acting on Generalised Quadrangles*, co-supervised with Michael Giudici, 2022 --
 - Jacob Smith, PhD, *TBA*, co-supervised with Michael Giudici, 2023 --
-- Jolyon Joyce, Honours, *TBA*, 2024
-- Jeff Saunders, Honours, *TBA*, 2024
-- Huxley Berry, Honours, *TBA*, co-supervised with Luke Morgan, 2024
 
 
 ### Past students
@@ -70,9 +67,12 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 #### Honours Students ####
 
-1. Jacob Smith, *Non-regular 2-closed permutation groups that are not automorphism groups of digraphs*, co-supervised by Michael Giudici, 2022.
+1. Jolyon Joyce, *The incidence-based foundation of hyperbolic planes over arbitrary and Euclidean ordered fields*, 2024
+2. Jeff Saunders, *Affine geometric algebra*, 2024
+3. Huxley Berry, *Finite abstract ovals*, co-supervised with Luke Morgan, 2024
+4. Jacob Smith, *Non-regular 2-closed permutation groups that are not automorphism groups of digraphs*, co-supervised with Michael Giudici, 2022.
 2. Darryl Teo, Honours, *On intersection multiplicity of plane curves*, 2021.
-2. Ann Linehan, Honours, *Relationships Between Geometric Propositions which Characterise Projective Planes*, co-supervised by Jesse Lansdown, 2021.
+2. Ann Linehan, Honours, *Relationships Between Geometric Propositions which Characterise Projective Planes*, co-supervised with Jesse Lansdown, 2021.
 3. Hefu Yu, *The quest to classify finite flag-transitive projective planes*, 2020 -- 2021
 4. Dominique Douglas-Smith, *Skew Projection*, co-supervised by Jesse Lansdown, 2020
 5. James Evans, *Generalised polygons and their symmetries*, co-supervised by Emilio Pierro, 2019.
