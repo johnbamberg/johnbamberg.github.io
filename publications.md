@@ -255,15 +255,15 @@ with Michael Giudici and Jacob Smith.
 ## Submitted
 
 - Exploiting degeneracy in projective geometric algebra,  
-with Jeff Saunders.
+with Jeff Saunders. [arxiv](https://arxiv.org/abs/2408.13441)
 - The synchronisation hierarchy via coherent configurations,  
-with Jesse Lansdown.
+with Jesse Lansdown. [arxiv](https://arxiv.org/abs/2407.07352)
 - Ramsey numbers and extremal structures in polar spaces,  
-with Anurag Bishnoi and Ferdinand Ihringer.
+with Anurag Bishnoi, Ferdinand Ihringer, and Ananthakrishnan Ravi. [arxiv](https://arxiv.org/abs/2406.03043)
 - Low rank groups of Lie type acting point and line-primitively on finite generalised quadrangles,  
-with Vishnuram Arumugam and Michael Giudici.
+with Vishnuram Arumugam and Michael Giudici. [arxiv](https://arxiv.org/abs/2405.03790)
 - Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
-with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger.
+with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger. [arxiv](https://arxiv.org/abs/2202.06237)
 - FinInG: a package for finite incidence geometry,   
 with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavrauw.
 
