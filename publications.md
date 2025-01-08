@@ -224,6 +224,10 @@ Designs, Codes and Cryptography 92 (2024), 495-503. [doi](https://doi.org/10.100
 70. On Bruen chains,  
 Finite Fields and their Applications 99 (2024), Paper No. 102491,  
 with Jesse Lansdown and Geertrui Van de Voorde. [doi](https://doi.org/10.1016/j.ffa.2024.102491)
+71. New 2-closed groups that are not automorphism groups of digraphs,   
+Algebraic Combinatorics 7 (2024), no. 6, pp. 1793-1811.  
+with Michael Giudici and Jacob Smith. [doi](https://doi.org/10.5802/alco.392)
+
 
 
 ## Books
@@ -244,10 +248,6 @@ with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.202
 - Tactical decompositions in finite polar spaces and non-spreading classical group actions,  
 Designs, Codes, and Cryptography,  
 with Michael Giudici, Jesse Lansdown, Gordon Royle. [doi](https://doi.org/10.1007/s10623-024-01490-y)
-- New 2-closed groups that are not automorphism
-groups of digraphs,   
-Algebraic Combinatorics,  
-with Michael Giudici and Jacob Smith.
 
 
 
