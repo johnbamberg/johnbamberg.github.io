@@ -5,6 +5,13 @@ title: Teaching
 
 # Teaching
 
+### 2025
+
+- For the first six weeks of Semester 1, I will be at The University of Canterbury (NZ) teaching [MATH320](https://courseinfo.canterbury.ac.nz/GetCourseDetails.aspx?course=MATH320&occurrence=25S1(C)&year=2025). This is part of a [Visiting Erskine Fellowship](https://www.canterbury.ac.nz/about-uc/what-we-do/teaching/erskine-programme/erskine-fellowship).
+- [MATH1720](http://handbooks.uwa.edu.au/unitdetails?code=MATH1720) (Mathematics Fundamentals), Semester 1
+- [MATH1014](http://handbooks.uwa.edu.au/unitdetails?code=MATH1014) (Algebra), Semester 2
+
+
 ### 2024
 
 - [MATH1720](http://handbooks.uwa.edu.au/unitdetails?code=MATH1720) (Mathematics Fundamentals), Semester 1

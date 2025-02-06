@@ -43,6 +43,8 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 - Vishnu Arumugam, PhD, *Groups of Lie Type Acting on Generalised Quadrangles*, co-supervised with Michael Giudici, 2022 --
 - Jacob Smith, PhD, *TBA*, co-supervised with Michael Giudici, 2023 --
+- James Jensen, Honours, *TBA*.
+- Jake Rigg, Honours, *TBA*.
 
 
 ### Past students
