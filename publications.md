@@ -227,6 +227,10 @@ with Jesse Lansdown and Geertrui Van de Voorde. [doi](https://doi.org/10.1016/j.
 71. New 2-closed groups that are not automorphism groups of digraphs,   
 Algebraic Combinatorics 7 (2024), no. 6, pp. 1793-1811.  
 with Michael Giudici and Jacob Smith. [doi](https://doi.org/10.5802/alco.392)
+72. Affine vector space partitions,  
+Designs, Codes and Cryptography 93 (2025), pp. 331-357,  
+with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz. [doi](https://doi.org/10.1007/s10623-023-01263-z)
+
 
 
 
@@ -239,9 +243,6 @@ with Tim Penttila
 
 ## To appear
 
-- Affine vector space partitions,  
-Designs, Codes and Cryptography,  
-with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz. [doi](https://doi.org/10.1007/s10623-023-01263-z)
 - Spreading primitive groups of diagonal type do not exist,  
 Proceedings A of the Royal Society of Edinburgh,  
 with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.2024.53)
