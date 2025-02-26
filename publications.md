@@ -249,7 +249,9 @@ with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.202
 - Tactical decompositions in finite polar spaces and non-spreading classical group actions,  
 Designs, Codes, and Cryptography,  
 with Michael Giudici, Jesse Lansdown, Gordon Royle. [doi](https://doi.org/10.1007/s10623-024-01490-y)
-
+- Low rank groups of Lie type acting point and line-primitively on finite generalised quadrangles,  
+Electronic Journal of Combinatorics,  
+with Vishnuram Arumugam and Michael Giudici. [arxiv](https://arxiv.org/abs/2405.03790)
 
 
 
@@ -261,8 +263,6 @@ with Jeff Saunders. [arxiv](https://arxiv.org/abs/2408.13441)
 with Jesse Lansdown. [arxiv](https://arxiv.org/abs/2407.07352)
 - Ramsey numbers and extremal structures in polar spaces,  
 with Anurag Bishnoi, Ferdinand Ihringer, and Ananthakrishnan Ravi. [arxiv](https://arxiv.org/abs/2406.03043)
-- Low rank groups of Lie type acting point and line-primitively on finite generalised quadrangles,  
-with Vishnuram Arumugam and Michael Giudici. [arxiv](https://arxiv.org/abs/2405.03790)
 - Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
 with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger. [arxiv](https://arxiv.org/abs/2202.06237)
 - FinInG: a package for finite incidence geometry,   
