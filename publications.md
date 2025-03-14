@@ -216,7 +216,7 @@ with Jesse Lansdown. [doi](http://doi.org/10.5802/alco.246)
 European Journal of Combinatorics 117 (2023), 103732,   
 with Michael Giudici, Jesse Lansdown, and Gordon Royle. [doi](https://doi.org/10.1016/j.ejc.2023.103732)
 68. Simpler foundations for the hyperbolic plane,  
-Forum Mathematicum, vol. 35, no. 5, 2023, pp. 1301-1325.  [doi](https://doi.org/10.1515/forum-2022-0268)  
+Forum Mathematicum 35 (2023), no. 5, pp. 1301-1325.  [doi](https://doi.org/10.1515/forum-2022-0268)  
 with Tim Penttila. 
 69. On the $430$-cap of $\mathrm{PG}(6,4)$ having two intersection sizes with respect to hyperplanes.  
 Designs, Codes and Cryptography 92 (2024), 495-503. [doi](https://doi.org/10.1007/s10623-023-01318-1
@@ -230,6 +230,9 @@ with Michael Giudici and Jacob Smith. [doi](https://doi.org/10.5802/alco.392)
 72. Affine vector space partitions,  
 Designs, Codes and Cryptography 93 (2025), pp. 331-357,  
 with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz. [doi](https://doi.org/10.1007/s10623-023-01263-z)
+73. Low rank groups of Lie type acting point and line-primitively on finite generalised quadrangles,  
+Electronic Journal of Combinatorics 32(1) (2025), #P1.43,   
+with Vishnuram Arumugam and Michael Giudici. [doi](https://doi.org/10.37236/12993)
 
 
 
@@ -249,9 +252,6 @@ with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.202
 - Tactical decompositions in finite polar spaces and non-spreading classical group actions,  
 Designs, Codes, and Cryptography,  
 with Michael Giudici, Jesse Lansdown, Gordon Royle. [doi](https://doi.org/10.1007/s10623-024-01490-y)
-- Low rank groups of Lie type acting point and line-primitively on finite generalised quadrangles,  
-Electronic Journal of Combinatorics,  
-with Vishnuram Arumugam and Michael Giudici. [arxiv](https://arxiv.org/abs/2405.03790)
 
 
 
