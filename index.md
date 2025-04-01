@@ -13,6 +13,7 @@ I am a mathematician in the [Centre for the Mathematics of Symmetry and Computat
 - Finite incidence geometry
 - Group theory (esp. finite permutation groups)
 - Algebraic graph theory (e.g., applications of association schemes to geometry)
+- Applications of finite geometry to extremal combinatorics (e.g., Ramsey numbers)
 
 ## Editorial
 
@@ -34,5 +35,5 @@ I am a mathematician in the [Centre for the Mathematics of Symmetry and Computat
 
 [Research Repository page](https://research-repository.uwa.edu.au/en/persons/john-bamberg)  
 
-[Contact page](http://www.uwa.edu.au/people/john.bamberg)
+[Main contact page](http://www.uwa.edu.au/people/john.bamberg)
 
