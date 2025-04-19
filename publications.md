@@ -233,6 +233,9 @@ with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz. [doi](https://doi.org/10
 73. Low rank groups of Lie type acting point and line-primitively on finite generalised quadrangles,  
 Electronic Journal of Combinatorics 32(1) (2025), #P1.43,   
 with Vishnuram Arumugam and Michael Giudici. [doi](https://doi.org/10.37236/12993)
+74. Tactical decompositions in finite polar spaces and non-spreading classical group actions,  
+Designs, Codes, and Cryptography 93 (2025), 1127–1141,  
+with Michael Giudici, Jesse Lansdown, Gordon Royle. [doi](https://doi.org/10.1007/s10623-024-01490-y)
 
 
 
@@ -249,16 +252,14 @@ with Tim Penttila
 - Spreading primitive groups of diagonal type do not exist,  
 Proceedings A of the Royal Society of Edinburgh,  
 with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.2024.53)
-- Tactical decompositions in finite polar spaces and non-spreading classical group actions,  
-Designs, Codes, and Cryptography,  
-with Michael Giudici, Jesse Lansdown, Gordon Royle. [doi](https://doi.org/10.1007/s10623-024-01490-y)
+- Exploiting degeneracy in projective geometric algebra,   
+Advances in Applied Clifford Algebra,  
+with Jeff Saunders. [arxiv](https://arxiv.org/abs/2408.13441)
 
 
 
 ## Submitted
 
-- Exploiting degeneracy in projective geometric algebra,  
-with Jeff Saunders. [arxiv](https://arxiv.org/abs/2408.13441)
 - The synchronisation hierarchy via coherent configurations,  
 with Jesse Lansdown. [arxiv](https://arxiv.org/abs/2407.07352)
 - Ramsey numbers and extremal structures in polar spaces,  
