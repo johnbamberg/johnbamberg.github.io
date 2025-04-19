@@ -234,7 +234,7 @@ with Yuval Filmus, Ferdinand Ihringer, and Sascha Kurz. [doi](https://doi.org/10
 Electronic Journal of Combinatorics 32(1) (2025), #P1.43,   
 with Vishnuram Arumugam and Michael Giudici. [doi](https://doi.org/10.37236/12993)
 74. Tactical decompositions in finite polar spaces and non-spreading classical group actions,  
-Designs, Codes, and Cryptography 93 (2025), 1127–1141,  
+Designs, Codes, and Cryptography 93 (2025), pp. 1127-1141,  
 with Michael Giudici, Jesse Lansdown, Gordon Royle. [doi](https://doi.org/10.1007/s10623-024-01490-y)
 
 
