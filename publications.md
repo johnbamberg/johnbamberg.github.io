@@ -271,7 +271,7 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 
 ## In preparation
 
-- The association schemes on matchings and their designs, with Lukas Klawuhn.
+- On the association schemes of perfect matchings and their designs, with Lukas Klawuhn.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons
