@@ -271,6 +271,7 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 
 ## In preparation
 
+- On the Hermitian Veronesean, with Geertrui Van de Voorde.
 - On the association schemes of perfect matchings and their designs, with Lukas Klawuhn.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
