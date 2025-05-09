@@ -260,6 +260,7 @@ with Jeff Saunders. [arxiv](https://arxiv.org/abs/2408.13441)
 
 ## Submitted
 
+- On the Hermitian Veronesean, with Geertrui Van de Voorde. [arxiv](https://arxiv.org/abs/2407.07352)
 - The synchronisation hierarchy via coherent configurations,  
 with Jesse Lansdown. [arxiv](https://arxiv.org/abs/2407.07352)
 - Ramsey numbers and extremal structures in polar spaces,  
@@ -271,7 +272,6 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 
 ## In preparation
 
-- On the Hermitian Veronesean, with Geertrui Van de Voorde.
 - On the association schemes of perfect matchings and their designs, with Lukas Klawuhn.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
