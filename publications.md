@@ -260,7 +260,8 @@ with Jeff Saunders. [arxiv](https://arxiv.org/abs/2408.13441)
 
 ## Submitted
 
-- On the Hermitian Veronesean, with Geertrui Van de Voorde. [arxiv](https://arxiv.org/abs/2407.07352)
+- On the Hermitian Veronesean,  
+with Geertrui Van de Voorde. [arxiv](https://arxiv.org/abs/2505.05827)
 - The synchronisation hierarchy via coherent configurations,  
 with Jesse Lansdown. [arxiv](https://arxiv.org/abs/2407.07352)
 - Ramsey numbers and extremal structures in polar spaces,  
