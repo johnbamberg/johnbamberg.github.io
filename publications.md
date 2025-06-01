@@ -255,8 +255,9 @@ with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.202
 - Exploiting degeneracy in projective geometric algebra,   
 Advances in Applied Clifford Algebra,  
 with Jeff Saunders. [arxiv](https://arxiv.org/abs/2408.13441)
-
-
+- Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
+Journal of Pure and Applied Algebra,  
+with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger. [doi](https://doi.org/10.1016/j.jpaa.2025.108015)
 
 ## Submitted
 
@@ -266,8 +267,6 @@ with Geertrui Van de Voorde. [arxiv](https://arxiv.org/abs/2505.05827)
 with Jesse Lansdown. [arxiv](https://arxiv.org/abs/2407.07352)
 - Ramsey numbers and extremal structures in polar spaces,  
 with Anurag Bishnoi, Ferdinand Ihringer, and Ananthakrishnan Ravi. [arxiv](https://arxiv.org/abs/2406.03043)
-- Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
-with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger. [arxiv](https://arxiv.org/abs/2202.06237)
 - FinInG: a package for finite incidence geometry,   
 with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavrauw.
 
