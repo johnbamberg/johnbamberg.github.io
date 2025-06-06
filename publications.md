@@ -236,6 +236,9 @@ with Vishnuram Arumugam and Michael Giudici. [doi](https://doi.org/10.37236/1299
 74. Tactical decompositions in finite polar spaces and non-spreading classical group actions,  
 Designs, Codes, and Cryptography 93 (2025), pp. 1127-1141,  
 with Michael Giudici, Jesse Lansdown, Gordon Royle. [doi](https://doi.org/10.1007/s10623-024-01490-y)
+75. Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
+Journal of Pure and Applied Algebra 229(9) (2025), 108015,   
+with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger. [doi](https://doi.org/10.1016/j.jpaa.2025.108015)
 
 
 
@@ -255,9 +258,6 @@ with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.202
 - Exploiting degeneracy in projective geometric algebra,   
 Advances in Applied Clifford Algebra,  
 with Jeff Saunders. [arxiv](https://arxiv.org/abs/2408.13441)
-- Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
-Journal of Pure and Applied Algebra,  
-with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger. [doi](https://doi.org/10.1016/j.jpaa.2025.108015)
 
 ## Submitted
 

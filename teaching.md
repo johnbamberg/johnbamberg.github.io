@@ -71,10 +71,10 @@ MATH4031 is a primer on Algebraic Geometry, this year.
 
 ### 2016 
 
-- [MATH4403](http://handbooks.uwa.edu.au/unitdetails?code=MATH4403)  (Advanced Mathematics 1), Semester 1, 33%
-- [MATH5540](http://handbooks.uwa.edu.au/unitdetails?code=MATH5540)  (Advanced Mathematics 2), Semester 2, 33%
+- [MATH4403](http://handbooks.uwa.edu.au/unitdetails?code=MATH4403)  (Advanced Mathematics 1), Semester 1, 4 weeks
+- [MATH5540](http://handbooks.uwa.edu.au/unitdetails?code=MATH5540)  (Advanced Mathematics 2), Semester 2, 4 weeks
 - I was also a lecturer for the [AMSI Summer School](http://ss.amsi.org.au/tag/summer-school-2016) at RMIT, teaching an intensive course on "Projective Geometry" to honours and postgraduate students.
 
 ### 2015
 
-- [MATH5540](http://handbooks.uwa.edu.au/unitdetails?code=MATH5540)  (Advanced Mathematics 2), Semester 2, 33%
+- [MATH5540](http://handbooks.uwa.edu.au/unitdetails?code=MATH5540)  (Advanced Mathematics 2), Semester 2, 4 weeks
