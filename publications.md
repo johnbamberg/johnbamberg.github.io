@@ -239,8 +239,9 @@ with Michael Giudici, Jesse Lansdown, Gordon Royle. [doi](https://doi.org/10.100
 75. Codes and designs in Johnson graphs from symplectic actions on quadratic forms,  
 Journal of Pure and Applied Algebra 229(9) (2025), 108015,   
 with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger. [doi](https://doi.org/10.1016/j.jpaa.2025.108015)
-
-
+76. Exploiting degeneracy in projective geometric algebra,   
+Advances in Applied Clifford Algebra 35(34) (2025),  
+with Jeff Saunders. [doi](https://doi.org/10.1007/s00006-025-01392-9)
 
 
 ## Books
@@ -255,9 +256,6 @@ with Tim Penttila
 - Spreading primitive groups of diagonal type do not exist,  
 Proceedings A of the Royal Society of Edinburgh,  
 with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.2024.53)
-- Exploiting degeneracy in projective geometric algebra,   
-Advances in Applied Clifford Algebra,  
-with Jeff Saunders. [arxiv](https://arxiv.org/abs/2408.13441)
 
 ## Submitted
 
