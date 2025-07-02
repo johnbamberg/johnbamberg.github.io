@@ -139,7 +139,7 @@ Journal of Algebraic Combinatorics 45 (2017), no. 4, pp. 1217 -- 1228.
 with Melissa Lee.
 42. Synchronization and separation in the Johnson schemes,   
 Portugaliae Mathematica 74 (2017), no. 3, pp. 213 -- 232.  
-with Mohammed Aljohani and Peter J. Cameron.
+with Mohammed Aljohani and Peter J. Cameron. [doi](https://doi.org/10.4171/PM/2003)
 43. A classification of finite antiflag-transitive generalized quadrangles,  
 Transactions of the American Mathematical Society 370 (2018), no. 3, pp. 1551 -- 1601,  
 with Cai-Heng Li and Eric Swartz. [doi](https://doi.org/10.1090/tran/6984) 
@@ -157,7 +157,7 @@ Journal of Combinatorial Theory Series A 158 (2018), pp. 254 -- 275.
 with Anurag Bishnoi and Gordon Royle. [doi](https://doi.org/10.1016/j.jcta.2018.03.015)
 48. Maximal linear groups induced on the Frattini quotient of a _p_-group,   
 Journal of Pure and Applied Algebra 222 (2018), no. 10, pp. 2931 -- 2951,  
-with S. P. Glasby, Luke Morgan, and Alice Niemeyer.
+with S. P. Glasby, Luke Morgan, and Alice Niemeyer. [doi](https://doi.org/10.1016/j.jpaa.2017.11.006)
 49. On the circular altitude of a graph,  
 Australasian Journal of Combinatorics 72 (2018), no. 2, pp. 357 -- 368,  
 with Brian Corr, Alice Devillers, Daniel Hawtin, Irene Pivotto, and Eric Swartz. [doi](https://doi.org/10.1016/j.jpaa.2017.11.006) 
@@ -268,9 +268,14 @@ with Anurag Bishnoi, Ferdinand Ihringer, and Ananthakrishnan Ravi. [arxiv](https
 - FinInG: a package for finite incidence geometry,   
 with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavrauw.
 
+## Preprints
+
+- On the association schemes of perfect matchings and their designs,  
+with Lukas Klawuhn. [arxiv](https://arxiv.org/abs/2507.00813)
+
+
 ## In preparation
 
-- On the association schemes of perfect matchings and their designs, with Lukas Klawuhn.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons
