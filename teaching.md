@@ -7,7 +7,7 @@ title: Teaching
 
 ### 2025
 
-- For the first six weeks of Semester 1, I will be at The University of Canterbury (NZ) teaching [MATH320](https://courseinfo.canterbury.ac.nz/GetCourseDetails.aspx?course=MATH320&occurrence=25S1(C)&year=2025). This is part of a [Visiting Erskine Fellowship](https://www.canterbury.ac.nz/about-uc/what-we-do/teaching/erskine-programme/erskine-fellowship).
+- For the first six weeks of Semester 1, I was at The University of Canterbury (NZ) teaching [MATH320](https://courseinfo.canterbury.ac.nz/GetCourseDetails.aspx?course=MATH320&occurrence=25S1(C)&year=2025). This is part of a [Visiting Erskine Fellowship](https://www.canterbury.ac.nz/about-uc/what-we-do/teaching/erskine-programme/erskine-fellowship).
 - [MATH1720](http://handbooks.uwa.edu.au/unitdetails?code=MATH1720) (Mathematics Fundamentals), Semester 1
 - [MATH1014](http://handbooks.uwa.edu.au/unitdetails?code=MATH1014) (Algebra), Semester 2
 
@@ -20,7 +20,7 @@ title: Teaching
 
 ### 2023 
 
-I will be on sabbatical in the first semester of 2023. For second semester, I'll be teaching the following:
+I was on sabbatical in the first semester of 2023. 
 
 - [MATH1014](http://handbooks.uwa.edu.au/unitdetails?code=MATH1014) (Algebra), Semester 2
 - [MATH4033](http://handbooks.uwa.edu.au/unitdetails?code=MATH4033)  (Advanced Topics in Pure Mathematics), Semester 2
@@ -31,7 +31,7 @@ I will be on sabbatical in the first semester of 2023. For second semester, I'll
 - [MATH1720](http://handbooks.uwa.edu.au/unitdetails?code=MATH1720) (Mathematics Fundamentals), Semester 1
 - [MATH4033](http://handbooks.uwa.edu.au/unitdetails?code=MATH4033)  (Advanced Topics in Pure Mathematics), Semester 2
 
-MATH4033 will be on algebraic graph theory and association schemes, this year.
+MATH4033 was on algebraic graph theory and association schemes, this year.
 
 ### 2021 
 
@@ -39,7 +39,7 @@ MATH4033 will be on algebraic graph theory and association schemes, this year.
 - [MATH4031](http://handbooks.uwa.edu.au/unitdetails?code=MATH4031) (Algebra), Semester 1
 - [MATH1720](http://handbooks.uwa.edu.au/unitdetails?code=MATH1720) (Mathematics Fundamentals), Semester 2
 
-MATH4031 is a primer on Algebraic Geometry, this year.
+MATH4031 was a primer on Algebraic Geometry, this year.
 
 ### 2020 
 
@@ -47,11 +47,11 @@ MATH4031 is a primer on Algebraic Geometry, this year.
 - [MATH4031](http://handbooks.uwa.edu.au/unitdetails?code=MATH4031) (Algebra), Semester 1
 - [MATH1720](http://handbooks.uwa.edu.au/unitdetails?code=MATH1720) (Mathematics Fundamentals), Semester 2
 
-MATH4031 is a primer on Algebraic Geometry, this year.
+MATH4031 was a primer on Algebraic Geometry, this year.
 
 ### 2019 
 
-- [MATH1601](http://handbooks.uwa.edu.au/unitdetails?code=MATH1601) (Mathematics: from the Renaissance to modern day), Semester 1, more details can be found [here](http://school.maths.uwa.edu.au/~bamberg/MATH1601.html).
+- [MATH1601](http://handbooks.uwa.edu.au/unitdetails?code=MATH1601) (Mathematics: from the Renaissance to modern day), Semester 1.
 - [STAT1400](http://handbooks.uwa.edu.au/unitdetails?code=MATH3033) (Statistics for Science), Semester 1
 
 (I was on long-service leave in Semester 2).

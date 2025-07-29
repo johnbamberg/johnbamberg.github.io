@@ -241,8 +241,7 @@ Journal of Pure and Applied Algebra 229(9) (2025), 108015,
 with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger. [doi](https://doi.org/10.1016/j.jpaa.2025.108015)
 76. Exploiting degeneracy in projective geometric algebra,   
 Advances in Applied Clifford Algebra 35(34) (2025),  
-with Jeff Saunders. [doi](https://doi.org/10.1007/s00006-025-01392-9)
-
+with Jeff Saunders. [doi](https://doi.org/10.1007/s00006-025-01392-9) 
 
 ## Books
 
