@@ -264,13 +264,13 @@ with Geertrui Van de Voorde. [arxiv](https://arxiv.org/abs/2505.05827)
 with Jesse Lansdown. [arxiv](https://arxiv.org/abs/2407.07352)
 - Ramsey numbers and extremal structures in polar spaces,  
 with Anurag Bishnoi, Ferdinand Ihringer, and Ananthakrishnan Ravi. [arxiv](https://arxiv.org/abs/2406.03043)
-- FinInG: a package for finite incidence geometry,   
-with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavrauw.
+- On the association schemes of perfect matchings and their designs,  
+with Lukas Klawuhn. [arxiv](https://arxiv.org/abs/2507.00813)
 
 ## Preprints
 
-- On the association schemes of perfect matchings and their designs,  
-with Lukas Klawuhn. [arxiv](https://arxiv.org/abs/2507.00813)
+- FinInG: a package for finite incidence geometry,   
+with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavrauw. [arxiv](https://arxiv.org/abs/1606.05530)
 
 
 ## In preparation
