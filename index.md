@@ -3,7 +3,7 @@ layout: default
 title: Home Page
 ---
 
-![Me](john31.png)
+![Me](JohnBamberg.jpg)
 ![Poncelet's Porism](ponceletporism.gif)
 
 I am a mathematician in the [Centre for the Mathematics of Symmetry and Computation](http://cmsc.io) within the [Department of Mathematics and Statistics](https://www.uwa.edu.au/schools/physics-mathematics-computing/mathematics-and-stats) at the University of Western Australia.
