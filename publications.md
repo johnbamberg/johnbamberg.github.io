@@ -255,15 +255,18 @@ with Tim Penttila
 - Spreading primitive groups of diagonal type do not exist,  
 Proceedings A of the Royal Society of Edinburgh,  
 with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.2024.53)
+- On the Hermitian Veronesean,  
+Finite Fields and their Applications,  
+with Geertrui Van de Voorde. [arxiv](https://arxiv.org/abs/2505.05827)
+
 
 ## Submitted
 
-- On the Hermitian Veronesean,  
-with Geertrui Van de Voorde. [arxiv](https://arxiv.org/abs/2505.05827)
+- Ramsey numbers and extremal structures in polar spaces,   
+<!-- European Journal of Combinatorics, --> 
+with Anurag Bishnoi, Ferdinand Ihringer, and Ananthakrishnan Ravi. [arxiv](https://arxiv.org/abs/2406.03043)
 - The synchronisation hierarchy via coherent configurations,  
 with Jesse Lansdown. [arxiv](https://arxiv.org/abs/2407.07352)
-- Ramsey numbers and extremal structures in polar spaces,  
-with Anurag Bishnoi, Ferdinand Ihringer, and Ananthakrishnan Ravi. [arxiv](https://arxiv.org/abs/2406.03043)
 - On the association schemes of perfect matchings and their designs,  
 with Lukas Klawuhn. [arxiv](https://arxiv.org/abs/2507.00813)
 

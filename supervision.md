@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: page
 title: Supervision
 ---
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 # Research projects
 
@@ -41,16 +39,14 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 ### Current students
 
-- Vishnu Arumugam, PhD, *Groups of Lie Type Acting on Generalised Quadrangles*, co-supervised with Michael Giudici, 2022 --
+- Vishnu Arumugam, PhD, *Groups of Lie Type Acting on Generalised Quadrangles*, co-supervised with Michael Giudici, 2022 -- 2025
 - Jacob Smith, PhD, *TBA*, co-supervised with Michael Giudici, 2023 --
-- James Jensen, Honours, *TBA*.
-- Jake Rigg, Honours, *TBA*.
-
 
 ### Past students
 
 #### PhD Students ####
 
+ 1. Vishnu Arumugam, PhD, *Groups of Lie Type Acting on Generalised Quadrangles*, co-supervised with Michael Giudici, 2022 -- 2025.  
  1. Jesse Lansdown, PhD, *Designs in finite geometry*, co-supervised with Gordon Royle and Alice Niemeyer (cotutelle with Aachen), 2015 -- 2020
  2. Mark Ioppolo, PhD, *Codes in Johnson graphs associated with quadratic forms over $\mathbb{F}_2$*,  co-supervised with Cheryl Praeger and Alice Devillers, 2012 -- 2020.
  3. Jon Xu, PhD, *Chevalley groups, Schubert varieties, and finite geometry*, co-supervised with Arun Ram, 2012 -- 2017.
@@ -69,6 +65,8 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 #### Honours Students ####
 
+1. James Jensen, Honours, *Finite-dimensional Hopf algebras*, 2025. 
+2. Jake Rigg, Honours, *Bounding cliques in graphs*, 2025. 
 1. Jolyon Joyce, *The incidence-based foundation of hyperbolic planes over arbitrary and Euclidean ordered fields*, 2024.
 2. Jeff Saunders, *Affine geometric algebra*, 2024.
 3. Huxley Berry, *Finite abstract ovals*, co-supervised with Luke Morgan, 2024.

@@ -5,6 +5,13 @@ title: Teaching
 
 # Teaching
 
+### 2026
+- [MATH3035](http://handbooks.uwa.edu.au/unitdetails?code=MATH3035) (Algebraic Geometry and Ring Theory), Semester 2
+- [MATH4033](http://handbooks.uwa.edu.au/unitdetails?code=MATH4033) (Topics in Combinatorics), Semester 2
+
+MATH4033 will be on algebraic graph theory and association schemes.
+
+
 ### 2025
 
 - For the first six weeks of Semester 1, I was at The University of Canterbury (NZ) teaching [MATH320](https://courseinfo.canterbury.ac.nz/GetCourseDetails.aspx?course=MATH320&occurrence=25S1(C)&year=2025). This is part of a [Visiting Erskine Fellowship](https://www.canterbury.ac.nz/about-uc/what-we-do/teaching/erskine-programme/erskine-fellowship).
