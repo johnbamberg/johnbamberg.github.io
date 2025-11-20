@@ -3392,10 +3392,10 @@ to be completed
 
 ### Honorary Research Fellows
 
-- Mike Fisher
-- Nandita Rath
-- Kaipillil Vijayan
-- George Yeo
+- M. E. Fisher
+- N. Rath
+- K. Vijayan
+- G. Yeo
 
 
 ## 2010
