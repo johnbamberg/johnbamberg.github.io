@@ -30,7 +30,7 @@ I am a mathematician in the [Centre for the Mathematics of Symmetry and Computat
 #### [Errata and addenda](errata.html)
 #### [Are you looking for a supervisor?](supervision.html)
 #### [Teaching](teaching.html)  
-         
+#### [Historical list of members of the Department of Mathematics and Statistics](mathsstats-staff-by-year.html)
 ---
 
 [Research Repository page](https://research-repository.uwa.edu.au/en/persons/john-bamberg)  
