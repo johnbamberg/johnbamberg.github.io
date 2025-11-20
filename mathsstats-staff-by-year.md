@@ -2772,16 +2772,11 @@ to be completed
 
 ## 1999
 
-### Professor of Applied Mathematics
+
+### Professors
 
 - A. I. Mees
-
-### Professor of Mathematics (Probability and Statistics)
-
 - A. J. Baddeley
-
-### Professor of Pure Mathematics
-
 - C. E. Praeger
 
 ### Associate Professors
@@ -3342,17 +3337,15 @@ to be completed
 - N. Rath
 - G. Yeo
 
-
 ## 2009
 
 ### Professors
 
 - Adrian J. Baddeley
 - Andrew Bassom
+- J. Lyle Noakes
 - Cheryl E. Praeger
-- Valery T. Stefanov
-- Luchezar N. Stoyanov
-- Kaipillil Vijayan
+- Song Wang
 
 ### Associate Professors
 
@@ -3361,7 +3354,9 @@ to be completed
 - Cai Heng Li
 - William E. Longstaff
 - Anthony G. Pakes
-- Song Wang
+- Gordon Royle
+- Valery T. Stefanov
+- Luchezar N. Stoyanov
 
 ### Senior Lecturers
 
@@ -3370,6 +3365,7 @@ to be completed
 - Grant Keady
 - Tsoy-Wo Ma
 - Robin K. Milne
+- Gopalan Nair
 - Alice Niemeyer
 - Robert P. Sullivan
 
@@ -3378,17 +3374,17 @@ to be completed
 - Michael Alder
 - Wally Andrioni
 - Nazim R. Khan
+- John Lau
 - Pamela McCaskie
-- Elena Pasternak
-
-### Research Fellow
-
 - Kevin Murray
+- Elena Pasternak
 
 ### Research Associates
 
+- John Bamberg
+- Alice Devillers
 - Thomas Stemler
-- Jiying Yin
+- Sukru Yalcinkaya
 
 ### Australian Postdoctoral Fellows
 
@@ -3396,242 +3392,215 @@ to be completed
 
 ### Honorary Research Fellows
 
-- M. E. Fisher
-- N. Rath
-- G. Yeo
+- Mike Fisher
+- Nandita Rath
+- Kaipillil Vijayan
+- George Yeo
 
 
 ## 2010
 
-### Professors
 
-- Adrian J. Baddeley
-- Andrew Bassom
-- Alice Niemeyer
-- J. Lyle Noakes
-- Anthony G. Pakes
-- Cheryl E. Praeger
-- Gordon Royle
-- Valery T. Stefanov
-- Luchezar N. Stoyanov
+### Head of School/Winthrop Professor
 
-### Associate Professors
+- Bassom, Andrew
 
-- Neville D. Fowkes
-- Desmond L. Hill
-- Leslie S. Jennings
-- Cai Heng Li
-- Robin K. Milne
-- Gopalan Nair
-- Robert P. Sullivan
-- Song Wang
+### Winthrop Professor
 
-### Assistant Professors
+- Noakes, Lyle
+- Wang, Song
 
-- Michael Alder
-- Wally Andrioni
-- John Bamberg
-- Edward Cripps
-- Thomas Stemler
-- Kaipillil Vijayan
+### Winthrop Professor/ARC Federation Fellow
 
-### Senior Lecturers
+- Praeger AM FAA, Cheryl
 
-- Nazim R. Khan
+### Professor
 
-### Lecturers
+- Li, Cai-Heng
+- Longstaff, William
+- Pakes, Anthony
+- Royle, Gordon
+- Stoyanov, Luchezar
 
-- Elena Pasternak
-- Christian Thomas
+### Associate Professor 
 
-### Research Associates
+- Fowkes, Neville	
+- Hill, Des	
+- Keady, Grant	
+- Milne, Robin	
+- Nair, Gopalan	
 
-- Kevin Murray
-- Nandita Rath
+### Australian Research Fellow/Research Associate Professor
+
+- Giudici Michael
+
+### Senior Lecturer
+
+- Sullivan, Bob
+
+### Assistant Professor
+
+- Alder, Mike
+- Andrioni, Wally
+- Cripps, Edward
+- Khan, Nazim
+- Lau, John
+- McCaskie, Pamela
+- Murray, Kevin
+- Stemler, Thomas
+- Su, Steve
 
 ### Research Assistant Professor
 
-- Alice Devillers
+- Bamberg, John
+- Devillers, Alice
 
-### Honorary Research Fellows
+### Research Associate
 
-- Michael Fisher
-- Kaipillil Vijayan
+- Thomas, Christian
+- Yalcinkaya, Sukru
 
+### Honorary Research Fellow
+
+Fisher, Mike		
+Rath, Nandita
+Vijayan, Kaipillil
+Yeo, Geoffrey	
+
+
+
+<!--
 
 ## 2011
 
-### Professors
+### Head of School/Winthrop Professor
 
-- Adrian J. Baddeley
-- Andrew Bassom
-- Alice Niemeyer
-- J. Lyle Noakes
-- Anthony G. Pakes
-- Cheryl E. Praeger
-- Gordon Royle
-- Valery T. Stefanov
-- Luchezar N. Stoyanov
+- Bassom, Andrew
 
-### Associate Professors
+### Assistant Professor
 
-- Neville Fowkes
-- Des Hill
-- Les Jennings
-- Cai Heng Li
-- Robin Milne
-- Gopalan Nair
-- Bob Sullivan
-- Song Wang
+- Alder, Mike
+- Andrioni, Wally
+- Cripps, Edward
+- Khan, Nazim
+- Lau, John
+- McCaskie, Pamela
+- Murray, Kevin
+- Stemler, Thomas
 
-### Assistant Professors
+### Lecturer
 
-- Mike Alder
-- Edward Cripps
-- Nazim Khan
-- Kevin Murray
-- Thomas Stemler
-- Kaipillil Vijayan
+- Giudici, Michael
+- Niemeyer, Alice
+- Yin, Jiying
 
-### Lecturers
+### Professor
 
-- Alice Devillers
-- Elena Pasternak
-- Christian Thomas
+- Praeger AM FAA, Cheryl
+- Wang, Song
 
-### Honorary Fellow
+### Research Associate
 
-- Kathleen Chindarsi
+- Fawcett, Joanna
+- Nair, Gopalan
+- Pivotto, Irene
+- Rakshit, Suman
 
-### Research Associates
+### Senior Honorary Research Fellow
 
-- Nandita Rath
+- Fisher, Mike
 
-### Honorary Research Fellows
+### Winthrop Professor/ARC Federation Fellow
 
-- Mike Fisher
-- Kaipillil Vijayan
-
-### Research Assistant / Australian Research Fellow
-
-- Michael Giudici
+- Praeger AM FAA, Cheryl
 
 
 ## 2012
 
-### Professors
+### Head of School/Winthrop Professor
 
-- Adrian J. Baddeley
-- Andrew Bassom
-- Les Jennings
-- Alice Niemeyer
-- Lyle Noakes
-- Tony Pakes
-- Cheryl Praeger
-- Gordon Royle
-- Valery Stefanov
-- Luchezar Stoyanov
+- Bassom, Andrew
 
-### Associate Professors
+### Assistant Professor
 
-- Neville Fowkes
-- Des Hill
-- Russell John
-- Gopalan Nair
-- Bob Sullivan
-- Song Wang
+- Alder, Mike
+- Andrioni, Wally
+- Cripps, Edward
+- Khan, Nazim
+- Lau, John
+- McCaskie, Pamela
+- Murray, Kevin
+- Stemler, Thomas
 
-### Assistant Professors
+### Lecturer
 
-- Edward Cripps
-- Nazim Khan
-- John Lau
-- Kevin Murray
-- Thomas Stemler
+- Giudici, Michael
+- Niemeyer, Alice
+- Yin, Jiying
 
-### Lecturers
+### Professor
 
-- Alice Devillers
-- Nazim Khan
-- Elena Pasternak
-- Christian Thomas
-- Tomasz Popiel
+- Praeger AM FAA, Cheryl
+- Wang, Song
 
-### Honorary Fellow
+### Research Associate
 
-- Kathleen Chindarsi
+- Fawcett, Joanna
+- Nair, Gopalan
+- Pivotto, Irene
+- Rakshit, Suman
+- Pieper, Neil
 
-### Research Associates
+### Senior Honorary Research Fellow
 
-- Neil Gillespie
-- Irene Pivotto
-- Shu-Jiao Song
+- Fisher, Mike
 
-### Honorary Research Fellows
+### Winthrop Professor/ARC Federation Fellow
 
-- Mike Fisher
-- Nandita Rath
-- Kaipillil Vijayan
-- Guang Yeo
+- Praeger AM FAA, Cheryl
 
 
 ## 2013
 
-### Professors
+### Head of School/Winthrop Professor
 
-- Adrian J. Baddeley
-- Andrew Bassom
-- Les Jennings
-- Alice Niemeyer
-- Lyle Noakes
-- Tony Pakes
-- Cheryl Praeger
-- Gordon Royle
-- Valery Stefanov
-- Luchezar Stoyanov
+- Bassom, Andrew
 
-### Associate Professors
+### Assistant Professor
 
-- Neville Fowkes
-- Des Hill
-- Russell John
-- Gopalan Nair
-- Song Wang
+- Cripps, Edward
+- Khan, Nazim
+- Lau, John
+- McCaskie, Pamela
+- Murray, Kevin
+- Stemler, Thomas
 
-### Assistant Professors
+### Lecturer
 
-- Edward Cripps
-- Nazim Khan
-- John Lau
-- Kevin Murray
-- Thomas Stemler
+- Giudici, Michael
+- Niemeyer, Alice
+- Yin, Jiying
 
-### Lecturers
+### Professor
 
-- Alice Devillers
-- Nazim Khan
-- Tomasz Popiel
+- Praeger AM FAA, Cheryl
+- Wang, Song
 
-### Research Associates
+### Research Associate
 
-- Joanna Fawcett
-- Neil Gillespie
-- Stephen Glasby
-- Irene Pivotto
-- Suman Rakshit
-- Shu-Jiao Song
-- Eric Swartz
+- Fawcett, Joanna
+- Nair, Gopalan
+- Pivotto, Irene
+- Rakshit, Suman
+- Pieper, Neil
 
-### Honorary Fellow
+### Senior Honorary Research Fellow
 
-- Kathleen Chindarsi
+- Fisher, Mike
 
-### Honorary Research Fellows
+### Winthrop Professor/ARC Federation Fellow
 
-- Mike Fisher
-- Nandita Rath
-- Kaipillil Vijayan
-- Guang Yeo
+- Praeger AM FAA, Cheryl
 
 
 ## 2014
@@ -3650,55 +3619,60 @@ to be completed
 - Popiel, Tomasz
 - Rakshit, Suman
 - Smith, Simon
+- Wong, Sim Wee
+
+### Research Assistant
+
+- Denham, Luke
+- Gallivan, Alice
 
 ### Senior Lecturer
 
 - Cripps, Edward
 - Devillers, Alice
-- Murray, Kevin
+- Stemler, Thomas
+
+### Adjunct Professor
+
+- Haynes, Richard
+- Jones, Mike
+- Vijayan, Kaipillil
+
+### Adjunct Senior Lecturer
+
+- Denton, Stephen
+- Oxer, Alexander
+
+### Adjunct Associate Professor
+
+- Smith, Michael
 
 ### Assistant Professor
 
-- Giudici, Michael
-- Khan, Nazim R
-- Pretorius, Louisa
-- Stemler, Thomas
+- Khan, Nazim
+- Lau, John
+- Murray, Kevin
+- Niemeyer, Alice
+- Pieper, Neil
+- Stafford, John
+- Walker, Geoffrey
 - Yin, Jiying
 
 ### Associate Professor
 
-- Li, Cai-Heng
+- John, Russell
 - Milne, Robin
-- Noakes, Lyle
-- O’Shea, Roseanna
-- Pakes, Anthony
-- Praeger, Cheryl
-- Stefanov, Valery
+- Turlach, Berwin
+
+### Professor
+
+- Judd, Kevin
 - Stoyanov, Luchezar
-- Wang, Song
 
-### Lecturer
+### Winthrop Professor
 
-- Lay, Benjamin
-- Pasternak, Elena
-- Peiris, Nisanka
-- Pravnin, Sourav
-- Reichard, Sven
-- Robbins, Kate
-
-### Honorary Research Fellow
-
-- Bamberg, John
-- Brualdi, Richard
-- Finner, Helmut
-- Giannelli, Eugenio
-- Gutin, Gregory
-- Hofman, Jan
-- Kovács, István
-- Muzychuk, Mikhail
-- Schneider, Csaba
-- Wang, Xiao
-- Yeo, Andrea
+- Li, Cai Heng
+- Li, Cai-Heng
 
 
 ## 2015
@@ -3710,58 +3684,50 @@ to be completed
 ### Professor
 
 - Bassom, Andrew
-- Giudici, Michael
-- Li, Cai-Heng
-- Niemeyer, Alice
-- Stoyanov, Luchezar
+- Wang, Song
 
 ### Research Associate
 
 - Bharat, Chrianna
 - Budgeon, Charley
-- Morgan, Luke
-- Pivotto, Irene
-- Prado, Maria
-- Rakshit, Suman
-- Smith, Simon
 
 ### Senior Lecturer
 
 - Cripps, Edward
 - Devillers, Alice
+
+### Adjunct Associate Professor
+
+- Edwards, Michael
+- Nair, Gopalan
+- Turlach, Berwin
+
+### Assistant Professor
+
+- Khan, Nazim
+- Lau, John
 - Murray, Kevin
-- Wang, Song
+- Niemeyer, Alice
+- Walker, Geoffrey
+- Yin, Jiying
+- Zubkov, Vladimir
 
 ### Associate Professor
 
-- Milne, Robin
-- Pakes, Anthony
-- Praeger, Cheryl
-- Stefanov, Valery
+- Giudici, Michael
 
-### Lecturer
+### Adjunct Senior Lecturer
 
-- Lay, Benjamin
-- Pasternak, Elena
-- Peiris, Nisanka
-- Pravnin, Sourav
-- Reichard, Sven
-- Robbins, Kate
-- Rodriguez Segura, Raúl
-- Sammartano, Alessandro
-- Sheard, Anne
+- Denton, Stephen
 
-### Honorary Research Fellow
+### Adjunct Professor
 
-- Bamberg, John
-- Brualdi, Richard
-- Finner, Helmut
-- Gutin, Gregory
-- Kovács, István
-- Muzychuk, Mikhail
-- Schneider, Csaba
-- Wang, Xiao
-- Yeo, Andrea
+- Fisher, Mike
+- Vijayan, Kaipillil
+
+### Senior Honorary Research Fellow
+
+- Praeger AM, Cheryl
 
 
 ## 2016
@@ -3773,22 +3739,11 @@ to be completed
 ### Professor
 
 - Abarzhi, Snezhana
-- Bassom, Andrew
-- Giudici, Michael
-- Li, Cai Heng
-- Li, Cai-Heng
-- Niemeyer, Alice
-- Praeger, Cheryl
-- Stoyanov, Luchezar
+- Wang, Song
 
 ### Research Associate
 
 - Budgeon, Charley
-- Morgan, Luke
-- Pivotto, Irene
-- Prado, Maria
-- Rakshit, Suman
-- Smith, Simon
 
 ### Resseach Fellow
 
@@ -3798,37 +3753,36 @@ to be completed
 
 - Cripps, Edward
 - Devillers, Alice
+
+### Assistant Professor
+
+- Khan, Nazim
+- Lau, John
 - Murray, Kevin
-- Wang, Song
+- Niemeyer, Alice
+- Walker, Geoffrey
+- Yin, Jiying
+- Zubkov, Vladimir
 
-### Associate Professor
-
-- Milne, Robin
-- Pakes, Anthony
-- Stefanov, Valery
-
-### Honorary Research Fellow
+### Associate Professor/Future Fellow
 
 - Bamberg, John
-- Brualdi, Richard
-- Gutin, Gregory
-- Kovács, István
-- Muzychuk, Mikhail
-- Schneider, Csaba
-- Wang, Xiao
-- Yeo, Andrea
 
-### Lecturer
+### Adjunct Associate Professor
 
-- Lay, Benjamin
-- May, Alice
-- Pasternak, Elena
-- Peiris, Nisanka
-- Pravnin, Sourav
-- Reichard, Sven
-- Robbins, Kate
-- Sammartano, Alessandro
-- Sheard, Anne
-- Suarez, Federico
+- Edwards, Michael
+- Nair, Gopalan
+- Turlach, Berwin
 
+### Adjunct Senior Lecturer
 
+- Denton, Stephen
+- Firth, Martin
+- Glasby, Stephen
+
+### Adjunct Professor
+
+- Fisher, Mike
+- Vijayan, Kaipillil
+
+-->
