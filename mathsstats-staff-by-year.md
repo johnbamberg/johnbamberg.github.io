@@ -3510,7 +3510,6 @@ Yeo, Geoffrey
 
 
 
-<!--
 
 ## 2011
 
@@ -3518,43 +3517,67 @@ Yeo, Geoffrey
 
 - Bassom, Andrew
 
+### Winthrop Professor
+
+- Wang, Song
+- Noakes, Lyle
+
+### Winthrop Professor/ARC Federation Fellow
+
+- Praeger, Cheryl
+
+## Professor
+
+- Jennings, Les
+- Judd, Kevin
+- Niemeyer, Alice
+- Pakes, Tony
+- Royle, Gordon
+- Stoyanov, Latchezar
+- Volodin, Andrei
+
+### Associate Professor
+
+- Devillers, Alice	
+- Fowkes, Neville	
+- Hill, Des
+- Milne, Robin	
+- Nair, Gopalan	
+- Turlach, Berwin
+
+### Australian Research Fellow/Research Associate Professor
+
+- Giudici, Michael
+
+### Research Associate Professor
+
+- Bamberg, John
+
 ### Assistant Professor
 
-- Alder, Mike
 - Andrioni, Wally
 - Cripps, Edward
 - Khan, Nazim
 - Lau, John
-- McCaskie, Pamela
 - Murray, Kevin
 - Stemler, Thomas
+- Su, Steve
 
-### Lecturer
+### Lecturer/Researhc Associate
 
-- Giudici, Michael
-- Niemeyer, Alice
-- Yin, Jiying
+- Popiel, Tomasz
 
-### Professor
+### Honorary Research Fellow
 
-- Praeger AM FAA, Cheryl
-- Wang, Song
+- Rath, Nandita
+- Vijayan, Kaipillil
+- Yeo, Geoffrey
 
-### Research Associate
+### Honorary Fellow
 
-- Fawcett, Joanna
-- Nair, Gopalan
-- Pivotto, Irene
-- Rakshit, Suman
+- Chindarsi, Kathleen
 
-### Senior Honorary Research Fellow
-
-- Fisher, Mike
-
-### Winthrop Professor/ARC Federation Fellow
-
-- Praeger AM FAA, Cheryl
-
+<!--
 
 ## 2012
 
