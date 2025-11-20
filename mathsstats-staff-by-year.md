@@ -7,6 +7,8 @@ title: Maths & Stats staff by year
 
 _Staff are listed in each year during which their appointment was active._
 
+Lists are incomplete after 1993 and are still in progress.
+
 ## 1929
 
 ### Professor
@@ -2737,7 +2739,7 @@ _Staff are listed in each year during which their appointment was active._
 - T.W. Ma
 
 
-## 1994
+<!--## 1994
 
 ### Associate Professor
 
@@ -3294,3 +3296,4 @@ _Staff are listed in each year during which their appointment was active._
 
 - J.L. Noakes
 
+-->
