@@ -2738,562 +2738,551 @@ Lists are incomplete after 1993 and are still in progress.
 - T. Penttila
 - T.W. Ma
 
+## 1994 - 1997
 
-<!--## 1994
-
-### Associate Professor
-
-- P. Schultz
-
-### Senior Lecturer
-
-- G. Keady
-- K. Vijayan
-- N.D. Fowkes
-- R.D. List
-- R.P. Sullivan
-
-### Lecturer
-
-- T.W. Ma
-
-
-## 1995
-
-### Associate Professor
-
-- P. Schultz
-
-### Senior Lecturer
-
-- G. Keady
-- K. Vijayan
-- N.D. Fowkes
-- R.D. List
-- R.P. Sullivan
-
-### Lecturer
-
-- T.W. Ma
-
-
-## 1996
-
-### Associate Professor
-
-- P. Schultz
-
-### Senior Lecturer
-
-- G. Keady
-- K. Vijayan
-- N.D. Fowkes
-- R.D. List
-- R.P. Sullivan
-
-### Lecturer
-
-- T.W. Ma
-
-
-## 1997
-
-### Associate Professor
-
-- P. Schultz
-
-### Senior Lecturer
-
-- G. Keady
-- K. Vijayan
-- N.D. Fowkes
-- R.D. List
-- R.P. Sullivan
-
-### Lecturer
-
-- T.W. Ma
-
+to be completed
 
 ## 1998
 
-### Associate Professor
+### Professors
 
-- J.L. Noakes
-- L.S. Jennings
+- A. I. Mees
+- A. J. Baddeley
+- C. E. Praeger
+
+### Associate Professors
+
+- M. E. Fisher
+- W. E. Longstaff
+- R. A. Maller
+- J. L. Noakes
+- A. G. Pakes
 - P. Schultz
-- R.K. Milne
 
-### Senior Lecturer
+### Senior Lecturers
 
+- S. P. Fitzpatrick
+- N. D. Fowkes
+- L. S. Jennings
 - G. Keady
-- K. Vijayan
-- N.D. Fowkes
-- R.B. McFeat
-- R.D. List
-- R.P. Sullivan
-
-### Lecturer
-
-- F.E. Yeomans
-- J.M. Hopwood
-- M.D. Alder
-- M.E. Fisher
-- T.W. Ma
-
+- R. D. List
+- R. B. McFeat
+- R. K. Milne
+- V. T. Stefanov
 
 ## 1999
 
-### Associate Professor
+### Professor of Applied Mathematics
 
-- J.L. Noakes
-- L.S. Jennings
+- A. I. Mees
+
+### Professor of Mathematics (Probability and Statistics)
+
+- A. J. Baddeley
+
+### Professor of Pure Mathematics
+
+- C. E. Praeger
+
+### Associate Professors
+
+- M. E. Fisher
+- L. S. Jennings
+- W. E. Longstaff
+- R. A. Maller
+- J. L. Noakes
+- A. G. Pakes
 - P. Schultz
-- R.K. Milne
 
-### Senior Lecturer
+### Senior Lecturers
 
+- S. P. Fitzpatrick
+- N. D. Fowkes
 - G. Keady
+- R. D. List
+- R. B. McFeat
+- R. K. Milne
+- V. T. Stefanov
+- L. N. Stoyanov
+- R. P. Sullivan
 - K. Vijayan
-- N.D. Fowkes
-- R.B. McFeat
-- R.D. List
-- R.P. Sullivan
 
-### Lecturer
+### Lecturers
 
-- F.E. Yeomans
-- J.M. Hopwood
-- M.D. Alder
-- M.E. Fisher
-- T.W. Ma
+- M. D. Alder
+- M. L. Hazelton
+- D. L. Hill
+- J. M. Hopwood
+- T.-W. Ma
+- T. Penttila
+- D. Pitney
+- X. G. Yang
+- F. E. Yeomans
 
+### Honorary Research Fellows
+
+- P. B. Chapman
+- B. S. Goh
+- D. G. Hurley
+- A. R. Woods
 
 ## 2000
 
-### Associate Professor
+### Professors
 
-- J.L. Noakes
-- L.S. Jennings
-- R.K. Milne
+- A. I. Mees  
+- A. J. Baddeley  
+- C. E. Praeger  
 
-### Senior Lecturer
+### Associate Professors
 
-- G. Keady
-- K. Vijayan
-- N.D. Fowkes
-- R.B. McFeat
-- R.D. List
-- R.P. Sullivan
+- M. E. Fisher  
+- L. S. Jennings  
+- W. E. Longstaff  
+- R. A. Maller  
+- J. L. Noakes  
+- A. G. Pakes  
+- P. Schultz  
 
-### Lecturer
+### Senior Lecturers
 
-- F.E. Yeomans
-- J.M. Hopwood
-- M.D. Alder
-- M.E. Fisher
-- T.W. Ma
+- S. P. Fitzpatrick  
+- N. D. Fowkes  
+- G. Keady  
+- R. D. List  
+- R. B. McFeat  
+- R. K. Milne  
+- V. T. Stefanov  
+- L. N. Stoyanov  
+- R. P. Sullivan  
+- K. Vijayan  
+
+### Lecturers
+
+- M. D. Alder  
+- J. Gao  
+- M. L. Hazelton  
+- D. L. Hill  
+- J. M. Hopwood  
+- K. Judd  
+- T.-W. Ma  
+- T. Penttila  
+- D. Pitney  
+- B. Turlach  
+- S. Wang  
+- F. E. Yeomans  
+
+### Research Fellows
+
+- U. Hahn  
+- C. H. Li  
+- Y. Li  
+- A. Niemeyer  
+- B. Pilgram  
+
+### Honorary Research Fellows
+
+- P. B. Chapman  
+- D. G. Hurley  
+- A. R. Woods  
+
 
 
 ## 2001
 
-### Associate Professor
+### Professors
 
-- J.L. Noakes
-- L.S. Jennings
-- R.K. Milne
+- A. I. Mees  
+- A. J. Baddeley  
+- C. E. Praeger  
 
-### Senior Lecturer
+### Associate Professors
 
-- G. Keady
-- K. Vijayan
-- N.D. Fowkes
-- R.B. McFeat
-- R.D. List
-- R.P. Sullivan
+- M. E. Fisher  
+- L. S. Jennings  
+- W. E. Longstaff  
+- J. L. Noakes  
+- A. G. Pakes  
+- T. Penttila  
 
-### Lecturer
+### Senior Lecturers
 
-- F.E. Yeomans
-- J.M. Hopwood
-- M.D. Alder
-- M.E. Fisher
-- T.W. Ma
+- S. P. Fitzpatrick  
+- N. D. Fowkes  
+- G. Keady  
+- R. D. List  
+- R. B. McFeat  
+- R. K. Milne  
+- V. T. Stefanov  
+- L. N. Stoyanov  
+- R. P. Sullivan  
+- K. Vijayan  
+
+### Lecturers
+
+- J. Gao  
+- M. L. Hazelton  
+- D. L. Hill  
+- J. M. Hopwood  
+- K. Judd  
+- T.-W. Ma  
+- A. Niemeyer  
+- D. Pitney  
+- B. Turlach  
+- S. Wang  
+- F. E. Yeomans  
+
+### Research Fellow
+
+- C. H. Li  
+
+### Honorary Research Fellows
+
+- P. B. Chapman  
+- P. Schultz  
+- A. R. Woods  
 
 
 ## 2002
 
-### Associate Professor
+### Professors
 
-- J.L. Noakes
-- L.S. Jennings
-- R.K. Milne
+- A. I. Mees  
+- A. J. Baddeley  
+- C. E. Praeger  
 
-### Senior Lecturer
+### Associate Professors
 
-- G. Keady
-- K. Vijayan
-- N.D. Fowkes
-- R.B. McFeat
-- R.D. List
-- R.P. Sullivan
+- M. E. Fisher  
+- L. S. Jennings  
+- W. E. Longstaff  
+- J. L. Noakes  
+- A. G. Pakes  
+- T. Penttila  
+- K. Vijayan  
 
-### Lecturer
+### Senior Lecturers
 
-- F.E. Yeomans
-- J.M. Hopwood
-- M.D. Alder
-- T.W. Ma
+- S. P. Fitzpatrick  
+- N. D. Fowkes  
+- M. L. Hazelton  
+- J. M. Hopwood  
+- G. Keady  
+- R. D. List  
+- R. B. McFeat  
+- R. K. Milne  
+- V. T. Stefanov  
+- L. N. Stoyanov  
+- R. P. Sullivan  
+- S. Wang  
+
+### Lecturers
+
+- J. Gao  
+- D. L. Hill  
+- K. Judd  
+- T.-W. Ma  
+- A. Niemeyer  
+- B. Turlach  
+- F. E. Yeomans  
+
+### Research Fellows
+
+- C. H. Li  
+- N. Rath  
+
+### Honorary Research Fellows
+
+- P. B. Chapman  
+- P. Schultz  
+- A. R. Woods  
 
 
 ## 2003
 
-### Associate Professor
+### Professors
 
-- J.L. Noakes
-- L.S. Jennings
-- R.K. Milne
+- A. J. Baddeley  
+- C. E. Praeger  
 
-### Senior Lecturer
+### Associate Professors
 
-- G. Keady
-- K. Vijayan
-- N.D. Fowkes
-- R.B. McFeat
-- R.D. List
-- R.P. Sullivan
+- L. S. Jennings  
+- W. E. Longstaff  
+- J. L. Noakes  
+- A. G. Pakes  
+- T. Penttila  
+- K. Vijayan  
 
-### Lecturer
+### Senior Lecturers
 
-- F.E. Yeomans
-- J.M. Hopwood
-- M.D. Alder
-- T.W. Ma
+- D. Anderson  
+- S. P. Fitzpatrick  
+- N. D. Fowkes  
+- J. Gao  
+- M. L. Hazelton  
+- J. M. Hopwood  
+- G. Keady  
+- R. D. List  
+- R. B. McFeat  
+- R. K. Milne  
+- V. T. Stefanov  
+- L. N. Stoyanov  
+- R. P. Sullivan  
+- S. Wang  
 
+### Lecturers
+
+- M. Alder  
+- D. L. Hill  
+- K. Judd  
+- T.-W. Ma  
+- A. Niemeyer  
+- B. Turlach  
+- F. E. Yeomans  
+
+### Research Fellows
+
+- C. H. Li  
+- N. Rath  
+
+### Honorary Research Fellows
+
+- P. B. Chapman  
+- M. E. Fisher  
+- P. Schultz  
+- A. R. Woods  
 
 ## 2004
 
-### Professor
+### Professors
 
-- J.L. Noakes
+- A. J. Baddeley  
+- C. E. Praeger  
 
-### Associate Professor
+### Professorial Fellow
 
-- L.S. Jennings
-- R.K. Milne
+- J. L. Noakes  
 
-### Senior Lecturer
+### Associate Professors
 
-- G. Keady
-- K. Vijayan
-- N.D. Fowkes
-- R.P. Sullivan
+- L. S. Jennings  
+- K. Judd  
+- C. H. Li  
+- W. E. Longstaff  
+- A. G. Pakes  
+- T. Penttila  
+- L. N. Stoyanov  
+- K. Vijayan  
 
-### Lecturer
+### Senior Lecturers
 
-- F.E. Yeomans
-- J.M. Hopwood
-- M.D. Alder
-- T.W. Ma
+- D. Anderson  
+- S. P. Fitzpatrick  
+- N. D. Fowkes  
+- J. Gao  
+- M. L. Hazelton  
+- J. Hopwood  
+- G. Keady  
+- R. K. Milne  
+- V. T. Stefanov  
+- R. P. Sullivan  
+- S. Wang  
+
+### Lecturers
+
+- M. Alder  
+- D. L. Hill  
+- T.-W. Ma  
+- A. Niemeyer  
+- B. Turlach  
+- F. E. Yeomans  
+
+### Research Associate
+
+- K. Murray  
+
+### Honorary Research Fellows
+
+- P. B. Chapman  
+- M. E. Fisher  
+- B. S. Goh  
+- B. Madsen  
+- N. Rath  
+- P. Schultz  
+- G. Yeo  
+
 
 
 ## 2005
 
-### Professor
+### Professors
 
-- J.L. Noakes
+- A. J. Baddeley  
+- A. Bassom  
+- C. E. Praeger  
 
-### Associate Professor
+### Professorial Fellow
 
-- L.S. Jennings
-- R.K. Milne
+- J. L. Noakes  
 
-### Senior Lecturer
+### Associate Professors
 
-- G. Keady
-- K. Vijayan
-- N.D. Fowkes
-- R.P. Sullivan
+- L. S. Jennings  
+- K. Judd  
+- C. H. Li  
+- W. E. Longstaff  
+- A. G. Pakes  
+- T. Penttila  
+- V. T. Stefanov  
+- L. N. Stoyanov  
+- K. Vijayan  
+- S. Wang  
 
-### Lecturer
+### Senior Lecturers
 
-- F.E. Yeomans
-- J.M. Hopwood
-- M.D. Alder
-- T.W. Ma
+- D. Anderson  
+- N. D. Fowkes  
+- J. Gao  
+- M. L. Hazelton  
+- G. Keady  
+- T.-W. Ma  
+- R. K. Milne  
+- A. Niemeyer  
+- R. P. Sullivan  
+
+### Lecturers
+
+- M. Alder  
+- D. L. Hill  
+- N. R. Khan  
+- B. Turlach  
+- F. E. Yeomans  
+
+### Research Associate
+
+- K. Murray  
+
+### Australian Postdoctoral Fellows
+
+- J. Bamberg  
+- M. R. Giudici  
+
+### Honorary Research Fellows
+
+- P. B. Chapman  
+- M. E. Fisher  
+- B. S. Goh  
+- B. Madsen  
+- N. Rath  
+- P. Schultz  
+- G. Yeo  
 
 
 ## 2006
 
-### Professor
+### Professors
 
-- J.L. Noakes
+- Adrian J. Baddeley  
+- Andrew Bassom  
+- J. Lyle Noakes  
+- Cheryl E. Praeger  
 
-### Associate Professor
+### Professorial Fellow
 
-- L.S. Jennings
-- R.K. Milne
+- Jiti Gao  
 
-### Senior Lecturer
+### Associate Professors
 
-- G. Keady
-- K. Vijayan
-- N.D. Fowkes
-- R.P. Sullivan
+- Leslie S. Jennings  
+- Kevin Judd  
+- Cai Heng Li  
+- William E. Longstaff  
+- Anthony G. Pakes  
+- Timothy Penttila  
+- Valery T. Stefanov  
+- Luchezar N. Stoyanov  
+- Kaipillil Vijayan  
+- Song Wang  
 
-### Lecturer
+### Senior Lecturers
 
-- F.E. Yeomans
-- J.M. Hopwood
-- M.D. Alder
-- T.W. Ma
+- Neville D. Fowkes  
+- Grant Keady  
+- Tsoy-Wo Ma  
+- Robin K. Milne  
+- Alice Niemeyer  
+- Robert P. Sullivan  
+
+### Lecturers
+
+- Michael Alder  
+- Desmond L. Hill  
+- Nazim R. Khan  
+- Berwin Turlach  
+- Frank E. Yeomans  
+
+### Research Associate
+
+- Kevin Murray  
+
+### Australian Postdoctoral Fellows
+
+- John Bamberg  
+- Michael R. Giudici  
+
+### Honorary Research Fellows
+
+- P. B. Chapman  
+- M. E. Fisher  
+- B. S. Goh  
+- B. Madsen  
+- N. Rath  
+- P. Schultz  
+- G. Yeo  
 
 
 ## 2007
 
-### Professor
+### Professors
 
-- J.L. Noakes
+- Adrian J. Baddeley  
+- Andrew Bassom  
+- J. Lyle Noakes  
+- Cheryl E. Praeger  
 
-### Associate Professor
+### Professorial Fellow
 
-- L.S. Jennings
-- R.K. Milne
+- Jiti Gao  
 
-### Senior Lecturer
+### Associate Professors
 
-- G. Keady
-- K. Vijayan
-- N.D. Fowkes
-- R.P. Sullivan
+- Leslie S. Jennings  
+- Kevin Judd  
+- Cai Heng Li  
+- William E. Longstaff  
+- Anthony G. Pakes  
+- Valery T. Stefanov  
+- Luchezar N. Stoyanov  
+- Kaipillil Vijayan  
+- Song Wang  
 
-### Lecturer
+### Senior Lecturers
 
-- F.E. Yeomans
-- J.M. Hopwood
-- M.D. Alder
-- T.W. Ma
+- Neville D. Fowkes  
+- Grant Keady  
+- Tsoy-Wo Ma  
+- Robin K. Milne  
+- Alice Niemeyer  
+- Robert P. Sullivan  
 
+### Lecturers
+
+- Michael Alder  
+- Desmond L. Hill  
+- Nazim R. Khan  
+- Samuel Mueller  
+- Elena Paste
 
 ## 2008
 
-### Professor
-
-- J.L. Noakes
-
-### Associate Professor
-
-- L.S. Jennings
-- R.K. Milne
-
-### Senior Lecturer
-
-- G. Keady
-- N.D. Fowkes
-- R.P. Sullivan
-
-### Lecturer
-
-- J.M. Hopwood
-- M.D. Alder
-- T.W. Ma
-
-
-## 2009
-
-### Professor
-
-- J.L. Noakes
-
-### Associate Professor
-
-- L.S. Jennings
-- R.K. Milne
-
-### Senior Lecturer
-
-- G. Keady
-- N.D. Fowkes
-- R.P. Sullivan
-
-### Lecturer
-
-- J.M. Hopwood
-- M.D. Alder
-
-
-## 2010
-
-### Professor
-
-- J.L. Noakes
-
-### Associate Professor
-
-- L.S. Jennings
-- R.K. Milne
-
-### Senior Lecturer
-
-- G. Keady
-- N.D. Fowkes
-- R.P. Sullivan
-
-### Lecturer
-
-- J.M. Hopwood
-- M.D. Alder
-
-
-## 2011
-
-### Professor
-
-- J.L. Noakes
-
-### Associate Professor
-
-- L.S. Jennings
-- R.K. Milne
-
-### Senior Lecturer
-
-- N.D. Fowkes
-
-### Lecturer
-
-- J.M. Hopwood
-- M.D. Alder
-
-
-## 2012
-
-### Professor
-
-- J.L. Noakes
-
-### Associate Professor
-
-- L.S. Jennings
-- R.K. Milne
-
-### Senior Lecturer
-
-- N.D. Fowkes
-
-### Lecturer
-
-- J.M. Hopwood
-
-
-## 2013
-
-### Professor
-
-- J.L. Noakes
-
-### Senior Lecturer
-
-- N.D. Fowkes
-
-
-## 2014
-
-### Professor
-
-- J.L. Noakes
-
-### Senior Lecturer
-
-- N.D. Fowkes
-
-
-## 2015
-
-### Professor
-
-- J.L. Noakes
-
-### Senior Lecturer
-
-- N.D. Fowkes
-
-
-## 2016
-
-### Professor
-
-- J.L. Noakes
-
-### Senior Lecturer
-
-- N.D. Fowkes
-
-
-## 2017
-
-### Professor
-
-- J.L. Noakes
-
-### Senior Lecturer
-
-- N.D. Fowkes
-
-
-## 2018
-
-### Professor
-
-- J.L. Noakes
-
-
-## 2019
-
-### Professor
-
-- J.L. Noakes
-
-
-## 2020
-
-### Professor
-
-- J.L. Noakes
-
-
-## 2021
-
-### Professor
-
-- J.L. Noakes
-
-
-## 2022
-
-### Professor
-
-- J.L. Noakes
-
-
-## 2023
-
-### Professor
-
-- J.L. Noakes
-
-
-## 2024
-
-### Professor
-
-- J.L. Noakes
-
-
-## 2025
-
-### Professor
-
-- J.L. Noakes
-
--->
