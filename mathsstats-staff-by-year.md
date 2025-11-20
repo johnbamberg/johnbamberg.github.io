@@ -2768,7 +2768,27 @@ to be completed
 - R. D. List
 - R. B. McFeat
 - R. K. Milne
+- L. N. Stoyanov
+- R. P. Sullivan
 - V. T. Stefanov
+
+### Lecturers
+
+- M. D. Alder
+- M. L. Hazelton
+- D. L. Hill
+- J. M. Hopwood
+- K. T. Judd
+- T.-W. Ma
+- T. Penttila
+- F. E. Yeomans
+
+### Honorary Research Fellows
+
+- B. S. Goh
+- D. G. Hurley
+- A. R. Woods
+
 
 ## 1999
 
