@@ -3282,7 +3282,553 @@ to be completed
 - Desmond L. Hill  
 - Nazim R. Khan  
 - Samuel Mueller  
-- Elena Paste
+- Elena Pasternak
 
 ## 2008
+
+### Professors
+
+- Adrian J. Baddeley
+- Andrew Bassom
+- J. Lyle Noakes
+- Cheryl E. Praeger
+
+### Associate Professors
+
+- Leslie S. Jennings
+- Kevin Judd
+- Cai Heng Li
+- William E. Longstaff
+- Anthony G. Pakes
+- Valery T. Stefanov
+- Luchezar N. Stoyanov
+- Song Wang
+
+### Senior Lecturers
+
+- Neville D. Fowkes
+- Desmond L. Hill
+- Grant Keady
+- Tsoy-Wo Ma
+- Robin K. Milne
+- Alice Niemeyer
+- Robert P. Sullivan
+
+### Lecturers
+
+- Michael Alder
+- Wally Andrioni
+- Nazim R. Khan
+- Pamela McCaskie
+- Elena Pasternak
+
+### Research Fellow
+
+- Kevin Murray
+
+### Research Associates
+
+- Sven Reichard
+- Thomas Stemler
+- Jiying Yin
+
+### Australian Postdoctoral Fellows
+
+- Michael R. Giudici
+
+### Honorary Research Fellows
+
+- M. E. Fisher
+- N. Rath
+- G. Yeo
+
+
+## 2009
+
+### Professors
+
+- Adrian J. Baddeley
+- Andrew Bassom
+- Cheryl E. Praeger
+- Valery T. Stefanov
+- Luchezar N. Stoyanov
+- Kaipillil Vijayan
+
+### Associate Professors
+
+- Leslie S. Jennings
+- Kevin Judd
+- Cai Heng Li
+- William E. Longstaff
+- Anthony G. Pakes
+- Song Wang
+
+### Senior Lecturers
+
+- Neville D. Fowkes
+- Desmond L. Hill
+- Grant Keady
+- Tsoy-Wo Ma
+- Robin K. Milne
+- Alice Niemeyer
+- Robert P. Sullivan
+
+### Lecturers
+
+- Michael Alder
+- Wally Andrioni
+- Nazim R. Khan
+- Pamela McCaskie
+- Elena Pasternak
+
+### Research Fellow
+
+- Kevin Murray
+
+### Research Associates
+
+- Thomas Stemler
+- Jiying Yin
+
+### Australian Postdoctoral Fellows
+
+- Michael R. Giudici
+
+### Honorary Research Fellows
+
+- M. E. Fisher
+- N. Rath
+- G. Yeo
+
+
+## 2010
+
+### Professors
+
+- Adrian J. Baddeley
+- Andrew Bassom
+- Alice Niemeyer
+- J. Lyle Noakes
+- Anthony G. Pakes
+- Cheryl E. Praeger
+- Gordon Royle
+- Valery T. Stefanov
+- Luchezar N. Stoyanov
+
+### Associate Professors
+
+- Neville D. Fowkes
+- Desmond L. Hill
+- Leslie S. Jennings
+- Cai Heng Li
+- Robin K. Milne
+- Gopalan Nair
+- Robert P. Sullivan
+- Song Wang
+
+### Assistant Professors
+
+- Michael Alder
+- Wally Andrioni
+- John Bamberg
+- Edward Cripps
+- Thomas Stemler
+- Kaipillil Vijayan
+
+### Senior Lecturers
+
+- Nazim R. Khan
+
+### Lecturers
+
+- Elena Pasternak
+- Christian Thomas
+
+### Research Associates
+
+- Kevin Murray
+- Nandita Rath
+
+### Research Assistant Professor
+
+- Alice Devillers
+
+### Honorary Research Fellows
+
+- Michael Fisher
+- Kaipillil Vijayan
+
+
+## 2011
+
+### Professors
+
+- Adrian J. Baddeley
+- Andrew Bassom
+- Alice Niemeyer
+- J. Lyle Noakes
+- Anthony G. Pakes
+- Cheryl E. Praeger
+- Gordon Royle
+- Valery T. Stefanov
+- Luchezar N. Stoyanov
+
+### Associate Professors
+
+- Neville Fowkes
+- Des Hill
+- Les Jennings
+- Cai Heng Li
+- Robin Milne
+- Gopalan Nair
+- Bob Sullivan
+- Song Wang
+
+### Assistant Professors
+
+- Mike Alder
+- Edward Cripps
+- Nazim Khan
+- Kevin Murray
+- Thomas Stemler
+- Kaipillil Vijayan
+
+### Lecturers
+
+- Alice Devillers
+- Elena Pasternak
+- Christian Thomas
+
+### Honorary Fellow
+
+- Kathleen Chindarsi
+
+### Research Associates
+
+- Nandita Rath
+
+### Honorary Research Fellows
+
+- Mike Fisher
+- Kaipillil Vijayan
+
+### Research Assistant / Australian Research Fellow
+
+- Michael Giudici
+
+
+## 2012
+
+### Professors
+
+- Adrian J. Baddeley
+- Andrew Bassom
+- Les Jennings
+- Alice Niemeyer
+- Lyle Noakes
+- Tony Pakes
+- Cheryl Praeger
+- Gordon Royle
+- Valery Stefanov
+- Luchezar Stoyanov
+
+### Associate Professors
+
+- Neville Fowkes
+- Des Hill
+- Russell John
+- Gopalan Nair
+- Bob Sullivan
+- Song Wang
+
+### Assistant Professors
+
+- Edward Cripps
+- Nazim Khan
+- John Lau
+- Kevin Murray
+- Thomas Stemler
+
+### Lecturers
+
+- Alice Devillers
+- Nazim Khan
+- Elena Pasternak
+- Christian Thomas
+- Tomasz Popiel
+
+### Honorary Fellow
+
+- Kathleen Chindarsi
+
+### Research Associates
+
+- Neil Gillespie
+- Irene Pivotto
+- Shu-Jiao Song
+
+### Honorary Research Fellows
+
+- Mike Fisher
+- Nandita Rath
+- Kaipillil Vijayan
+- Guang Yeo
+
+
+## 2013
+
+### Professors
+
+- Adrian J. Baddeley
+- Andrew Bassom
+- Les Jennings
+- Alice Niemeyer
+- Lyle Noakes
+- Tony Pakes
+- Cheryl Praeger
+- Gordon Royle
+- Valery Stefanov
+- Luchezar Stoyanov
+
+### Associate Professors
+
+- Neville Fowkes
+- Des Hill
+- Russell John
+- Gopalan Nair
+- Song Wang
+
+### Assistant Professors
+
+- Edward Cripps
+- Nazim Khan
+- John Lau
+- Kevin Murray
+- Thomas Stemler
+
+### Lecturers
+
+- Alice Devillers
+- Nazim Khan
+- Tomasz Popiel
+
+### Research Associates
+
+- Joanna Fawcett
+- Neil Gillespie
+- Stephen Glasby
+- Irene Pivotto
+- Suman Rakshit
+- Shu-Jiao Song
+- Eric Swartz
+
+### Honorary Fellow
+
+- Kathleen Chindarsi
+
+### Honorary Research Fellows
+
+- Mike Fisher
+- Nandita Rath
+- Kaipillil Vijayan
+- Guang Yeo
+
+
+## 2014
+
+### Head of School/Professor
+
+- Bassom, Andrew
+
+### Research Associate
+
+- Bharat, Chrianna
+- Budgeon, Charley
+- Fawcett, Joanna
+- Morgan, Luke
+- Pivotto, Irene
+- Popiel, Tomasz
+- Rakshit, Suman
+- Smith, Simon
+
+### Senior Lecturer
+
+- Cripps, Edward
+- Devillers, Alice
+- Murray, Kevin
+
+### Assistant Professor
+
+- Giudici, Michael
+- Khan, Nazim R
+- Pretorius, Louisa
+- Stemler, Thomas
+- Yin, Jiying
+
+### Associate Professor
+
+- Li, Cai-Heng
+- Milne, Robin
+- Noakes, Lyle
+- O’Shea, Roseanna
+- Pakes, Anthony
+- Praeger, Cheryl
+- Stefanov, Valery
+- Stoyanov, Luchezar
+- Wang, Song
+
+### Lecturer
+
+- Lay, Benjamin
+- Pasternak, Elena
+- Peiris, Nisanka
+- Pravnin, Sourav
+- Reichard, Sven
+- Robbins, Kate
+
+### Honorary Research Fellow
+
+- Bamberg, John
+- Brualdi, Richard
+- Finner, Helmut
+- Giannelli, Eugenio
+- Gutin, Gregory
+- Hofman, Jan
+- Kovács, István
+- Muzychuk, Mikhail
+- Schneider, Csaba
+- Wang, Xiao
+- Yeo, Andrea
+
+
+## 2015
+
+### Head of School
+
+- Noakes, Lyle
+
+### Professor
+
+- Bassom, Andrew
+- Giudici, Michael
+- Li, Cai-Heng
+- Niemeyer, Alice
+- Stoyanov, Luchezar
+
+### Research Associate
+
+- Bharat, Chrianna
+- Budgeon, Charley
+- Morgan, Luke
+- Pivotto, Irene
+- Prado, Maria
+- Rakshit, Suman
+- Smith, Simon
+
+### Senior Lecturer
+
+- Cripps, Edward
+- Devillers, Alice
+- Murray, Kevin
+- Wang, Song
+
+### Associate Professor
+
+- Milne, Robin
+- Pakes, Anthony
+- Praeger, Cheryl
+- Stefanov, Valery
+
+### Lecturer
+
+- Lay, Benjamin
+- Pasternak, Elena
+- Peiris, Nisanka
+- Pravnin, Sourav
+- Reichard, Sven
+- Robbins, Kate
+- Rodriguez Segura, Raúl
+- Sammartano, Alessandro
+- Sheard, Anne
+
+### Honorary Research Fellow
+
+- Bamberg, John
+- Brualdi, Richard
+- Finner, Helmut
+- Gutin, Gregory
+- Kovács, István
+- Muzychuk, Mikhail
+- Schneider, Csaba
+- Wang, Xiao
+- Yeo, Andrea
+
+
+## 2016
+
+### Head of School
+
+- Noakes, Lyle
+
+### Professor
+
+- Abarzhi, Snezhana
+- Bassom, Andrew
+- Giudici, Michael
+- Li, Cai Heng
+- Li, Cai-Heng
+- Niemeyer, Alice
+- Praeger, Cheryl
+- Stoyanov, Luchezar
+
+### Research Associate
+
+- Budgeon, Charley
+- Morgan, Luke
+- Pivotto, Irene
+- Prado, Maria
+- Rakshit, Suman
+- Smith, Simon
+
+### Resseach Fellow
+
+- Correa, Debora
+
+### Senior Lecturer
+
+- Cripps, Edward
+- Devillers, Alice
+- Murray, Kevin
+- Wang, Song
+
+### Associate Professor
+
+- Milne, Robin
+- Pakes, Anthony
+- Stefanov, Valery
+
+### Honorary Research Fellow
+
+- Bamberg, John
+- Brualdi, Richard
+- Gutin, Gregory
+- Kovács, István
+- Muzychuk, Mikhail
+- Schneider, Csaba
+- Wang, Xiao
+- Yeo, Andrea
+
+### Lecturer
+
+- Lay, Benjamin
+- May, Alice
+- Pasternak, Elena
+- Peiris, Nisanka
+- Pravnin, Sourav
+- Reichard, Sven
+- Robbins, Kate
+- Sammartano, Alessandro
+- Sheard, Anne
+- Suarez, Federico
+
 
