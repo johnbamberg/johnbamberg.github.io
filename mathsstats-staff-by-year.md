@@ -3278,6 +3278,27 @@ to be completed
 - Nazim R. Khan  
 - Samuel Mueller  
 - Elena Pasternak
+- Frank E. Yeomans
+
+### Research Fellow
+
+- Kevin Murray
+
+### Research Associates
+
+- Sven Reichard
+- Jiying Yin
+
+### Australian Postdoctoral Fellows
+
+- Michael R. Giudici
+
+### Honorary Research Fellows
+
+- M. E. Fisher
+- B. Madsen
+- N. Rath
+- G. Yeo
 
 ## 2008
 
