@@ -257,7 +257,7 @@ Proceedings A of the Royal Society of Edinburgh,
 with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.2024.53)
 - On the Hermitian Veronesean,  
 Finite Fields and their Applications,  
-with Geertrui Van de Voorde. [arxiv](https://arxiv.org/abs/2505.05827)
+with Geertrui Van de Voorde. [doi](https://doi.org/10.1016/j.ffa.2025.102762)
 
 
 ## Submitted
