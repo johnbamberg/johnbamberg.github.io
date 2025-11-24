@@ -5,7 +5,11 @@ title: Teaching
 
 # Teaching
 
+**Note: I am not a Unit Coordinator for MATH1720 in 2026.**
+
+
 ### 2026
+
 - [MATH3035](http://handbooks.uwa.edu.au/unitdetails?code=MATH3035) (Algebraic Geometry and Ring Theory), Semester 2
 - [MATH4033](http://handbooks.uwa.edu.au/unitdetails?code=MATH4033) (Topics in Combinatorics), Semester 2
 
