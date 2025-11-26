@@ -242,6 +242,10 @@ with Alice Devillers, Mark Ioppolo, Cheryl E. Praeger. [doi](https://doi.org/10.
 76. Exploiting degeneracy in projective geometric algebra,   
 Advances in Applied Clifford Algebra 35(34) (2025),  
 with Jeff Saunders. [doi](https://doi.org/10.1007/s00006-025-01392-9) 
+77. On the Hermitian Veronesean,  
+Finite Fields and their Applications 111, Paper No. 102762, (2026),  
+with Geertrui Van de Voorde. [doi](https://doi.org/10.1016/j.ffa.2025.102762)
+
 
 ## Books
 
@@ -255,9 +259,6 @@ with Tim Penttila
 - Spreading primitive groups of diagonal type do not exist,  
 Proceedings A of the Royal Society of Edinburgh,  
 with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.2024.53)
-- On the Hermitian Veronesean,  
-Finite Fields and their Applications,  
-with Geertrui Van de Voorde. [doi](https://doi.org/10.1016/j.ffa.2025.102762)
 
 
 ## Submitted
