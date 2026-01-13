@@ -245,6 +245,9 @@ with Jeff Saunders. [doi](https://doi.org/10.1007/s00006-025-01392-9)
 77. On the Hermitian Veronesean,  
 Finite Fields and their Applications 111, Paper No. 102762, (2026),  
 with Geertrui Van de Voorde. [doi](https://doi.org/10.1016/j.ffa.2025.102762)
+78. Spreading primitive groups of diagonal type do not exist,  
+Proceedings A of the Royal Society of Edinburgh 156(1), pp. 188-198, (2026),  
+with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.2024.53)
 
 
 ## Books
@@ -256,9 +259,9 @@ with Tim Penttila
 
 ## To appear
 
-- Spreading primitive groups of diagonal type do not exist,  
-Proceedings A of the Royal Society of Edinburgh,  
-with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.2024.53)
+- The synchronisation hierarchy via coherent configurations,  
+Linear Algebra and its Applications,  
+with Jesse Lansdown. [arxiv](https://arxiv.org/abs/2407.07352)
 
 
 ## Submitted
@@ -266,10 +269,9 @@ with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.202
 - Ramsey numbers and extremal structures in polar spaces,   
 <!-- European Journal of Combinatorics, --> 
 with Anurag Bishnoi, Ferdinand Ihringer, and Ananthakrishnan Ravi. [arxiv](https://arxiv.org/abs/2406.03043)
-- The synchronisation hierarchy via coherent configurations,  
-with Jesse Lansdown. [arxiv](https://arxiv.org/abs/2407.07352)
 - On the association schemes of perfect matchings and their designs,  
 with Lukas Klawuhn. [arxiv](https://arxiv.org/abs/2507.00813)
+
 
 ## Preprints
 
