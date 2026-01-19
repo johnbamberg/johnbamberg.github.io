@@ -261,7 +261,7 @@ with Tim Penttila
 
 - The synchronisation hierarchy via coherent configurations,  
 Linear Algebra and its Applications,  
-with Jesse Lansdown. [arxiv](https://arxiv.org/abs/2407.07352)
+with Jesse Lansdown. [doi](https://doi.org/10.1016/j.laa.2026.01.013).
 
 
 ## Submitted
