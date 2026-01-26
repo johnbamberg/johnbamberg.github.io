@@ -248,6 +248,9 @@ with Geertrui Van de Voorde. [doi](https://doi.org/10.1016/j.ffa.2025.102762)
 78. Spreading primitive groups of diagonal type do not exist,  
 Proceedings A of the Royal Society of Edinburgh 156(1), pp. 188-198, (2026),  
 with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.2024.53)
+79. The synchronisation hierarchy via coherent configurations,  
+Linear Algebra and its Applications 735, pp. 203-221 (2026),  
+with Jesse Lansdown. [doi](https://doi.org/10.1016/j.laa.2026.01.013).
 
 
 ## Books
@@ -259,9 +262,9 @@ with Tim Penttila
 
 ## To appear
 
-- The synchronisation hierarchy via coherent configurations,  
-Linear Algebra and its Applications,  
-with Jesse Lansdown. [doi](https://doi.org/10.1016/j.laa.2026.01.013).
+- On the association schemes of perfect matchings and their designs,   
+Algebraic Combinatorics,   
+with Lukas Klawuhn. [arxiv](https://arxiv.org/abs/2507.00813)
 
 
 ## Submitted
@@ -269,8 +272,6 @@ with Jesse Lansdown. [doi](https://doi.org/10.1016/j.laa.2026.01.013).
 - Ramsey numbers and extremal structures in polar spaces,   
 <!-- European Journal of Combinatorics, --> 
 with Anurag Bishnoi, Ferdinand Ihringer, and Ananthakrishnan Ravi. [arxiv](https://arxiv.org/abs/2406.03043)
-- On the association schemes of perfect matchings and their designs,  
-with Lukas Klawuhn. [arxiv](https://arxiv.org/abs/2507.00813)
 
 
 ## Preprints
