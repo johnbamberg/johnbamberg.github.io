@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order in Chaos: Ramsey Theory</title>
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --panel: #ffffff;
+      --ink: #222222;
+      --muted: #6b7280;
+      --edge-grey: #d1d5db;
+      --red: #dc2626;
+      --blue: #2563eb;
+      --yellow: #facc15;
+      --yellow-stroke: #b45309;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: radial-gradient(circle at top, #ffffff 0%, var(--bg) 65%);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .app {
+      width: min(1080px, 100%);
+      background: var(--panel);
+      border: 1px solid #e5e7eb;
+      border-radius: 24px;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.10);
+      overflow: hidden;
+    }
+
+    header {
+      padding: 24px 28px 18px;
+      border-bottom: 1px solid #e5e7eb;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.45rem, 2.4vw, 2.2rem);
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      margin: 8px 0 0;
+      color: var(--muted);
+      max-width: 700px;
+      line-height: 1.45;
+    }
+
+    .controls {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    button {
+      appearance: none;
+      border: none;
+      border-radius: 999px;
+      padding: 11px 17px;
+      font-weight: 700;
+      cursor: pointer;
+      background: #111827;
+      color: white;
+      box-shadow: 0 8px 18px rgba(17, 24, 39, 0.18);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+    }
+
+    button.secondary {
+      background: #f3f4f6;
+      color: #111827;
+      box-shadow: none;
+      border: 1px solid #e5e7eb;
+    }
+
+    button:hover:not(:disabled) {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 24px rgba(17, 24, 39, 0.20);
+    }
+
+    button.secondary:hover:not(:disabled) {
+      box-shadow: 0 8px 18px rgba(17, 24, 39, 0.08);
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+      opacity: 0.55;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: 1fr 270px;
+      gap: 0;
+    }
+
+    .stage {
+      padding: 18px;
+      min-height: 640px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(145deg, #fbfbfb, #f4f4f2);
+    }
+
+    svg {
+      width: min(720px, 100%);
+      height: auto;
+      display: block;
+      overflow: visible;
+    }
+
+    .edge {
+      stroke: var(--edge-grey);
+      stroke-width: 1.35;
+      opacity: 0.75;
+      transition: stroke 0.15s ease, stroke-width 0.15s ease, opacity 0.15s ease;
+    }
+
+    .edge.red {
+      stroke: var(--red);
+      opacity: 0.88;
+    }
+
+    .edge.blue {
+      stroke: var(--blue);
+      opacity: 0.88;
+    }
+
+    .edge.clique-edge {
+      stroke-width: 4.2;
+      opacity: 1;
+    }
+
+    .vertex {
+      fill: #ffffff;
+      stroke: #111827;
+      stroke-width: 2.2;
+      transition: fill 0.2s ease, stroke 0.2s ease, r 0.2s ease;
+    }
+
+    .vertex.highlight {
+      fill: var(--yellow);
+      stroke: var(--yellow-stroke);
+      r: 15;
+    }
+
+    .label {
+      font-size: 11px;
+      font-weight: 800;
+      text-anchor: middle;
+      dominant-baseline: central;
+      pointer-events: none;
+      fill: #111827;
+    }
+
+    aside {
+      border-left: 1px solid #e5e7eb;
+      padding: 22px;
+      background: #fff;
+    }
+
+    .stat-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 16px;
+      margin-bottom: 14px;
+      background: #fafafa;
+    }
+
+    .stat-label {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-bottom: 6px;
+    }
+
+    .stat-value {
+      font-size: 1.55rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .message {
+      line-height: 1.45;
+      color: #374151;
+      margin-top: 14px;
+      font-size: 0.95rem;
+    }
+
+    .legend {
+      display: grid;
+      gap: 8px;
+      margin-top: 18px;
+      font-size: 0.92rem;
+      color: #374151;
+    }
+
+    .legend-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .swatch {
+      width: 26px;
+      height: 4px;
+      border-radius: 999px;
+      background: var(--edge-grey);
+    }
+
+    .swatch.red { background: var(--red); }
+    .swatch.blue { background: var(--blue); }
+    .swatch.yellow {
+      width: 16px;
+      height: 16px;
+      border-radius: 999px;
+      background: var(--yellow);
+      border: 2px solid var(--yellow-stroke);
+    }
+
+    @media (max-width: 860px) {
+      .main {
+        grid-template-columns: 1fr;
+      }
+
+      aside {
+        border-left: none;
+        border-top: 1px solid #e5e7eb;
+      }
+
+      .stage {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div>
+        <h1>Order in chaos: Ramsey theory</h1>
+        <p class="subtitle">
+          Randomly colour the edges of the complete graph K<sub>18</sub>. Ramsey's theorem guarantees that every red/blue colouring contains a monochromatic K<sub>4</sub>.
+        </p>
+      </div>
+      <div class="controls">
+        <button id="randomBtn">Random 2-colouring</button>
+        <button id="findBtn" class="secondary" disabled>Find monochromatic clique</button>
+        <button id="resetBtn" class="secondary">Reset</button>
+      </div>
+    </header>
+
+    <div class="main">
+      <section class="stage" aria-label="Complete graph on 18 vertices">
+        <svg id="graph" viewBox="0 0 700 700" role="img" aria-label="A complete graph on 18 vertices"></svg>
+      </section>
+
+      <aside>
+        <div class="stat-card">
+          <div class="stat-label">Graph</div>
+          <div class="stat-value">K<sub>18</sub></div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Edges coloured</div>
+          <div class="stat-value"><span id="edgeCount">0</span> / 153</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Current red/blue split</div>
+          <div class="stat-value"><span id="redCount">0</span> / <span id="blueCount">0</span></div>
+        </div>
+        <div id="message" class="message">
+          Start with the light-grey complete graph, then click <strong>Random 2-colouring</strong>.
+        </div>
+        <div class="legend">
+          <div class="legend-row"><span class="swatch"></span> uncoloured edge</div>
+          <div class="legend-row"><span class="swatch red"></span> red edge</div>
+          <div class="legend-row"><span class="swatch blue"></span> blue edge</div>
+          <div class="legend-row"><span class="swatch yellow"></span> vertices of a monochromatic K<sub>4</sub></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    const n = 18;
+    const svg = document.getElementById("graph");
+    const randomBtn = document.getElementById("randomBtn");
+    const findBtn = document.getElementById("findBtn");
+    const resetBtn = document.getElementById("resetBtn");
+    const edgeCountEl = document.getElementById("edgeCount");
+    const redCountEl = document.getElementById("redCount");
+    const blueCountEl = document.getElementById("blueCount");
+    const messageEl = document.getElementById("message");
+
+    const cx = 350;
+    const cy = 350;
+    const radius = 280;
+    const vertices = [];
+    const edges = [];
+    let animationTimer = null;
+
+    function makeSvgElement(tag, attrs = {}) {
+      const el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+      for (const [key, value] of Object.entries(attrs)) {
+        el.setAttribute(key, value);
+      }
+      return el;
+    }
+
+    function edgeKey(i, j) {
+      return i < j ? `${i}-${j}` : `${j}-${i}`;
+    }
+
+    function buildGraph() {
+      svg.innerHTML = "";
+      vertices.length = 0;
+      edges.length = 0;
+
+      for (let i = 0; i < n; i++) {
+        const angle = -Math.PI / 2 + (2 * Math.PI * i) / n;
+        vertices.push({
+          id: i,
+          x: cx + radius * Math.cos(angle),
+          y: cy + radius * Math.sin(angle)
+        });
+      }
+
+      const edgeLayer = makeSvgElement("g", { id: "edges" });
+      const vertexLayer = makeSvgElement("g", { id: "vertices" });
+      svg.append(edgeLayer, vertexLayer);
+
+      for (let i = 0; i < n; i++) {
+        for (let j = i + 1; j < n; j++) {
+          const line = makeSvgElement("line", {
+            x1: vertices[i].x,
+            y1: vertices[i].y,
+            x2: vertices[j].x,
+            y2: vertices[j].y,
+            class: "edge",
+            "data-i": i,
+            "data-j": j,
+            "data-key": edgeKey(i, j)
+          });
+          edgeLayer.appendChild(line);
+          edges.push({ i, j, colour: null, el: line });
+        }
+      }
+
+      for (const v of vertices) {
+        const group = makeSvgElement("g", { class: "vertex-group" });
+        const circle = makeSvgElement("circle", {
+          cx: v.x,
+          cy: v.y,
+          r: 11,
+          class: "vertex",
+          "data-id": v.id
+        });
+        const label = makeSvgElement("text", {
+          x: v.x,
+          y: v.y,
+          class: "label"
+        });
+        label.textContent = v.id + 1;
+        group.append(circle, label);
+        vertexLayer.appendChild(group);
+        v.el = circle;
+      }
+
+      updateStats();
+    }
+
+    function clearHighlights() {
+      for (const v of vertices) {
+        v.el.classList.remove("highlight");
+      }
+      for (const e of edges) {
+        e.el.classList.remove("clique-edge");
+      }
+    }
+
+    function resetGraph() {
+      if (animationTimer) {
+        clearInterval(animationTimer);
+        animationTimer = null;
+      }
+      clearHighlights();
+      for (const e of edges) {
+        e.colour = null;
+        e.el.classList.remove("red", "blue", "clique-edge");
+      }
+      randomBtn.disabled = false;
+      findBtn.disabled = true;
+      messageEl.innerHTML = 'Start with the light-grey complete graph, then click <strong>Random 2-colouring</strong>.';
+      updateStats();
+    }
+
+    function updateStats() {
+      const coloured = edges.filter(e => e.colour !== null).length;
+      const red = edges.filter(e => e.colour === "red").length;
+      const blue = edges.filter(e => e.colour === "blue").length;
+      edgeCountEl.textContent = coloured;
+      redCountEl.textContent = red;
+      blueCountEl.textContent = blue;
+    }
+
+    function shuffle(array) {
+      const a = array.slice();
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    function randomColouring() {
+      if (animationTimer) return;
+
+      clearHighlights();
+      for (const e of edges) {
+        e.colour = null;
+        e.el.classList.remove("red", "blue", "clique-edge");
+      }
+
+      const edgeOrder = shuffle(edges);
+      let index = 0;
+      randomBtn.disabled = true;
+      findBtn.disabled = true;
+      messageEl.textContent = "Colouring edges randomly at 20 edges per second...";
+      updateStats();
+
+      animationTimer = setInterval(() => {
+        if (index >= edgeOrder.length) {
+          clearInterval(animationTimer);
+          animationTimer = null;
+          randomBtn.disabled = false;
+          findBtn.disabled = false;
+          messageEl.innerHTML = 'The colouring is complete. Click <strong>Find monochromatic clique</strong> to reveal the forced order.';
+          return;
+        }
+
+        const e = edgeOrder[index];
+        e.colour = Math.random() < 0.5 ? "red" : "blue";
+        e.el.classList.add(e.colour);
+        index++;
+        updateStats();
+      }, 50); // 20 edges per second
+    }
+
+    function getEdge(i, j) {
+      return edges.find(e => e.i === Math.min(i, j) && e.j === Math.max(i, j));
+    }
+
+    function findMonochromaticK4() {
+      clearHighlights();
+
+      const allColoured = edges.every(e => e.colour !== null);
+      if (!allColoured) {
+        messageEl.textContent = "Finish the random colouring first.";
+        return null;
+      }
+
+      for (let a = 0; a < n - 3; a++) {
+        for (let b = a + 1; b < n - 2; b++) {
+          for (let c = b + 1; c < n - 1; c++) {
+            for (let d = c + 1; d < n; d++) {
+              const subset = [a, b, c, d];
+              const pairEdges = [
+                getEdge(a, b), getEdge(a, c), getEdge(a, d),
+                getEdge(b, c), getEdge(b, d), getEdge(c, d)
+              ];
+              const colour = pairEdges[0].colour;
+              if (colour && pairEdges.every(e => e.colour === colour)) {
+                highlightClique(subset, pairEdges, colour);
+                return { subset, colour };
+              }
+            }
+          }
+        }
+      }
+
+      // This should never happen for K18 by R(4,4)=18.
+      messageEl.textContent = "No monochromatic K₄ was found. That would contradict R(4,4)=18, so something has gone wrong.";
+      return null;
+    }
+
+    function highlightClique(subset, pairEdges, colour) {
+      for (const i of subset) {
+        vertices[i].el.classList.add("highlight");
+      }
+      for (const e of pairEdges) {
+        e.el.classList.add("clique-edge");
+      }
+      const labels = subset.map(i => i + 1).join(", ");
+      messageEl.innerHTML = `Found a monochromatic <strong>${colour}</strong> K<sub>4</sub> on vertices <strong>{${labels}}</strong>.`;
+    }
+
+    randomBtn.addEventListener("click", randomColouring);
+    findBtn.addEventListener("click", findMonochromaticK4);
+    resetBtn.addEventListener("click", resetGraph);
+
+    buildGraph();
+  </script>
+</body>
+</html>
