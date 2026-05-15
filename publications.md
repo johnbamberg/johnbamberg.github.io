@@ -282,6 +282,7 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 
 ## In preparation
 
+- On applications of the clique-adjacency polynomial to arbitrary finite graphs, with Jake Rigg.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons
