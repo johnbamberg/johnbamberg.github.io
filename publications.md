@@ -251,6 +251,9 @@ with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.202
 79. The synchronisation hierarchy via coherent configurations,  
 Linear Algebra and its Applications 735, pp. 203-221 (2026),  
 with Jesse Lansdown. [doi](https://doi.org/10.1016/j.laa.2026.01.013).
+80. On the association schemes of perfect matchings and their designs,   
+Algebraic Combinatorics 9(3), pp. 789-809 (2026), [doi](https://doi.org/10.5802/alco.490).  
+with Lukas Klawuhn. [arxiv](https://arxiv.org/abs/2507.00813)
 
 
 ## Books
@@ -262,17 +265,17 @@ with Tim Penttila
 
 ## To appear
 
-- On the association schemes of perfect matchings and their designs,   
-Algebraic Combinatorics,   
-with Lukas Klawuhn. [arxiv](https://arxiv.org/abs/2507.00813)
-
+- 
 
 ## Submitted
 
-- Ramsey numbers and extremal structures in polar spaces,   
-<!-- European Journal of Combinatorics, --> 
-with Anurag Bishnoi, Ferdinand Ihringer, and Ananthakrishnan Ravi. [arxiv](https://arxiv.org/abs/2406.03043)
 
+- Ramsey numbers and extremal structures in polar spaces,   
+with Anurag Bishnoi, Ferdinand Ihringer, and Ananthakrishnan Ravi. [arxiv](https://arxiv.org/abs/2406.03043)
+- On applications of the clique-adjacency polynomial to arbitrary finite graphs,  
+with Jake Rigg. [arxiv](https://arxiv.org/abs/2606.19820)
+- Every special set of the Hermitian surface $H(3, q^2)$ is classical,  
+with Ethan Kealley. 
 
 ## Preprints
 
@@ -282,7 +285,8 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 
 ## In preparation
 
-- On applications of the clique-adjacency polynomial to arbitrary finite graphs, with Jake Rigg.
+- Hyperovals and whisks, with Gordon Royle and Jason Williford.
+- On configurations that are nearly generalised polygons, with Sam Adriaensen and Jason Williford.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons
