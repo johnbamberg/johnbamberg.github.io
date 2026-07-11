@@ -273,7 +273,7 @@ with Anurag Bishnoi, Ferdinand Ihringer, and Ananthakrishnan Ravi. [arxiv](https
 - On applications of the clique-adjacency polynomial to arbitrary finite graphs,  
 with Jake Rigg. [arxiv](https://arxiv.org/abs/2606.19820)
 - Every special set of the Hermitian surface $H(3,q^2)$ is classical,  
-with Ethan Kealley. 
+with Ethan Kealley. [arxiv](https://arxiv.org/abs/2607.08135)
 
 ## Preprints
 
