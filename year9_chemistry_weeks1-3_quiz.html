@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Year 9 Chemistry Practice Quiz</title>
+  <style>
+    :root {
+      --navy: #16324f;
+      --blue: #1f6f8b;
+      --teal: #2a9d8f;
+      --paper: #ffffff;
+      --page: #edf3f6;
+      --ink: #18232d;
+      --muted: #5d6b76;
+      --line: #d5dfe5;
+      --correct: #18794e;
+      --correct-bg: #e8f6ef;
+      --wrong: #b33a3a;
+      --wrong-bg: #fdecec;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(42,157,143,.14), transparent 34rem),
+        var(--page);
+    }
+    .app {
+      width: min(850px, calc(100% - 24px));
+      margin: 24px auto;
+    }
+    header {
+      padding: 27px 30px;
+      color: white;
+      border-radius: 20px 20px 0 0;
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+      box-shadow: 0 16px 40px rgba(22,50,79,.15);
+    }
+    header h1 { margin: 0 0 6px; font-size: clamp(1.7rem, 4vw, 2.45rem); }
+    header p { margin: 0; color: rgba(255,255,255,.84); }
+    main {
+      padding: 28px 30px 34px;
+      background: var(--paper);
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 16px 40px rgba(22,50,79,.15);
+    }
+    .hidden { display: none !important; }
+    .panel {
+      padding: 17px 18px;
+      margin: 20px 0;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: #f8fafb;
+    }
+    .panel p { margin: 5px 0 0; color: var(--muted); line-height: 1.55; }
+    label { display: block; margin-bottom: 7px; font-weight: 750; }
+    select {
+      width: min(280px, 100%);
+      padding: 11px 13px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: white;
+      color: var(--ink);
+      font: inherit;
+    }
+    button {
+      border: 0;
+      border-radius: 11px;
+      padding: 12px 18px;
+      font: inherit;
+      font-weight: 750;
+      cursor: pointer;
+    }
+    button:disabled { cursor: default; opacity: .82; }
+    .primary { color: white; background: var(--blue); }
+    .primary:hover:not(:disabled) { background: var(--navy); }
+    .secondary { color: var(--ink); background: #e8eef2; }
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .progress {
+      height: 10px;
+      margin: 12px 0 25px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #e6edf0;
+    }
+    .progress div {
+      width: 0;
+      height: 100%;
+      background: var(--teal);
+      transition: width .22s ease;
+    }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--blue);
+      font-size: .9rem;
+      font-weight: 850;
+      letter-spacing: .045em;
+      text-transform: uppercase;
+    }
+    #question {
+      margin: 0 0 21px;
+      font-size: clamp(1.22rem, 2.5vw, 1.55rem);
+      line-height: 1.4;
+    }
+    .answers { display: grid; gap: 11px; }
+    .answer {
+      display: grid;
+      grid-template-columns: 35px 1fr;
+      gap: 10px;
+      align-items: center;
+      width: 100%;
+      padding: 13px 15px;
+      text-align: left;
+      color: var(--ink);
+      background: white;
+      border: 2px solid var(--line);
+    }
+    .answer:hover:not(:disabled) { border-color: #8eb4c0; background: #f8fbfc; }
+    .letter {
+      display: grid;
+      place-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      color: var(--navy);
+      background: #edf3f5;
+      font-weight: 850;
+    }
+    .answer.correct { border-color: var(--correct); background: var(--correct-bg); }
+    .answer.wrong { border-color: var(--wrong); background: var(--wrong-bg); }
+    .feedback {
+      margin-top: 19px;
+      padding: 15px 17px;
+      border-radius: 12px;
+      line-height: 1.5;
+    }
+    .feedback.correct { border-left: 5px solid var(--correct); background: var(--correct-bg); }
+    .feedback.wrong { border-left: 5px solid var(--wrong); background: var(--wrong-bg); }
+    .feedback strong { display: block; margin-bottom: 3px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .centre { justify-content: center; }
+    .results { text-align: center; }
+    .score {
+      display: grid;
+      place-items: center;
+      width: 150px;
+      height: 150px;
+      margin: 20px auto;
+      border-radius: 50%;
+      background: conic-gradient(var(--teal) var(--angle), #e4ecef 0);
+      position: relative;
+    }
+    .score::after {
+      content: "";
+      position: absolute;
+      inset: 13px;
+      border-radius: 50%;
+      background: white;
+    }
+    .score span { position: relative; z-index: 1; font-size: 2rem; font-weight: 850; }
+    .review { margin-top: 28px; text-align: left; }
+    .review-item { padding: 15px 0; border-top: 1px solid var(--line); }
+    .review-item h3 { margin: 0 0 7px; font-size: 1rem; }
+    .review-item p { margin: 4px 0; color: var(--muted); }
+    .right { color: var(--correct) !important; font-weight: 750; }
+    .incorrect { color: var(--wrong) !important; font-weight: 750; }
+    .note { color: var(--muted); font-size: .92rem; }
+    @media (max-width: 580px) {
+      .app { width: min(100% - 14px, 850px); margin: 7px auto; }
+      header, main { padding-left: 18px; padding-right: 18px; }
+      header { border-radius: 14px 14px 0 0; }
+      main { border-radius: 0 0 14px 14px; }
+      .answer { padding: 12px; }
+    }
+    @media print {
+      body { background: white; }
+      .app { width: 100%; margin: 0; }
+      header, main { box-shadow: none; border-radius: 0; }
+      .actions, .progress, #setup { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Year 9 Chemistry Practice</h1>
+      <p>Weeks 1–3: atoms, isotopes and the periodic table</p>
+    </header>
+    <main>
+      <section id="setup">
+        <h2>Start a random quiz</h2>
+        <p>Each attempt draws a new set of questions from a bank of 50 and shuffles the answer choices.</p>
+
+        <div class="panel">
+          <strong>Topics</strong>
+          <p>Subatomic particles; atomic and mass numbers; protons, neutrons and electrons; isotopes; groups and periods; metals and non-metals; Groups 1, 2, 17 and 18; and shell electron configurations up to atomic number 20.</p>
+        </div>
+
+        <label for="count">Quiz length</label>
+        <select id="count">
+          <option value="5">5 questions</option>
+          <option value="10" selected>10 questions</option>
+          <option value="15">15 questions</option>
+          <option value="20">20 questions</option>
+          <option value="30">30 questions</option>
+          <option value="50">All 50 questions</option>
+        </select>
+
+        <div class="actions">
+          <button class="primary" id="start">Start quiz</button>
+        </div>
+        <p class="note">Works offline. No login, installation or internet connection is required.</p>
+      </section>
+
+      <section id="quiz" class="hidden">
+        <div class="topline">
+          <span id="progressText"></span>
+          <span id="scoreText"></span>
+        </div>
+        <div class="progress"><div id="progressBar"></div></div>
+        <p class="eyebrow" id="questionNumber"></p>
+        <h2 id="question"></h2>
+        <div class="answers" id="answers"></div>
+        <div id="feedback" class="feedback hidden" aria-live="polite"></div>
+        <div class="actions">
+          <button class="primary hidden" id="next">Next question</button>
+          <button class="secondary" id="finish">End quiz</button>
+        </div>
+      </section>
+
+      <section id="results" class="hidden">
+        <div class="results">
+          <h2>Quiz complete</h2>
+          <div class="score" id="scoreCircle" style="--angle:0deg"><span id="finalScore"></span></div>
+          <h3 id="message"></h3>
+          <p id="summary"></p>
+          <div class="actions centre">
+            <button class="primary" id="again">New random quiz</button>
+            <button class="secondary hidden" id="retry">Retry incorrect questions</button>
+            <button class="secondary" onclick="window.print()">Print results</button>
+          </div>
+        </div>
+        <div class="review" id="review"></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    "use strict";
+
+    const BANK = [{"id": 1, "question": "Which subatomic particle has a relative charge of +1?", "options": ["Proton", "Neutron", "Electron", "Nucleus"], "answer": 0, "explanation": "A proton has a relative charge of +1."}, {"id": 2, "question": "Which subatomic particle has no electrical charge?", "options": ["Neutron", "Proton", "Electron", "Ion"], "answer": 0, "explanation": "A neutron has a relative charge of 0."}, {"id": 3, "question": "Which subatomic particle has a relative charge of −1?", "options": ["Electron", "Proton", "Neutron", "Nucleus"], "answer": 0, "explanation": "An electron has a relative charge of −1."}, {"id": 4, "question": "Where are protons found in an atom?", "options": ["In the nucleus", "In electron shells", "Outside the atom", "Only in the outer shell"], "answer": 0, "explanation": "Protons are found in the nucleus."}, {"id": 5, "question": "Where are electrons found in the shell model of an atom?", "options": ["In shells around the nucleus", "Inside neutrons", "Only in the nucleus", "Between protons"], "answer": 0, "explanation": "Electrons occupy shells around the nucleus."}, {"id": 6, "question": "Which particles have approximately the same relative mass?", "options": ["Protons and neutrons", "Protons and electrons", "Neutrons and electrons", "All three particles"], "answer": 0, "explanation": "Protons and neutrons each have a relative mass of about 1; electrons are much lighter."}, {"id": 7, "question": "What does the atomic number tell you?", "options": ["The number of protons", "The number of neutrons", "The number of occupied shells", "The total number of particles"], "answer": 0, "explanation": "The atomic number is the number of protons in the nucleus."}, {"id": 8, "question": "What does the mass number tell you?", "options": ["The total number of protons and neutrons", "The number of electrons", "The number of protons only", "The number of valence electrons"], "answer": 0, "explanation": "Mass number = number of protons + number of neutrons."}, {"id": 9, "question": "Which statement best defines an element?", "options": ["A substance made of atoms with the same number of protons", "A substance made of atoms with the same number of neutrons", "A mixture of different substances", "Any substance containing electrons"], "answer": 0, "explanation": "All atoms of one element have the same atomic number, so they have the same number of protons."}, {"id": 10, "question": "In a neutral atom, which numbers are equal?", "options": ["Protons and electrons", "Protons and neutrons", "Neutrons and electrons", "Mass number and atomic number"], "answer": 0, "explanation": "A neutral atom has equal positive and negative charge, so its proton and electron numbers are equal."}, {"id": 11, "question": "A neutral atom has atomic number 8. How many protons does it have?", "options": ["8", "16", "10", "4"], "answer": 0, "explanation": "Atomic number equals the number of protons, so the atom has 8 protons."}, {"id": 12, "question": "A neutral atom has atomic number 8. How many electrons does it have?", "options": ["8", "16", "10", "4"], "answer": 0, "explanation": "A neutral atom has the same number of electrons as protons, so it has 8 electrons."}, {"id": 13, "question": "Oxygen-16 has atomic number 8. How many neutrons does it contain?", "options": ["8", "16", "24", "0"], "answer": 0, "explanation": "Neutrons = mass number − atomic number = 16 − 8 = 8."}, {"id": 14, "question": "Sodium-23 has atomic number 11. How many neutrons does it contain?", "options": ["12", "11", "23", "34"], "answer": 0, "explanation": "Neutrons = 23 − 11 = 12."}, {"id": 15, "question": "A neutral magnesium-24 atom has atomic number 12. Which set of particle numbers is correct?", "options": ["12 protons, 12 neutrons, 12 electrons", "12 protons, 24 neutrons, 12 electrons", "24 protons, 12 neutrons, 24 electrons", "12 protons, 12 neutrons, 24 electrons"], "answer": 0, "explanation": "It has 12 protons, 24 − 12 = 12 neutrons, and 12 electrons."}, {"id": 16, "question": "Calcium-40 has atomic number 20. How many neutrons does it contain?", "options": ["20", "40", "60", "10"], "answer": 0, "explanation": "Neutrons = 40 − 20 = 20."}, {"id": 17, "question": "An atom has 15 protons and 16 neutrons. What is its mass number?", "options": ["31", "15", "16", "1"], "answer": 0, "explanation": "Mass number = 15 + 16 = 31."}, {"id": 18, "question": "An atom has mass number 27 and 13 protons. How many neutrons does it have?", "options": ["14", "13", "27", "40"], "answer": 0, "explanation": "Neutrons = 27 − 13 = 14."}, {"id": 19, "question": "In isotope notation, where is the mass number usually written?", "options": ["At the upper left of the element symbol", "At the lower left of the symbol", "At the upper right of the symbol", "Below the element name"], "answer": 0, "explanation": "The mass number is written at the upper left of the element symbol."}, {"id": 20, "question": "In isotope notation, where is the atomic number usually written?", "options": ["At the lower left of the element symbol", "At the upper left of the symbol", "At the upper right of the symbol", "Above the element name"], "answer": 0, "explanation": "The atomic number is written at the lower left of the element symbol."}, {"id": 21, "question": "Which statement correctly defines isotopes?", "options": ["Atoms of the same element with different numbers of neutrons", "Atoms of different elements with the same number of protons", "Atoms with the same mass number and no electrons", "Atoms with different numbers of protons but the same symbol"], "answer": 0, "explanation": "Isotopes have the same number of protons but different numbers of neutrons."}, {"id": 22, "question": "Carbon-12 and carbon-14 are isotopes. Which number is the same in both?", "options": ["Number of protons", "Number of neutrons", "Mass number", "Total number of nuclear particles"], "answer": 0, "explanation": "Both are carbon, so they have the same atomic number and the same number of protons."}, {"id": 23, "question": "Carbon-12 and carbon-14 are isotopes. Which number is different?", "options": ["Number of neutrons", "Number of protons", "Atomic number", "Number of electrons in neutral atoms"], "answer": 0, "explanation": "Their different mass numbers come from different numbers of neutrons."}, {"id": 24, "question": "Why do isotopes of the same element have the same chemical properties?", "options": ["They have the same electron arrangement", "They have the same number of neutrons", "They have the same mass number", "Their nuclei contain no charge"], "answer": 0, "explanation": "Chemical behaviour depends mainly on electron arrangement, which is the same for neutral isotopes of an element."}, {"id": 25, "question": "Chlorine-35 and chlorine-37 both have atomic number 17. How many neutrons are in chlorine-37?", "options": ["20", "17", "35", "54"], "answer": 0, "explanation": "Neutrons = 37 − 17 = 20."}, {"id": 26, "question": "What is a group in the periodic table?", "options": ["A vertical column", "A horizontal row", "A diagonal sequence", "A set containing only metals"], "answer": 0, "explanation": "A group is a vertical column."}, {"id": 27, "question": "What is a period in the periodic table?", "options": ["A horizontal row", "A vertical column", "A group of gases", "A list of isotopes"], "answer": 0, "explanation": "A period is a horizontal row."}, {"id": 28, "question": "Why do elements in the same group have similar chemical properties?", "options": ["They have the same number of valence electrons", "They have the same mass number", "They have the same number of neutrons", "They all have the same number of occupied shells"], "answer": 0, "explanation": "Elements in the same group have the same number of outer-shell, or valence, electrons."}, {"id": 29, "question": "For the first 20 elements, what does the period number usually show?", "options": ["The number of occupied electron shells", "The number of valence electrons", "The number of neutrons", "The mass number"], "answer": 0, "explanation": "For the first 20 elements, the period number matches the number of occupied shells."}, {"id": 30, "question": "Where are metals generally located on the periodic table?", "options": ["On the left and through the centre", "Only on the far right", "Only in Group 18", "Only in the first period"], "answer": 0, "explanation": "Metals are generally found on the left-hand side and through the centre."}, {"id": 31, "question": "Where are non-metals generally located on the periodic table?", "options": ["On the right-hand side", "Only in the centre", "Only in Group 1", "Only below atomic number 10"], "answer": 0, "explanation": "Non-metals are generally found on the right-hand side."}, {"id": 32, "question": "What is the name of Group 1?", "options": ["Alkali metals", "Alkaline earth metals", "Noble gases", "Transition metals"], "answer": 0, "explanation": "Group 1 elements are called the alkali metals."}, {"id": 33, "question": "What is the name of Group 2?", "options": ["Alkaline earth metals", "Alkali metals", "Noble gases", "Halogens"], "answer": 0, "explanation": "Group 2 elements are called the alkaline earth metals."}, {"id": 34, "question": "What is the name commonly given to Group 17?", "options": ["Halogens", "Noble gases", "Alkali metals", "Transition metals"], "answer": 0, "explanation": "Group 17 elements are called the halogens."}, {"id": 35, "question": "What is the name of Group 18?", "options": ["Noble gases", "Halogens", "Alkali metals", "Alkaline earth metals"], "answer": 0, "explanation": "Group 18 elements are called the noble gases."}, {"id": 36, "question": "Which description best matches Group 1 elements?", "options": ["Soft, silvery metals", "Unreactive gases", "Brittle non-metals", "Colourless liquids only"], "answer": 0, "explanation": "Group 1 elements are relatively soft, silvery metals."}, {"id": 37, "question": "What forms when a Group 1 metal reacts with water?", "options": ["A metal hydroxide solution and hydrogen gas", "A metal chloride and oxygen gas", "A noble gas and water", "A metal carbonate only"], "answer": 0, "explanation": "Group 1 metals react with water to form a metal hydroxide solution and hydrogen."}, {"id": 38, "question": "Which property is typical of Group 2 elements?", "options": ["They conduct heat and electricity", "They are all gases at room temperature", "They have full outer shells", "They form diatomic non-metal molecules"], "answer": 0, "explanation": "Group 2 elements are metals and are good conductors of heat and electricity."}, {"id": 39, "question": "How many valence electrons do Group 17 atoms have?", "options": ["7", "1", "2", "8"], "answer": 0, "explanation": "Group 17 atoms have seven valence electrons."}, {"id": 40, "question": "How do Group 17 elements occur in their pure state?", "options": ["As diatomic molecules", "Only as single atoms", "As metallic lattices", "As 2+ ions"], "answer": 0, "explanation": "Group 17 elements form diatomic molecules in their pure state."}, {"id": 41, "question": "What happens to the melting point of Group 17 elements down the group?", "options": ["It generally increases", "It generally becomes zero", "It stays exactly the same", "It cannot be compared"], "answer": 0, "explanation": "The melting point generally increases down Group 17."}, {"id": 42, "question": "What physical state are Group 18 elements at room temperature?", "options": ["Gas", "Solid", "Liquid", "Plasma only"], "answer": 0, "explanation": "All Group 18 elements are gases at room temperature."}, {"id": 43, "question": "Why are Group 18 elements generally unreactive?", "options": ["They have full outer electron shells", "They have no electrons", "They have no neutrons", "They have only one proton"], "answer": 0, "explanation": "A full outer shell gives Group 18 atoms a stable electron arrangement."}, {"id": 44, "question": "What is the electron configuration of a neutral sodium atom, atomic number 11?", "options": ["2, 8, 1", "2, 7, 2", "2, 8, 2", "2, 9"], "answer": 0, "explanation": "Sodium has 11 electrons arranged 2, 8, 1."}, {"id": 45, "question": "What is the electron configuration of a neutral magnesium atom, atomic number 12?", "options": ["2, 8, 2", "2, 8, 1", "2, 7, 3", "2, 10"], "answer": 0, "explanation": "Magnesium has 12 electrons arranged 2, 8, 2."}, {"id": 46, "question": "What is the electron configuration of a neutral chlorine atom, atomic number 17?", "options": ["2, 8, 7", "2, 7, 8", "2, 8, 8", "2, 6, 9"], "answer": 0, "explanation": "Chlorine has 17 electrons arranged 2, 8, 7."}, {"id": 47, "question": "What is the electron configuration of a neutral argon atom, atomic number 18?", "options": ["2, 8, 8", "2, 8, 7, 1", "2, 7, 9", "2, 8, 6, 2"], "answer": 0, "explanation": "Argon has 18 electrons arranged 2, 8, 8."}, {"id": 48, "question": "What is the electron configuration of a neutral potassium atom, atomic number 19?", "options": ["2, 8, 8, 1", "2, 8, 9", "2, 8, 7, 2", "2, 9, 8"], "answer": 0, "explanation": "Potassium has 19 electrons arranged 2, 8, 8, 1."}, {"id": 49, "question": "An atom has electron configuration 2, 8, 7. Which group is it in?", "options": ["Group 17", "Group 18", "Group 2", "Group 1"], "answer": 0, "explanation": "It has seven valence electrons, so it is in Group 17."}, {"id": 50, "question": "Which element should have chemical properties most similar to sodium?", "options": ["Lithium", "Magnesium", "Chlorine", "Neon"], "answer": 0, "explanation": "Lithium and sodium are both in Group 1 and therefore have the same number of valence electrons."}];
+
+    const state = {
+      quiz: [],
+      index: 0,
+      score: 0,
+      responses: [],
+      answered: false
+    };
+
+    const el = {
+      setup: document.getElementById("setup"),
+      quiz: document.getElementById("quiz"),
+      results: document.getElementById("results"),
+      count: document.getElementById("count"),
+      start: document.getElementById("start"),
+      progressText: document.getElementById("progressText"),
+      scoreText: document.getElementById("scoreText"),
+      progressBar: document.getElementById("progressBar"),
+      questionNumber: document.getElementById("questionNumber"),
+      question: document.getElementById("question"),
+      answers: document.getElementById("answers"),
+      feedback: document.getElementById("feedback"),
+      next: document.getElementById("next"),
+      finish: document.getElementById("finish"),
+      finalScore: document.getElementById("finalScore"),
+      scoreCircle: document.getElementById("scoreCircle"),
+      message: document.getElementById("message"),
+      summary: document.getElementById("summary"),
+      review: document.getElementById("review"),
+      again: document.getElementById("again"),
+      retry: document.getElementById("retry")
+    };
+
+    function shuffle(items) {
+      const a = [...items];
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    function prepare(question) {
+      return {
+        ...question,
+        choices: shuffle(question.options.map((text, index) => ({
+          text,
+          correct: index === question.answer
+        })))
+      };
+    }
+
+    function show(name) {
+      el.setup.classList.toggle("hidden", name !== "setup");
+      el.quiz.classList.toggle("hidden", name !== "quiz");
+      el.results.classList.toggle("hidden", name !== "results");
+    }
+
+    function begin(source = null) {
+      const questions = source || shuffle(BANK).slice(0, Number(el.count.value));
+      state.quiz = questions.map(prepare);
+      state.index = 0;
+      state.score = 0;
+      state.responses = [];
+      state.answered = false;
+      show("quiz");
+      render();
+    }
+
+    function render() {
+      const q = state.quiz[state.index];
+      const number = state.index + 1;
+      const total = state.quiz.length;
+
+      state.answered = false;
+      el.progressText.textContent = `Question ${number} of ${total}`;
+      el.scoreText.textContent = `Score: ${state.score}`;
+      el.progressBar.style.width = `${(state.index / total) * 100}%`;
+      el.questionNumber.textContent = `Question ${number}`;
+      el.question.textContent = q.question;
+      el.answers.innerHTML = "";
+      el.feedback.className = "feedback hidden";
+      el.feedback.textContent = "";
+      el.next.classList.add("hidden");
+
+      q.choices.forEach((choice, index) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "answer";
+        button.innerHTML =
+          `<span class="letter">${String.fromCharCode(65 + index)}</span>` +
+          `<span>${choice.text}</span>`;
+        button.addEventListener("click", () => choose(index));
+        el.answers.appendChild(button);
+      });
+    }
+
+    function choose(index) {
+      if (state.answered) return;
+      state.answered = true;
+
+      const q = state.quiz[state.index];
+      const selected = q.choices[index];
+      const correctChoice = q.choices.find(choice => choice.correct);
+      const buttons = [...el.answers.querySelectorAll(".answer")];
+
+      buttons.forEach((button, i) => {
+        button.disabled = true;
+        if (q.choices[i].correct) button.classList.add("correct");
+      });
+
+      if (selected.correct) {
+        state.score += 1;
+        buttons[index].classList.add("correct");
+        el.feedback.className = "feedback correct";
+        el.feedback.innerHTML = `<strong>Correct</strong>${q.explanation}`;
+      } else {
+        buttons[index].classList.add("wrong");
+        el.feedback.className = "feedback wrong";
+        el.feedback.innerHTML = `<strong>Not quite</strong>${q.explanation}`;
+      }
+
+      state.responses.push({
+        id: q.id,
+        question: q.question,
+        selected: selected.text,
+        correct: correctChoice.text,
+        isCorrect: selected.correct,
+        explanation: q.explanation
+      });
+
+      el.scoreText.textContent = `Score: ${state.score}`;
+      el.progressBar.style.width = `${((state.index + 1) / state.quiz.length) * 100}%`;
+      el.next.textContent = state.index === state.quiz.length - 1 ? "See results" : "Next question";
+      el.next.classList.remove("hidden");
+    }
+
+    function next() {
+      if (!state.answered) return;
+      if (state.index < state.quiz.length - 1) {
+        state.index += 1;
+        render();
+      } else {
+        finish();
+      }
+    }
+
+    function finish() {
+      if (!state.responses.length) {
+        show("setup");
+        return;
+      }
+
+      show("results");
+      const total = state.responses.length;
+      const score = state.responses.filter(r => r.isCorrect).length;
+      const percent = Math.round((score / total) * 100);
+
+      el.finalScore.textContent = `${score}/${total}`;
+      el.scoreCircle.style.setProperty("--angle", `${percent * 3.6}deg`);
+
+      if (percent === 100) el.message.textContent = "Excellent work!";
+      else if (percent >= 80) el.message.textContent = "Very strong result.";
+      else if (percent >= 60) el.message.textContent = "Good progress.";
+      else el.message.textContent = "Keep practising — the next quiz will use a new mix.";
+
+      el.summary.textContent = `You answered ${score} of ${total} questions correctly (${percent}%).`;
+
+      const incorrect = state.responses.filter(r => !r.isCorrect);
+      el.retry.classList.toggle("hidden", incorrect.length === 0);
+
+      el.review.innerHTML = "<h2>Answer review</h2>";
+      state.responses.forEach((r, index) => {
+        const item = document.createElement("div");
+        item.className = "review-item";
+        item.innerHTML = `
+          <h3>${index + 1}. ${r.question}</h3>
+          <p class="${r.isCorrect ? "right" : "incorrect"}">Your answer: ${r.selected}</p>
+          ${r.isCorrect ? "" : `<p class="right">Correct answer: ${r.correct}</p>`}
+          <p>${r.explanation}</p>
+        `;
+        el.review.appendChild(item);
+      });
+    }
+
+    el.start.addEventListener("click", () => begin());
+    el.next.addEventListener("click", next);
+    el.finish.addEventListener("click", finish);
+    el.again.addEventListener("click", () => show("setup"));
+    el.retry.addEventListener("click", () => {
+      const missedIds = state.responses.filter(r => !r.isCorrect).map(r => r.id);
+      const missed = BANK.filter(q => missedIds.includes(q.id));
+      begin(missed);
+    });
+  </script>
+</body>
+</html>
