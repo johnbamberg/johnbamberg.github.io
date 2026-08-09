@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#17365d">
+  <title>Year 9 Mathematics Pathway 1 Practice Quiz</title>
+  <style>
+    :root {
+      --navy: #17365d;
+      --blue: #2563a6;
+      --teal: #177e89;
+      --gold: #d49a24;
+      --paper: #ffffff;
+      --page: #eef3f7;
+      --ink: #18232d;
+      --muted: #5e6b76;
+      --line: #d7e0e7;
+      --soft: #f7f9fb;
+      --correct: #18794e;
+      --correct-bg: #e8f6ef;
+      --wrong: #b33a3a;
+      --wrong-bg: #fdecec;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(23,126,137,.12), transparent 34rem),
+        var(--page);
+      -webkit-tap-highlight-color: transparent;
+    }
+    .app {
+      width: min(900px, calc(100% - 24px));
+      margin: 24px auto;
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    header {
+      padding: 28px 30px;
+      color: white;
+      border-radius: 20px 20px 0 0;
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+      box-shadow: 0 16px 40px rgba(23,54,93,.14);
+    }
+    header h1 { margin: 0 0 7px; font-size: clamp(1.7rem, 4vw, 2.45rem); line-height: 1.12; }
+    header p { margin: 0; color: rgba(255,255,255,.88); line-height: 1.45; }
+    main {
+      padding: 28px 30px 34px;
+      background: var(--paper);
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 16px 40px rgba(23,54,93,.14);
+    }
+    h2 { line-height: 1.25; }
+    .hidden { display: none !important; }
+    .panel {
+      padding: 17px 18px;
+      margin: 20px 0;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: var(--soft);
+    }
+    .panel p { margin: 5px 0 0; color: var(--muted); line-height: 1.55; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    label { display: block; margin-bottom: 7px; font-weight: 750; }
+    select {
+      width: 100%;
+      min-height: 46px;
+      padding: 10px 13px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: white;
+      color: var(--ink);
+      font: inherit;
+    }
+    button {
+      min-height: 46px;
+      border: 0;
+      border-radius: 11px;
+      padding: 12px 18px;
+      font: inherit;
+      font-weight: 760;
+      cursor: pointer;
+      touch-action: manipulation;
+    }
+    button:focus-visible, select:focus-visible { outline: 3px solid rgba(37,99,166,.28); outline-offset: 2px; }
+    button:disabled { cursor: default; opacity: .86; }
+    .primary { color: white; background: var(--blue); }
+    .primary:active { transform: translateY(1px); }
+    .secondary { color: var(--ink); background: #e8eef2; }
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .progress {
+      height: 10px;
+      margin: 12px 0 22px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #e6edf0;
+    }
+    .progress div { width: 0; height: 100%; background: var(--teal); transition: width .2s ease; }
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--blue);
+      font-size: .88rem;
+      font-weight: 850;
+      letter-spacing: .045em;
+      text-transform: uppercase;
+    }
+    .topic-chip {
+      display: inline-block;
+      margin-left: 7px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #eaf1f8;
+      color: var(--navy);
+      font-size: .78rem;
+      letter-spacing: 0;
+      text-transform: none;
+      vertical-align: 1px;
+    }
+    #question {
+      margin: 0 0 16px;
+      font-size: clamp(1.18rem, 2.5vw, 1.52rem);
+      line-height: 1.42;
+    }
+    .question-extra { margin: -4px 0 18px; overflow-x: auto; }
+    .math-table { border-collapse: collapse; margin: 10px 0 4px; min-width: 300px; }
+    .math-table th, .math-table td { border: 1px solid #aebbc6; padding: 8px 11px; text-align: center; }
+    .math-table th { background: #f0f4f7; }
+    .answers { display: grid; gap: 11px; }
+    .answer {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 10px;
+      align-items: center;
+      width: 100%;
+      padding: 13px 15px;
+      text-align: left;
+      color: var(--ink);
+      background: white;
+      border: 2px solid var(--line);
+    }
+    .answer:active:not(:disabled) { background: #f4f8fb; }
+    .letter {
+      display: grid;
+      place-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      color: var(--navy);
+      background: #edf3f5;
+      font-weight: 850;
+    }
+    .answer.correct { border-color: var(--correct); background: var(--correct-bg); }
+    .answer.wrong { border-color: var(--wrong); background: var(--wrong-bg); }
+    .feedback {
+      margin-top: 18px;
+      padding: 15px 17px;
+      border-radius: 12px;
+      line-height: 1.55;
+    }
+    .feedback.correct { border-left: 5px solid var(--correct); background: var(--correct-bg); }
+    .feedback.wrong { border-left: 5px solid var(--wrong); background: var(--wrong-bg); }
+    .feedback strong { display: block; margin-bottom: 3px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .centre { justify-content: center; }
+    .results { text-align: center; }
+    .score {
+      display: grid;
+      place-items: center;
+      width: 150px;
+      height: 150px;
+      margin: 20px auto;
+      border-radius: 50%;
+      background: conic-gradient(var(--teal) var(--angle), #e4ecef 0);
+      position: relative;
+    }
+    .score::after { content: ""; position: absolute; inset: 13px; border-radius: 50%; background: white; }
+    .score span { position: relative; z-index: 1; font-size: 2rem; font-weight: 850; }
+    .breakdown {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 20px 0;
+      text-align: center;
+    }
+    .breakdown div { padding: 12px 8px; border: 1px solid var(--line); border-radius: 11px; background: var(--soft); }
+    .breakdown strong { display: block; font-size: 1.15rem; }
+    .breakdown span { color: var(--muted); font-size: .86rem; }
+    .review { margin-top: 28px; text-align: left; }
+    .review-item { padding: 15px 0; border-top: 1px solid var(--line); }
+    .review-item h3 { margin: 0 0 7px; font-size: 1rem; line-height: 1.4; }
+    .review-item p { margin: 4px 0; color: var(--muted); line-height: 1.45; }
+    .right { color: var(--correct) !important; font-weight: 750; }
+    .incorrect { color: var(--wrong) !important; font-weight: 750; }
+    .note { color: var(--muted); font-size: .92rem; line-height: 1.48; }
+    .device-note { border-left: 4px solid var(--gold); }
+    noscript .noscript { display: block; padding: 18px; margin: 20px 0; border-radius: 10px; background: #fff3cd; color: #5c4600; }
+    @media (hover: hover) {
+      .primary:hover:not(:disabled) { background: var(--navy); }
+      .answer:hover:not(:disabled) { border-color: #8eb4c0; background: #f8fbfc; }
+    }
+    @media (max-width: 620px) {
+      .app { width: min(100% - 12px, 900px); margin: 6px auto; }
+      header, main { padding-left: 18px; padding-right: 18px; }
+      header { border-radius: 14px 14px 0 0; }
+      main { border-radius: 0 0 14px 14px; }
+      .grid { grid-template-columns: 1fr; }
+      .answer { padding: 12px; }
+      .breakdown { grid-template-columns: 1fr; }
+    }
+    @media print {
+      body { background: white; }
+      .app { width: 100%; margin: 0; }
+      header, main { box-shadow: none; border-radius: 0; }
+      .actions, .progress, #setup { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Year 9 Mathematics — Pathway 1</h1>
+      <p>Practice quiz: Linear Relations, Probability and Statistics</p>
+    </header>
+    <main>
+      <noscript><div class="noscript">This quiz needs JavaScript. Open the HTML file in a web browser rather than an email or file preview.</div></noscript>
+
+      <section id="setup">
+        <h2>Prepare for the test</h2>
+        <p>Each attempt draws a fresh set of questions from a bank of 60 and shuffles the answer choices. Answers include short worked explanations.</p>
+
+        <div class="panel">
+          <strong>WA Year 9 core focus</strong>
+          <p><b>Linear Relations:</b> gradient, midpoint, distance, equations of straight lines, tables of values, direct proportion and interpreting gradient/intercepts. <b>Probability:</b> two-stage events, with and without replacement, sample spaces, estimated probability and chance variation. <b>Statistics:</b> mean/median/mode/range, relative frequency, comparing distributions, sampling methods and judging whether samples are representative.</p>
+        </div>
+
+        <div class="grid">
+          <div>
+            <label for="topic">Topic</label>
+            <select id="topic">
+              <option value="mixed" selected>Mixed — all three topics</option>
+              <option value="Linear Relations">Linear Relations only</option>
+              <option value="Probability">Probability only</option>
+              <option value="Statistics">Statistics only</option>
+            </select>
+          </div>
+          <div>
+            <label for="count">Quiz length</label>
+            <select id="count">
+              <option value="5">5 questions</option>
+              <option value="10" selected>10 questions</option>
+              <option value="15">15 questions</option>
+              <option value="20">20 questions</option>
+              <option value="30">30 questions</option>
+              <option value="60">Full 60-question bank</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="button" class="primary" id="start">Start quiz</button>
+        </div>
+        <p class="note">Works offline: no login, installation or internet connection is needed once the file is saved.</p>
+        <div class="panel device-note">
+          <strong>iPhone/iPad note</strong>
+          <p>If the Start button does nothing while viewing an email attachment or Files preview, that preview is blocking JavaScript. Save the file and open it in a web browser. On a laptop, double-clicking the saved HTML file should open it directly in the browser.</p>
+        </div>
+      </section>
+
+      <section id="quiz" class="hidden">
+        <div class="topline">
+          <span id="progressText"></span>
+          <span id="scoreText"></span>
+        </div>
+        <div class="progress"><div id="progressBar"></div></div>
+        <p class="eyebrow"><span id="questionNumber"></span><span class="topic-chip" id="topicChip"></span></p>
+        <h2 id="question"></h2>
+        <div id="questionExtra" class="question-extra"></div>
+        <div class="answers" id="answers"></div>
+        <div id="feedback" class="feedback hidden" aria-live="polite"></div>
+        <div class="actions">
+          <button type="button" class="primary hidden" id="next">Next question</button>
+          <button type="button" class="secondary" id="finish">End quiz</button>
+        </div>
+      </section>
+
+      <section id="results" class="hidden">
+        <div class="results">
+          <h2>Quiz complete</h2>
+          <div class="score" id="scoreCircle" style="--angle:0deg"><span id="finalScore"></span></div>
+          <h3 id="message"></h3>
+          <p id="summary"></p>
+          <div class="breakdown" id="breakdown"></div>
+          <div class="actions centre">
+            <button type="button" class="primary" id="again">New random quiz</button>
+            <button type="button" class="secondary hidden" id="retry">Retry incorrect questions</button>
+            <button type="button" class="secondary" id="print">Print results</button>
+          </div>
+        </div>
+        <div class="review" id="review"></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+  (function () {
+    "use strict";
+
+    var BANK = [
+      {id:1,topic:"Linear Relations",q:"What is the gradient of the line segment joining (2, 3) and (6, 11)?",o:["2","1/2","4","8"],a:0,e:"Gradient = rise/run = (11 − 3)/(6 − 2) = 8/4 = 2."},
+      {id:2,topic:"Linear Relations",q:"What is the midpoint of the line segment joining (−2, 5) and (4, −1)?",o:["(1, 2)","(2, 1)","(−3, 6)","(1, 3)"],a:0,e:"Midpoint = ((−2 + 4)/2, (5 + (−1))/2) = (1, 2)."},
+      {id:3,topic:"Linear Relations",q:"For the relation y = 3x − 4, what is y when x = 5?",o:["11","19","7","15"],a:0,e:"Substitute x = 5: y = 3(5) − 4 = 15 − 4 = 11."},
+      {id:4,topic:"Linear Relations",q:"Which equation has gradient −2 and y-intercept 5?",o:["y = −2x + 5","y = 5x − 2","y = 2x + 5","y = −2x − 5"],a:0,e:"In y = mx + c, m is the gradient and c is the y-intercept, so y = −2x + 5."},
+      {id:5,topic:"Linear Relations",q:"The table follows a linear relation. What is its gradient?",x:"<table class='math-table'><tr><th>x</th><td>0</td><td>1</td><td>2</td><td>3</td></tr><tr><th>y</th><td>−1</td><td>3</td><td>7</td><td>11</td></tr></table>",o:["4","3","−1","5"],a:0,e:"Each time x increases by 1, y increases by 4. Therefore the gradient is 4."},
+      {id:6,topic:"Linear Relations",q:"A line passes through (0, −2) and (3, 4). Which equation describes the line?",o:["y = 2x − 2","y = 3x − 2","y = 2x + 2","y = −2x + 4"],a:0,e:"The gradient is (4 − (−2))/(3 − 0) = 6/3 = 2, and the y-intercept is −2. So y = 2x − 2."},
+      {id:7,topic:"Linear Relations",q:"Which point lies on the line y = −3x + 7?",o:["(2, 1)","(1, 5)","(0, 3)","(3, 0)"],a:0,e:"For (2, 1), the right side is −3(2) + 7 = 1, which matches y = 1."},
+      {id:8,topic:"Linear Relations",q:"What is the y-intercept of y = 5x + 8?",o:["8","5","−8","0"],a:0,e:"The y-intercept is the value of y when x = 0. Here y = 8."},
+      {id:9,topic:"Linear Relations",q:"y is directly proportional to x. If y = 12 when x = 3, which equation relates y and x?",o:["y = 4x","y = 3x + 3","y = 12x","y = x + 9"],a:0,e:"Direct proportion has the form y = kx. Here k = 12/3 = 4, so y = 4x."},
+      {id:10,topic:"Linear Relations",q:"Which relation shows direct proportion?",o:["y = 2.5x","y = 2.5x + 1","y = x − 4","y = 5"],a:0,e:"A direct proportion has the form y = kx and its graph passes through the origin. Only y = 2.5x has this form."},
+      {id:11,topic:"Linear Relations",q:"What is the distance between (1, 2) and (4, 6)?",o:["5","7","4","3"],a:0,e:"The horizontal change is 3 and the vertical change is 4. Distance = √(3² + 4²) = √25 = 5."},
+      {id:12,topic:"Linear Relations",q:"What is the gradient of the line through (1, 5) and (5, −3)?",o:["−2","2","−1/2","−8"],a:0,e:"Gradient = (−3 − 5)/(5 − 1) = −8/4 = −2."},
+      {id:13,topic:"Linear Relations",q:"On the line y = 2x + 1, what value of x gives y = 13?",o:["6","7","5","12"],a:0,e:"Set 13 = 2x + 1. Then 12 = 2x, so x = 6."},
+      {id:14,topic:"Linear Relations",q:"What is true about the lines y = 3x + 2 and y = 3x − 5?",o:["They are parallel","They are perpendicular","They have the same y-intercept","They cross at (0, 3)"],a:0,e:"Both lines have gradient 3 but different y-intercepts, so they are parallel."},
+      {id:15,topic:"Linear Relations",q:"Which equation has gradient 1/2 and y-intercept −3?",o:["y = 0.5x − 3","y = −3x + 0.5","y = 2x − 3","y = 0.5x + 3"],a:0,e:"Using y = mx + c with m = 1/2 and c = −3 gives y = 0.5x − 3."},
+      {id:16,topic:"Linear Relations",q:"A taxi fare has a fixed charge of $4 plus $2.50 per kilometre. If d is distance in kilometres and C is cost in dollars, which relation is correct?",o:["C = 2.5d + 4","C = 4d + 2.5","C = 6.5d","C = 2.5d − 4"],a:0,e:"The $4 is the fixed starting cost (intercept) and $2.50 is added for each kilometre, so C = 2.5d + 4."},
+      {id:17,topic:"Linear Relations",q:"A tank contains V = 12t + 50 litres after t minutes. What does the gradient 12 mean?",o:["The tank gains 12 litres per minute","The tank starts with 12 litres","The tank gains 50 litres per minute","The tank is empty after 12 minutes"],a:0,e:"The coefficient of t is the rate of change: the volume increases by 12 litres each minute."},
+      {id:18,topic:"Linear Relations",q:"For V = 12t + 50, what does the number 50 represent?",o:["The initial volume is 50 litres","The tank fills at 50 litres per minute","The tank takes 50 minutes to fill","The gradient is 50"],a:0,e:"At t = 0, V = 50, so 50 litres is the initial amount in the tank."},
+      {id:19,topic:"Linear Relations",q:"For y = −x + 4, what is y when x = −2?",o:["6","2","−6","−2"],a:0,e:"Substitute x = −2: y = −(−2) + 4 = 2 + 4 = 6."},
+      {id:20,topic:"Linear Relations",q:"Which relation is NOT a direct proportion?",o:["y = 3x + 1","y = 7x","y = 0.4x","y = −2x"],a:0,e:"Direct proportion must have the form y = kx, with no added constant. y = 3x + 1 does not pass through the origin."},
+
+      {id:21,topic:"Probability",q:"Two fair coins are tossed. How many outcomes are in the sample space if order matters?",o:["4","2","3","8"],a:0,e:"The sample space is {HH, HT, TH, TT}, so there are 4 outcomes."},
+      {id:22,topic:"Probability",q:"Two fair coins are tossed. What is the probability of getting two heads?",o:["1/4","1/2","3/4","1/8"],a:0,e:"Only HH is favourable out of the 4 equally likely outcomes, so the probability is 1/4."},
+      {id:23,topic:"Probability",q:"A fair coin is tossed and a fair six-sided die is rolled. What is the probability of getting a head AND an even number?",o:["1/4","1/2","1/3","1/6"],a:0,e:"P(head) = 1/2 and P(even) = 3/6 = 1/2. The events are independent, so P = 1/2 × 1/2 = 1/4."},
+      {id:24,topic:"Probability",q:"A bag has 3 red and 2 blue counters. A counter is chosen, replaced, then another is chosen. What is P(red then red)?",o:["9/25","3/10","6/25","2/5"],a:0,e:"With replacement, each draw has P(red) = 3/5. So P(red, red) = 3/5 × 3/5 = 9/25."},
+      {id:25,topic:"Probability",q:"A bag has 3 red and 2 blue counters. Two counters are chosen without replacement. What is P(red then red)?",o:["3/10","9/25","1/2","2/5"],a:0,e:"P(first red) = 3/5. Then 2 red remain out of 4 counters, so P = 3/5 × 2/4 = 6/20 = 3/10."},
+      {id:26,topic:"Probability",q:"A counter is drawn from a bag, replaced, and then a second counter is drawn. Which statement best describes the two draws?",o:["The draws are independent","The draws are always mutually exclusive","The second draw is impossible","The draws must have equal outcomes"],a:0,e:"Replacement restores the bag to its original contents, so the first outcome does not change the probabilities on the second draw."},
+      {id:27,topic:"Probability",q:"A counter is drawn from a bag and NOT replaced before a second counter is drawn. Why are the draws dependent?",o:["The first draw changes the contents of the bag","The second draw always matches the first","There is only one possible outcome","All counters become equally likely only after the first draw"],a:0,e:"Without replacement, the first draw changes what remains, so the probabilities for the second draw depend on the first result."},
+      {id:28,topic:"Probability",q:"The digits 1, 2, 3, 4 and 5 are on five cards. Two cards are drawn without replacement to form a two-digit number. What is the probability that the number is even?",o:["2/5","1/2","1/5","3/5"],a:0,e:"There are 5 × 4 = 20 ordered outcomes. An even number must end in 2 or 4. For each even final digit there are 4 choices for the first digit, giving 8 favourable outcomes. 8/20 = 2/5."},
+      {id:29,topic:"Probability",q:"A fair spinner has four equal sectors labelled A, A, B and C. It is spun twice. What is P(B then C)?",o:["1/16","1/8","1/4","1/12"],a:0,e:"P(B) = 1/4 and P(C) = 1/4. The spins are independent, so P(B then C) = 1/4 × 1/4 = 1/16."},
+      {id:30,topic:"Probability",q:"Two fair coins are tossed. What is the probability of getting at least one head?",o:["3/4","1/4","1/2","1"],a:0,e:"The outcomes are HH, HT, TH and TT. Three of the four have at least one head, so the probability is 3/4."},
+      {id:31,topic:"Probability",q:"A box contains 2 caramel chocolates and 1 strawberry chocolate. Two chocolates are selected without replacement. What is P(two caramels)?",o:["1/3","4/9","2/3","1/2"],a:0,e:"P(first caramel) = 2/3, then P(second caramel) = 1/2. So P = 2/3 × 1/2 = 1/3."},
+      {id:32,topic:"Probability",q:"The same box has 2 caramel and 1 strawberry chocolate. If a chocolate is selected, its flavour recorded and it is replaced before the second selection, what is P(two caramels)?",o:["4/9","1/3","2/9","2/3"],a:0,e:"With replacement, P(caramel) stays 2/3 on each selection. So P = 2/3 × 2/3 = 4/9."},
+      {id:33,topic:"Probability",q:"A bag contains 3 blue counters and 1 green counter. Two counters are drawn without replacement. What is the probability of getting one of each colour, in either order?",o:["1/2","3/8","1/4","3/4"],a:0,e:"P(B then G) = 3/4 × 1/3 = 1/4. P(G then B) = 1/4 × 3/3 = 1/4. Total = 1/2."},
+      {id:34,topic:"Probability",q:"An event has probability 0.30. About how many times would you expect it to occur in 200 trials?",o:["60","30","70","20"],a:0,e:"Expected frequency = probability × number of trials = 0.30 × 200 = 60."},
+      {id:35,topic:"Probability",q:"In a simulation, an event occurred 87 times in 300 trials. What is the estimated probability?",o:["0.29","0.87","0.30","0.13"],a:0,e:"Estimated probability = relative frequency = 87/300 = 0.29."},
+      {id:36,topic:"Probability",q:"A fair coin is simulated many times. What usually happens to the estimated probability of heads as the number of trials becomes very large?",o:["It tends to get closer to 0.5","It must become exactly 0.5","It tends to get closer to 1","It becomes less reliable"],a:0,e:"With many trials, relative frequency usually settles closer to the theoretical probability 0.5, though it need not equal 0.5 exactly."},
+      {id:37,topic:"Probability",q:"In a probability tree, what operation is normally used to find the probability of following one complete path through successive stages?",o:["Multiply the probabilities along the path","Add every probability in the tree","Subtract the second probability from the first","Average the probabilities on the path"],a:0,e:"For successive stages on one path, multiply the branch probabilities, adjusting probabilities if the situation is without replacement."},
+      {id:38,topic:"Probability",q:"Two fair six-sided dice are rolled. What is the probability that their sum is 7?",o:["1/6","1/12","1/7","5/36"],a:0,e:"There are 36 equally likely ordered outcomes. Six give a sum of 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). Thus 6/36 = 1/6."},
+      {id:39,topic:"Probability",q:"If P(red) = 0.35, what is P(not red)?",o:["0.65","0.35","1.35","0.55"],a:0,e:"An event and its complement add to 1, so P(not red) = 1 − 0.35 = 0.65."},
+      {id:40,topic:"Probability",q:"A bag has 2 red and 3 blue counters. A counter is selected, replaced, then another is selected. What is the probability that the two colours are different?",o:["12/25","6/25","13/25","2/5"],a:0,e:"Different colours means R then B or B then R: (2/5 × 3/5) + (3/5 × 2/5) = 6/25 + 6/25 = 12/25."},
+
+      {id:41,topic:"Statistics",q:"What is the mean of 4, 5, 6 and 9?",o:["6","5","6.5","7"],a:0,e:"Mean = (4 + 5 + 6 + 9)/4 = 24/4 = 6."},
+      {id:42,topic:"Statistics",q:"What is the median of 3, 4, 4, 7 and 12?",o:["4","6","7","5"],a:0,e:"The data are already ordered. The middle (third) value is 4."},
+      {id:43,topic:"Statistics",q:"What is the mode of 2, 2, 3, 5, 5, 5 and 8?",o:["5","2","3","8"],a:0,e:"The mode is the most frequent value. Here 5 occurs three times, more than any other value."},
+      {id:44,topic:"Statistics",q:"A dataset has minimum 6 and maximum 18. What is its range?",o:["12","24","6","18"],a:0,e:"Range = maximum − minimum = 18 − 6 = 12."},
+      {id:45,topic:"Statistics",q:"The table shows scores for 10 students. What is the mean score?",x:"<table class='math-table'><tr><th>Score</th><td>1</td><td>2</td><td>3</td></tr><tr><th>Frequency</th><td>2</td><td>3</td><td>5</td></tr></table>",o:["2.3","2.0","2.5","2.8"],a:0,e:"Total score = 1×2 + 2×3 + 3×5 = 2 + 6 + 15 = 23. Mean = 23/10 = 2.3."},
+      {id:46,topic:"Statistics",q:"In a sample of 45 students, 18 prefer option A. What is the relative frequency for option A?",o:["0.40","0.18","0.45","0.60"],a:0,e:"Relative frequency = 18/45 = 0.40."},
+      {id:47,topic:"Statistics",q:"In a representative sample, 40% of students choose a particular lunch. About how many would you predict to choose it in a population of 250 students?",o:["100","40","150","90"],a:0,e:"0.40 × 250 = 100, so about 100 students would be predicted to choose it."},
+      {id:48,topic:"Statistics",q:"Two datasets have the same median, but Dataset B has a much larger range. What does this tell you?",o:["Dataset B has greater spread","Dataset B must have a larger mean","Dataset B has a smaller sample size","The datasets have identical distributions"],a:0,e:"Range is a measure of spread. A larger range means the values in Dataset B are more spread out."},
+      {id:49,topic:"Statistics",q:"A dataset is 5, 6, 6, 7, 7, 8, 30. Which statement best describes the effect of the outlier 30?",o:["It pulls the mean upward more strongly than the median","It makes the median equal to 30","It makes the range smaller","It has no effect on the mean"],a:0,e:"The large outlier contributes directly to the total used for the mean, while the median remains the middle value 7. The mean is therefore pulled upward."},
+      {id:50,topic:"Statistics",q:"A student surveys the first 20 people who enter the canteen because they are easy to reach. What sampling method is this?",o:["Convenience sampling","Systematic sampling","Stratified sampling","Census"],a:0,e:"Convenience sampling chooses people because they are readily available rather than by a random or structured selection method."},
+      {id:51,topic:"Statistics",q:"A school selects every 10th name from an alphabetical list of students after choosing a starting point. What sampling method is being used?",o:["Systematic sampling","Convenience sampling","Cluster sampling","Census"],a:0,e:"Systematic sampling selects members at a regular interval, such as every 10th name."},
+      {id:52,topic:"Statistics",q:"A school wants a sample that contains students from each year group in the same proportions as the whole school. Which method is most suitable?",o:["Stratified sampling","Convenience sampling","Cluster sampling","Voluntary response sampling"],a:0,e:"Stratified sampling divides the population into groups and samples from each group in suitable proportions."},
+      {id:53,topic:"Statistics",q:"A researcher randomly chooses two whole classes and surveys every student in those classes. Which sampling method is this?",o:["Cluster sampling","Systematic sampling","Convenience sampling","Stratified sampling"],a:0,e:"The population is divided into natural groups (classes), and whole selected groups are surveyed. That is cluster sampling."},
+      {id:54,topic:"Statistics",q:"Why is a random sample often preferred to asking only volunteers?",o:["It helps reduce selection bias","It guarantees every sample gives the same result","It always includes the entire population","It makes chance variation disappear"],a:0,e:"Random selection gives members of the population a fairer chance of being chosen and helps reduce systematic selection bias."},
+      {id:55,topic:"Statistics",q:"What is a census?",o:["Collecting data from the whole population","Collecting data from a randomly chosen subset","Selecting every nth person","Choosing the easiest people to contact"],a:0,e:"A census attempts to collect information from every member of the population."},
+      {id:56,topic:"Statistics",q:"A school wants to estimate students’ travel time to school. Which sample is most likely to be representative?",o:["A random sample drawn across all year groups","Only students in the cycling club","The first 30 students arriving before 8:00 am","Students who volunteer after seeing a social-media post"],a:0,e:"A random sample across the school is less likely to over-represent a particular travel method, arrival time or type of volunteer."},
+      {id:57,topic:"Statistics",q:"Dataset A is 10, 11, 12, 13, 14. Dataset B is 6, 10, 12, 14, 18. Which statement is true?",o:["Both have median 12, but Dataset B has greater spread","Dataset A has a larger range","Dataset B has a smaller median","Both datasets have the same range"],a:0,e:"Both middle values are 12. Dataset A has range 14 − 10 = 4, while Dataset B has range 18 − 6 = 12, so B is more spread out."},
+      {id:58,topic:"Statistics",q:"Class A scores are 6, 7, 7, 8, 8, 9. Class B scores are 4, 6, 7, 8, 10, 11. Which class has the greater range?",o:["Class B","Class A","They have the same range","The range cannot be found"],a:0,e:"Class A range = 9 − 6 = 3. Class B range = 11 − 4 = 7. Therefore Class B has the greater spread by range."},
+      {id:59,topic:"Statistics",q:"A distribution has most values between 5 and 10, but a few values extend much farther to the right at 20, 25 and 30. How would its shape commonly be described?",o:["Positively skewed (right-skewed)","Negatively skewed (left-skewed)","Perfectly symmetric","Uniform"],a:0,e:"A long tail toward the larger values on the right is called positive, or right, skew."},
+      {id:60,topic:"Statistics",q:"A news site asks readers to click YES or NO in an online poll about school uniforms. Why should its result be treated cautiously as an estimate of all students’ opinions?",o:["People choose whether to respond, so the sample may be biased","Online polls always have too many responses","Percentages cannot be calculated from polls","A poll can only be valid if every answer is YES"],a:0,e:"A voluntary-response sample can over-represent people with strong opinions or people who happen to visit the site, so it may not represent the whole population."}
+    ];
+
+    var state = { quiz: [], index: 0, score: 0, responses: [], answered: false };
+    var el = {};
+
+    function byId(id) { return document.getElementById(id); }
+    function shuffle(items) {
+      var a = items.slice();
+      for (var i = a.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var t = a[i]; a[i] = a[j]; a[j] = t;
+      }
+      return a;
+    }
+    function prepare(question) {
+      var choices = [];
+      for (var i = 0; i < question.o.length; i++) {
+        choices.push({ text: question.o[i], correct: i === question.a });
+      }
+      var copy = {};
+      for (var key in question) { if (Object.prototype.hasOwnProperty.call(question, key)) copy[key] = question[key]; }
+      copy.choices = shuffle(choices);
+      return copy;
+    }
+    function show(name) {
+      el.setup.classList.toggle("hidden", name !== "setup");
+      el.quiz.classList.toggle("hidden", name !== "quiz");
+      el.results.classList.toggle("hidden", name !== "results");
+      window.scrollTo(0, 0);
+    }
+    function balancedMixed(count) {
+      var topics = ["Linear Relations", "Probability", "Statistics"];
+      var chosen = [];
+      var base = Math.floor(count / 3);
+      var remainder = count % 3;
+      var order = shuffle(topics);
+      for (var i = 0; i < topics.length; i++) {
+        var topic = topics[i];
+        var take = base + (order.indexOf(topic) < remainder ? 1 : 0);
+        var pool = BANK.filter(function (q) { return q.topic === topic; });
+        chosen = chosen.concat(shuffle(pool).slice(0, take));
+      }
+      if (chosen.length < count) {
+        var ids = chosen.map(function(q){ return q.id; });
+        var remaining = BANK.filter(function(q){ return ids.indexOf(q.id) === -1; });
+        chosen = chosen.concat(shuffle(remaining).slice(0, count - chosen.length));
+      }
+      return shuffle(chosen);
+    }
+    function pickQuestions() {
+      var topic = el.topic.value;
+      var requested = parseInt(el.count.value, 10);
+      var pool;
+      if (topic === "mixed") {
+        return balancedMixed(Math.min(requested, BANK.length));
+      }
+      pool = BANK.filter(function (q) { return q.topic === topic; });
+      return shuffle(pool).slice(0, Math.min(requested, pool.length));
+    }
+    function begin(source) {
+      var questions = source || pickQuestions();
+      state.quiz = questions.map(prepare);
+      state.index = 0;
+      state.score = 0;
+      state.responses = [];
+      state.answered = false;
+      show("quiz");
+      render();
+    }
+    function render() {
+      var q = state.quiz[state.index];
+      var number = state.index + 1;
+      var total = state.quiz.length;
+      state.answered = false;
+      el.progressText.textContent = "Question " + number + " of " + total;
+      el.scoreText.textContent = "Score: " + state.score;
+      el.progressBar.style.width = ((state.index / total) * 100) + "%";
+      el.questionNumber.textContent = "Question " + number;
+      el.topicChip.textContent = q.topic;
+      el.question.textContent = q.q;
+      el.questionExtra.innerHTML = q.x || "";
+      el.answers.innerHTML = "";
+      el.feedback.className = "feedback hidden";
+      el.feedback.textContent = "";
+      el.next.classList.add("hidden");
+      el.finish.classList.remove("hidden");
+
+      q.choices.forEach(function (choice, index) {
+        var button = document.createElement("button");
+        button.type = "button";
+        button.className = "answer";
+        button.setAttribute("aria-label", "Answer " + String.fromCharCode(65 + index) + ": " + choice.text);
+        var letter = document.createElement("span");
+        letter.className = "letter";
+        letter.textContent = String.fromCharCode(65 + index);
+        var text = document.createElement("span");
+        text.textContent = choice.text;
+        button.appendChild(letter);
+        button.appendChild(text);
+        button.addEventListener("click", function () { choose(index); }, false);
+        el.answers.appendChild(button);
+      });
+    }
+    function choose(index) {
+      if (state.answered) return;
+      state.answered = true;
+      var q = state.quiz[state.index];
+      var selected = q.choices[index];
+      var correctChoice = null;
+      for (var i = 0; i < q.choices.length; i++) if (q.choices[i].correct) correctChoice = q.choices[i];
+      var buttons = el.answers.querySelectorAll(".answer");
+      for (var b = 0; b < buttons.length; b++) {
+        buttons[b].disabled = true;
+        if (q.choices[b].correct) buttons[b].classList.add("correct");
+      }
+      if (selected.correct) {
+        state.score += 1;
+        buttons[index].classList.add("correct");
+        el.feedback.className = "feedback correct";
+        el.feedback.innerHTML = "<strong>Correct</strong>" + q.e;
+      } else {
+        buttons[index].classList.add("wrong");
+        el.feedback.className = "feedback wrong";
+        el.feedback.innerHTML = "<strong>Not quite</strong>" + q.e;
+      }
+      state.responses.push({
+        id: q.id, topic: q.topic, question: q.q, extra: q.x || "",
+        selected: selected.text, correct: correctChoice.text,
+        isCorrect: selected.correct, explanation: q.e
+      });
+      el.scoreText.textContent = "Score: " + state.score;
+      el.progressBar.style.width = (((state.index + 1) / state.quiz.length) * 100) + "%";
+      el.next.textContent = state.index === state.quiz.length - 1 ? "See results" : "Next question";
+      el.next.classList.remove("hidden");
+    }
+    function next() {
+      if (!state.answered) return;
+      if (state.index < state.quiz.length - 1) {
+        state.index += 1;
+        render();
+      } else {
+        finish();
+      }
+    }
+    function finish() {
+      if (!state.responses.length) { show("setup"); return; }
+      show("results");
+      var total = state.responses.length;
+      var score = state.responses.filter(function(r){ return r.isCorrect; }).length;
+      var percent = Math.round((score / total) * 100);
+      el.finalScore.textContent = score + "/" + total;
+      el.scoreCircle.style.setProperty("--angle", (percent * 3.6) + "deg");
+      if (percent === 100) el.message.textContent = "Excellent work!";
+      else if (percent >= 80) el.message.textContent = "Very strong test preparation.";
+      else if (percent >= 60) el.message.textContent = "Good progress — review the missed questions.";
+      else el.message.textContent = "Keep practising — use the topic filter to target weak areas.";
+      el.summary.textContent = "You answered " + score + " of " + total + " questions correctly (" + percent + "%).";
+
+      var topics = ["Linear Relations", "Probability", "Statistics"];
+      el.breakdown.innerHTML = "";
+      topics.forEach(function(topic){
+        var rs = state.responses.filter(function(r){ return r.topic === topic; });
+        if (!rs.length) return;
+        var sc = rs.filter(function(r){ return r.isCorrect; }).length;
+        var div = document.createElement("div");
+        div.innerHTML = "<strong>" + sc + "/" + rs.length + "</strong><span>" + topic + "</span>";
+        el.breakdown.appendChild(div);
+      });
+
+      var incorrect = state.responses.filter(function(r){ return !r.isCorrect; });
+      el.retry.classList.toggle("hidden", incorrect.length === 0);
+      el.review.innerHTML = "<h2>Answer review</h2>";
+      state.responses.forEach(function(r, index){
+        var item = document.createElement("div");
+        item.className = "review-item";
+        var h = document.createElement("h3");
+        h.textContent = (index + 1) + ". " + r.question;
+        item.appendChild(h);
+        if (r.extra) {
+          var extra = document.createElement("div");
+          extra.className = "question-extra";
+          extra.innerHTML = r.extra;
+          item.appendChild(extra);
+        }
+        var p1 = document.createElement("p");
+        p1.className = r.isCorrect ? "right" : "incorrect";
+        p1.textContent = "Your answer: " + r.selected;
+        item.appendChild(p1);
+        if (!r.isCorrect) {
+          var p2 = document.createElement("p");
+          p2.className = "right";
+          p2.textContent = "Correct answer: " + r.correct;
+          item.appendChild(p2);
+        }
+        var p3 = document.createElement("p");
+        p3.textContent = r.explanation;
+        item.appendChild(p3);
+        el.review.appendChild(item);
+      });
+    }
+    function init() {
+      el.setup = byId("setup"); el.quiz = byId("quiz"); el.results = byId("results");
+      el.topic = byId("topic"); el.count = byId("count"); el.start = byId("start");
+      el.progressText = byId("progressText"); el.scoreText = byId("scoreText"); el.progressBar = byId("progressBar");
+      el.questionNumber = byId("questionNumber"); el.topicChip = byId("topicChip"); el.question = byId("question");
+      el.questionExtra = byId("questionExtra"); el.answers = byId("answers"); el.feedback = byId("feedback");
+      el.next = byId("next"); el.finish = byId("finish"); el.finalScore = byId("finalScore"); el.scoreCircle = byId("scoreCircle");
+      el.message = byId("message"); el.summary = byId("summary"); el.breakdown = byId("breakdown"); el.review = byId("review");
+      el.again = byId("again"); el.retry = byId("retry"); el.print = byId("print");
+
+      el.start.addEventListener("click", function(){ begin(); }, false);
+      el.next.addEventListener("click", next, false);
+      el.finish.addEventListener("click", finish, false);
+      el.again.addEventListener("click", function(){ show("setup"); }, false);
+      el.retry.addEventListener("click", function(){
+        var ids = state.responses.filter(function(r){ return !r.isCorrect; }).map(function(r){ return r.id; });
+        var missed = BANK.filter(function(q){ return ids.indexOf(q.id) !== -1; });
+        begin(missed);
+      }, false);
+      el.print.addEventListener("click", function(){ window.print(); }, false);
+
+      el.topic.addEventListener("change", function(){
+        var max = el.topic.value === "mixed" ? 60 : 20;
+        var options = el.count.options;
+        for (var i = 0; i < options.length; i++) {
+          options[i].disabled = parseInt(options[i].value, 10) > max;
+        }
+        if (parseInt(el.count.value, 10) > max) el.count.value = "20";
+      }, false);
+    }
+
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init, false);
+    else init();
+  }());
+  </script>
+</body>
+</html>
