@@ -268,13 +268,13 @@ with Tim Penttila
 
 ## Submitted
 
-- Ramsey numbers and extremal structures in polar spaces,   
+- New bounds and constructions for large partial $m$-ovoids and related structures,   
 with Anurag Bishnoi, Ferdinand Ihringer, and Ananthakrishnan Ravi. [arxiv](https://arxiv.org/abs/2406.03043)
 - On applications of the clique-adjacency polynomial to arbitrary finite graphs,  
 with Jake Rigg. [arxiv](https://arxiv.org/abs/2606.19820)
 - Every special set of the Hermitian surface $H(3,q^2)$ is classical,  
 with Ethan Kealley. [arxiv](https://arxiv.org/abs/2607.08135)
-- There are no sharply transitive subsets of $\mathrm{SL}(2,q)$ for $q\ge 13$,  
+- There are no sharply transitive subsets of $\mathrm{SL}(2,q)$ for $q\geqslant 13$,  
 with Sam Mattheus.
 
 ## Preprints
