@@ -275,7 +275,7 @@ with Jake Rigg. [arxiv](https://arxiv.org/abs/2606.19820)
 - Every special set of the Hermitian surface $H(3,q^2)$ is classical,  
 with Ethan Kealley. [arxiv](https://arxiv.org/abs/2607.08135)
 - There are no sharply transitive subsets of $\mathrm{SL}(2,q)$ for $q\geqslant 13$,  
-with Sam Mattheus.
+with Sam Mattheus. [arxiv](https://arxiv.org/abs/2608.17371)
 
 ## Preprints
 
