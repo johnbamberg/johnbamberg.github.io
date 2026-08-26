@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#153f52">
+  <title>Year 9 Chemistry: Compounds and Reactions</title>
+  <style>
+    :root {
+      --navy: #153f52;
+      --blue: #1d6f8a;
+      --teal: #168f82;
+      --paper: #ffffff;
+      --page: #edf4f5;
+      --ink: #17242b;
+      --muted: #607079;
+      --line: #d3dfe3;
+      --correct: #18794e;
+      --correct-bg: #e8f6ef;
+      --wrong: #ae3434;
+      --wrong-bg: #fdecec;
+      --shadow: 0 18px 48px rgba(21,63,82,.15);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: env(safe-area-inset-top) env(safe-area-inset-right)
+               env(safe-area-inset-bottom) env(safe-area-inset-left);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 2%, rgba(22,143,130,.16), transparent 30rem),
+        linear-gradient(180deg, #f6fafb 0, var(--page) 35rem);
+    }
+
+    button, select { font: inherit; }
+
+    button { touch-action: manipulation; }
+
+    .app {
+      width: min(880px, calc(100% - 24px));
+      margin: 24px auto;
+    }
+
+    header {
+      padding: 28px 30px;
+      color: white;
+      border-radius: 21px 21px 0 0;
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+      box-shadow: var(--shadow);
+    }
+
+    header h1 {
+      margin: 0 0 7px;
+      font-size: clamp(1.75rem, 4.2vw, 2.55rem);
+      line-height: 1.12;
+    }
+
+    header p {
+      margin: 0;
+      color: rgba(255,255,255,.84);
+      line-height: 1.45;
+    }
+
+    main {
+      min-height: 490px;
+      padding: 28px 30px 35px;
+      background: var(--paper);
+      border-radius: 0 0 21px 21px;
+      box-shadow: var(--shadow);
+    }
+
+    h2 { margin-top: 0; }
+    .hidden { display: none !important; }
+
+    .panel {
+      padding: 17px 18px;
+      margin: 20px 0;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: #f8fafb;
+    }
+
+    .panel p {
+      margin: 5px 0 0;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .settings {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 22px 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 7px;
+      font-weight: 780;
+    }
+
+    select {
+      width: 100%;
+      min-height: 46px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      color: var(--ink);
+      background: white;
+    }
+
+    button {
+      min-height: 46px;
+      border: 0;
+      border-radius: 11px;
+      padding: 11px 18px;
+      font-weight: 780;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button:focus-visible, select:focus-visible {
+      outline: 3px solid rgba(29,111,138,.25);
+      outline-offset: 2px;
+    }
+
+    button:disabled { cursor: default; opacity: .86; }
+
+    .primary {
+      color: white;
+      background: var(--blue);
+    }
+
+    .primary:hover:not(:disabled) { background: var(--navy); }
+
+    .secondary {
+      color: var(--ink);
+      background: #e7eef1;
+    }
+
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      color: var(--muted);
+      font-weight: 730;
+    }
+
+    .progress {
+      height: 10px;
+      margin: 12px 0 25px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #e5edef;
+    }
+
+    .progress div {
+      width: 0;
+      height: 100%;
+      background: var(--teal);
+      transition: width .22s ease;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--blue);
+      font-size: .9rem;
+      font-weight: 850;
+      letter-spacing: .045em;
+      text-transform: uppercase;
+    }
+
+    #question {
+      margin: 0 0 21px;
+      font-size: clamp(1.22rem, 2.7vw, 1.58rem);
+      line-height: 1.42;
+    }
+
+    .answers {
+      display: grid;
+      gap: 11px;
+    }
+
+    .answer {
+      display: grid;
+      grid-template-columns: 35px 1fr;
+      gap: 10px;
+      align-items: center;
+      width: 100%;
+      min-height: 58px;
+      padding: 12px 15px;
+      text-align: left;
+      color: var(--ink);
+      background: white;
+      border: 2px solid var(--line);
+    }
+
+    .answer:hover:not(:disabled) {
+      border-color: #88b2bf;
+      background: #f8fbfc;
+    }
+
+    .letter {
+      display: grid;
+      place-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      color: var(--navy);
+      background: #edf3f5;
+      font-weight: 850;
+    }
+
+    .answer.correct {
+      border-color: var(--correct);
+      background: var(--correct-bg);
+    }
+
+    .answer.wrong {
+      border-color: var(--wrong);
+      background: var(--wrong-bg);
+    }
+
+    .feedback {
+      margin-top: 19px;
+      padding: 15px 17px;
+      border-radius: 12px;
+      line-height: 1.5;
+    }
+
+    .feedback.correct {
+      border-left: 5px solid var(--correct);
+      background: var(--correct-bg);
+    }
+
+    .feedback.wrong {
+      border-left: 5px solid var(--wrong);
+      background: var(--wrong-bg);
+    }
+
+    .feedback strong {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .centre { justify-content: center; }
+    .results { text-align: center; }
+
+    .score {
+      display: grid;
+      place-items: center;
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin: 20px auto;
+      border-radius: 50%;
+      background: conic-gradient(var(--teal) var(--angle), #e3ecef 0);
+    }
+
+    .score::after {
+      content: "";
+      position: absolute;
+      inset: 13px;
+      border-radius: 50%;
+      background: white;
+    }
+
+    .score span {
+      position: relative;
+      z-index: 1;
+      font-size: 2rem;
+      font-weight: 850;
+    }
+
+    .review {
+      margin-top: 28px;
+      text-align: left;
+    }
+
+    .review-item {
+      padding: 15px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .review-item h3 {
+      margin: 0 0 7px;
+      font-size: 1rem;
+      line-height: 1.45;
+    }
+
+    .review-item p {
+      margin: 4px 0;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .right {
+      color: var(--correct) !important;
+      font-weight: 750;
+    }
+
+    .incorrect {
+      color: var(--wrong) !important;
+      font-weight: 750;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: .92rem;
+      line-height: 1.45;
+    }
+
+    .ios-note {
+      margin-top: 21px;
+      padding: 12px 14px;
+      border-left: 4px solid var(--blue);
+      border-radius: 8px;
+      color: var(--muted);
+      background: #f2f7f9;
+      font-size: .91rem;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 620px) {
+      .app {
+        width: min(100% - 14px, 880px);
+        margin: 7px auto;
+      }
+
+      header, main {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      header { border-radius: 14px 14px 0 0; }
+      main { border-radius: 0 0 14px 14px; }
+      .settings { grid-template-columns: 1fr; }
+      .answer { padding: 12px; }
+    }
+
+    @media print {
+      body { background: white; }
+      .app { width: 100%; margin: 0; }
+      header, main { box-shadow: none; border-radius: 0; }
+      .actions, .progress, #setup { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Year 9 Chemistry Practice</h1>
+      <p>Weeks 4–9: ions, compounds, properties and chemical reactions</p>
+    </header>
+
+    <main>
+      <section id="setup">
+        <h2>Start a random quiz</h2>
+        <p>Every attempt draws a new selection from a bank of 50 questions and shuffles the answer choices.</p>
+
+        <div class="panel">
+          <strong>Material covered</strong>
+          <p>Ions and ionic compounds; names and formulas; solubility; covalent substances; properties of ionic and covalent molecular substances; reactants and products; conservation of mass; formula interpretation; and balancing simple equations.</p>
+        </div>
+
+        <div class="settings">
+          <div>
+            <label for="topic">Topic</label>
+            <select id="topic">
+              <option value="all">Mixed revision — all topics</option>
+              <option value="ionic">Ions and ionic compounds</option>
+              <option value="properties">Solubility and substance properties</option>
+              <option value="covalent">Covalent substances</option>
+              <option value="reactions">Chemical reactions and equations</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="count">Quiz length</label>
+            <select id="count"></select>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="button" class="primary" id="start">Start quiz</button>
+        </div>
+
+        <p class="note">The quiz works without a login and does not send or store results online.</p>
+        <div class="ios-note">
+          <strong>iPhone/iPad:</strong> open the hosted quiz link in Safari. An HTML file shown inside an email or Files attachment preview may display correctly but block its JavaScript buttons.
+        </div>
+      </section>
+
+      <section id="quiz" class="hidden">
+        <div class="topline">
+          <span id="progressText"></span>
+          <span id="scoreText"></span>
+        </div>
+
+        <div class="progress"><div id="progressBar"></div></div>
+        <p class="eyebrow" id="questionNumber"></p>
+        <h2 id="question"></h2>
+        <div class="answers" id="answers"></div>
+        <div id="feedback" class="feedback hidden" aria-live="polite"></div>
+
+        <div class="actions">
+          <button type="button" class="primary hidden" id="next">Next question</button>
+          <button type="button" class="secondary" id="finish">End quiz</button>
+        </div>
+      </section>
+
+      <section id="results" class="hidden">
+        <div class="results">
+          <h2>Quiz complete</h2>
+          <div class="score" id="scoreCircle" style="--angle:0deg">
+            <span id="finalScore"></span>
+          </div>
+          <h3 id="message"></h3>
+          <p id="summary"></p>
+
+          <div class="actions centre">
+            <button type="button" class="primary" id="again">New random quiz</button>
+            <button type="button" class="secondary hidden" id="retry">Retry incorrect questions</button>
+            <button type="button" class="secondary" id="print">Print results</button>
+          </div>
+        </div>
+
+        <div class="review" id="review"></div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    "use strict";
+
+    const BANK = [{"id": 1, "category": "ionic", "question": "Which statement best defines an ion?", "options": ["An atom that has gained or lost electrons and therefore has an electrical charge", "An atom with equal numbers of protons and electrons", "An atom that contains no neutrons", "A molecule made only from noble gases"], "answer": 0, "explanation": "An ion forms when an atom gains or loses electrons, giving it an overall electrical charge."}, {"id": 2, "category": "ionic", "question": "What is a cation?", "options": ["A positively charged ion", "A negatively charged ion", "A neutral atom", "A shared pair of electrons"], "answer": 0, "explanation": "A cation is a positively charged ion."}, {"id": 3, "category": "ionic", "question": "What is an anion?", "options": ["A negatively charged ion", "A positively charged ion", "A neutral atom", "A metal atom before it loses electrons"], "answer": 0, "explanation": "An anion is a negatively charged ion."}, {"id": 4, "category": "ionic", "question": "What happens to an atom when it loses one or more electrons?", "options": ["It becomes a positively charged ion", "It becomes a negatively charged ion", "Its number of protons decreases", "It becomes an isotope"], "answer": 0, "explanation": "Losing negatively charged electrons leaves the atom with an overall positive charge."}, {"id": 5, "category": "ionic", "question": "What happens to an atom when it gains one or more electrons?", "options": ["It becomes a negatively charged ion", "It becomes a positively charged ion", "Its atomic number increases", "Its nucleus disappears"], "answer": 0, "explanation": "Gaining negatively charged electrons gives the atom an overall negative charge."}, {"id": 6, "category": "ionic", "question": "Which type of ion is usually formed by a metal atom?", "options": ["A cation", "An anion", "A neutral molecule", "A diatomic non-metal molecule"], "answer": 0, "explanation": "Metal atoms usually lose electrons and form positively charged cations."}, {"id": 7, "category": "ionic", "question": "Which type of ion is usually formed by a non-metal atom?", "options": ["An anion", "A cation", "A neutral metal atom", "A proton"], "answer": 0, "explanation": "Non-metal atoms usually gain electrons and form negatively charged anions."}, {"id": 8, "category": "ionic", "question": "A neutral sodium atom has 11 electrons. How many electrons are in Na⁺?", "options": ["10", "11", "12", "1"], "answer": 0, "explanation": "Na⁺ forms when sodium loses one electron, so it has 10 electrons."}, {"id": 9, "category": "ionic", "question": "A neutral oxygen atom has 8 electrons. How many electrons are in O²⁻?", "options": ["10", "8", "6", "2"], "answer": 0, "explanation": "O²⁻ forms when oxygen gains two electrons, giving it 10 electrons."}, {"id": 10, "category": "ionic", "question": "How does a magnesium atom form Mg²⁺?", "options": ["It loses two electrons", "It gains two electrons", "It loses two protons", "It gains two neutrons"], "answer": 0, "explanation": "A magnesium atom forms Mg²⁺ by losing two electrons."}, {"id": 11, "category": "ionic", "question": "What is the formula of lithium fluoride?", "options": ["LiF", "Li₂F", "LiF₂", "Li₂F₂"], "answer": 0, "explanation": "Li⁺ and F⁻ combine in a 1:1 ratio, so the formula is LiF."}, {"id": 12, "category": "ionic", "question": "What is the formula of beryllium fluoride?", "options": ["BeF₂", "BeF", "Be₂F", "Be₂F₂"], "answer": 0, "explanation": "One Be²⁺ ion requires two F⁻ ions, giving BeF₂."}, {"id": 13, "category": "ionic", "question": "What is the formula of sodium oxide?", "options": ["Na₂O", "NaO", "NaO₂", "Na₂O₂"], "answer": 0, "explanation": "Two Na⁺ ions balance one O²⁻ ion, so the formula is Na₂O."}, {"id": 14, "category": "ionic", "question": "What is the formula of aluminium oxide?", "options": ["Al₂O₃", "AlO", "AlO₂", "Al₃O₂"], "answer": 0, "explanation": "Two Al³⁺ ions and three O²⁻ ions give an overall charge of zero, so the formula is Al₂O₃."}, {"id": 15, "category": "ionic", "question": "What is the formula of magnesium chloride?", "options": ["MgCl₂", "MgCl", "Mg₂Cl", "Mg₂Cl₂"], "answer": 0, "explanation": "One Mg²⁺ ion requires two Cl⁻ ions, giving MgCl₂."}, {"id": 16, "category": "ionic", "question": "What is the correct name for NaCl?", "options": ["Sodium chloride", "Sodium chlorine", "Nitrogen chloride", "Sodium chlorate"], "answer": 0, "explanation": "NaCl is the two-element ionic compound sodium chloride."}, {"id": 17, "category": "ionic", "question": "What is the correct name for CaF₂?", "options": ["Calcium fluoride", "Calcium fluorine", "Carbon fluoride", "Calcium difluoride"], "answer": 0, "explanation": "CaF₂ is named calcium fluoride."}, {"id": 18, "category": "ionic", "question": "Which formula represents an ionic compound?", "options": ["MgO", "H₂O", "NH₃", "O₂"], "answer": 0, "explanation": "MgO contains a metal and a non-metal. The other choices contain only non-metals."}, {"id": 19, "category": "properties", "question": "What is the main purpose of a solubility table?", "options": ["To predict whether an ionic compound will dissolve in water", "To calculate the atomic number of an element", "To count electrons in a neutral atom", "To balance every chemical equation automatically"], "answer": 0, "explanation": "A solubility table is used to predict whether an ionic compound is soluble in water."}, {"id": 20, "category": "properties", "question": "What does it mean when a substance is soluble in water?", "options": ["It dissolves in water", "It always reacts explosively with water", "It changes into a metal", "It cannot be mixed with water"], "answer": 0, "explanation": "A soluble substance dissolves in water."}, {"id": 21, "category": "properties", "question": "Which procedure would best test whether an ionic compound is soluble in water?", "options": ["Add a small amount to water, stir, and observe whether it dissolves", "Place it beside a beaker without adding it", "Heat the empty beaker", "Count the letters in its chemical name"], "answer": 0, "explanation": "Solubility can be tested by mixing the substance with water and observing whether it dissolves."}, {"id": 22, "category": "properties", "question": "Which melting and boiling point pattern is generally associated with ionic compounds?", "options": ["High melting and boiling points", "Very low melting and boiling points only", "A melting point of exactly 0 °C", "No melting point at all"], "answer": 0, "explanation": "The program lists generally high melting and boiling points as a key property of ionic compounds."}, {"id": 23, "category": "properties", "question": "Which description is generally associated with solid ionic compounds?", "options": ["Hard and brittle", "Soft gases only", "Always flexible", "Always liquid at room temperature"], "answer": 0, "explanation": "Ionic compounds are generally hard and brittle."}, {"id": 24, "category": "properties", "question": "Does a solid ionic compound usually conduct electricity?", "options": ["No", "Yes, always", "Only if it is a noble gas", "Only when it contains hydrogen"], "answer": 0, "explanation": "Ionic compounds generally do not conduct electricity in the solid state."}, {"id": 25, "category": "properties", "question": "When does an ionic compound generally conduct electricity?", "options": ["When molten or dissolved in water", "Only when completely solid", "Only when frozen", "It never conducts in any state"], "answer": 0, "explanation": "Ionic compounds generally conduct electricity when molten or in aqueous solution."}, {"id": 26, "category": "properties", "question": "Which electrical property is generally associated with covalent molecular substances?", "options": ["They do not conduct electricity", "They always conduct in the solid state", "They conduct only because they contain metal ions", "They conduct better than all ionic substances"], "answer": 0, "explanation": "The program lists non-conduction of electricity as a key property of covalent molecular substances."}, {"id": 27, "category": "properties", "question": "How do the melting points of covalent molecular substances generally compare with those of ionic compounds?", "options": ["They are generally lower", "They are always much higher", "They are always identical", "Covalent substances have no melting points"], "answer": 0, "explanation": "Covalent molecular substances generally have relatively low melting points."}, {"id": 28, "category": "properties", "question": "An unknown substance is hard and brittle, has a high melting point, and conducts electricity when molten. What type of substance is it most likely to be?", "options": ["An ionic compound", "A covalent molecular substance", "A single neutron", "A noble gas atom"], "answer": 0, "explanation": "Those properties match the listed properties of ionic compounds."}, {"id": 29, "category": "properties", "question": "Which property is listed for covalent molecular substances in the program?", "options": ["They are generally soft and malleable", "They always have very high boiling points", "They conduct electricity as solids", "They are always hard and brittle"], "answer": 0, "explanation": "The program describes covalent molecular substances as generally soft and malleable."}, {"id": 30, "category": "covalent", "question": "How is a covalent bond formed?", "options": ["Atoms share electrons", "Atoms transfer protons", "Atoms lose their nuclei", "Neutrons move between electron shells"], "answer": 0, "explanation": "Covalent substances form when atoms share electrons."}, {"id": 31, "category": "covalent", "question": "Which types of elements usually combine to form covalent substances?", "options": ["Non-metal elements with other non-metal elements", "Metal elements with metal elements only", "Noble gases with no other atoms", "Only Group 1 metals"], "answer": 0, "explanation": "The program states that non-metal elements combine to form covalent substances."}, {"id": 32, "category": "covalent", "question": "What is the formula of a hydrogen molecule?", "options": ["H₂", "H", "H₃", "2H"], "answer": 0, "explanation": "Hydrogen forms diatomic molecules, represented by H₂."}, {"id": 33, "category": "covalent", "question": "What is the formula of an oxygen molecule?", "options": ["O₂", "O", "O₃", "2O₂"], "answer": 0, "explanation": "Oxygen forms diatomic molecules, represented by O₂."}, {"id": 34, "category": "covalent", "question": "What is the formula of a nitrogen molecule?", "options": ["N₂", "N", "N₃", "2N"], "answer": 0, "explanation": "Nitrogen forms diatomic molecules, represented by N₂."}, {"id": 35, "category": "covalent", "question": "What is the chemical formula for water?", "options": ["H₂O", "HO₂", "H₂O₂", "H₃O"], "answer": 0, "explanation": "A water molecule contains two hydrogen atoms and one oxygen atom: H₂O."}, {"id": 36, "category": "covalent", "question": "What is the chemical formula for ammonia?", "options": ["NH₃", "N₃H", "NH₂", "N₂H₃"], "answer": 0, "explanation": "An ammonia molecule is represented by NH₃."}, {"id": 37, "category": "covalent", "question": "What is the chemical formula for hydrogen chloride?", "options": ["HCl", "H₂Cl", "HCl₂", "Cl₂H"], "answer": 0, "explanation": "Hydrogen chloride contains one hydrogen atom and one chlorine atom: HCl."}, {"id": 38, "category": "covalent", "question": "Which pairing is classified correctly?", "options": ["HCl is covalent, while LiF is ionic", "HCl is ionic, while LiF is covalent", "Both HCl and LiF are metals", "Both HCl and LiF are single elements"], "answer": 0, "explanation": "HCl contains two non-metals and is covalent; LiF contains a metal and a non-metal and is ionic."}, {"id": 39, "category": "reactions", "question": "What happens to atoms during a chemical reaction?", "options": ["They are rearranged to form new substances", "They are destroyed completely", "They all change into neutrons", "Their total number must increase"], "answer": 0, "explanation": "Chemical reactions rearrange atoms to form new substances."}, {"id": 40, "category": "reactions", "question": "What are reactants?", "options": ["The starting substances in a chemical reaction", "The substances formed at the end", "The numbers placed before formulas", "The electrons inside a nucleus"], "answer": 0, "explanation": "Reactants are the substances present at the start of a chemical reaction."}, {"id": 41, "category": "reactions", "question": "What are products?", "options": ["The new substances formed in a chemical reaction", "The starting substances only", "The protons transferred between atoms", "The rows of the periodic table"], "answer": 0, "explanation": "Products are the new substances formed by a chemical reaction."}, {"id": 42, "category": "reactions", "question": "Magnesium burns in oxygen to form magnesium oxide. Which word equation is correct?", "options": ["magnesium + oxygen → magnesium oxide", "magnesium oxide → magnesium + oxygen", "magnesium + oxide → oxygen", "oxygen + magnesium oxide → magnesium"], "answer": 0, "explanation": "The reactants are magnesium and oxygen, and the product is magnesium oxide."}, {"id": 43, "category": "reactions", "question": "In the word equation hydrogen + oxygen → water, which substances are the reactants?", "options": ["Hydrogen and oxygen", "Water only", "Hydrogen and water", "Oxygen and water"], "answer": 0, "explanation": "The substances to the left of the arrow—hydrogen and oxygen—are the reactants."}, {"id": 44, "category": "reactions", "question": "Which statement expresses the law of conservation of mass?", "options": ["The total mass of the reactants equals the total mass of the products", "The products always have twice the mass of the reactants", "Mass disappears whenever a gas is formed", "Every reaction produces exactly one gram of matter"], "answer": 0, "explanation": "In a chemical reaction, mass is conserved: total reactant mass equals total product mass."}, {"id": 45, "category": "reactions", "question": "A reaction takes place in a closed container. The reactants have a total mass of 18 g. What should the total mass of the products be?", "options": ["18 g", "9 g", "36 g", "It cannot be related to the reactant mass"], "answer": 0, "explanation": "By conservation of mass, the total product mass is also 18 g."}, {"id": 46, "category": "reactions", "question": "Which equation is correctly balanced for the formation of water?", "options": ["2H₂ + O₂ → 2H₂O", "H₂ + O₂ → H₂O", "H₂ + 2O₂ → H₂O", "2H₂ + 2O₂ → H₂O"], "answer": 0, "explanation": "2H₂ + O₂ → 2H₂O has four H atoms and two O atoms on each side."}, {"id": 47, "category": "reactions", "question": "Which equation is correctly balanced for the formation of ammonia?", "options": ["N₂ + 3H₂ → 2NH₃", "N₂ + H₂ → NH₃", "2N₂ + H₂ → 2NH₃", "N₂ + 2H₂ → NH₃"], "answer": 0, "explanation": "N₂ + 3H₂ → 2NH₃ has two N atoms and six H atoms on each side."}, {"id": 48, "category": "reactions", "question": "Which equation is correctly balanced?", "options": ["2Mg + O₂ → 2MgO", "Mg + O₂ → MgO", "Mg + 2O₂ → MgO", "2Mg + 2O₂ → MgO"], "answer": 0, "explanation": "2Mg + O₂ → 2MgO has two Mg atoms and two O atoms on each side."}, {"id": 49, "category": "reactions", "question": "Which equation is correctly balanced?", "options": ["2Na + Cl₂ → 2NaCl", "Na + Cl₂ → NaCl", "2Na + 2Cl₂ → NaCl", "Na + Cl₂ → 2NaCl"], "answer": 0, "explanation": "2Na + Cl₂ → 2NaCl has two Na atoms and two Cl atoms on each side."}, {"id": 50, "category": "reactions", "question": "How many atoms are represented altogether in one formula unit of Al₂O₃?", "options": ["5 atoms: 2 aluminium and 3 oxygen", "3 atoms: 2 aluminium and 1 oxygen", "2 atoms: 1 aluminium and 1 oxygen", "6 atoms: 3 aluminium and 3 oxygen"], "answer": 0, "explanation": "Al₂O₃ contains 2 aluminium atoms and 3 oxygen atoms, for 5 atoms altogether."}];
+
+    const state = {
+      quiz: [],
+      index: 0,
+      score: 0,
+      responses: [],
+      answered: false
+    };
+
+    const el = {
+      setup: document.getElementById("setup"),
+      quiz: document.getElementById("quiz"),
+      results: document.getElementById("results"),
+      topic: document.getElementById("topic"),
+      count: document.getElementById("count"),
+      start: document.getElementById("start"),
+      progressText: document.getElementById("progressText"),
+      scoreText: document.getElementById("scoreText"),
+      progressBar: document.getElementById("progressBar"),
+      questionNumber: document.getElementById("questionNumber"),
+      question: document.getElementById("question"),
+      answers: document.getElementById("answers"),
+      feedback: document.getElementById("feedback"),
+      next: document.getElementById("next"),
+      finish: document.getElementById("finish"),
+      finalScore: document.getElementById("finalScore"),
+      scoreCircle: document.getElementById("scoreCircle"),
+      message: document.getElementById("message"),
+      summary: document.getElementById("summary"),
+      review: document.getElementById("review"),
+      again: document.getElementById("again"),
+      retry: document.getElementById("retry"),
+      print: document.getElementById("print")
+    };
+
+    function shuffle(items) {
+      const copy = [...items];
+      for (let i = copy.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
+    function topicQuestions() {
+      return el.topic.value === "all"
+        ? BANK
+        : BANK.filter(question => question.category === el.topic.value);
+    }
+
+    function refreshLengths(preferred = 10) {
+      const available = topicQuestions().length;
+      const regular = [5, 10, 15, 20, 30, 50].filter(value => value < available);
+      const choices = [...regular, available];
+
+      el.count.innerHTML = "";
+      choices.forEach(value => {
+        const option = document.createElement("option");
+        option.value = String(value);
+        option.textContent = value === available
+          ? `All ${available} questions`
+          : `${value} questions`;
+        el.count.appendChild(option);
+      });
+
+      const nearest = choices.includes(preferred)
+        ? preferred
+        : choices.reduce((best, value) =>
+            Math.abs(value - preferred) < Math.abs(best - preferred) ? value : best
+          );
+
+      el.count.value = String(nearest);
+    }
+
+    function prepare(question) {
+      return {
+        ...question,
+        choices: shuffle(question.options.map((text, index) => ({
+          text,
+          correct: index === question.answer
+        })))
+      };
+    }
+
+    function show(section) {
+      el.setup.classList.toggle("hidden", section !== "setup");
+      el.quiz.classList.toggle("hidden", section !== "quiz");
+      el.results.classList.toggle("hidden", section !== "results");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function begin(source = null) {
+      const selected = source || shuffle(topicQuestions()).slice(0, Number(el.count.value));
+
+      state.quiz = selected.map(prepare);
+      state.index = 0;
+      state.score = 0;
+      state.responses = [];
+      state.answered = false;
+
+      show("quiz");
+      render();
+    }
+
+    function render() {
+      const q = state.quiz[state.index];
+      const number = state.index + 1;
+      const total = state.quiz.length;
+
+      state.answered = false;
+      el.progressText.textContent = `Question ${number} of ${total}`;
+      el.scoreText.textContent = `Score: ${state.score}`;
+      el.progressBar.style.width = `${(state.index / total) * 100}%`;
+      el.questionNumber.textContent = `Question ${number}`;
+      el.question.textContent = q.question;
+      el.answers.innerHTML = "";
+      el.feedback.className = "feedback hidden";
+      el.feedback.textContent = "";
+      el.next.classList.add("hidden");
+
+      q.choices.forEach((choice, index) => {
+        const button = document.createElement("button");
+        const letter = String.fromCharCode(65 + index);
+
+        button.type = "button";
+        button.className = "answer";
+        button.setAttribute("aria-label", `${letter}. ${choice.text}`);
+
+        const letterSpan = document.createElement("span");
+        letterSpan.className = "letter";
+        letterSpan.textContent = letter;
+
+        const textSpan = document.createElement("span");
+        textSpan.textContent = choice.text;
+
+        button.append(letterSpan, textSpan);
+        button.addEventListener("click", () => choose(index));
+        el.answers.appendChild(button);
+      });
+    }
+
+    function choose(index) {
+      if (state.answered) return;
+      state.answered = true;
+
+      const q = state.quiz[state.index];
+      const selected = q.choices[index];
+      const correctChoice = q.choices.find(choice => choice.correct);
+      const buttons = [...el.answers.querySelectorAll(".answer")];
+
+      buttons.forEach((button, buttonIndex) => {
+        button.disabled = true;
+        if (q.choices[buttonIndex].correct) {
+          button.classList.add("correct");
+        }
+      });
+
+      if (selected.correct) {
+        state.score += 1;
+        buttons[index].classList.add("correct");
+        el.feedback.className = "feedback correct";
+        el.feedback.innerHTML = `<strong>Correct</strong>${q.explanation}`;
+      } else {
+        buttons[index].classList.add("wrong");
+        el.feedback.className = "feedback wrong";
+        el.feedback.innerHTML = `<strong>Not quite</strong>${q.explanation}`;
+      }
+
+      state.responses.push({
+        id: q.id,
+        question: q.question,
+        selected: selected.text,
+        correct: correctChoice.text,
+        isCorrect: selected.correct,
+        explanation: q.explanation
+      });
+
+      el.scoreText.textContent = `Score: ${state.score}`;
+      el.progressBar.style.width =
+        `${((state.index + 1) / state.quiz.length) * 100}%`;
+      el.next.textContent =
+        state.index === state.quiz.length - 1 ? "See results" : "Next question";
+      el.next.classList.remove("hidden");
+      el.next.focus();
+    }
+
+    function next() {
+      if (!state.answered) return;
+
+      if (state.index < state.quiz.length - 1) {
+        state.index += 1;
+        render();
+      } else {
+        finish();
+      }
+    }
+
+    function finish() {
+      if (state.responses.length === 0) {
+        show("setup");
+        return;
+      }
+
+      show("results");
+
+      const total = state.responses.length;
+      const score = state.responses.filter(response => response.isCorrect).length;
+      const percent = Math.round((score / total) * 100);
+
+      el.finalScore.textContent = `${score}/${total}`;
+      el.scoreCircle.style.setProperty("--angle", `${percent * 3.6}deg`);
+
+      if (percent === 100) {
+        el.message.textContent = "Excellent work!";
+      } else if (percent >= 80) {
+        el.message.textContent = "Very strong result.";
+      } else if (percent >= 60) {
+        el.message.textContent = "Good progress.";
+      } else {
+        el.message.textContent = "Keep practising—the next quiz will use a new mix.";
+      }
+
+      el.summary.textContent =
+        `You answered ${score} of ${total} questions correctly (${percent}%).`;
+
+      const incorrect = state.responses.filter(response => !response.isCorrect);
+      el.retry.classList.toggle("hidden", incorrect.length === 0);
+
+      el.review.innerHTML = "<h2>Answer review</h2>";
+
+      state.responses.forEach((response, index) => {
+        const item = document.createElement("div");
+        item.className = "review-item";
+
+        const heading = document.createElement("h3");
+        heading.textContent = `${index + 1}. ${response.question}`;
+
+        const yourAnswer = document.createElement("p");
+        yourAnswer.className = response.isCorrect ? "right" : "incorrect";
+        yourAnswer.textContent = `Your answer: ${response.selected}`;
+
+        item.append(heading, yourAnswer);
+
+        if (!response.isCorrect) {
+          const correctAnswer = document.createElement("p");
+          correctAnswer.className = "right";
+          correctAnswer.textContent = `Correct answer: ${response.correct}`;
+          item.appendChild(correctAnswer);
+        }
+
+        const explanation = document.createElement("p");
+        explanation.textContent = response.explanation;
+        item.appendChild(explanation);
+        el.review.appendChild(item);
+      });
+    }
+
+    el.topic.addEventListener("change", () => refreshLengths(10));
+    el.start.addEventListener("click", () => begin());
+    el.next.addEventListener("click", next);
+    el.finish.addEventListener("click", finish);
+    el.again.addEventListener("click", () => show("setup"));
+    el.retry.addEventListener("click", () => {
+      const missedIds = new Set(
+        state.responses
+          .filter(response => !response.isCorrect)
+          .map(response => response.id)
+      );
+      begin(BANK.filter(question => missedIds.has(question.id)));
+    });
+    el.print.addEventListener("click", () => window.print());
+
+    refreshLengths(10);
+  </script>
+</body>
+</html>
