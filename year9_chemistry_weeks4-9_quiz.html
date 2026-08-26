@@ -21,11 +21,8 @@
       --wrong-bg: #fdecec;
       --shadow: 0 18px 48px rgba(21,63,82,.15);
     }
-
     * { box-sizing: border-box; }
-
     html { -webkit-text-size-adjust: 100%; }
-
     body {
       margin: 0;
       min-height: 100vh;
@@ -37,16 +34,9 @@
         radial-gradient(circle at 8% 2%, rgba(22,143,130,.16), transparent 30rem),
         linear-gradient(180deg, #f6fafb 0, var(--page) 35rem);
     }
-
     button, select { font: inherit; }
-
     button { touch-action: manipulation; }
-
-    .app {
-      width: min(880px, calc(100% - 24px));
-      margin: 24px auto;
-    }
-
+    .app { width: min(880px, calc(100% - 24px)); margin: 24px auto; }
     header {
       padding: 28px 30px;
       color: white;
@@ -54,19 +44,8 @@
       background: linear-gradient(135deg, var(--navy), var(--blue));
       box-shadow: var(--shadow);
     }
-
-    header h1 {
-      margin: 0 0 7px;
-      font-size: clamp(1.75rem, 4.2vw, 2.55rem);
-      line-height: 1.12;
-    }
-
-    header p {
-      margin: 0;
-      color: rgba(255,255,255,.84);
-      line-height: 1.45;
-    }
-
+    header h1 { margin: 0 0 7px; font-size: clamp(1.75rem, 4.2vw, 2.55rem); line-height: 1.12; }
+    header p { margin: 0; color: rgba(255,255,255,.84); line-height: 1.45; }
     main {
       min-height: 490px;
       padding: 28px 30px 35px;
@@ -74,10 +53,8 @@
       border-radius: 0 0 21px 21px;
       box-shadow: var(--shadow);
     }
-
     h2 { margin-top: 0; }
     .hidden { display: none !important; }
-
     .panel {
       padding: 17px 18px;
       margin: 20px 0;
@@ -85,26 +62,14 @@
       border-radius: 13px;
       background: #f8fafb;
     }
-
-    .panel p {
-      margin: 5px 0 0;
-      color: var(--muted);
-      line-height: 1.55;
-    }
-
+    .panel p { margin: 5px 0 0; color: var(--muted); line-height: 1.55; }
     .settings {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 16px;
       margin: 22px 0;
     }
-
-    label {
-      display: block;
-      margin-bottom: 7px;
-      font-weight: 780;
-    }
-
+    label { display: block; margin-bottom: 7px; font-weight: 780; }
     select {
       width: 100%;
       min-height: 46px;
@@ -114,7 +79,6 @@
       color: var(--ink);
       background: white;
     }
-
     button {
       min-height: 46px;
       border: 0;
@@ -124,26 +88,14 @@
       cursor: pointer;
       -webkit-tap-highlight-color: transparent;
     }
-
     button:focus-visible, select:focus-visible {
       outline: 3px solid rgba(29,111,138,.25);
       outline-offset: 2px;
     }
-
     button:disabled { cursor: default; opacity: .86; }
-
-    .primary {
-      color: white;
-      background: var(--blue);
-    }
-
+    .primary { color: white; background: var(--blue); }
     .primary:hover:not(:disabled) { background: var(--navy); }
-
-    .secondary {
-      color: var(--ink);
-      background: #e7eef1;
-    }
-
+    .secondary { color: var(--ink); background: #e7eef1; }
     .topline {
       display: flex;
       justify-content: space-between;
@@ -152,7 +104,6 @@
       color: var(--muted);
       font-weight: 730;
     }
-
     .progress {
       height: 10px;
       margin: 12px 0 25px;
@@ -160,14 +111,9 @@
       border-radius: 999px;
       background: #e5edef;
     }
-
     .progress div {
-      width: 0;
-      height: 100%;
-      background: var(--teal);
-      transition: width .22s ease;
+      width: 0; height: 100%; background: var(--teal); transition: width .22s ease;
     }
-
     .eyebrow {
       margin: 0 0 8px;
       color: var(--blue);
@@ -176,18 +122,12 @@
       letter-spacing: .045em;
       text-transform: uppercase;
     }
-
     #question {
       margin: 0 0 21px;
       font-size: clamp(1.22rem, 2.7vw, 1.58rem);
       line-height: 1.42;
     }
-
-    .answers {
-      display: grid;
-      gap: 11px;
-    }
-
+    .answers { display: grid; gap: 11px; }
     .answer {
       display: grid;
       grid-template-columns: 35px 1fr;
@@ -201,157 +141,49 @@
       background: white;
       border: 2px solid var(--line);
     }
-
-    .answer:hover:not(:disabled) {
-      border-color: #88b2bf;
-      background: #f8fbfc;
-    }
-
+    .answer:hover:not(:disabled) { border-color: #88b2bf; background: #f8fbfc; }
     .letter {
-      display: grid;
-      place-items: center;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      color: var(--navy);
-      background: #edf3f5;
-      font-weight: 850;
+      display: grid; place-items: center; width: 30px; height: 30px;
+      border-radius: 50%; color: var(--navy); background: #edf3f5; font-weight: 850;
     }
-
-    .answer.correct {
-      border-color: var(--correct);
-      background: var(--correct-bg);
-    }
-
-    .answer.wrong {
-      border-color: var(--wrong);
-      background: var(--wrong-bg);
-    }
-
-    .feedback {
-      margin-top: 19px;
-      padding: 15px 17px;
-      border-radius: 12px;
-      line-height: 1.5;
-    }
-
-    .feedback.correct {
-      border-left: 5px solid var(--correct);
-      background: var(--correct-bg);
-    }
-
-    .feedback.wrong {
-      border-left: 5px solid var(--wrong);
-      background: var(--wrong-bg);
-    }
-
-    .feedback strong {
-      display: block;
-      margin-bottom: 3px;
-    }
-
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 20px;
-    }
-
+    .answer.correct { border-color: var(--correct); background: var(--correct-bg); }
+    .answer.wrong { border-color: var(--wrong); background: var(--wrong-bg); }
+    .feedback { margin-top: 19px; padding: 15px 17px; border-radius: 12px; line-height: 1.5; }
+    .feedback.correct { border-left: 5px solid var(--correct); background: var(--correct-bg); }
+    .feedback.wrong { border-left: 5px solid var(--wrong); background: var(--wrong-bg); }
+    .feedback strong { display: block; margin-bottom: 3px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
     .centre { justify-content: center; }
     .results { text-align: center; }
-
     .score {
-      display: grid;
-      place-items: center;
-      position: relative;
-      width: 150px;
-      height: 150px;
-      margin: 20px auto;
-      border-radius: 50%;
+      display: grid; place-items: center; position: relative;
+      width: 150px; height: 150px; margin: 20px auto; border-radius: 50%;
       background: conic-gradient(var(--teal) var(--angle), #e3ecef 0);
     }
-
     .score::after {
-      content: "";
-      position: absolute;
-      inset: 13px;
-      border-radius: 50%;
-      background: white;
+      content: ""; position: absolute; inset: 13px; border-radius: 50%; background: white;
     }
-
-    .score span {
-      position: relative;
-      z-index: 1;
-      font-size: 2rem;
-      font-weight: 850;
-    }
-
-    .review {
-      margin-top: 28px;
-      text-align: left;
-    }
-
-    .review-item {
-      padding: 15px 0;
-      border-top: 1px solid var(--line);
-    }
-
-    .review-item h3 {
-      margin: 0 0 7px;
-      font-size: 1rem;
-      line-height: 1.45;
-    }
-
-    .review-item p {
-      margin: 4px 0;
-      color: var(--muted);
-      line-height: 1.45;
-    }
-
-    .right {
-      color: var(--correct) !important;
-      font-weight: 750;
-    }
-
-    .incorrect {
-      color: var(--wrong) !important;
-      font-weight: 750;
-    }
-
-    .note {
-      color: var(--muted);
-      font-size: .92rem;
-      line-height: 1.45;
-    }
-
+    .score span { position: relative; z-index: 1; font-size: 2rem; font-weight: 850; }
+    .review { margin-top: 28px; text-align: left; }
+    .review-item { padding: 15px 0; border-top: 1px solid var(--line); }
+    .review-item h3 { margin: 0 0 7px; font-size: 1rem; line-height: 1.45; }
+    .review-item p { margin: 4px 0; color: var(--muted); line-height: 1.45; }
+    .right { color: var(--correct) !important; font-weight: 750; }
+    .incorrect { color: var(--wrong) !important; font-weight: 750; }
+    .note { color: var(--muted); font-size: .92rem; line-height: 1.45; }
     .ios-note {
-      margin-top: 21px;
-      padding: 12px 14px;
-      border-left: 4px solid var(--blue);
-      border-radius: 8px;
-      color: var(--muted);
-      background: #f2f7f9;
-      font-size: .91rem;
-      line-height: 1.45;
+      margin-top: 21px; padding: 12px 14px; border-left: 4px solid var(--blue);
+      border-radius: 8px; color: var(--muted); background: #f2f7f9;
+      font-size: .91rem; line-height: 1.45;
     }
-
     @media (max-width: 620px) {
-      .app {
-        width: min(100% - 14px, 880px);
-        margin: 7px auto;
-      }
-
-      header, main {
-        padding-left: 18px;
-        padding-right: 18px;
-      }
-
+      .app { width: min(100% - 14px, 880px); margin: 7px auto; }
+      header, main { padding-left: 18px; padding-right: 18px; }
       header { border-radius: 14px 14px 0 0; }
       main { border-radius: 0 0 14px 14px; }
       .settings { grid-template-columns: 1fr; }
       .answer { padding: 12px; }
     }
-
     @media print {
       body { background: white; }
       .app { width: 100%; margin: 0; }
@@ -366,17 +198,14 @@
       <h1>Year 9 Chemistry Practice</h1>
       <p>Weeks 4–9: ions, compounds, properties and chemical reactions</p>
     </header>
-
     <main>
       <section id="setup">
         <h2>Start a random quiz</h2>
-        <p>Every attempt draws a new selection from a bank of 50 questions and shuffles the answer choices.</p>
-
+        <p>Every attempt draws a new selection from a bank of <strong>200 questions</strong> and shuffles the answer choices.</p>
         <div class="panel">
           <strong>Material covered</strong>
           <p>Ions and ionic compounds; names and formulas; solubility; covalent substances; properties of ionic and covalent molecular substances; reactants and products; conservation of mass; formula interpretation; and balancing simple equations.</p>
         </div>
-
         <div class="settings">
           <div>
             <label for="topic">Topic</label>
@@ -388,17 +217,14 @@
               <option value="reactions">Chemical reactions and equations</option>
             </select>
           </div>
-
           <div>
             <label for="count">Quiz length</label>
             <select id="count"></select>
           </div>
         </div>
-
         <div class="actions">
           <button type="button" class="primary" id="start">Start quiz</button>
         </div>
-
         <p class="note">The quiz works without a login and does not send or store results online.</p>
         <div class="ios-note">
           <strong>iPhone/iPad:</strong> open the hosted quiz link in Safari. An HTML file shown inside an email or Files attachment preview may display correctly but block its JavaScript buttons.
@@ -407,16 +233,13 @@
 
       <section id="quiz" class="hidden">
         <div class="topline">
-          <span id="progressText"></span>
-          <span id="scoreText"></span>
+          <span id="progressText"></span><span id="scoreText"></span>
         </div>
-
         <div class="progress"><div id="progressBar"></div></div>
         <p class="eyebrow" id="questionNumber"></p>
         <h2 id="question"></h2>
         <div class="answers" id="answers"></div>
         <div id="feedback" class="feedback hidden" aria-live="polite"></div>
-
         <div class="actions">
           <button type="button" class="primary hidden" id="next">Next question</button>
           <button type="button" class="secondary" id="finish">End quiz</button>
@@ -426,19 +249,15 @@
       <section id="results" class="hidden">
         <div class="results">
           <h2>Quiz complete</h2>
-          <div class="score" id="scoreCircle" style="--angle:0deg">
-            <span id="finalScore"></span>
-          </div>
+          <div class="score" id="scoreCircle" style="--angle:0deg"><span id="finalScore"></span></div>
           <h3 id="message"></h3>
           <p id="summary"></p>
-
           <div class="actions centre">
             <button type="button" class="primary" id="again">New random quiz</button>
             <button type="button" class="secondary hidden" id="retry">Retry incorrect questions</button>
             <button type="button" class="secondary" id="print">Print results</button>
           </div>
         </div>
-
         <div class="review" id="review"></div>
       </section>
     </main>
@@ -446,16 +265,9 @@
 
   <script>
     "use strict";
+    const BANK = [{"id": 1, "category": "ionic", "question": "Which statement best defines an ion?", "options": ["An atom that has gained or lost electrons and therefore has an electrical charge", "An atom with equal numbers of protons and electrons", "An atom that contains no neutrons", "A molecule made only from noble gases"], "answer": 0, "explanation": "An ion forms when an atom gains or loses electrons, giving it an overall electrical charge."}, {"id": 2, "category": "ionic", "question": "What is a cation?", "options": ["A positively charged ion", "A negatively charged ion", "A neutral atom", "A shared pair of electrons"], "answer": 0, "explanation": "A cation is a positively charged ion."}, {"id": 3, "category": "ionic", "question": "What is an anion?", "options": ["A negatively charged ion", "A positively charged ion", "A neutral atom", "A metal atom before it loses electrons"], "answer": 0, "explanation": "An anion is a negatively charged ion."}, {"id": 4, "category": "ionic", "question": "What happens to an atom when it loses one or more electrons?", "options": ["It becomes a positively charged ion", "It becomes a negatively charged ion", "Its number of protons decreases", "It becomes an isotope"], "answer": 0, "explanation": "Losing negatively charged electrons leaves the atom with an overall positive charge."}, {"id": 5, "category": "ionic", "question": "What happens to an atom when it gains one or more electrons?", "options": ["It becomes a negatively charged ion", "It becomes a positively charged ion", "Its atomic number increases", "Its nucleus disappears"], "answer": 0, "explanation": "Gaining negatively charged electrons gives the atom an overall negative charge."}, {"id": 6, "category": "ionic", "question": "Which type of ion is usually formed by a metal atom?", "options": ["A cation", "An anion", "A neutral molecule", "A diatomic non-metal molecule"], "answer": 0, "explanation": "Metal atoms usually lose electrons and form positively charged cations."}, {"id": 7, "category": "ionic", "question": "Which type of ion is usually formed by a non-metal atom?", "options": ["An anion", "A cation", "A neutral metal atom", "A proton"], "answer": 0, "explanation": "Non-metal atoms usually gain electrons and form negatively charged anions."}, {"id": 8, "category": "ionic", "question": "Why do atoms form ions in the model used in this unit?", "options": ["To achieve a stable electron arrangement", "To change their number of protons", "To change into isotopes", "To remove all particles from the nucleus"], "answer": 0, "explanation": "The program describes ion formation as gaining or losing electrons to achieve a stable electron arrangement."}, {"id": 9, "category": "ionic", "question": "Which particle is transferred when an ionic bond forms?", "options": ["Electrons", "Protons", "Neutrons", "Nuclei"], "answer": 0, "explanation": "Ionic compounds form when electrons are transferred from one atom to another."}, {"id": 10, "category": "ionic", "question": "What holds an ionic compound together at the particle level?", "options": ["Attraction between positively and negatively charged ions", "Sharing of neutrons between atoms", "Attraction between two neutral nuclei only", "A transfer of protons from non-metals to metals"], "answer": 0, "explanation": "Ionic compounds consist of oppositely charged ions attracted to one another."}, {"id": 11, "category": "ionic", "question": "A neutral sodium atom has 11 electrons. How many electrons are in Na⁺?", "options": ["10", "11", "12", "1"], "answer": 0, "explanation": "Na⁺ forms when sodium loses 1 electron, so it has 10 electrons."}, {"id": 12, "category": "ionic", "question": "How does a sodium atom form Na⁺?", "options": ["It loses 1 electron", "It gains 1 electron", "It loses 1 proton", "It changes its number of neutrons by 1"], "answer": 0, "explanation": "Na⁺ is formed by losing 1 electron."}, {"id": 13, "category": "ionic", "question": "What type of ion is Na⁺?", "options": ["A cation", "An anion", "A neutral atom", "An isotope name"], "answer": 0, "explanation": "Na⁺ is positively charged, so it is a cation."}, {"id": 14, "category": "ionic", "question": "A neutral magnesium atom has 12 electrons. How many electrons are in Mg²⁺?", "options": ["10", "12", "14", "2"], "answer": 0, "explanation": "Mg²⁺ forms when magnesium loses 2 electrons, so it has 10 electrons."}, {"id": 15, "category": "ionic", "question": "How does a magnesium atom form Mg²⁺?", "options": ["It loses 2 electrons", "It gains 2 electrons", "It loses 2 protons", "It changes its number of neutrons by 2"], "answer": 0, "explanation": "Mg²⁺ is formed by losing 2 electrons."}, {"id": 16, "category": "ionic", "question": "What type of ion is Mg²⁺?", "options": ["A cation", "An anion", "A neutral atom", "An isotope name"], "answer": 0, "explanation": "Mg²⁺ is positively charged, so it is a cation."}, {"id": 17, "category": "ionic", "question": "A neutral aluminium atom has 13 electrons. How many electrons are in Al³⁺?", "options": ["10", "13", "16", "3"], "answer": 0, "explanation": "Al³⁺ forms when aluminium loses 3 electrons, so it has 10 electrons."}, {"id": 18, "category": "ionic", "question": "How does a aluminium atom form Al³⁺?", "options": ["It loses 3 electrons", "It gains 3 electrons", "It loses 3 protons", "It changes its number of neutrons by 3"], "answer": 0, "explanation": "Al³⁺ is formed by losing 3 electrons."}, {"id": 19, "category": "ionic", "question": "What type of ion is Al³⁺?", "options": ["A cation", "An anion", "A neutral atom", "An isotope name"], "answer": 0, "explanation": "Al³⁺ is positively charged, so it is a cation."}, {"id": 20, "category": "ionic", "question": "A neutral fluorine atom has 9 electrons. How many electrons are in F⁻?", "options": ["10", "9", "8", "1"], "answer": 0, "explanation": "F⁻ forms when fluorine gains 1 electron, so it has 10 electrons."}, {"id": 21, "category": "ionic", "question": "How does a fluorine atom form F⁻?", "options": ["It gains 1 electron", "It loses 1 electron", "It gains 1 proton", "It changes its number of neutrons by 1"], "answer": 0, "explanation": "F⁻ is formed by gaining 1 electron."}, {"id": 22, "category": "ionic", "question": "What type of ion is F⁻?", "options": ["An anion", "A cation", "A neutral atom", "An isotope name"], "answer": 0, "explanation": "F⁻ is negatively charged, so it is an anion."}, {"id": 23, "category": "ionic", "question": "A neutral oxygen atom has 8 electrons. How many electrons are in O²⁻?", "options": ["10", "8", "6", "2"], "answer": 0, "explanation": "O²⁻ forms when oxygen gains 2 electrons, so it has 10 electrons."}, {"id": 24, "category": "ionic", "question": "How does a oxygen atom form O²⁻?", "options": ["It gains 2 electrons", "It loses 2 electrons", "It gains 2 protons", "It changes its number of neutrons by 2"], "answer": 0, "explanation": "O²⁻ is formed by gaining 2 electrons."}, {"id": 25, "category": "ionic", "question": "What type of ion is O²⁻?", "options": ["An anion", "A cation", "A neutral atom", "An isotope name"], "answer": 0, "explanation": "O²⁻ is negatively charged, so it is an anion."}, {"id": 26, "category": "ionic", "question": "A neutral chlorine atom has 17 electrons. How many electrons are in Cl⁻?", "options": ["18", "17", "16", "1"], "answer": 0, "explanation": "Cl⁻ forms when chlorine gains 1 electron, so it has 18 electrons."}, {"id": 27, "category": "ionic", "question": "How does a chlorine atom form Cl⁻?", "options": ["It gains 1 electron", "It loses 1 electron", "It gains 1 proton", "It changes its number of neutrons by 1"], "answer": 0, "explanation": "Cl⁻ is formed by gaining 1 electron."}, {"id": 28, "category": "ionic", "question": "What type of ion is Cl⁻?", "options": ["An anion", "A cation", "A neutral atom", "An isotope name"], "answer": 0, "explanation": "Cl⁻ is negatively charged, so it is an anion."}, {"id": 29, "category": "ionic", "question": "What is the formula of lithium fluoride?", "options": ["LiF", "Li₂F", "LiF₂", "BeF"], "answer": 0, "explanation": "The ion charges must balance to zero. Li⁺ and F⁻ combine in the smallest whole-number ratio 1:1, giving LiF."}, {"id": 30, "category": "ionic", "question": "Which pair of ions forms LiF?", "options": ["Li⁺ and F⁻", "F⁻ and F⁻", "Li⁺ and Li⁺", "Two neutral atoms with no electron transfer"], "answer": 0, "explanation": "LiF is formed from Li⁺ and F⁻; their charges balance in the required ratio."}, {"id": 31, "category": "ionic", "question": "Which name matches the formula LiF?", "options": ["Lithium Fluoride", "Fluoride Lithium", "Lithium Oxygen", "A covalent molecule"], "answer": 0, "explanation": "LiF is the two-element ionic compound lithium fluoride."}, {"id": 32, "category": "ionic", "question": "What is the formula of beryllium fluoride?", "options": ["BeF₂", "Li₂F", "LiF₂", "BeF"], "answer": 0, "explanation": "The ion charges must balance to zero. Be²⁺ and F⁻ combine in the smallest whole-number ratio 1:2, giving BeF₂."}, {"id": 33, "category": "ionic", "question": "Which pair of ions forms BeF₂?", "options": ["Be²⁺ and F⁻", "F⁻ and F⁻", "Be²⁺ and Be²⁺", "Two neutral atoms with no electron transfer"], "answer": 0, "explanation": "BeF₂ is formed from Be²⁺ and F⁻; their charges balance in the required ratio."}, {"id": 34, "category": "ionic", "question": "Which name matches the formula BeF₂?", "options": ["Beryllium Fluoride", "Fluoride Beryllium", "Beryllium Oxygen", "A covalent molecule"], "answer": 0, "explanation": "BeF₂ is the two-element ionic compound beryllium fluoride."}, {"id": 35, "category": "ionic", "question": "What is the formula of sodium oxide?", "options": ["Na₂O", "Li₂F", "LiF₂", "BeF"], "answer": 0, "explanation": "The ion charges must balance to zero. Na⁺ and O²⁻ combine in the smallest whole-number ratio 2:1, giving Na₂O."}, {"id": 36, "category": "ionic", "question": "Which pair of ions forms Na₂O?", "options": ["Na⁺ and O²⁻", "O²⁻ and O²⁻", "Na⁺ and Na⁺", "Two neutral atoms with no electron transfer"], "answer": 0, "explanation": "Na₂O is formed from Na⁺ and O²⁻; their charges balance in the required ratio."}, {"id": 37, "category": "ionic", "question": "Which name matches the formula Na₂O?", "options": ["Sodium Oxide", "Oxide Sodium", "Sodium Chloride", "A covalent molecule"], "answer": 0, "explanation": "Na₂O is the two-element ionic compound sodium oxide."}, {"id": 38, "category": "ionic", "question": "What is the formula of aluminium oxide?", "options": ["Al₂O₃", "Li₂F", "LiF₂", "BeF"], "answer": 0, "explanation": "The ion charges must balance to zero. Al³⁺ and O²⁻ combine in the smallest whole-number ratio 2:3, giving Al₂O₃."}, {"id": 39, "category": "ionic", "question": "Which pair of ions forms Al₂O₃?", "options": ["Al³⁺ and O²⁻", "O²⁻ and O²⁻", "Al³⁺ and Al³⁺", "Two neutral atoms with no electron transfer"], "answer": 0, "explanation": "Al₂O₃ is formed from Al³⁺ and O²⁻; their charges balance in the required ratio."}, {"id": 40, "category": "ionic", "question": "Which name matches the formula Al₂O₃?", "options": ["Aluminium Oxide", "Oxide Aluminium", "Aluminium Chloride", "A covalent molecule"], "answer": 0, "explanation": "Al₂O₃ is the two-element ionic compound aluminium oxide."}, {"id": 41, "category": "ionic", "question": "What is the formula of magnesium chloride?", "options": ["MgCl₂", "Li₂F", "LiF₂", "BeF"], "answer": 0, "explanation": "The ion charges must balance to zero. Mg²⁺ and Cl⁻ combine in the smallest whole-number ratio 1:2, giving MgCl₂."}, {"id": 42, "category": "ionic", "question": "Which pair of ions forms MgCl₂?", "options": ["Mg²⁺ and Cl⁻", "Cl⁻ and Cl⁻", "Mg²⁺ and Mg²⁺", "Two neutral atoms with no electron transfer"], "answer": 0, "explanation": "MgCl₂ is formed from Mg²⁺ and Cl⁻; their charges balance in the required ratio."}, {"id": 43, "category": "ionic", "question": "Which name matches the formula MgCl₂?", "options": ["Magnesium Chloride", "Chloride Magnesium", "Magnesium Oxygen", "A covalent molecule"], "answer": 0, "explanation": "MgCl₂ is the two-element ionic compound magnesium chloride."}, {"id": 44, "category": "ionic", "question": "What is the formula of sodium chloride?", "options": ["NaCl", "Li₂F", "LiF₂", "BeF"], "answer": 0, "explanation": "The ion charges must balance to zero. Na⁺ and Cl⁻ combine in the smallest whole-number ratio 1:1, giving NaCl."}, {"id": 45, "category": "ionic", "question": "Which pair of ions forms NaCl?", "options": ["Na⁺ and Cl⁻", "Cl⁻ and Cl⁻", "Na⁺ and Na⁺", "Two neutral atoms with no electron transfer"], "answer": 0, "explanation": "NaCl is formed from Na⁺ and Cl⁻; their charges balance in the required ratio."}, {"id": 46, "category": "ionic", "question": "Which name matches the formula NaCl?", "options": ["Sodium Chloride", "Chloride Sodium", "Sodium Oxygen", "A covalent molecule"], "answer": 0, "explanation": "NaCl is the two-element ionic compound sodium chloride."}, {"id": 47, "category": "ionic", "question": "What is the formula of magnesium oxide?", "options": ["MgO", "Li₂F", "LiF₂", "BeF"], "answer": 0, "explanation": "The ion charges must balance to zero. Mg²⁺ and O²⁻ combine in the smallest whole-number ratio 1:1, giving MgO."}, {"id": 48, "category": "ionic", "question": "Which pair of ions forms MgO?", "options": ["Mg²⁺ and O²⁻", "O²⁻ and O²⁻", "Mg²⁺ and Mg²⁺", "Two neutral atoms with no electron transfer"], "answer": 0, "explanation": "MgO is formed from Mg²⁺ and O²⁻; their charges balance in the required ratio."}, {"id": 49, "category": "ionic", "question": "Which name matches the formula MgO?", "options": ["Magnesium Oxide", "Oxide Magnesium", "Magnesium Chloride", "A covalent molecule"], "answer": 0, "explanation": "MgO is the two-element ionic compound magnesium oxide."}, {"id": 50, "category": "ionic", "question": "What is the formula of aluminium fluoride?", "options": ["AlF₃", "Li₂F", "LiF₂", "BeF"], "answer": 0, "explanation": "The ion charges must balance to zero. Al³⁺ and F⁻ combine in the smallest whole-number ratio 1:3, giving AlF₃."}, {"id": 51, "category": "ionic", "question": "Which pair of ions forms AlF₃?", "options": ["Al³⁺ and F⁻", "F⁻ and F⁻", "Al³⁺ and Al³⁺", "Two neutral atoms with no electron transfer"], "answer": 0, "explanation": "AlF₃ is formed from Al³⁺ and F⁻; their charges balance in the required ratio."}, {"id": 52, "category": "ionic", "question": "Which name matches the formula AlF₃?", "options": ["Aluminium Fluoride", "Fluoride Aluminium", "Aluminium Oxygen", "A covalent molecule"], "answer": 0, "explanation": "AlF₃ is the two-element ionic compound aluminium fluoride."}, {"id": 53, "category": "ionic", "question": "What is the formula of lithium oxide?", "options": ["Li₂O", "Li₂F", "LiF₂", "BeF"], "answer": 0, "explanation": "The ion charges must balance to zero. Li⁺ and O²⁻ combine in the smallest whole-number ratio 2:1, giving Li₂O."}, {"id": 54, "category": "ionic", "question": "Which pair of ions forms Li₂O?", "options": ["Li⁺ and O²⁻", "O²⁻ and O²⁻", "Li⁺ and Li⁺", "Two neutral atoms with no electron transfer"], "answer": 0, "explanation": "Li₂O is formed from Li⁺ and O²⁻; their charges balance in the required ratio."}, {"id": 55, "category": "ionic", "question": "Which name matches the formula Li₂O?", "options": ["Lithium Oxide", "Oxide Lithium", "Lithium Chloride", "A covalent molecule"], "answer": 0, "explanation": "Li₂O is the two-element ionic compound lithium oxide."}, {"id": 56, "category": "ionic", "question": "What is the formula of beryllium oxide?", "options": ["BeO", "Li₂F", "LiF₂", "BeF"], "answer": 0, "explanation": "The ion charges must balance to zero. Be²⁺ and O²⁻ combine in the smallest whole-number ratio 1:1, giving BeO."}, {"id": 57, "category": "ionic", "question": "Which pair of ions forms BeO?", "options": ["Be²⁺ and O²⁻", "O²⁻ and O²⁻", "Be²⁺ and Be²⁺", "Two neutral atoms with no electron transfer"], "answer": 0, "explanation": "BeO is formed from Be²⁺ and O²⁻; their charges balance in the required ratio."}, {"id": 58, "category": "ionic", "question": "Which name matches the formula BeO?", "options": ["Beryllium Oxide", "Oxide Beryllium", "Beryllium Chloride", "A covalent molecule"], "answer": 0, "explanation": "BeO is the two-element ionic compound beryllium oxide."}, {"id": 59, "category": "ionic", "question": "What is the formula of magnesium fluoride?", "options": ["MgF₂", "Li₂F", "LiF₂", "BeF"], "answer": 0, "explanation": "The ion charges must balance to zero. Mg²⁺ and F⁻ combine in the smallest whole-number ratio 1:2, giving MgF₂."}, {"id": 60, "category": "ionic", "question": "Which pair of ions forms MgF₂?", "options": ["Mg²⁺ and F⁻", "F⁻ and F⁻", "Mg²⁺ and Mg²⁺", "Two neutral atoms with no electron transfer"], "answer": 0, "explanation": "MgF₂ is formed from Mg²⁺ and F⁻; their charges balance in the required ratio."}, {"id": 61, "category": "ionic", "question": "Which name matches the formula MgF₂?", "options": ["Magnesium Fluoride", "Fluoride Magnesium", "Magnesium Oxygen", "A covalent molecule"], "answer": 0, "explanation": "MgF₂ is the two-element ionic compound magnesium fluoride."}, {"id": 62, "category": "ionic", "question": "What is the formula of aluminium chloride?", "options": ["AlCl₃", "Li₂F", "LiF₂", "BeF"], "answer": 0, "explanation": "The ion charges must balance to zero. Al³⁺ and Cl⁻ combine in the smallest whole-number ratio 1:3, giving AlCl₃."}, {"id": 63, "category": "ionic", "question": "Which pair of ions forms AlCl₃?", "options": ["Al³⁺ and Cl⁻", "Cl⁻ and Cl⁻", "Al³⁺ and Al³⁺", "Two neutral atoms with no electron transfer"], "answer": 0, "explanation": "AlCl₃ is formed from Al³⁺ and Cl⁻; their charges balance in the required ratio."}, {"id": 64, "category": "ionic", "question": "Which name matches the formula AlCl₃?", "options": ["Aluminium Chloride", "Chloride Aluminium", "Aluminium Oxygen", "A covalent molecule"], "answer": 0, "explanation": "AlCl₃ is the two-element ionic compound aluminium chloride."}, {"id": 65, "category": "ionic", "question": "Which formula is most clearly ionic because it contains a metal and a non-metal?", "options": ["MgO", "H₂O", "NH₃", "O₂"], "answer": 0, "explanation": "MgO contains magnesium (a metal) and oxygen (a non-metal), matching the ionic-compound model in the unit."}, {"id": 66, "category": "ionic", "question": "Which formula is most clearly ionic because it contains sodium and a non-metal?", "options": ["NaCl", "HCl", "H₂", "NH₃"], "answer": 0, "explanation": "NaCl contains the metal sodium and the non-metal chlorine."}, {"id": 67, "category": "ionic", "question": "Which formula contains a 2+ metal ion and two 1− non-metal ions?", "options": ["MgCl₂", "NaCl", "LiF", "BeO"], "answer": 0, "explanation": "MgCl₂ contains Mg²⁺ balanced by two Cl⁻ ions."}, {"id": 68, "category": "ionic", "question": "Which formula contains two 1+ ions for every one 2− ion?", "options": ["Na₂O", "NaCl", "MgO", "Al₂O₃"], "answer": 0, "explanation": "Na₂O has two Na⁺ ions for each O²⁻ ion."}, {"id": 69, "category": "ionic", "question": "Which formula contains two 3+ ions and three 2− ions?", "options": ["Al₂O₃", "AlCl₃", "MgO", "Na₂O"], "answer": 0, "explanation": "In Al₂O₃, 2×(+3)=+6 and 3×(−2)=−6."}, {"id": 70, "category": "ionic", "question": "Which ion symbol shows a 2− charge?", "options": ["O²⁻", "Na⁺", "Mg²⁺", "Al³⁺"], "answer": 0, "explanation": "O²⁻ carries a charge of 2−."}, {"id": 71, "category": "ionic", "question": "Which ion symbol shows a 3+ charge?", "options": ["Al³⁺", "Mg²⁺", "Na⁺", "Cl⁻"], "answer": 0, "explanation": "Al³⁺ carries a charge of 3+."}, {"id": 72, "category": "properties", "question": "What is the main purpose of a solubility table?", "options": ["To predict whether an ionic compound will dissolve in water", "To calculate the atomic number of an element", "To count electrons in a neutral atom", "To balance every chemical equation automatically"], "answer": 0, "explanation": "A solubility table is used to predict whether an ionic compound is soluble in water."}, {"id": 73, "category": "properties", "question": "What does it mean when a substance is soluble in water?", "options": ["It dissolves in water", "It always reacts explosively with water", "It changes into a metal", "It cannot be mixed with water"], "answer": 0, "explanation": "A soluble substance dissolves in water."}, {"id": 74, "category": "properties", "question": "Which procedure would best test whether an ionic compound is soluble in water?", "options": ["Add a small amount to water, stir, and observe whether it dissolves", "Place it beside a beaker without adding it", "Heat the empty beaker", "Count the letters in its chemical name"], "answer": 0, "explanation": "Solubility can be tested by mixing the substance with water and observing whether it dissolves."}, {"id": 75, "category": "properties", "question": "Which melting and boiling point pattern is generally associated with ionic compounds?", "options": ["High melting and boiling points", "Very low melting and boiling points only", "A melting point of exactly 0 °C", "No melting point at all"], "answer": 0, "explanation": "The program lists generally high melting and boiling points as a key property of ionic compounds."}, {"id": 76, "category": "properties", "question": "Which description is generally associated with solid ionic compounds?", "options": ["Hard and brittle", "Soft gases only", "Always flexible", "Always liquid at room temperature"], "answer": 0, "explanation": "Ionic compounds are generally hard and brittle."}, {"id": 77, "category": "properties", "question": "Does a solid ionic compound usually conduct electricity?", "options": ["No", "Yes, always", "Only if it is a noble gas", "Only when it contains hydrogen"], "answer": 0, "explanation": "Ionic compounds generally do not conduct electricity in the solid state."}, {"id": 78, "category": "properties", "question": "When does an ionic compound generally conduct electricity?", "options": ["When molten or dissolved in water", "Only when completely solid", "Only when frozen", "It never conducts in any state"], "answer": 0, "explanation": "Ionic compounds generally conduct electricity when molten or in aqueous solution."}, {"id": 79, "category": "properties", "question": "Which electrical property is generally associated with covalent molecular substances?", "options": ["They do not conduct electricity", "They always conduct in the solid state", "They conduct only because they contain metal ions", "They conduct better than all ionic substances"], "answer": 0, "explanation": "The program lists non-conduction of electricity as a key property of covalent molecular substances."}, {"id": 80, "category": "properties", "question": "How do the melting points of covalent molecular substances generally compare with those of ionic compounds?", "options": ["They are generally lower", "They are always much higher", "They are always identical", "Covalent substances have no melting points"], "answer": 0, "explanation": "Covalent molecular substances generally have relatively low melting points."}, {"id": 81, "category": "properties", "question": "Which property is listed for covalent molecular substances in the program?", "options": ["They are generally soft and malleable", "They always have very high boiling points", "They conduct electricity as solids", "They are always hard and brittle"], "answer": 0, "explanation": "The program describes covalent molecular substances as generally soft and malleable."}, {"id": 82, "category": "properties", "question": "An unknown substance hard and brittle, has a high melting point, does not conduct as a solid, but conducts when molten. What type of substance is it most likely to be?", "options": ["An ionic compound", "A covalent molecular substance", "A neutral atom only", "A subatomic particle"], "answer": 0, "explanation": "The stated properties match the ionic-compound properties listed in the program."}, {"id": 83, "category": "properties", "question": "An unknown substance has a high boiling point and conducts electricity when dissolved in water. What type of substance is it most likely to be?", "options": ["An ionic compound", "A covalent molecular substance", "A neutral atom only", "A subatomic particle"], "answer": 0, "explanation": "The stated properties match the ionic-compound properties listed in the program."}, {"id": 84, "category": "properties", "question": "An unknown substance is brittle and conducts in aqueous solution. What type of substance is it most likely to be?", "options": ["An ionic compound", "A covalent molecular substance", "A neutral atom only", "A subatomic particle"], "answer": 0, "explanation": "The stated properties match the ionic-compound properties listed in the program."}, {"id": 85, "category": "properties", "question": "An unknown substance does not conduct in the solid state but does conduct when molten. What type of substance is it most likely to be?", "options": ["An ionic compound", "A covalent molecular substance", "A neutral atom only", "A subatomic particle"], "answer": 0, "explanation": "The stated properties match the ionic-compound properties listed in the program."}, {"id": 86, "category": "properties", "question": "An unknown substance has a relatively low melting point and does not conduct electricity. What type of substance is it most likely to be?", "options": ["A covalent molecular substance", "An ionic compound", "A cation", "A metal ion"], "answer": 0, "explanation": "These properties match the covalent molecular substances described in the program."}, {"id": 87, "category": "properties", "question": "An unknown substance is generally soft and does not conduct electricity. What type of substance is it most likely to be?", "options": ["A covalent molecular substance", "An ionic compound", "A cation", "A metal ion"], "answer": 0, "explanation": "These properties match the covalent molecular substances described in the program."}, {"id": 88, "category": "properties", "question": "An unknown substance has a low melting point and remains a non-conductor. What type of substance is it most likely to be?", "options": ["A covalent molecular substance", "An ionic compound", "A cation", "A metal ion"], "answer": 0, "explanation": "These properties match the covalent molecular substances described in the program."}, {"id": 89, "category": "properties", "question": "Which property is associated with ionic compounds in the course program?", "options": ["generally high melting and boiling points", "always being a gas at room temperature", "always containing no electrons", "always having a full outer shell"], "answer": 0, "explanation": "The program lists generally high melting and boiling points for ionic compounds."}, {"id": 90, "category": "properties", "question": "Which property is associated with ionic compounds in the course program? (Set 2)", "options": ["hard and brittle behaviour", "always being a gas at room temperature", "always containing no electrons", "always having a full outer shell"], "answer": 0, "explanation": "The program lists hard and brittle behaviour for ionic compounds."}, {"id": 91, "category": "properties", "question": "Which property is associated with ionic compounds in the solid state in the course program?", "options": ["poor electrical conduction", "always being a gas at room temperature", "always containing no electrons", "always having a full outer shell"], "answer": 0, "explanation": "The program lists poor electrical conduction for ionic compounds in the solid state."}, {"id": 92, "category": "properties", "question": "Which property is associated with ionic compounds when molten in the course program?", "options": ["electrical conduction", "always being a gas at room temperature", "always containing no electrons", "always having a full outer shell"], "answer": 0, "explanation": "The program lists electrical conduction for ionic compounds when molten."}, {"id": 93, "category": "properties", "question": "Which property is associated with ionic compounds in aqueous solution in the course program?", "options": ["electrical conduction", "always being a gas at room temperature", "always containing no electrons", "always having a full outer shell"], "answer": 0, "explanation": "The program lists electrical conduction for ionic compounds in aqueous solution."}, {"id": 94, "category": "properties", "question": "Which property is associated with covalent molecular substances in the course program?", "options": ["relatively low melting points", "always being a gas at room temperature", "always containing no electrons", "always having a full outer shell"], "answer": 0, "explanation": "The program lists relatively low melting points for covalent molecular substances."}, {"id": 95, "category": "properties", "question": "Which property is associated with covalent molecular substances in the course program? (Set 2)", "options": ["poor electrical conduction", "always being a gas at room temperature", "always containing no electrons", "always having a full outer shell"], "answer": 0, "explanation": "The program lists poor electrical conduction for covalent molecular substances."}, {"id": 96, "category": "properties", "question": "Which property is associated with covalent molecular substances in the course program? (Set 3)", "options": ["generally soft and malleable behaviour", "always being a gas at room temperature", "always containing no electrons", "always having a full outer shell"], "answer": 0, "explanation": "The program lists generally soft and malleable behaviour for covalent molecular substances."}, {"id": 97, "category": "properties", "question": "A sample of an ionic compound is solid. What should you expect about its electrical conductivity?", "options": ["It generally does not conduct", "It generally conducts very well", "It must be a covalent gas", "It has no charged particles"], "answer": 0, "explanation": "The program states that ionic compounds do not conduct electricity in the solid state."}, {"id": 98, "category": "properties", "question": "The same ionic compound is melted. What should happen to its ability to conduct electricity?", "options": ["It should conduct", "It must stop conducting", "Its atoms lose all protons", "It becomes a noble gas"], "answer": 0, "explanation": "The program states that ionic compounds conduct electricity when molten."}, {"id": 99, "category": "properties", "question": "An ionic compound is dissolved in water. What is its usual electrical behaviour?", "options": ["It conducts electricity", "It must remain a non-conductor", "It becomes a metal", "Its mass becomes zero"], "answer": 0, "explanation": "The program states that ionic compounds conduct electricity in aqueous solution."}, {"id": 100, "category": "properties", "question": "Which state change can make an ionic compound conduct when it did not conduct before?", "options": ["Solid to molten", "Molten to solid", "Aqueous to solid", "Gas to isotope"], "answer": 0, "explanation": "The key comparison in the program is that solid ionic compounds do not conduct, while molten ionic compounds do."}, {"id": 101, "category": "covalent", "question": "How is a covalent bond formed?", "options": ["Atoms share electrons", "Atoms transfer protons", "Atoms lose their nuclei", "Neutrons move between electron shells"], "answer": 0, "explanation": "Covalent substances form when atoms share electrons."}, {"id": 102, "category": "covalent", "question": "Which types of elements usually combine to form covalent substances?", "options": ["Non-metal elements with other non-metal elements", "Metal elements with metal elements only", "Noble gases with no other atoms", "Only Group 1 metals"], "answer": 0, "explanation": "The program states that non-metal elements combine to form covalent substances."}, {"id": 103, "category": "covalent", "question": "Why do non-metal atoms share electrons in the covalent model used in this unit?", "options": ["To achieve a stable electron arrangement", "To change their number of protons", "To make their mass number zero", "To become metals"], "answer": 0, "explanation": "The program describes covalent bonding as sharing electrons to achieve a stable electron arrangement."}, {"id": 104, "category": "covalent", "question": "Which statement contrasts ionic and covalent bonding correctly?", "options": ["Ionic bonding involves electron transfer; covalent bonding involves electron sharing", "Ionic bonding involves sharing; covalent bonding involves proton transfer", "Both require atoms to lose their nuclei", "Neither process involves electrons"], "answer": 0, "explanation": "The program distinguishes ionic compounds by electron transfer and covalent substances by electron sharing."}, {"id": 105, "category": "covalent", "question": "What is the chemical formula for hydrogen?", "options": ["H₂", "H", "H₃", "2H"], "answer": 0, "explanation": "The formula for hydrogen is H₂."}, {"id": 106, "category": "covalent", "question": "How many atoms are represented in one molecule of H₂?", "options": ["2", "1", "3", "1"], "answer": 0, "explanation": "One molecule of H₂ contains 2 atoms altogether."}, {"id": 107, "category": "covalent", "question": "How many different elements are present in H₂?", "options": ["1", "2", "3", "2"], "answer": 0, "explanation": "H₂ contains 1 different element."}, {"id": 108, "category": "covalent", "question": "What is the chemical formula for oxygen?", "options": ["O₂", "O", "O₃", "2O₂"], "answer": 0, "explanation": "The formula for oxygen is O₂."}, {"id": 109, "category": "covalent", "question": "How many atoms are represented in one molecule of O₂?", "options": ["2", "1", "3", "1"], "answer": 0, "explanation": "One molecule of O₂ contains 2 atoms altogether."}, {"id": 110, "category": "covalent", "question": "How many different elements are present in O₂?", "options": ["1", "2", "3", "2"], "answer": 0, "explanation": "O₂ contains 1 different element."}, {"id": 111, "category": "covalent", "question": "What is the chemical formula for nitrogen?", "options": ["N₂", "N", "N₃", "2N"], "answer": 0, "explanation": "The formula for nitrogen is N₂."}, {"id": 112, "category": "covalent", "question": "How many atoms are represented in one molecule of N₂?", "options": ["2", "1", "3", "1"], "answer": 0, "explanation": "One molecule of N₂ contains 2 atoms altogether."}, {"id": 113, "category": "covalent", "question": "How many different elements are present in N₂?", "options": ["1", "2", "3", "2"], "answer": 0, "explanation": "N₂ contains 1 different element."}, {"id": 114, "category": "covalent", "question": "What is the chemical formula for water?", "options": ["H₂O", "HO₂", "H₂O₂", "H₃O"], "answer": 0, "explanation": "The formula for water is H₂O."}, {"id": 115, "category": "covalent", "question": "How many atoms are represented in one molecule of H₂O?", "options": ["3", "2", "4", "2"], "answer": 0, "explanation": "One molecule of H₂O contains 3 atoms altogether."}, {"id": 116, "category": "covalent", "question": "How many different elements are present in H₂O?", "options": ["2", "3", "3", "1"], "answer": 0, "explanation": "H₂O contains 2 different elements."}, {"id": 117, "category": "covalent", "question": "What is the chemical formula for ammonia?", "options": ["NH₃", "N₃H", "NH₂", "N₂H₃"], "answer": 0, "explanation": "The formula for ammonia is NH₃."}, {"id": 118, "category": "covalent", "question": "How many atoms are represented in one molecule of NH₃?", "options": ["4", "3", "5", "2"], "answer": 0, "explanation": "One molecule of NH₃ contains 4 atoms altogether."}, {"id": 119, "category": "covalent", "question": "How many different elements are present in NH₃?", "options": ["2", "4", "3", "1"], "answer": 0, "explanation": "NH₃ contains 2 different elements."}, {"id": 120, "category": "covalent", "question": "What is the chemical formula for hydrogen chloride?", "options": ["HCl", "H₂Cl", "HCl₂", "Cl₂H"], "answer": 0, "explanation": "The formula for hydrogen chloride is HCl."}, {"id": 121, "category": "covalent", "question": "How many atoms are represented in one molecule of HCl?", "options": ["2", "1", "3", "2"], "answer": 0, "explanation": "One molecule of HCl contains 2 atoms altogether."}, {"id": 122, "category": "covalent", "question": "How many different elements are present in HCl?", "options": ["2", "2", "3", "1"], "answer": 0, "explanation": "HCl contains 2 different elements."}, {"id": 123, "category": "covalent", "question": "How many hydrogen atoms are shown in the formula H₂O?", "options": ["2", "1", "3", "4"], "answer": 0, "explanation": "The subscript in H₂O shows that there are 2 hydrogen atoms."}, {"id": 124, "category": "covalent", "question": "How many oxygen atoms are shown in the formula H₂O?", "options": ["1", "2", "3", "4"], "answer": 0, "explanation": "The subscript in H₂O shows that there is 1 oxygen atom."}, {"id": 125, "category": "covalent", "question": "How many nitrogen atoms are shown in the formula NH₃?", "options": ["1", "2", "3", "4"], "answer": 0, "explanation": "The subscript in NH₃ shows that there is 1 nitrogen atom."}, {"id": 126, "category": "covalent", "question": "How many hydrogen atoms are shown in the formula NH₃?", "options": ["3", "1", "2", "4"], "answer": 0, "explanation": "The subscript in NH₃ shows that there are 3 hydrogen atoms."}, {"id": 127, "category": "covalent", "question": "How many hydrogen atoms are shown in the formula HCl?", "options": ["1", "2", "3", "4"], "answer": 0, "explanation": "The subscript in HCl shows that there is 1 hydrogen atom."}, {"id": 128, "category": "covalent", "question": "How many chlorine atoms are shown in the formula HCl?", "options": ["1", "2", "3", "4"], "answer": 0, "explanation": "The subscript in HCl shows that there is 1 chlorine atom."}, {"id": 129, "category": "covalent", "question": "How many oxygen atoms are shown in the formula O₂?", "options": ["2", "1", "3", "4"], "answer": 0, "explanation": "The subscript in O₂ shows that there are 2 oxygen atoms."}, {"id": 130, "category": "covalent", "question": "How many nitrogen atoms are shown in the formula N₂?", "options": ["2", "1", "3", "4"], "answer": 0, "explanation": "The subscript in N₂ shows that there are 2 nitrogen atoms."}, {"id": 131, "category": "covalent", "question": "How many hydrogen atoms are shown in the formula H₂?", "options": ["2", "1", "3", "4"], "answer": 0, "explanation": "The subscript in H₂ shows that there are 2 hydrogen atoms."}, {"id": 132, "category": "covalent", "question": "How should H₂O be classified in this unit?", "options": ["Covalent compound/substance", "Ionic compound", "Single subatomic particle", "Isotope notation"], "answer": 0, "explanation": "H₂O is classified as covalent because it contains only non-metal elements."}, {"id": 133, "category": "covalent", "question": "How should NH₃ be classified in this unit?", "options": ["Covalent compound/substance", "Ionic compound", "Single subatomic particle", "Isotope notation"], "answer": 0, "explanation": "NH₃ is classified as covalent because it contains only non-metal elements."}, {"id": 134, "category": "covalent", "question": "How should HCl be classified in this unit?", "options": ["Covalent compound/substance", "Ionic compound", "Single subatomic particle", "Isotope notation"], "answer": 0, "explanation": "HCl is classified as covalent because it contains two non-metal elements."}, {"id": 135, "category": "covalent", "question": "How should H₂ be classified in this unit?", "options": ["Covalent compound/substance", "Ionic compound", "Single subatomic particle", "Isotope notation"], "answer": 0, "explanation": "H₂ is classified as covalent because it is a molecule of a non-metal element."}, {"id": 136, "category": "covalent", "question": "How should O₂ be classified in this unit?", "options": ["Covalent compound/substance", "Ionic compound", "Single subatomic particle", "Isotope notation"], "answer": 0, "explanation": "O₂ is classified as covalent because it is a molecule of a non-metal element."}, {"id": 137, "category": "covalent", "question": "How should N₂ be classified in this unit?", "options": ["Covalent compound/substance", "Ionic compound", "Single subatomic particle", "Isotope notation"], "answer": 0, "explanation": "N₂ is classified as covalent because it is a molecule of a non-metal element."}, {"id": 138, "category": "covalent", "question": "How should LiF be classified in this unit?", "options": ["Ionic compound/substance", "Covalent molecular substance", "Single subatomic particle", "Isotope notation"], "answer": 0, "explanation": "LiF is classified as ionic because it contains a metal and a non-metal."}, {"id": 139, "category": "covalent", "question": "How should BeF₂ be classified in this unit?", "options": ["Ionic compound/substance", "Covalent molecular substance", "Single subatomic particle", "Isotope notation"], "answer": 0, "explanation": "BeF₂ is classified as ionic because it contains a metal and a non-metal."}, {"id": 140, "category": "covalent", "question": "How should Na₂O be classified in this unit?", "options": ["Ionic compound/substance", "Covalent molecular substance", "Single subatomic particle", "Isotope notation"], "answer": 0, "explanation": "Na₂O is classified as ionic because it contains a metal and a non-metal."}, {"id": 141, "category": "covalent", "question": "How should Al₂O₃ be classified in this unit?", "options": ["Ionic compound/substance", "Covalent molecular substance", "Single subatomic particle", "Isotope notation"], "answer": 0, "explanation": "Al₂O₃ is classified as ionic because it contains a metal and a non-metal."}, {"id": 142, "category": "reactions", "question": "What happens to atoms during a chemical reaction?", "options": ["They are rearranged to form new substances", "They are destroyed completely", "They all change into neutrons", "Their total number must increase"], "answer": 0, "explanation": "Chemical reactions rearrange atoms to form new substances."}, {"id": 143, "category": "reactions", "question": "What are reactants?", "options": ["The starting substances in a chemical reaction", "The substances formed at the end", "The numbers placed before formulas", "The electrons inside a nucleus"], "answer": 0, "explanation": "Reactants are the substances present at the start of a chemical reaction."}, {"id": 144, "category": "reactions", "question": "What are products?", "options": ["The new substances formed in a chemical reaction", "The starting substances only", "The protons transferred between atoms", "The rows of the periodic table"], "answer": 0, "explanation": "Products are the new substances formed by a chemical reaction."}, {"id": 145, "category": "reactions", "question": "Which statement expresses the law of conservation of mass?", "options": ["The total mass of the reactants equals the total mass of the products", "The products always have twice the mass of the reactants", "Mass disappears whenever a gas is formed", "Every reaction produces exactly one gram of matter"], "answer": 0, "explanation": "In a chemical reaction, mass is conserved: total reactant mass equals total product mass."}, {"id": 146, "category": "reactions", "question": "Why must a chemical equation be balanced?", "options": ["To show that the same number of each type of atom is present before and after the reaction", "To make the products heavier than the reactants", "To change one element into another", "To remove all coefficients"], "answer": 0, "explanation": "Balancing represents the rearrangement of atoms and the conservation of matter."}, {"id": 147, "category": "reactions", "question": "Magnesium reacts with oxygen to form magnesium oxide. Which word equation is correct?", "options": ["magnesium + oxygen → magnesium oxide", "magnesium oxide → magnesium + oxygen", "magnesium + magnesium oxide → oxygen", "oxygen + magnesium oxide → magnesium"], "answer": 0, "explanation": "The reactants are magnesium and oxygen, and the product is magnesium oxide."}, {"id": 148, "category": "reactions", "question": "In the word equation magnesium + oxygen → magnesium oxide, which substances are the reactants?", "options": ["magnesium and oxygen", "magnesium oxide", "magnesium and magnesium oxide", "oxygen and magnesium oxide"], "answer": 0, "explanation": "The reactants are the substances on the left of the arrow: magnesium and oxygen."}, {"id": 149, "category": "reactions", "question": "In the word equation magnesium + oxygen → magnesium oxide, what is the product?", "options": ["magnesium oxide", "magnesium", "oxygen", "magnesium and oxygen"], "answer": 0, "explanation": "The product is the substance on the right of the arrow: magnesium oxide."}, {"id": 150, "category": "reactions", "question": "Hydrogen reacts with oxygen to form water. Which word equation is correct?", "options": ["hydrogen + oxygen → water", "water → hydrogen + oxygen", "hydrogen + water → oxygen", "oxygen + water → hydrogen"], "answer": 0, "explanation": "The reactants are hydrogen and oxygen, and the product is water."}, {"id": 151, "category": "reactions", "question": "In the word equation hydrogen + oxygen → water, which substances are the reactants?", "options": ["hydrogen and oxygen", "water", "hydrogen and water", "oxygen and water"], "answer": 0, "explanation": "The reactants are the substances on the left of the arrow: hydrogen and oxygen."}, {"id": 152, "category": "reactions", "question": "In the word equation hydrogen + oxygen → water, what is the product?", "options": ["water", "hydrogen", "oxygen", "hydrogen and oxygen"], "answer": 0, "explanation": "The product is the substance on the right of the arrow: water."}, {"id": 153, "category": "reactions", "question": "Sodium reacts with chlorine to form sodium chloride. Which word equation is correct?", "options": ["sodium + chlorine → sodium chloride", "sodium chloride → sodium + chlorine", "sodium + sodium chloride → chlorine", "chlorine + sodium chloride → sodium"], "answer": 0, "explanation": "The reactants are sodium and chlorine, and the product is sodium chloride."}, {"id": 154, "category": "reactions", "question": "In the word equation sodium + chlorine → sodium chloride, which substances are the reactants?", "options": ["sodium and chlorine", "sodium chloride", "sodium and sodium chloride", "chlorine and sodium chloride"], "answer": 0, "explanation": "The reactants are the substances on the left of the arrow: sodium and chlorine."}, {"id": 155, "category": "reactions", "question": "In the word equation sodium + chlorine → sodium chloride, what is the product?", "options": ["sodium chloride", "sodium", "chlorine", "sodium and chlorine"], "answer": 0, "explanation": "The product is the substance on the right of the arrow: sodium chloride."}, {"id": 156, "category": "reactions", "question": "Magnesium reacts with chlorine to form magnesium chloride. Which word equation is correct?", "options": ["magnesium + chlorine → magnesium chloride", "magnesium chloride → magnesium + chlorine", "magnesium + magnesium chloride → chlorine", "chlorine + magnesium chloride → magnesium"], "answer": 0, "explanation": "The reactants are magnesium and chlorine, and the product is magnesium chloride."}, {"id": 157, "category": "reactions", "question": "In the word equation magnesium + chlorine → magnesium chloride, which substances are the reactants?", "options": ["magnesium and chlorine", "magnesium chloride", "magnesium and magnesium chloride", "chlorine and magnesium chloride"], "answer": 0, "explanation": "The reactants are the substances on the left of the arrow: magnesium and chlorine."}, {"id": 158, "category": "reactions", "question": "In the word equation magnesium + chlorine → magnesium chloride, what is the product?", "options": ["magnesium chloride", "magnesium", "chlorine", "magnesium and chlorine"], "answer": 0, "explanation": "The product is the substance on the right of the arrow: magnesium chloride."}, {"id": 159, "category": "reactions", "question": "Lithium reacts with fluorine to form lithium fluoride. Which word equation is correct?", "options": ["lithium + fluorine → lithium fluoride", "lithium fluoride → lithium + fluorine", "lithium + lithium fluoride → fluorine", "fluorine + lithium fluoride → lithium"], "answer": 0, "explanation": "The reactants are lithium and fluorine, and the product is lithium fluoride."}, {"id": 160, "category": "reactions", "question": "In the word equation lithium + fluorine → lithium fluoride, which substances are the reactants?", "options": ["lithium and fluorine", "lithium fluoride", "lithium and lithium fluoride", "fluorine and lithium fluoride"], "answer": 0, "explanation": "The reactants are the substances on the left of the arrow: lithium and fluorine."}, {"id": 161, "category": "reactions", "question": "In the word equation lithium + fluorine → lithium fluoride, what is the product?", "options": ["lithium fluoride", "lithium", "fluorine", "lithium and fluorine"], "answer": 0, "explanation": "The product is the substance on the right of the arrow: lithium fluoride."}, {"id": 162, "category": "reactions", "question": "A reaction takes place in a closed container. The reactants have a total mass of 12 g. What is the total mass of the products?", "options": ["12 g", "24 g", "6 g", "5 g"], "answer": 0, "explanation": "By conservation of mass, the total mass of the products is also 12 g."}, {"id": 163, "category": "reactions", "question": "In a closed-system reaction, 7 g of one reactant combines with 5 g of another reactant. What is the total mass of the products?", "options": ["12 g", "2 g", "7 g", "5 g"], "answer": 0, "explanation": "The reactant masses add to 7 + 5 = 12 g, so the products have a total mass of 12 g."}, {"id": 164, "category": "reactions", "question": "A closed reaction produces 12 g of products. One reactant had a mass of 7 g. If there were only two reactants, what was the mass of the other reactant?", "options": ["5 g", "12 g", "7 g", "19 g"], "answer": 0, "explanation": "By conservation of mass, the two reactants total 12 g, so the missing mass is 12 − 7 = 5 g."}, {"id": 165, "category": "reactions", "question": "A reaction takes place in a closed container. The reactants have a total mass of 18 g. What is the total mass of the products?", "options": ["18 g", "36 g", "9 g", "13 g"], "answer": 0, "explanation": "By conservation of mass, the total mass of the products is also 18 g."}, {"id": 166, "category": "reactions", "question": "In a closed-system reaction, 5 g of one reactant combines with 13 g of another reactant. What is the total mass of the products?", "options": ["18 g", "8 g", "5 g", "13 g"], "answer": 0, "explanation": "The reactant masses add to 5 + 13 = 18 g, so the products have a total mass of 18 g."}, {"id": 167, "category": "reactions", "question": "A closed reaction produces 18 g of products. One reactant had a mass of 5 g. If there were only two reactants, what was the mass of the other reactant?", "options": ["13 g", "18 g", "5 g", "23 g"], "answer": 0, "explanation": "By conservation of mass, the two reactants total 18 g, so the missing mass is 18 − 5 = 13 g."}, {"id": 168, "category": "reactions", "question": "A reaction takes place in a closed container. The reactants have a total mass of 25 g. What is the total mass of the products?", "options": ["25 g", "50 g", "12 g", "16 g"], "answer": 0, "explanation": "By conservation of mass, the total mass of the products is also 25 g."}, {"id": 169, "category": "reactions", "question": "In a closed-system reaction, 9 g of one reactant combines with 16 g of another reactant. What is the total mass of the products?", "options": ["25 g", "7 g", "9 g", "16 g"], "answer": 0, "explanation": "The reactant masses add to 9 + 16 = 25 g, so the products have a total mass of 25 g."}, {"id": 170, "category": "reactions", "question": "A closed reaction produces 25 g of products. One reactant had a mass of 9 g. If there were only two reactants, what was the mass of the other reactant?", "options": ["16 g", "25 g", "9 g", "34 g"], "answer": 0, "explanation": "By conservation of mass, the two reactants total 25 g, so the missing mass is 25 − 9 = 16 g."}, {"id": 171, "category": "reactions", "question": "A reaction takes place in a closed container. The reactants have a total mass of 40 g. What is the total mass of the products?", "options": ["40 g", "80 g", "20 g", "24 g"], "answer": 0, "explanation": "By conservation of mass, the total mass of the products is also 40 g."}, {"id": 172, "category": "reactions", "question": "In a closed-system reaction, 16 g of one reactant combines with 24 g of another reactant. What is the total mass of the products?", "options": ["40 g", "8 g", "16 g", "24 g"], "answer": 0, "explanation": "The reactant masses add to 16 + 24 = 40 g, so the products have a total mass of 40 g."}, {"id": 173, "category": "reactions", "question": "A closed reaction produces 40 g of products. One reactant had a mass of 16 g. If there were only two reactants, what was the mass of the other reactant?", "options": ["24 g", "40 g", "16 g", "56 g"], "answer": 0, "explanation": "By conservation of mass, the two reactants total 40 g, so the missing mass is 40 − 16 = 24 g."}, {"id": 174, "category": "reactions", "question": "A reaction takes place in a closed container. The reactants have a total mass of 32 g. What is the total mass of the products?", "options": ["32 g", "64 g", "16 g", "21 g"], "answer": 0, "explanation": "By conservation of mass, the total mass of the products is also 32 g."}, {"id": 175, "category": "reactions", "question": "In a closed-system reaction, 11 g of one reactant combines with 21 g of another reactant. What is the total mass of the products?", "options": ["32 g", "10 g", "11 g", "21 g"], "answer": 0, "explanation": "The reactant masses add to 11 + 21 = 32 g, so the products have a total mass of 32 g."}, {"id": 176, "category": "reactions", "question": "A closed reaction produces 32 g of products. One reactant had a mass of 11 g. If there were only two reactants, what was the mass of the other reactant?", "options": ["21 g", "32 g", "11 g", "43 g"], "answer": 0, "explanation": "By conservation of mass, the two reactants total 32 g, so the missing mass is 32 − 11 = 21 g."}, {"id": 177, "category": "reactions", "question": "A reaction takes place in a closed container. The reactants have a total mass of 50 g. What is the total mass of the products?", "options": ["50 g", "100 g", "25 g", "29 g"], "answer": 0, "explanation": "By conservation of mass, the total mass of the products is also 50 g."}, {"id": 178, "category": "reactions", "question": "In a closed-system reaction, 21 g of one reactant combines with 29 g of another reactant. What is the total mass of the products?", "options": ["50 g", "8 g", "21 g", "29 g"], "answer": 0, "explanation": "The reactant masses add to 21 + 29 = 50 g, so the products have a total mass of 50 g."}, {"id": 179, "category": "reactions", "question": "A closed reaction produces 50 g of products. One reactant had a mass of 21 g. If there were only two reactants, what was the mass of the other reactant?", "options": ["29 g", "50 g", "21 g", "71 g"], "answer": 0, "explanation": "By conservation of mass, the two reactants total 50 g, so the missing mass is 50 − 21 = 29 g."}, {"id": 180, "category": "reactions", "question": "A reaction takes place in a closed container. The reactants have a total mass of 27 g. What is the total mass of the products?", "options": ["27 g", "54 g", "13 g", "14 g"], "answer": 0, "explanation": "By conservation of mass, the total mass of the products is also 27 g."}, {"id": 181, "category": "reactions", "question": "In a closed-system reaction, 13 g of one reactant combines with 14 g of another reactant. What is the total mass of the products?", "options": ["27 g", "1 g", "13 g", "14 g"], "answer": 0, "explanation": "The reactant masses add to 13 + 14 = 27 g, so the products have a total mass of 27 g."}, {"id": 182, "category": "reactions", "question": "A closed reaction produces 27 g of products. One reactant had a mass of 13 g. If there were only two reactants, what was the mass of the other reactant?", "options": ["14 g", "27 g", "13 g", "40 g"], "answer": 0, "explanation": "By conservation of mass, the two reactants total 27 g, so the missing mass is 27 − 13 = 14 g."}, {"id": 183, "category": "reactions", "question": "A reaction takes place in a closed container. The reactants have a total mass of 64 g. What is the total mass of the products?", "options": ["64 g", "128 g", "32 g", "45 g"], "answer": 0, "explanation": "By conservation of mass, the total mass of the products is also 64 g."}, {"id": 184, "category": "reactions", "question": "In a closed-system reaction, 19 g of one reactant combines with 45 g of another reactant. What is the total mass of the products?", "options": ["64 g", "26 g", "19 g", "45 g"], "answer": 0, "explanation": "The reactant masses add to 19 + 45 = 64 g, so the products have a total mass of 64 g."}, {"id": 185, "category": "reactions", "question": "A closed reaction produces 64 g of products. One reactant had a mass of 19 g. If there were only two reactants, what was the mass of the other reactant?", "options": ["45 g", "64 g", "19 g", "83 g"], "answer": 0, "explanation": "By conservation of mass, the two reactants total 64 g, so the missing mass is 64 − 19 = 45 g."}, {"id": 186, "category": "reactions", "question": "A reaction takes place in a closed container. The reactants have a total mass of 75 g. What is the total mass of the products?", "options": ["75 g", "150 g", "37 g", "47 g"], "answer": 0, "explanation": "By conservation of mass, the total mass of the products is also 75 g."}, {"id": 187, "category": "reactions", "question": "In a closed-system reaction, 28 g of one reactant combines with 47 g of another reactant. What is the total mass of the products?", "options": ["75 g", "19 g", "28 g", "47 g"], "answer": 0, "explanation": "The reactant masses add to 28 + 47 = 75 g, so the products have a total mass of 75 g."}, {"id": 188, "category": "reactions", "question": "A closed reaction produces 75 g of products. One reactant had a mass of 28 g. If there were only two reactants, what was the mass of the other reactant?", "options": ["47 g", "75 g", "28 g", "103 g"], "answer": 0, "explanation": "By conservation of mass, the two reactants total 75 g, so the missing mass is 75 − 28 = 47 g."}, {"id": 189, "category": "reactions", "question": "A reaction takes place in a closed container. The reactants have a total mass of 90 g. What is the total mass of the products?", "options": ["90 g", "180 g", "45 g", "56 g"], "answer": 0, "explanation": "By conservation of mass, the total mass of the products is also 90 g."}, {"id": 190, "category": "reactions", "question": "In a closed-system reaction, 34 g of one reactant combines with 56 g of another reactant. What is the total mass of the products?", "options": ["90 g", "22 g", "34 g", "56 g"], "answer": 0, "explanation": "The reactant masses add to 34 + 56 = 90 g, so the products have a total mass of 90 g."}, {"id": 191, "category": "reactions", "question": "A closed reaction produces 90 g of products. One reactant had a mass of 34 g. If there were only two reactants, what was the mass of the other reactant?", "options": ["56 g", "90 g", "34 g", "124 g"], "answer": 0, "explanation": "By conservation of mass, the two reactants total 90 g, so the missing mass is 90 − 34 = 56 g."}, {"id": 192, "category": "reactions", "question": "A reaction takes place in a closed container. The reactants have a total mass of 100 g. What is the total mass of the products?", "options": ["100 g", "200 g", "50 g", "54 g"], "answer": 0, "explanation": "By conservation of mass, the total mass of the products is also 100 g."}, {"id": 193, "category": "reactions", "question": "In a closed-system reaction, 46 g of one reactant combines with 54 g of another reactant. What is the total mass of the products?", "options": ["100 g", "8 g", "46 g", "54 g"], "answer": 0, "explanation": "The reactant masses add to 46 + 54 = 100 g, so the products have a total mass of 100 g."}, {"id": 194, "category": "reactions", "question": "A closed reaction produces 100 g of products. One reactant had a mass of 46 g. If there were only two reactants, what was the mass of the other reactant?", "options": ["54 g", "100 g", "46 g", "146 g"], "answer": 0, "explanation": "By conservation of mass, the two reactants total 100 g, so the missing mass is 100 − 46 = 54 g."}, {"id": 195, "category": "reactions", "question": "A reaction takes place in a closed container. The reactants have a total mass of 120 g. What is the total mass of the products?", "options": ["120 g", "240 g", "60 g", "65 g"], "answer": 0, "explanation": "By conservation of mass, the total mass of the products is also 120 g."}, {"id": 196, "category": "reactions", "question": "In a closed-system reaction, 55 g of one reactant combines with 65 g of another reactant. What is the total mass of the products?", "options": ["120 g", "10 g", "55 g", "65 g"], "answer": 0, "explanation": "The reactant masses add to 55 + 65 = 120 g, so the products have a total mass of 120 g."}, {"id": 197, "category": "reactions", "question": "A closed reaction produces 120 g of products. One reactant had a mass of 55 g. If there were only two reactants, what was the mass of the other reactant?", "options": ["65 g", "120 g", "55 g", "175 g"], "answer": 0, "explanation": "By conservation of mass, the two reactants total 120 g, so the missing mass is 120 − 55 = 65 g."}, {"id": 198, "category": "reactions", "question": "A reaction takes place in a closed container. The reactants have a total mass of 15 g. What is the total mass of the products?", "options": ["15 g", "30 g", "7 g", "9 g"], "answer": 0, "explanation": "By conservation of mass, the total mass of the products is also 15 g."}, {"id": 199, "category": "reactions", "question": "In a closed-system reaction, 6 g of one reactant combines with 9 g of another reactant. What is the total mass of the products?", "options": ["15 g", "3 g", "6 g", "9 g"], "answer": 0, "explanation": "The reactant masses add to 6 + 9 = 15 g, so the products have a total mass of 15 g."}, {"id": 200, "category": "reactions", "question": "A closed reaction produces 15 g of products. One reactant had a mass of 6 g. If there were only two reactants, what was the mass of the other reactant?", "options": ["9 g", "15 g", "6 g", "21 g"], "answer": 0, "explanation": "By conservation of mass, the two reactants total 15 g, so the missing mass is 15 − 6 = 9 g."}];
 
-    const BANK = [{"id": 1, "category": "ionic", "question": "Which statement best defines an ion?", "options": ["An atom that has gained or lost electrons and therefore has an electrical charge", "An atom with equal numbers of protons and electrons", "An atom that contains no neutrons", "A molecule made only from noble gases"], "answer": 0, "explanation": "An ion forms when an atom gains or loses electrons, giving it an overall electrical charge."}, {"id": 2, "category": "ionic", "question": "What is a cation?", "options": ["A positively charged ion", "A negatively charged ion", "A neutral atom", "A shared pair of electrons"], "answer": 0, "explanation": "A cation is a positively charged ion."}, {"id": 3, "category": "ionic", "question": "What is an anion?", "options": ["A negatively charged ion", "A positively charged ion", "A neutral atom", "A metal atom before it loses electrons"], "answer": 0, "explanation": "An anion is a negatively charged ion."}, {"id": 4, "category": "ionic", "question": "What happens to an atom when it loses one or more electrons?", "options": ["It becomes a positively charged ion", "It becomes a negatively charged ion", "Its number of protons decreases", "It becomes an isotope"], "answer": 0, "explanation": "Losing negatively charged electrons leaves the atom with an overall positive charge."}, {"id": 5, "category": "ionic", "question": "What happens to an atom when it gains one or more electrons?", "options": ["It becomes a negatively charged ion", "It becomes a positively charged ion", "Its atomic number increases", "Its nucleus disappears"], "answer": 0, "explanation": "Gaining negatively charged electrons gives the atom an overall negative charge."}, {"id": 6, "category": "ionic", "question": "Which type of ion is usually formed by a metal atom?", "options": ["A cation", "An anion", "A neutral molecule", "A diatomic non-metal molecule"], "answer": 0, "explanation": "Metal atoms usually lose electrons and form positively charged cations."}, {"id": 7, "category": "ionic", "question": "Which type of ion is usually formed by a non-metal atom?", "options": ["An anion", "A cation", "A neutral metal atom", "A proton"], "answer": 0, "explanation": "Non-metal atoms usually gain electrons and form negatively charged anions."}, {"id": 8, "category": "ionic", "question": "A neutral sodium atom has 11 electrons. How many electrons are in Na⁺?", "options": ["10", "11", "12", "1"], "answer": 0, "explanation": "Na⁺ forms when sodium loses one electron, so it has 10 electrons."}, {"id": 9, "category": "ionic", "question": "A neutral oxygen atom has 8 electrons. How many electrons are in O²⁻?", "options": ["10", "8", "6", "2"], "answer": 0, "explanation": "O²⁻ forms when oxygen gains two electrons, giving it 10 electrons."}, {"id": 10, "category": "ionic", "question": "How does a magnesium atom form Mg²⁺?", "options": ["It loses two electrons", "It gains two electrons", "It loses two protons", "It gains two neutrons"], "answer": 0, "explanation": "A magnesium atom forms Mg²⁺ by losing two electrons."}, {"id": 11, "category": "ionic", "question": "What is the formula of lithium fluoride?", "options": ["LiF", "Li₂F", "LiF₂", "Li₂F₂"], "answer": 0, "explanation": "Li⁺ and F⁻ combine in a 1:1 ratio, so the formula is LiF."}, {"id": 12, "category": "ionic", "question": "What is the formula of beryllium fluoride?", "options": ["BeF₂", "BeF", "Be₂F", "Be₂F₂"], "answer": 0, "explanation": "One Be²⁺ ion requires two F⁻ ions, giving BeF₂."}, {"id": 13, "category": "ionic", "question": "What is the formula of sodium oxide?", "options": ["Na₂O", "NaO", "NaO₂", "Na₂O₂"], "answer": 0, "explanation": "Two Na⁺ ions balance one O²⁻ ion, so the formula is Na₂O."}, {"id": 14, "category": "ionic", "question": "What is the formula of aluminium oxide?", "options": ["Al₂O₃", "AlO", "AlO₂", "Al₃O₂"], "answer": 0, "explanation": "Two Al³⁺ ions and three O²⁻ ions give an overall charge of zero, so the formula is Al₂O₃."}, {"id": 15, "category": "ionic", "question": "What is the formula of magnesium chloride?", "options": ["MgCl₂", "MgCl", "Mg₂Cl", "Mg₂Cl₂"], "answer": 0, "explanation": "One Mg²⁺ ion requires two Cl⁻ ions, giving MgCl₂."}, {"id": 16, "category": "ionic", "question": "What is the correct name for NaCl?", "options": ["Sodium chloride", "Sodium chlorine", "Nitrogen chloride", "Sodium chlorate"], "answer": 0, "explanation": "NaCl is the two-element ionic compound sodium chloride."}, {"id": 17, "category": "ionic", "question": "What is the correct name for CaF₂?", "options": ["Calcium fluoride", "Calcium fluorine", "Carbon fluoride", "Calcium difluoride"], "answer": 0, "explanation": "CaF₂ is named calcium fluoride."}, {"id": 18, "category": "ionic", "question": "Which formula represents an ionic compound?", "options": ["MgO", "H₂O", "NH₃", "O₂"], "answer": 0, "explanation": "MgO contains a metal and a non-metal. The other choices contain only non-metals."}, {"id": 19, "category": "properties", "question": "What is the main purpose of a solubility table?", "options": ["To predict whether an ionic compound will dissolve in water", "To calculate the atomic number of an element", "To count electrons in a neutral atom", "To balance every chemical equation automatically"], "answer": 0, "explanation": "A solubility table is used to predict whether an ionic compound is soluble in water."}, {"id": 20, "category": "properties", "question": "What does it mean when a substance is soluble in water?", "options": ["It dissolves in water", "It always reacts explosively with water", "It changes into a metal", "It cannot be mixed with water"], "answer": 0, "explanation": "A soluble substance dissolves in water."}, {"id": 21, "category": "properties", "question": "Which procedure would best test whether an ionic compound is soluble in water?", "options": ["Add a small amount to water, stir, and observe whether it dissolves", "Place it beside a beaker without adding it", "Heat the empty beaker", "Count the letters in its chemical name"], "answer": 0, "explanation": "Solubility can be tested by mixing the substance with water and observing whether it dissolves."}, {"id": 22, "category": "properties", "question": "Which melting and boiling point pattern is generally associated with ionic compounds?", "options": ["High melting and boiling points", "Very low melting and boiling points only", "A melting point of exactly 0 °C", "No melting point at all"], "answer": 0, "explanation": "The program lists generally high melting and boiling points as a key property of ionic compounds."}, {"id": 23, "category": "properties", "question": "Which description is generally associated with solid ionic compounds?", "options": ["Hard and brittle", "Soft gases only", "Always flexible", "Always liquid at room temperature"], "answer": 0, "explanation": "Ionic compounds are generally hard and brittle."}, {"id": 24, "category": "properties", "question": "Does a solid ionic compound usually conduct electricity?", "options": ["No", "Yes, always", "Only if it is a noble gas", "Only when it contains hydrogen"], "answer": 0, "explanation": "Ionic compounds generally do not conduct electricity in the solid state."}, {"id": 25, "category": "properties", "question": "When does an ionic compound generally conduct electricity?", "options": ["When molten or dissolved in water", "Only when completely solid", "Only when frozen", "It never conducts in any state"], "answer": 0, "explanation": "Ionic compounds generally conduct electricity when molten or in aqueous solution."}, {"id": 26, "category": "properties", "question": "Which electrical property is generally associated with covalent molecular substances?", "options": ["They do not conduct electricity", "They always conduct in the solid state", "They conduct only because they contain metal ions", "They conduct better than all ionic substances"], "answer": 0, "explanation": "The program lists non-conduction of electricity as a key property of covalent molecular substances."}, {"id": 27, "category": "properties", "question": "How do the melting points of covalent molecular substances generally compare with those of ionic compounds?", "options": ["They are generally lower", "They are always much higher", "They are always identical", "Covalent substances have no melting points"], "answer": 0, "explanation": "Covalent molecular substances generally have relatively low melting points."}, {"id": 28, "category": "properties", "question": "An unknown substance is hard and brittle, has a high melting point, and conducts electricity when molten. What type of substance is it most likely to be?", "options": ["An ionic compound", "A covalent molecular substance", "A single neutron", "A noble gas atom"], "answer": 0, "explanation": "Those properties match the listed properties of ionic compounds."}, {"id": 29, "category": "properties", "question": "Which property is listed for covalent molecular substances in the program?", "options": ["They are generally soft and malleable", "They always have very high boiling points", "They conduct electricity as solids", "They are always hard and brittle"], "answer": 0, "explanation": "The program describes covalent molecular substances as generally soft and malleable."}, {"id": 30, "category": "covalent", "question": "How is a covalent bond formed?", "options": ["Atoms share electrons", "Atoms transfer protons", "Atoms lose their nuclei", "Neutrons move between electron shells"], "answer": 0, "explanation": "Covalent substances form when atoms share electrons."}, {"id": 31, "category": "covalent", "question": "Which types of elements usually combine to form covalent substances?", "options": ["Non-metal elements with other non-metal elements", "Metal elements with metal elements only", "Noble gases with no other atoms", "Only Group 1 metals"], "answer": 0, "explanation": "The program states that non-metal elements combine to form covalent substances."}, {"id": 32, "category": "covalent", "question": "What is the formula of a hydrogen molecule?", "options": ["H₂", "H", "H₃", "2H"], "answer": 0, "explanation": "Hydrogen forms diatomic molecules, represented by H₂."}, {"id": 33, "category": "covalent", "question": "What is the formula of an oxygen molecule?", "options": ["O₂", "O", "O₃", "2O₂"], "answer": 0, "explanation": "Oxygen forms diatomic molecules, represented by O₂."}, {"id": 34, "category": "covalent", "question": "What is the formula of a nitrogen molecule?", "options": ["N₂", "N", "N₃", "2N"], "answer": 0, "explanation": "Nitrogen forms diatomic molecules, represented by N₂."}, {"id": 35, "category": "covalent", "question": "What is the chemical formula for water?", "options": ["H₂O", "HO₂", "H₂O₂", "H₃O"], "answer": 0, "explanation": "A water molecule contains two hydrogen atoms and one oxygen atom: H₂O."}, {"id": 36, "category": "covalent", "question": "What is the chemical formula for ammonia?", "options": ["NH₃", "N₃H", "NH₂", "N₂H₃"], "answer": 0, "explanation": "An ammonia molecule is represented by NH₃."}, {"id": 37, "category": "covalent", "question": "What is the chemical formula for hydrogen chloride?", "options": ["HCl", "H₂Cl", "HCl₂", "Cl₂H"], "answer": 0, "explanation": "Hydrogen chloride contains one hydrogen atom and one chlorine atom: HCl."}, {"id": 38, "category": "covalent", "question": "Which pairing is classified correctly?", "options": ["HCl is covalent, while LiF is ionic", "HCl is ionic, while LiF is covalent", "Both HCl and LiF are metals", "Both HCl and LiF are single elements"], "answer": 0, "explanation": "HCl contains two non-metals and is covalent; LiF contains a metal and a non-metal and is ionic."}, {"id": 39, "category": "reactions", "question": "What happens to atoms during a chemical reaction?", "options": ["They are rearranged to form new substances", "They are destroyed completely", "They all change into neutrons", "Their total number must increase"], "answer": 0, "explanation": "Chemical reactions rearrange atoms to form new substances."}, {"id": 40, "category": "reactions", "question": "What are reactants?", "options": ["The starting substances in a chemical reaction", "The substances formed at the end", "The numbers placed before formulas", "The electrons inside a nucleus"], "answer": 0, "explanation": "Reactants are the substances present at the start of a chemical reaction."}, {"id": 41, "category": "reactions", "question": "What are products?", "options": ["The new substances formed in a chemical reaction", "The starting substances only", "The protons transferred between atoms", "The rows of the periodic table"], "answer": 0, "explanation": "Products are the new substances formed by a chemical reaction."}, {"id": 42, "category": "reactions", "question": "Magnesium burns in oxygen to form magnesium oxide. Which word equation is correct?", "options": ["magnesium + oxygen → magnesium oxide", "magnesium oxide → magnesium + oxygen", "magnesium + oxide → oxygen", "oxygen + magnesium oxide → magnesium"], "answer": 0, "explanation": "The reactants are magnesium and oxygen, and the product is magnesium oxide."}, {"id": 43, "category": "reactions", "question": "In the word equation hydrogen + oxygen → water, which substances are the reactants?", "options": ["Hydrogen and oxygen", "Water only", "Hydrogen and water", "Oxygen and water"], "answer": 0, "explanation": "The substances to the left of the arrow—hydrogen and oxygen—are the reactants."}, {"id": 44, "category": "reactions", "question": "Which statement expresses the law of conservation of mass?", "options": ["The total mass of the reactants equals the total mass of the products", "The products always have twice the mass of the reactants", "Mass disappears whenever a gas is formed", "Every reaction produces exactly one gram of matter"], "answer": 0, "explanation": "In a chemical reaction, mass is conserved: total reactant mass equals total product mass."}, {"id": 45, "category": "reactions", "question": "A reaction takes place in a closed container. The reactants have a total mass of 18 g. What should the total mass of the products be?", "options": ["18 g", "9 g", "36 g", "It cannot be related to the reactant mass"], "answer": 0, "explanation": "By conservation of mass, the total product mass is also 18 g."}, {"id": 46, "category": "reactions", "question": "Which equation is correctly balanced for the formation of water?", "options": ["2H₂ + O₂ → 2H₂O", "H₂ + O₂ → H₂O", "H₂ + 2O₂ → H₂O", "2H₂ + 2O₂ → H₂O"], "answer": 0, "explanation": "2H₂ + O₂ → 2H₂O has four H atoms and two O atoms on each side."}, {"id": 47, "category": "reactions", "question": "Which equation is correctly balanced for the formation of ammonia?", "options": ["N₂ + 3H₂ → 2NH₃", "N₂ + H₂ → NH₃", "2N₂ + H₂ → 2NH₃", "N₂ + 2H₂ → NH₃"], "answer": 0, "explanation": "N₂ + 3H₂ → 2NH₃ has two N atoms and six H atoms on each side."}, {"id": 48, "category": "reactions", "question": "Which equation is correctly balanced?", "options": ["2Mg + O₂ → 2MgO", "Mg + O₂ → MgO", "Mg + 2O₂ → MgO", "2Mg + 2O₂ → MgO"], "answer": 0, "explanation": "2Mg + O₂ → 2MgO has two Mg atoms and two O atoms on each side."}, {"id": 49, "category": "reactions", "question": "Which equation is correctly balanced?", "options": ["2Na + Cl₂ → 2NaCl", "Na + Cl₂ → NaCl", "2Na + 2Cl₂ → NaCl", "Na + Cl₂ → 2NaCl"], "answer": 0, "explanation": "2Na + Cl₂ → 2NaCl has two Na atoms and two Cl atoms on each side."}, {"id": 50, "category": "reactions", "question": "How many atoms are represented altogether in one formula unit of Al₂O₃?", "options": ["5 atoms: 2 aluminium and 3 oxygen", "3 atoms: 2 aluminium and 1 oxygen", "2 atoms: 1 aluminium and 1 oxygen", "6 atoms: 3 aluminium and 3 oxygen"], "answer": 0, "explanation": "Al₂O₃ contains 2 aluminium atoms and 3 oxygen atoms, for 5 atoms altogether."}];
-
-    const state = {
-      quiz: [],
-      index: 0,
-      score: 0,
-      responses: [],
-      answered: false
-    };
+    const state = { quiz: [], index: 0, score: 0, responses: [], answered: false };
 
     const el = {
       setup: document.getElementById("setup"),
@@ -500,16 +312,15 @@
 
     function refreshLengths(preferred = 10) {
       const available = topicQuestions().length;
-      const regular = [5, 10, 15, 20, 30, 50].filter(value => value < available);
-      const choices = [...regular, available];
+      const standard = [5, 10, 15, 20, 25, 30, 40, 50, 75, 100, 150, 200]
+        .filter(value => value < available);
+      const choices = [...standard, available];
 
       el.count.innerHTML = "";
       choices.forEach(value => {
         const option = document.createElement("option");
         option.value = String(value);
-        option.textContent = value === available
-          ? `All ${available} questions`
-          : `${value} questions`;
+        option.textContent = value === available ? `All ${available} questions` : `${value} questions`;
         el.count.appendChild(option);
       });
 
@@ -526,8 +337,7 @@
       return {
         ...question,
         choices: shuffle(question.options.map((text, index) => ({
-          text,
-          correct: index === question.answer
+          text, correct: index === question.answer
         })))
       };
     }
@@ -536,18 +346,17 @@
       el.setup.classList.toggle("hidden", section !== "setup");
       el.quiz.classList.toggle("hidden", section !== "quiz");
       el.results.classList.toggle("hidden", section !== "results");
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      try { window.scrollTo({ top: 0, behavior: "smooth" }); }
+      catch (_) { window.scrollTo(0,0); }
     }
 
     function begin(source = null) {
       const selected = source || shuffle(topicQuestions()).slice(0, Number(el.count.value));
-
       state.quiz = selected.map(prepare);
       state.index = 0;
       state.score = 0;
       state.responses = [];
       state.answered = false;
-
       show("quiz");
       render();
     }
@@ -571,7 +380,6 @@
       q.choices.forEach((choice, index) => {
         const button = document.createElement("button");
         const letter = String.fromCharCode(65 + index);
-
         button.type = "button";
         button.className = "answer";
         button.setAttribute("aria-label", `${letter}. ${choice.text}`);
@@ -600,9 +408,7 @@
 
       buttons.forEach((button, buttonIndex) => {
         button.disabled = true;
-        if (q.choices[buttonIndex].correct) {
-          button.classList.add("correct");
-        }
+        if (q.choices[buttonIndex].correct) button.classList.add("correct");
       });
 
       if (selected.correct) {
@@ -626,17 +432,13 @@
       });
 
       el.scoreText.textContent = `Score: ${state.score}`;
-      el.progressBar.style.width =
-        `${((state.index + 1) / state.quiz.length) * 100}%`;
-      el.next.textContent =
-        state.index === state.quiz.length - 1 ? "See results" : "Next question";
+      el.progressBar.style.width = `${((state.index + 1) / state.quiz.length) * 100}%`;
+      el.next.textContent = state.index === state.quiz.length - 1 ? "See results" : "Next question";
       el.next.classList.remove("hidden");
-      el.next.focus();
     }
 
     function next() {
       if (!state.answered) return;
-
       if (state.index < state.quiz.length - 1) {
         state.index += 1;
         render();
@@ -652,7 +454,6 @@
       }
 
       show("results");
-
       const total = state.responses.length;
       const score = state.responses.filter(response => response.isCorrect).length;
       const percent = Math.round((score / total) * 100);
@@ -660,18 +461,12 @@
       el.finalScore.textContent = `${score}/${total}`;
       el.scoreCircle.style.setProperty("--angle", `${percent * 3.6}deg`);
 
-      if (percent === 100) {
-        el.message.textContent = "Excellent work!";
-      } else if (percent >= 80) {
-        el.message.textContent = "Very strong result.";
-      } else if (percent >= 60) {
-        el.message.textContent = "Good progress.";
-      } else {
-        el.message.textContent = "Keep practising—the next quiz will use a new mix.";
-      }
+      if (percent === 100) el.message.textContent = "Excellent work!";
+      else if (percent >= 80) el.message.textContent = "Very strong result.";
+      else if (percent >= 60) el.message.textContent = "Good progress.";
+      else el.message.textContent = "Keep practising—the next quiz will use a new mix.";
 
-      el.summary.textContent =
-        `You answered ${score} of ${total} questions correctly (${percent}%).`;
+      el.summary.textContent = `You answered ${score} of ${total} questions correctly (${percent}%).`;
 
       const incorrect = state.responses.filter(response => !response.isCorrect);
       el.retry.classList.toggle("hidden", incorrect.length === 0);
@@ -712,9 +507,7 @@
     el.again.addEventListener("click", () => show("setup"));
     el.retry.addEventListener("click", () => {
       const missedIds = new Set(
-        state.responses
-          .filter(response => !response.isCorrect)
-          .map(response => response.id)
+        state.responses.filter(response => !response.isCorrect).map(response => response.id)
       );
       begin(BANK.filter(question => missedIds.has(question.id)));
     });
