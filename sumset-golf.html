@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sumset Golf — a game of small sums</title>
+  <meta name="description" content="Play sumset golf: choose residues, make sums collide, and explore the Cauchy–Davenport theorem. A classroom game for one or two players.">
+  <meta name="theme-color" content="#08261e">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2308261e'/%3E%3Cpath d='M9 26V6l16 5-16 5' fill='%23d4f576' stroke='%23d4f576' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>
+:root{color-scheme:dark;--bg:#08261e;--panel:#10352a;--panel-2:#153f32;--line:#315246;--lime:#d4f576;--gold:#f6c75b;--ink:#102a22;--paper:#f4f9f2;--muted:#b5c9bd;--blue:#b4d8f9;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--paper);font-size:16px;line-height:1.5}button,select{font:inherit}button{cursor:pointer;touch-action:manipulation}button:disabled{cursor:default}button,a,select{ -webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:4px}button{border:0}h1,h2,h3,p{margin:0}h1{font-size:clamp(2rem,3.5vw,3rem);font-weight:550;letter-spacing:-.055em;line-height:1.1}h2{font-size:1.25rem;letter-spacing:-.03em;font-weight:600}a{color:inherit}.masthead{max-width:1480px;margin:auto;padding:25px 44px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);gap:20px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;letter-spacing:.075em;font-size:1.15rem;font-weight:650;white-space:nowrap}.brand strong{color:var(--lime);font-weight:400}.brand-mark{display:grid;place-items:center;background:var(--lime);color:var(--bg);width:36px;height:36px;border-radius:50%;font-size:1.6rem;font-family:Georgia,serif;font-weight:600}.header-actions{display:flex;gap:25px;align-items:center}.text-button{color:inherit;background:transparent;padding:8px 0;font-size:.9rem}.text-button:hover{color:var(--lime)}.text-button span{margin-left:12px}.outline-button{border:1px solid #789082;color:var(--paper);background:transparent;padding:9px 18px;border-radius:6px;font-size:.9rem}.outline-button:hover{background:var(--panel-2)}main{max-width:1480px;margin:auto;padding:34px 44px 0}.game-heading{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:28px;gap:20px}.eyebrow{font-size:.75rem;letter-spacing:.12em;font-weight:650;line-height:1.5}.game-heading .eyebrow{color:var(--lime);margin-bottom:9px}.course-meta{display:flex;gap:9px;align-items:center;font-size:.9rem;white-space:nowrap}.meta-tag{padding:6px 11px;border:1px solid var(--line);border-radius:5px;color:var(--muted)}.game-layout{display:grid;grid-template-columns:minmax(0,1fr) 268px;gap:26px}.play-area{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel)}.set-bar{padding:22px 28px;display:flex;gap:23px;align-items:center;border-bottom:1px solid var(--line)}.set-label .eyebrow{display:block;color:var(--muted);font-size:.7rem;letter-spacing:.08em}.set-label strong{font-family:Georgia,serif;font-size:1.65rem;font-style:italic;font-weight:normal}.a-cards{display:flex;gap:9px}.a-card{display:grid;place-items:center;min-width:48px;height:56px;background:var(--lime);color:var(--ink);font-size:1.6rem;font-weight:550;border-radius:6px;box-shadow:0 3px 0 #7fa944}.par-chip{margin-left:auto;display:flex;align-items:center;gap:12px;padding-left:20px;border-left:1px solid var(--line)}.par-chip span{max-width:88px;font-size:.65rem;letter-spacing:.08em;font-weight:600;color:var(--muted)}.par-chip strong{font-family:Georgia,serif;font-size:2.2rem;font-weight:400;line-height:1}.board-layout{display:grid;grid-template-columns:minmax(260px,43%) minmax(0,1fr)}.clock-panel{padding:24px 19px 20px;border-right:1px solid var(--line);background:#0c2c23}.panel-heading{display:flex;gap:12px;align-items:center;justify-content:space-between}.panel-heading .eyebrow{font-size:.68rem;color:var(--muted)}.field-badge{font-family:Georgia,serif;font-size:1rem;font-style:italic;color:var(--lime)}#clock{width:100%;max-width:400px;margin:8px auto 0;aspect-ratio:1}#clock svg{display:block;width:100%;height:100%;overflow:visible}.clock-value{font-family:inherit;font-size:14px;font-weight:650}.clock-center-number{font-family:Georgia,serif;font-size:54px;fill:var(--paper)}.clock-center-label{font-family:inherit;font-size:10px;letter-spacing:1.3px;fill:var(--muted)}.clock-legend{display:flex;gap:20px;justify-content:center;font-size:.75rem;color:var(--muted);flex-wrap:wrap}.legend-swatch{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}.clock-caption{font-size:.8rem;color:var(--muted);text-align:center;max-width:270px;margin:11px auto 0;min-height:38px}.turn-panel{background:var(--paper);color:var(--ink);padding:28px 26px;min-height:405px}.turn-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}.player-label{font-size:.75rem;letter-spacing:.11em;font-weight:750;display:flex;gap:8px;align-items:center}.player-label:before{content:'';width:7px;height:7px;background:#437849;border-radius:50%}.turn-top .counter{font-size:.8rem;color:#486255}.turn-panel h2{font-size:1.85rem;letter-spacing:-.045em;line-height:1.2;margin-bottom:7px}.turn-description{color:#526558;font-size:.9rem;line-height:1.5;margin-bottom:21px}.residue-picker{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px}.residue-button{height:43px;border:1px solid #c1d0bf;border-radius:5px;background:transparent;color:var(--ink);font-size:1.05rem;font-weight:550;position:relative;transition:background .13s,transform .13s}.residue-button:hover{background:#e0eadb;transform:translateY(-1px)}.residue-button.selected{background:var(--ink);border-color:var(--ink);color:var(--lime)}.residue-button.in-a:after{content:'';position:absolute;bottom:4px;left:calc(50% - 2px);width:4px;height:4px;border-radius:50%;background:#6e8d51}.residue-button.selected:after{background:var(--lime)}.selection-line{display:flex;gap:10px;justify-content:space-between;align-items:center;font-size:.85rem;margin:18px 0}.selection-line strong{font-weight:650}.small-link{background:transparent;text-decoration:underline;text-underline-offset:3px;color:#486255;font-size:.8rem;padding:0}.live-score{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:15px 0 13px;padding-top:14px;border-top:1px solid #ccd6c7;font-size:.9rem}.live-score strong{font-size:1.3rem;line-height:1;color:#275b3b}.primary-button{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;background:var(--ink);color:var(--paper);border-radius:6px;padding:13px 17px;font-weight:600;font-size:.95rem}.primary-button:hover{background:#214e3b}.primary-button:disabled{background:#d5dfd0;color:#667560}.primary-button.lime{background:var(--lime);color:var(--ink)}.primary-button.lime:hover{background:#e2ff97}.quiet-note{font-size:.75rem;color:#657569;margin-top:10px;text-align:center}.sum-panel{padding:23px 28px;border-top:1px solid var(--line)}.sum-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:15px}.sum-heading h3{font-weight:550;font-size:1rem}.sum-heading span{font-size:.75rem;color:var(--muted)}.sum-chips{display:flex;gap:7px;flex-wrap:wrap;align-items:center;min-height:32px}.sum-chip{display:inline-flex;align-items:center;justify-content:center;min-width:31px;padding:3px 8px;border:1px solid #668078;border-radius:4px;font-variant-numeric:tabular-nums;color:var(--paper)}.sum-chip.collision{background:var(--lime);color:var(--ink);border-color:var(--lime)}.sum-empty{font-size:.85rem;color:var(--muted)}.sum-details{margin-top:16px}.sum-details summary{font-size:.8rem;color:var(--muted);cursor:pointer;width:fit-content}.addition-table{width:100%;border-collapse:collapse;margin-top:13px;text-align:center;font-size:.85rem}.addition-table th,.addition-table td{padding:8px;border:1px solid var(--line);width:25%}.addition-table th{color:var(--lime);font-weight:550}.addition-table td.repeated{color:var(--lime);background:#204333}.sidebar{display:flex;flex-direction:column;gap:22px}.scorecard{background:var(--paper);color:var(--ink);border-radius:10px;overflow:hidden}.scorecard-heading{padding:20px 20px 17px;display:flex;align-items:center;justify-content:space-between;gap:9px}.scorecard-heading h2{font-size:1.1rem}.scorecard-heading .eyebrow{font-size:.6rem;color:#667560}.score-table{width:100%;border-collapse:collapse;font-size:.85rem}.score-table th,.score-table td{padding:10px 17px;text-align:center;border-top:1px solid #dbe2d6}.score-table th:first-child,.score-table td:first-child{text-align:left}.score-table th{font-weight:500;color:#677a6a;font-size:.75rem}.score-table tr.current{background:#e7eedf}.score-table td.empty{color:#a5b29f}.score-table tfoot td{font-weight:700;font-size:1rem;border-top:1px solid #b2c2ad}.scoring-note{display:flex;gap:13px;background:#e8eedf;margin:6px 14px 16px;padding:15px;border-radius:6px;font-size:.8rem;color:#55684f}.small-flag{font-size:1.8rem;color:#557837;line-height:1.1}.scoring-note strong{color:var(--ink)}.theorem-card{padding:0 8px}.theorem-card .eyebrow{font-size:.65rem;color:var(--lime);margin-bottom:9px}.theorem-card h2{font-family:Georgia,serif;font-size:1.75rem;font-weight:400;margin-bottom:10px}.theorem-card p:not(.eyebrow){font-size:.85rem;color:var(--muted);margin-bottom:13px}.theorem-card strong{color:var(--paper);font-weight:550}.theorem-card .text-button{font-size:.8rem}.handoff{display:flex;flex-direction:column;justify-content:center;min-height:340px}.handoff-icon{font-size:2.5rem;margin-bottom:17px;font-weight:400;line-height:1;color:#457543}.handoff .primary-button{margin-top:16px}.result-kicker{font-size:.75rem;font-weight:700;letter-spacing:.1em;color:#537449;margin-bottom:12px}.result-scores{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:18px 0}.result-score{background:#e7eedf;border:1px solid #c8d7c1;border-radius:6px;padding:12px;text-align:left;color:var(--ink)}.result-score.active{border:2px solid #54783b;padding:11px;background:#e0edce}.result-score span{display:block;font-size:.75rem}.result-score strong{font-family:Georgia,serif;font-size:2rem;font-weight:400;line-height:1.3;display:block}.result-score small{font-size:.75rem;color:#63705b}.best-note{font-size:.85rem;border-top:1px solid #ccd6c7;padding-top:12px;color:#526558;margin-bottom:16px}.best-note strong{color:var(--ink)}.best-note .small-link{display:inline;margin-left:3px}.result-b{font-size:.8rem;margin-top:9px;color:#47603f}.final-total{font-family:Georgia,serif;font-size:3.5rem;margin:10px 0;color:#284c30}.finished .turn-description{margin-bottom:8px}.error-text{color:#88411f;font-size:.8rem;min-height:0;margin-top:7px}.pill{border:1px solid #718374;font-size:.7rem;border-radius:4px;padding:2px 6px}footer{display:flex;justify-content:space-between;font-size:.75rem;color:#9cb4a5;padding:23px 0 27px;gap:20px}dialog{color-scheme:light;width:min(520px,calc(100% - 32px));padding:28px;background:var(--paper);color:var(--ink);border:0;border-radius:12px;box-shadow:0 24px 80px #0008;max-height:calc(100dvh - 32px);overflow-y:auto}dialog::backdrop{background:#03140fcc;backdrop-filter:blur(5px)}dialog h2{font-size:1.85rem;line-height:1.2;margin:13px 0 20px}dialog p{font-size:.95rem;margin-bottom:16px;line-height:1.6}.dialog-heading{display:flex;justify-content:space-between;align-items:center}.dialog-heading .eyebrow{font-size:.7rem;color:#587147;margin:0}.icon-button{background:transparent;color:var(--ink);font-size:1.75rem;line-height:1;padding:0 3px}.dialog-note{font-size:.85rem!important;color:#5b6e57;background:#e8efdf;border-radius:5px;padding:13px;line-height:1.6}dialog .primary-button{margin-top:17px}.rules-list{padding-left:23px;font-size:.95rem}.rules-list li{padding-left:5px;margin-bottom:14px}label{display:block;margin-bottom:7px;font-size:.85rem;font-weight:600}select{color:var(--ink);width:100%;background:white;border:1px solid #b8c6b1;padding:11px 10px;border-radius:5px;font-size:.95rem;min-height:45px}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0}form>.dialog-note{margin:0}.math-formula{font-family:Georgia,serif;font-size:1.2rem;background:#e8efdf;padding:18px 10px;text-align:center;margin-bottom:19px;border-radius:5px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.noscript{padding:24px;background:var(--gold);color:var(--ink);position:fixed;bottom:0;width:100%}
+@media(min-width:1400px){.residue-picker{grid-template-columns:repeat(6,minmax(0,1fr))}.clock-panel{padding:24px}.turn-panel{padding:30px}.residue-button{height:46px}}
+@media(max-width:1180px){.masthead{padding:22px 25px}main{padding:28px 25px 0}.game-layout{grid-template-columns:minmax(0,1fr) 230px;gap:18px}.board-layout{grid-template-columns:42% minmax(0,1fr)}.turn-panel{padding:23px 18px}.clock-panel{padding:23px 13px}.set-bar{padding:20px;gap:16px}.set-label .eyebrow{max-width:100px}.a-card{min-width:42px;height:50px}.par-chip{gap:8px;padding-left:14px}.par-chip span{max-width:70px}.residue-picker{grid-template-columns:repeat(5,minmax(0,1fr))}.turn-panel h2{font-size:1.65rem}.scorecard-heading{padding:17px 14px}.scorecard-heading .eyebrow{font-size:.6rem;max-width:45px;text-align:right}}
+@media(max-width:960px){.game-layout{grid-template-columns:1fr}.sidebar{display:grid;grid-template-columns:1fr 1fr;align-items:start}.theorem-card{padding:15px}.board-layout{grid-template-columns:42% minmax(0,1fr)}.residue-picker{grid-template-columns:repeat(6,minmax(0,1fr))}.scorecard-heading .eyebrow{max-width:unset}.turn-panel{padding:26px}.clock-panel{padding:23px}.game-heading{margin-bottom:23px}}
+@media(max-width:620px){.masthead{padding:17px 17px;gap:10px}.brand{font-size:.9rem;gap:8px;letter-spacing:.045em}.brand-mark{width:30px;height:30px;font-size:1.3rem}.header-actions{gap:13px}.header-actions .text-button{font-size:0}.header-actions .text-button span{font-size:1rem;margin:0;border:1px solid #779283;border-radius:50%;padding:1px 7px}.outline-button{font-size:.8rem;padding:7px 11px}main{padding:23px 14px 0}.game-heading{display:block}.game-heading .eyebrow{font-size:.65rem}h1{font-size:2.1rem}.course-meta{margin-top:14px;font-size:.75rem}.meta-tag{padding:3px 8px}.set-bar{padding:17px 14px;gap:13px;flex-wrap:wrap}.set-label .eyebrow{font-size:.55rem;max-width:80px}.set-label strong{font-size:1.3rem}.a-cards{gap:6px}.a-card{min-width:36px;height:43px;font-size:1.3rem}.par-chip{padding-left:10px;gap:6px}.par-chip span{font-size:.5rem;max-width:58px}.par-chip strong{font-size:1.7rem}.board-layout{display:flex;flex-direction:column-reverse}.clock-panel{border-right:0;border-top:1px solid var(--line);padding:19px;display:grid;grid-template-columns:1fr 1fr;align-items:center;column-gap:15px}.panel-heading{grid-column:1/-1}.clock-legend{font-size:.7rem;align-self:end;grid-column:2;grid-row:2;justify-content:start;gap:8px;flex-direction:column;padding-bottom:45px}#clock{max-width:220px;margin-top:0;grid-row:2/4;grid-column:1}.clock-caption{grid-column:2;grid-row:2/4;text-align:left;font-size:.75rem;align-self:end;margin-bottom:25px;min-height:0}.turn-panel{min-height:0;padding:23px 20px}.turn-panel h2{font-size:1.7rem}.turn-description{margin-bottom:16px}.residue-picker{grid-template-columns:repeat(6,minmax(0,1fr))}.residue-button{height:42px}.sum-panel{padding:20px}.sidebar{gap:16px}.theorem-card{padding:10px 0}.theorem-card h2{font-size:1.5rem}.theorem-card p:not(.eyebrow){font-size:.8rem}.score-table th,.score-table td{padding:9px 10px}.scorecard-heading{display:block;padding:14px 12px}.scorecard-heading .eyebrow{display:block;margin-top:4px;text-align:left}.scoring-note{margin:5px 10px 12px;padding:10px;font-size:.7rem;gap:7px}.small-flag{font-size:1.4rem}.handoff{min-height:320px}.clock-panel:has(+ .turn-panel .handoff){display:none}footer{font-size:.65rem}footer span:last-child{max-width:145px;text-align:right}}
+@media(max-width:370px){.a-card{min-width:32px}.set-bar{gap:9px}.par-chip{padding-left:8px}.par-chip span{max-width:45px}.residue-picker{grid-template-columns:repeat(5,minmax(0,1fr))}.sidebar{grid-template-columns:1fr}.clock-panel{display:block}#clock{max-width:260px}.clock-legend{flex-direction:row;justify-content:center;padding:0}.clock-caption{text-align:center;margin:12px auto 0}.header-actions{gap:10px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+</style>
+  
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="#main" aria-label="Sumset Golf home"><span class="brand-mark" aria-hidden="true">Σ</span><span>SUMSET <strong>GOLF</strong></span></a>
+    <div class="header-actions"><button id="rules-open" class="text-button">How to play <span aria-hidden="true">?</span></button><button id="new-open" class="outline-button">New game</button></div>
+  </header>
+  <main id="main">
+    <section class="game-heading" aria-label="Game status"><div><p class="eyebrow">SMALL SUMS. LOW SCORES.</p><h1>Find your overlap.</h1></div><div id="course-meta" class="course-meta"></div></section>
+    <div class="game-layout">
+      <section class="play-area" aria-label="Playing area">
+        <div class="set-bar"><div class="set-label"><span class="eyebrow">THIS HOLE’S SHARED SET</span><strong>A =</strong></div><div id="a-cards" class="a-cards"></div><div class="par-chip"><span>THEORETICAL PAR</span><strong>6</strong></div></div>
+        <div class="board-layout">
+          <section class="clock-panel" aria-label="Modular addition visualisation"><div class="panel-heading"><span class="eyebrow">THE MODULAR CLOCK</span><span id="field-badge" class="field-badge"></span></div><div id="clock"></div><div id="clock-legend" class="clock-legend"></div><p id="clock-caption" class="clock-caption"></p></section>
+          <section class="turn-panel" aria-label="Your turn"><div id="turn-content"></div></section>
+        </div>
+        <section id="sum-panel" class="sum-panel" aria-label="Addition table"></section>
+      </section>
+      <aside class="sidebar"><section class="scorecard"><div class="scorecard-heading"><h2>Scorecard</h2><span class="eyebrow">LOWEST WINS</span></div><div id="scores"></div><div class="scoring-note"><span class="small-flag" aria-hidden="true">⚑</span><p>Your score is<br><strong>|A + B| − 6.</strong><br>Every extra sum costs a point.</p></div></section><section class="theorem-card"><p class="eyebrow">THE MATH BEHIND THE GAME</p><h2>Six is the floor.</h2><p>The Cauchy–Davenport theorem guarantees at least <strong>4 + 3 − 1 = 6</strong> distinct sums.</p><p>A score of zero is perfect, but some sets A make it impossible. Can you find the best score for this hole?</p><button class="text-button" id="math-open">Why does that happen? <span aria-hidden="true">↗</span></button></section></aside>
+    </div>
+    <footer><span>Arithmetic modulo a prime.</span><span>A little addition. A lot of possibility.</span></footer>
+  </main>
+  <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
+  <dialog id="rules-dialog" aria-labelledby="rules-title"><div class="dialog-heading"><p class="eyebrow">WELCOME TO THE COURSE</p><button class="icon-button close-dialog" aria-label="Close instructions">×</button></div><h2 id="rules-title">Make the sums overlap.</h2><ol class="rules-list"><li><strong>Share a set.</strong> Each hole gives everyone the same four-element set A.</li><li><strong>Choose three cards.</strong> Your three distinct residues form B. Cards may also belong to A.</li><li><strong>Add every pair.</strong> A + B contains all a + b, reduced modulo the prime. Repeated sums count only once.</li><li><strong>Keep it small.</strong> Your score is the number of distinct sums minus 6. Lowest total wins.</li></ol><p class="dialog-note">For two players on one device, look away during the other player’s turn. Choices are hidden during the handover and revealed after both players lock in.</p><button class="primary-button close-dialog">Let’s play</button></dialog>
+  <dialog id="settings-dialog" aria-labelledby="settings-title"><div class="dialog-heading"><p class="eyebrow">A FRESH SCORECARD</p><button class="icon-button close-dialog" aria-label="Close game settings">×</button></div><h2 id="settings-title">Set up your game.</h2><form id="settings-form"><label for="mode">Players</label><select id="mode"><option value="2">Two players · pass the device</option><option value="1">Solo practice</option></select><div class="form-row"><div><label for="prime">Prime modulus</label><select id="prime"><option>11</option><option selected>17</option><option>23</option></select></div><div><label for="holes">Holes</label><select id="holes"><option>3</option><option selected>5</option><option>9</option></select></div></div><p class="dialog-note">Four cards in A, three in B. Starting a new game clears the current scorecard.</p><button class="primary-button" type="submit">Start new game</button></form></dialog>
+  <dialog id="math-dialog" aria-labelledby="math-title"><div class="dialog-heading"><p class="eyebrow">CAUCHY–DAVENPORT</p><button class="icon-button close-dialog" aria-label="Close mathematical explanation">×</button></div><h2 id="math-title">A bound, not a promise.</h2><p>For nonempty subsets A and B of the field with p elements,</p><div class="math-formula">|A + B| ≥ min(p, |A| + |B| − 1).</div><p>Here |A| = 4 and |B| = 3, so there must be at least six distinct sums. That makes every score nonnegative.</p><p>The bound need not be attainable for a given A. In this game, a score of zero is possible exactly when A is an arithmetic progression modulo p; a progression B with the same step then works. The converse follows from <strong>Vosper’s theorem</strong>.</p><p class="dialog-note">For example, modulo 17, A = {1, 4, 7, 10} and B = {0, 3, 6} give A + B = {1, 4, 7, 10, 13, 16}. Six sums, score zero.</p><p>After a hole, “Show best play” displays a B with the smallest possible sumset, found by checking every choice up to translation.</p><button class="primary-button close-dialog">Back to the game</button></dialog>
+  <noscript><p class="noscript">Please enable JavaScript to play Sumset Golf.</p></noscript>
+<script>
+(() => {
+"use strict";
+const sorted = xs => [...xs].sort((a,b)=>a-b);
+const mod = (n,p) => ((n%p)+p)%p;
+function sumset(A,B,p) { return sorted(new Set(A.flatMap(a=>B.map(b=>mod(a+b,p))))); }
+function score(A,B,p) { return sumset(A,B,p).length-Math.min(p,A.length+B.length-1); }
+function validateSet(xs,n,p) {
+  return Array.isArray(xs)&&xs.length===n&&new Set(xs).size===n&&xs.every(x=>Number.isInteger(x)&&x>=0&&x<p);
+}
+function drawSet(p,n,random=Math.random) {
+  const bag=Array.from({length:p},(_,i)=>i);
+  for(let i=bag.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[bag[i],bag[j]]=[bag[j],bag[i]];}
+  return sorted(bag.slice(0,n));
+}
+function optimum(A,p,n=3) {
+  // Translating B does not change |A+B|, so an optimal B can contain 0.
+  let best={size:p+1,B:[]};
+  const visit=(B,start)=>{
+    if(B.length===n){const size=sumset(A,B,p).length;if(size<best.size)best={size,B:[...B]};return;}
+    for(let b=start;b<=p-(n-B.length);b++)visit([...B,b],b+1);
+  };
+  visit([0],1);
+  return {...best,score:best.size-Math.min(p,A.length+n-1)};
+}
+function newMatch({p=17,players=2,holes=5}={}) {
+  if(![11,17,23].includes(p)||![1,2].includes(players)||![3,5,9].includes(holes))throw new Error('Choose a supported game format.');
+  return {p,players,holes,round:1,A:drawSet(p,4),B:[],active:0,phase:'choose',locked:[],history:[],totals:Array(players).fill(0),resultPlayer:0,revealBest:false};
+}
+function choose(state,x) {
+  if(state.phase!=='choose')throw new Error('Start the next turn before selecting cards.');
+  if(!Number.isInteger(x)||x<0||x>=state.p)throw new Error('Choose a residue in this field.');
+  if(state.B.includes(x))state.B=state.B.filter(b=>b!==x);
+  else if(state.B.length<3)state.B=sorted([...state.B,x]);
+  else throw new Error('Remove a card before choosing another.');
+}
+function lockTurn(state) {
+  if(state.phase!=='choose'||!validateSet(state.B,3,state.p))throw new Error('Choose exactly three different residues.');
+  state.locked[state.active]=[...state.B];state.B=[];
+  if(state.active+1<state.players){state.active++;state.phase='handoff';return;}
+  const results=state.locked.map(B=>({B:[...B],sums:sumset(state.A,B,state.p),score:score(state.A,B,state.p)}));
+  results.forEach((r,i)=>state.totals[i]+=r.score);
+  state.history.push({A:[...state.A],results,best:optimum(state.A,state.p)});
+  state.phase='result';state.resultPlayer=0;state.revealBest=false;
+}
+function startTurn(state) {if(state.phase!=='handoff')throw new Error('No turn is waiting.');state.phase='choose';}
+function nextRound(state) {
+  if(state.phase!=='result')throw new Error('Finish this hole first.');
+  if(state.round===state.holes){state.phase='finished';return;}
+  state.round++;state.A=drawSet(state.p,4);state.B=[];state.locked=[];state.active=0;state.phase='choose';state.revealBest=false;
+}
+function publicState(state) {
+  // Never expose a locked choice while the other player is still playing.
+  const visible={p:state.p,players:state.players,hole:state.round,holes:state.holes,phase:state.phase,A:state.A,totals:state.totals,history:state.history};
+  if(state.phase==='choose')Object.assign(visible,{player:state.active+1,B:state.B});
+  return visible;
+}
+
+let state=newMatch();
+let error='';
+const $=s=>document.querySelector(s);
+const fmt=B=>`{${B.join(', ')}}`;
+const points=n=>n===0?'0':`+${n}`;
+const announce=text=>{$('#announcement').textContent=text;};
+
+function displayChoice(){
+  if(state.phase==='choose')return state.B;
+  if(state.phase==='result')return state.revealBest?state.history.at(-1).best.B:state.locked[state.resultPlayer];
+  return [];
+}
+function renderClock(){
+  const p=state.p,B=displayChoice(),hidden=['handoff','finished'].includes(state.phase);
+  const counts=new Map();if(!hidden)state.A.forEach(a=>B.forEach(b=>{const s=mod(a+b,p);counts.set(s,(counts.get(s)||0)+1);}));
+  const pos=i=>{const t=2*Math.PI*i/p-Math.PI/2;return [160+126*Math.cos(t),160+126*Math.sin(t)];};
+  let paths='';
+  if(B.length&&!hidden)for(const b of B)for(const a of state.A){const [x1,y1]=pos(a),[x2,y2]=pos(mod(a+b,p));if(b!==0)paths+=`<path d="M${x1},${y1} Q160,160 ${x2},${y2}" fill="none" stroke="#d4f576" stroke-width="1.3" opacity=".15"/>`;}
+  const nodes=Array.from({length:p},(_,i)=>{const [x,y]=pos(i),count=counts.get(i)||0,isA=state.A.includes(i),fill=count>1?'#d4f576':count?'#f6c75b':!B.length&&isA?'#d4f576':'#123b2e',fg=count||(!B.length&&isA)?'#102a22':'#b6cbbd';return `<g><circle cx="${x}" cy="${y}" r="${p===23?12:14}" fill="${fill}" stroke="${isA?'#cfe7ba':'#37604c'}" stroke-width="${isA?2:1}"/><text x="${x}" y="${y}" dy=".35em" text-anchor="middle" class="clock-value" fill="${fg}">${i}</text></g>`;}).join('');
+  const number=hidden?'—':B.length?counts.size:'4';
+  const label=hidden?'READY FOR THE NEXT TURN':B.length?'DISTINCT SUMS':'RESIDUES IN A';
+  $('#clock').innerHTML=`<svg viewBox="0 0 320 320" role="img" aria-labelledby="clock-title clock-desc"><title id="clock-title">Residues modulo ${p}</title><desc id="clock-desc">${hidden?'Choices are hidden.':B.length?`A plus B has ${counts.size} distinct residues: ${sorted(counts.keys()).join(', ')}.`:`The shared set A is ${state.A.join(', ')}.`}</desc><circle cx="160" cy="160" r="126" fill="none" stroke="#325543"/><circle cx="160" cy="160" r="95" fill="none" stroke="#294a38" stroke-dasharray="2 8"/>${paths}${nodes}<circle cx="160" cy="160" r="62" fill="#0c2c23"/><text class="clock-center-number" x="160" y="156" text-anchor="middle">${number}</text><text class="clock-center-label" x="160" y="180" text-anchor="middle" ${hidden?'style="font-size:7px"':''}>${label}</text></svg>`;
+  $('#clock-legend').innerHTML=B.length&&!hidden?'<span><i class="legend-swatch" style="background:#f6c75b"></i>One pair</span><span><i class="legend-swatch" style="background:#d4f576"></i>Repeated sum</span>':'<span><i class="legend-swatch" style="background:#d4f576"></i>Shared set A</span>';
+  $('#clock-caption').textContent=hidden?'A fresh choice, on the same course.':B.length?`Add around the clock. Sums of ${p} or more wrap back to 0.`:'Choose cards for B to see the sums appear.';
+}
+function renderScores(){
+  const names=state.players===1?['You']:['Player 1','Player 2'];
+  $('#scores').innerHTML=`<table class="score-table"><caption class="sr-only">Scores by hole. Lower scores are better.</caption><thead><tr><th scope="col">Hole</th>${names.map(n=>`<th scope="col">${n}</th>`).join('')}</tr></thead><tbody>${Array.from({length:state.holes},(_,i)=>`<tr class="${i+1===state.round&&state.phase!=='finished'?'current':''}"><td>${String(i+1).padStart(2,'0')}</td>${names.map((_,j)=>`<td class="${!state.history[i]?'empty':''}">${state.history[i]?points(state.history[i].results[j].score):'—'}</td>`).join('')}</tr>`).join('')}</tbody><tfoot><tr><td>Total</td>${state.totals.map(t=>`<td>${t}</td>`).join('')}</tr></tfoot></table>`;
+}
+function renderTurn(){
+  const root=$('#turn-content');
+  if(state.phase==='choose'){
+    const B=state.B,n=sumset(state.A,B,state.p).length;
+    root.innerHTML=`<div class="turn-top"><span class="player-label">${state.players===1?'SOLO PRACTICE':`PLAYER ${state.active+1}`}</span><span class="counter">${B.length} / 3 selected</span></div><h2 tabindex="-1">Choose your B.</h2><p class="turn-description">Pick three different residues. Make as many sums coincide as you can.</p><div class="residue-picker" aria-label="Choose three residues for B">${Array.from({length:state.p},(_,i)=>`<button class="residue-button ${B.includes(i)?'selected':''} ${state.A.includes(i)?'in-a':''}" data-residue="${i}" aria-label="Residue ${i}${state.A.includes(i)?', also in A':''}" aria-pressed="${B.includes(i)}">${i}</button>`).join('')}</div><div class="selection-line"><span><strong>B</strong> = ${B.length?fmt(B):'{…}'}</span><button class="small-link" id="clear-choice" ${B.length?'':'disabled'}>Clear</button></div><div class="live-score"><span>${B.length===3?`${n} distinct sums`:B.length?`${n} sums so far`:'Your score appears here'}</span><strong>${B.length===3?points(n-6):'—'}</strong></div><button id="lock-choice" class="primary-button" ${B.length===3?'':'disabled'}>Lock in your cards <span aria-hidden="true">→</span></button><p class="quiet-note">${state.players===2?'Other player: look away until the handover.':'Try different cards before you lock in.'}</p><p class="error-text" role="status">${error}</p>`;
+  }else if(state.phase==='handoff'){
+    root.innerHTML=`<div class="handoff"><div class="handoff-icon" aria-hidden="true">⇄</div><p class="result-kicker">CHOICE LOCKED & HIDDEN</p><h2 tabindex="-1">Pass to Player ${state.active+1}.</h2><p class="turn-description">The same A. A fresh B.<br>Choose your cards without seeing the other player’s choice.</p><button class="primary-button" id="start-turn">I’m Player ${state.active+1} · begin</button><p class="quiet-note">Player 1, please look away.</p></div>`;
+  }else if(state.phase==='result'){
+    const h=state.history.at(-1),best=h.best,scores=h.results.map(r=>r.score);
+    const title=state.players===1?(scores[0]===0?'Perfect overlap.':scores[0]===best.score?'Best possible.':'Hole complete.'):(scores[0]===scores[1]?'Honours even.':`Player ${scores[0]<scores[1]?1:2} takes the hole.`);
+    root.innerHTML=`<p class="result-kicker">HOLE ${state.round} COMPLETE</p><h2 tabindex="-1">${title}</h2><p class="turn-description">${state.players===2?'Both choices are in. Select a player to inspect their sums.':'Inspect your sums, or see a best possible play.'}</p><div class="result-scores">${h.results.map((r,i)=>`<button class="result-score ${i===state.resultPlayer&&!state.revealBest?'active':''}" data-result="${i}" aria-pressed="${i===state.resultPlayer&&!state.revealBest}"><span>${state.players===1?'Your score':`Player ${i+1}`}</span><strong>${points(r.score)}</strong><small>${r.sums.length} distinct sums</small></button>`).join('')}</div><p class="result-b">${state.revealBest?'Best play':state.players===1?'Your choice':`Player ${state.resultPlayer+1}`} · B = ${fmt(displayChoice())}</p><div class="best-note" style="margin-top:13px">Best possible for this A: <strong>${points(best.score)}</strong>.<br>${best.score===0?'A perfect overlap is possible.':'Zero is impossible on this hole.'} <button class="small-link" id="show-best">${state.revealBest?'Best play shown':'Show best play'}</button></div><button class="primary-button" id="next-round">${state.round===state.holes?'See final scores':'Next hole'} <span aria-hidden="true">→</span></button>`;
+  }else{
+    const a=state.totals[0],b=state.totals[1],title=state.players===1?'Round complete.':a===b?'A shared victory.':`Player ${a<b?1:2} wins.`;
+    root.innerHTML=`<div class="finished"><p class="result-kicker">${state.holes} HOLES PLAYED</p><h2 tabindex="-1">${title}</h2><div class="final-total">${state.players===1?a:`${a} <span style="font-size:1.8rem">—</span> ${b}`}</div><p class="turn-description">${state.players===1?'Your total score':`Player 1 · Player 2`}<br>Lowest total wins.</p><div class="best-note">The best possible total on this course was <strong>${state.history.reduce((s,h)=>s+h.best.score,0)}</strong>.${state.totals.some(t=>t===state.history.reduce((s,h)=>s+h.best.score,0))?' Every hole optimised!':''}</div><button class="primary-button" id="play-again">Play another round</button><p class="quiet-note">New sets. Same rules.</p></div>`;
+  }
+}
+function renderSums(){
+  const B=displayChoice(),S=sumset(state.A,B,state.p),counts=new Map();state.A.forEach(a=>B.forEach(b=>{const s=mod(a+b,state.p);counts.set(s,(counts.get(s)||0)+1);}));
+  $('#sum-panel').innerHTML=`<div class="sum-heading"><h3>A + B <span aria-hidden="true">${B.length?'=':''}</span></h3><span>${B.length?`${state.A.length*B.length} pairs → ${S.length} distinct sums`:'REPEATED SUMS COUNT ONCE'}</span></div><div class="sum-chips">${B.length?S.map(n=>`<span class="sum-chip ${counts.get(n)>1?'collision':''}" title="${counts.get(n)} pair${counts.get(n)===1?'':'s'} give ${n}">${n}</span>`).join(''):`<span class="sum-empty">${state.phase==='handoff'?'The previous choice stays hidden until both players finish.':state.phase==='finished'?'A round of small sums, complete.':'Your sumset will appear as you choose cards.'}</span>`}</div>${B.length?`<details class="sum-details"><summary>Show all additions · modulo ${state.p}</summary><table class="addition-table"><caption class="sr-only">Each cell contains a plus b modulo ${state.p}. Highlighted residues occur more than once.</caption><thead><tr><th scope="col">A ↘ B</th>${B.map(b=>`<th scope="col">${b}</th>`).join('')}</tr></thead><tbody>${state.A.map(a=>`<tr><th scope="row">${a}</th>${B.map(b=>{const n=mod(a+b,state.p);return `<td class="${counts.get(n)>1?'repeated':''}" title="${a} + ${b} ≡ ${n} modulo ${state.p}">${n}</td>`;}).join('')}</tr>`).join('')}</tbody></table></details>`:''}`;
+}
+function render(){
+  const focused=document.activeElement,focusResidue=focused?.dataset?.residue,focusResult=focused?.dataset?.result,focusId=focused?.id,tableOpen=$('.sum-details')?.open;
+  $('#course-meta').innerHTML=`<span class="meta-tag">${state.players===1?'Solo practice':'2 players · one device'}</span><span class="meta-tag">Hole ${state.round} / ${state.holes}</span>`;
+  $('#a-cards').innerHTML=state.A.map(a=>`<span class="a-card">${a}</span>`).join('');
+  $('#a-cards').setAttribute('aria-label',`A is ${state.A.join(', ')}`);
+  $('#field-badge').textContent=`mod ${state.p}`;
+  renderTurn();renderClock();renderScores();renderSums();
+  if(tableOpen&&$('.sum-details')&&state.phase!=='handoff')$('.sum-details').open=true;
+  if(focusResidue!==undefined)$(`[data-residue="${focusResidue}"]`)?.focus({preventScroll:true});
+  else if(focusResult!==undefined)$(`[data-result="${focusResult}"]`)?.focus({preventScroll:true});
+  else if(focusId)document.getElementById(focusId)?.focus({preventScroll:true});
+}
+function act(action,message,focus=false){
+  try{error='';action();render();if(message)announce(message);if(focus)$('#turn-content h2')?.focus({preventScroll:true});}
+  catch(e){error=e.message;render();announce(error);}
+}
+document.addEventListener('click',event=>{
+  const target=event.target.closest('button');if(!target)return;
+  if(target.matches('.close-dialog'))return target.closest('dialog').close();
+  if(target.dataset.residue!==undefined)return act(()=>choose(state,Number(target.dataset.residue)),null);
+  if(target.dataset.result!==undefined)return act(()=>{state.resultPlayer=Number(target.dataset.result);state.revealBest=false;},'Showing selected player’s sums.');
+  switch(target.id){
+    case 'rules-open':$('#rules-dialog').showModal();break;
+    case 'math-open':$('#math-dialog').showModal();break;
+    case 'new-open':$('#mode').value=state.players;$('#prime').value=state.p;$('#holes').value=state.holes;$('#settings-dialog').showModal();break;
+    case 'clear-choice':act(()=>{state.B=[];},'Selection cleared.');break;
+    case 'lock-choice':act(()=>lockTurn(state),'Cards locked.',true);break;
+    case 'start-turn':act(()=>startTurn(state),`Player ${state.active+1}, choose three cards.`,true);break;
+    case 'show-best':act(()=>{state.revealBest=true;},'Showing a best possible choice.');break;
+    case 'next-round':act(()=>nextRound(state),null,true);break;
+    case 'play-again':act(()=>{state=newMatch({p:state.p,players:state.players,holes:state.holes});},'New round started.',true);break;
+  }
+});
+$('#settings-form').addEventListener('submit',event=>{event.preventDefault();act(()=>{state=newMatch({p:Number($('#prime').value),players:Number($('#mode').value),holes:Number($('#holes').value)});$('#settings-dialog').close();},'New game started.',true);});
+for(const dialog of document.querySelectorAll('dialog'))dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});
+render();
+
+// Optional browser agent interface, sharing exactly the same actions as the UI.
+if(document.modelContext?.registerTool){
+  const lifecycle=new AbortController();
+  const tools=[
+    {name:'get_sumset_game',title:'Read the sumset game',description:'Read the current hole and visible game state. Locked opponent choices remain hidden until the hole is complete.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:true},execute:()=>publicState(state)},
+    {name:'set_sumset_choice',title:'Choose cards for B',description:'Stage up to three distinct residues for the current player. Does not lock the choice or end the turn.',inputSchema:{type:'object',properties:{cards:{type:'array',items:{type:'integer'},maxItems:3,uniqueItems:true}},required:['cards'],additionalProperties:false},execute:input=>{if(state.phase!=='choose')throw new Error('This is not a selection turn.');if(!validateSet(input.cards,input.cards?.length,state.p)||input.cards.length>3)throw new Error('Provide up to three different residues in the current field.');state.B=sorted(input.cards);error='';render();return publicState(state);}},
+    {name:'lock_sumset_choice',title:'Lock in the current cards',description:'Submit exactly three selected cards, ending the current turn. After the final player, reveal the results and record scores.',inputSchema:{type:'object',properties:{},additionalProperties:false},execute:()=>{lockTurn(state);error='';render();return publicState(state);}},
+    {name:'advance_sumset_game',title:'Continue the game',description:'Accept a waiting handover, or advance a completed hole. Does not submit an unfinished choice.',inputSchema:{type:'object',properties:{},additionalProperties:false},execute:()=>{if(state.phase==='handoff')startTurn(state);else if(state.phase==='result')nextRound(state);else throw new Error('Finish the current turn first.');render();return publicState(state);}},
+    {name:'start_sumset_game',title:'Start a new game',description:'Clear the scorecard and start a new game with four cards in A and three in B.',inputSchema:{type:'object',properties:{p:{type:'integer',enum:[11,17,23]},players:{type:'integer',enum:[1,2]},holes:{type:'integer',enum:[3,5,9]}},required:['p','players','holes'],additionalProperties:false},execute:input=>{const next=newMatch(input);state=next;error='';render();return publicState(state);}}
+  ];
+  for(const tool of tools){try{Promise.resolve(document.modelContext.registerTool({...tool,annotations:{readOnlyHint:false,untrustedContentHint:false,...tool.annotations}},{signal:lifecycle.signal})).catch(()=>{});}catch{}}
+  window.addEventListener('pagehide',()=>lifecycle.abort(),{once:true});
+}
+
+})();
+</script>
+</body>
+</html>
