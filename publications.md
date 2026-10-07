@@ -252,9 +252,11 @@ with Saul D. Freedman and Michael Giudici. [doi](https://doi.org/10.1017/prm.202
 Linear Algebra and its Applications 735, pp. 203-221 (2026),  
 with Jesse Lansdown. [doi](https://doi.org/10.1016/j.laa.2026.01.013).
 80. On the association schemes of perfect matchings and their designs,   
-Algebraic Combinatorics 9(3), pp. 789-809 (2026), [doi](https://doi.org/10.5802/alco.490).  
-with Lukas Klawuhn. [arxiv](https://arxiv.org/abs/2507.00813)
-
+Algebraic Combinatorics 9(3), pp. 789-809 (2026),  
+with Lukas Klawuhn. [doi](https://doi.org/10.5802/alco.490). 
+81. New bounds and constructions for large partial $m$-ovoids and related structures,   
+European Journal of Combinatorics 139 (2027), Paper No. 104457.
+with Anurag Bishnoi, Ferdinand Ihringer, and Ananthakrishnan Ravi. [doi](https://doi.org/10.1016/j.ejc.2026.104457). 
 
 ## Books
 
@@ -265,9 +267,6 @@ with Tim Penttila
 
 ## To appear
 
-- New bounds and constructions for large partial $m$-ovoids and related structures,   
-European Journal of Combinatorics,  
-with Anurag Bishnoi, Ferdinand Ihringer, and Ananthakrishnan Ravi. [arxiv](https://arxiv.org/abs/2406.03043)
 
 
 ## Submitted
