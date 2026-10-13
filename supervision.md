@@ -3,6 +3,8 @@ layout: page
 title: Supervision
 ---
 
+**I am currently not taking on any PhD students.**
+
 # Research projects
 
 One of the things I most like about my job is supervising students in research projects. From [AMSI](https://amsi.org.au) Vacation Scholarship students to honours students to PhD students, I enjoy collaborating with a student that is seeing a dedicated research problem for the first time, and then becoming a master of their subject.
@@ -41,7 +43,6 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 - Jeff Saunders, PhD, *TBA*, co-supervised with Michael Giudici, 2026 -- 
 - Jacob Smith, PhD, *TBA*, co-supervised with Michael Giudici, 2023 --
-- Ethan Kealley, Honours, *TBA*, 2026.
 
 ### Past students
 
@@ -66,6 +67,7 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 #### Honours Students ####
 
+1. Ethan Kealley, Honours, *On the Hermitian Veronsean*, 2026.
 1. James Jensen, Honours, *Finite-dimensional Hopf algebras*, 2025. 
 2. Jake Rigg, Honours, *Bounding cliques in graphs*, 2025. 
 1. Jolyon Joyce, *The incidence-based foundation of hyperbolic planes over arbitrary and Euclidean ordered fields*, 2024.
