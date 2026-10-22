@@ -48,28 +48,28 @@ I have been enormously lucky to have supervised some remarkable students. Here i
 
 #### PhD Students ####
 
- 1. Vishnu Arumugam, PhD, *Groups of Lie Type Acting on Generalised Quadrangles*, co-supervised with Michael Giudici, 2022 -- 2026.  
- 1. Jesse Lansdown, PhD, *Designs in finite geometry*, co-supervised with Gordon Royle and Alice Niemeyer (cotutelle with Aachen), 2015 -- 2020
- 2. Mark Ioppolo, PhD, *Codes in Johnson graphs associated with quadratic forms over $\mathbb{F}_2$*,  co-supervised with Cheryl Praeger and Alice Devillers, 2012 -- 2020.
- 3. Jon Xu, PhD, *Chevalley groups, Schubert varieties, and finite geometry*, co-supervised with Arun Ram, 2012 -- 2017.
- 4. Sayeed Hassan Alavi, PhD, *Triple factorisations of groups*, co-supervised with Cheryl Praeger, 2008 -- 2011.
- 5. Frédéric Vanhove, PhD, *Incidence geometry from an algebraic graph theory point of view*, co-supervised with Frank De Clerck, 2007 -- 2011.
- 6. Geoffrey Pearce, PhD, *Transitive factorisations of graphs*, co-supervised with Cheryl Praeger, 2004 -- 2007.
+ 1. Vishnu Arumugam, *Groups of Lie Type Acting on Generalised Quadrangles*, co-supervised with Michael Giudici, 2022 -- 2026.  
+ 1. [Jesse Lansdown](https://research.universityofgalway.ie/en/persons/jesse-lansdown/), *Designs in finite geometry*, co-supervised with Gordon Royle and Alice Niemeyer (cotutelle with Aachen), 2015 -- 2020
+ 2. [Mark Ioppolo](https://mioppolo.github.io), *Codes in Johnson graphs associated with quadratic forms over $\mathbb{F}_2$*,  co-supervised with Cheryl Praeger and Alice Devillers, 2012 -- 2020.
+ 3. Jon Xu, *Chevalley groups, Schubert varieties, and finite geometry*, co-supervised with Arun Ram, 2012 -- 2017.
+ 4. [Sayeed Hassan Alavi](https://scholar.google.com/citations?user=ztfA8sIAAAAJ&hl=en), *Triple factorisations of groups*, co-supervised with Cheryl Praeger, 2008 -- 2011.
+ 5. Frédéric Vanhove, *Incidence geometry from an algebraic graph theory point of view*, co-supervised with Frank De Clerck, 2007 -- 2011.
+ 6. Geoffrey Pearce, *Transitive factorisations of graphs*, co-supervised with Cheryl Praeger, 2004 -- 2007.
 
 #### Masters/MPhil Students ####
 
-1. Saul Freedman, MPhil, *p-groups related to exceptional groups of Lie type*, co-supervised with Luke Morgan, 2017 -- 2018.
-2. Melissa Lee, MPhil, *The m-covers and m-ovoids of generalised quadrangles and related structures*, co-supervised with Michael Giudici, 2015/2016.
-3. Sylvia Morris, MPhil, *Symplectic translation planes, pseudo-ovals, and maximal 4-arcs*, co-supervised with Michael Giudici, 2011 -- 2013.
+1. [Saul Freedman](https://mathematics.colostate.edu/person/?id=093920EF4E3FA81C67C534C807774A7D&sq=t), MPhil, *p-groups related to exceptional groups of Lie type*, co-supervised with Luke Morgan, 2017 -- 2018.
+2. [Melissa Lee](https://research.monash.edu/en/persons/melissa-lee/), MPhil, *The m-covers and m-ovoids of generalised quadrangles and related structures*, co-supervised with Michael Giudici, 2015/2016.
+3. [Sylvia Morris](https://www.sylviamorris.com.au), MPhil, *Symplectic translation planes, pseudo-ovals, and maximal 4-arcs*, co-supervised with Michael Giudici, 2011 -- 2013.
 4. Guang Rao, Masters, *Symmetric translation planes of square order*, 2009/2010.
 5. Cedric Raemdonck and Els Quintelier, Masters, *Databanken en websites voor wiskundig onderzoek*, co-supervised with Leo Storme, Michel Lavrauw, Geert Vernaeve, 2008.
 6. Frédéric Vanhove, Masters, *Een studie van m-systemen en aanverwante incidentiestructuren*, co-supervised with Frank De Clerck, 2006/2007.
 
 #### Honours Students ####
 
-1. Ethan Kealley, Honours, *On the Hermitian Veronsean*, 2026.
-1. James Jensen, Honours, *Finite-dimensional Hopf algebras*, 2025. 
-2. Jake Rigg, Honours, *Bounding cliques in graphs*, 2025. 
+1. Ethan Kealley, *On the Hermitian Veronsean*, 2026.
+1. James Jensen, *Finite-dimensional Hopf algebras*, 2025. 
+2. Jake Rigg, *Bounding cliques in graphs*, 2025. 
 1. Jolyon Joyce, *The incidence-based foundation of hyperbolic planes over arbitrary and Euclidean ordered fields*, 2024.
 2. Jeff Saunders, *Affine geometric algebra*, 2024.
 3. Huxley Berry, *Finite abstract ovals*, co-supervised with Luke Morgan, 2024.
