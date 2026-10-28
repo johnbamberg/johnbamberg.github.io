@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AustMS 2026 Programme</title>
+<meta name="description" content="Programme for the 70th Annual Meeting of the Australian Mathematical Society, The University of Western Australia, 1–4 December 2026.">
+
+<!-- Renders LaTeX ($...$) in titles and abstracts. Delete these two script tags if you don't need it. -->
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [["$", "$"], ["\\(", "\\)"]], processEscapes: true },
+    options: { ignoreHtmlClass: "no-math" }
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+
+<style>
+/* Layout: one centred column. Header + tab bar, then tables of talks grouped by day.
+   On phones each table row becomes a stacked card. Change the colours here. */
+:root {
+  --bg: #ffffff;
+  --fg: #1d1a1c;
+  --muted: #675d60;
+  --line: #e4dcda;
+  --head: #ead6d1;      /* table header band */
+  --accent: #7b2d3b;    /* tabs, buttons, tick boxes */
+  --accent-fg: #ffffff;
+  --picked: #fbf0e4;    /* background of a ticked talk */
+  --warn: #9a3f12;
+  --warn-bg: #fdeee3;
+  --chip: #f5efed;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #17151a; --fg: #ece6e5; --muted: #a99ea1; --line: #3a3337; --head: #47313a;
+    --accent: #e7a6b1; --accent-fg: #1b1016; --picked: #302720; --warn: #f2a878; --warn-bg: #3a2519;
+    --chip: #28232a; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #17151a; --fg: #ece6e5; --muted: #a99ea1; --line: #3a3337; --head: #47313a;
+  --accent: #e7a6b1; --accent-fg: #1b1016; --picked: #302720; --warn: #f2a878; --warn-bg: #3a2519;
+  --chip: #28232a; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 16px/1.5 var(--font);
+}
+.wrap {
+  max-width: 76rem; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+header.top { padding-block: 1.75rem 0.5rem; }
+h1 { font-size: clamp(1.6rem, 1.2rem + 1.8vw, 2.4rem); line-height: 1.15; margin: 0 0 .35rem; font-weight: 600; text-wrap: balance; }
+.sub { margin: 0; color: var(--muted); }
+.notice { margin: .9rem 0 0; padding: .55rem .8rem; border-radius: 6px; background: var(--warn-bg); color: var(--warn); font-size: .9rem; }
+
+/* Tab bar + search */
+.bar {
+  position: sticky; top: 0; z-index: 5; background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+.bar .wrap { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; justify-content: space-between; padding-block: .6rem; }
+.tabs { display: flex; flex-wrap: wrap; gap: .35rem; }
+.tab {
+  font: inherit; font-size: .95rem; cursor: pointer;
+  padding: .4rem .85rem; border-radius: 999px; border: 1px solid var(--line);
+  background: transparent; color: var(--fg);
+}
+.tab[aria-current="page"] { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+.tab .count { display: inline-block; min-width: 1.4em; padding: 0 .35em; margin-left: .25rem; border-radius: 999px; background: var(--chip); color: var(--fg); font-size: .8rem; text-align: center; font-variant-numeric: tabular-nums; }
+.tab[aria-current="page"] .count { background: var(--accent-fg); color: var(--accent); }
+.search { flex: 1 1 14rem; max-width: 22rem; }
+.search input {
+  width: 100%; font: inherit; font-size: .95rem; padding: .4rem .75rem;
+  border: 1px solid var(--line); border-radius: 999px; background: var(--bg); color: var(--fg);
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+main { padding-block: 1.25rem 3rem; min-height: 50vh; }
+h2 { font-size: clamp(1.2rem, 1.05rem + .7vw, 1.55rem); font-weight: 500; margin: 2rem 0 .75rem; text-wrap: balance; }
+h2:first-child { margin-top: .5rem; }
+.lead { display: block; margin: 0 0 .6rem; }
+select {
+  font: inherit; width: 100%; max-width: 36rem; padding: .5rem .7rem;
+  border: 1px solid var(--line); border-radius: 8px; background: var(--chip); color: var(--fg);
+}
+
+/* Session overview chips */
+.chips { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); gap: .5rem; margin-top: 1.25rem; }
+.chip {
+  font: inherit; text-align: left; cursor: pointer; padding: .6rem .8rem; border-radius: 8px;
+  border: 1px solid var(--line); background: var(--chip); color: var(--fg);
+  display: flex; justify-content: space-between; gap: .75rem; align-items: baseline;
+}
+.chip:hover { border-color: var(--accent); }
+.chip small { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+/* Day buttons */
+.days { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .5rem; }
+.days .tab { font-variant-numeric: tabular-nums; }
+.talks tr.slot-row th {
+  text-align: left; font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums;
+  padding: 1.1rem .7rem .4rem; border-bottom: 2px solid var(--head);
+}
+
+/* Talk tables */
+.table-wrap { overflow-x: auto; }
+table.talks { width: 100%; border-collapse: collapse; font-size: .97rem; }
+.talks thead th { background: var(--head); text-align: left; font-weight: 600; padding: .6rem .7rem; white-space: nowrap; }
+.talks td { padding: .6rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.talks .c-pick { width: 2.75rem; padding-right: 0; }
+.talks .c-time { width: 7.5rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.talks .c-session { width: 13rem; }
+.talks td.c-session { color: var(--muted); }
+.talks .c-speaker { width: 15rem; }
+.talks .c-room { width: 8rem; text-align: right; white-space: nowrap; }
+.talks thead .c-room { text-align: right; }
+.aff { display: block; color: var(--muted); font-size: .85rem; }
+tr.is-picked td { background: var(--picked); }
+tr.is-removed td { opacity: .45; }
+tr.is-clash td:first-child { box-shadow: inset 3px 0 0 var(--warn); }
+.clash { margin-top: .3rem; color: var(--warn); font-size: .87rem; }
+.pick { display: flex; align-items: center; justify-content: center; width: 2rem; height: 1.6rem; cursor: pointer; }
+.pick input { width: 1.15rem; height: 1.15rem; accent-color: var(--accent); cursor: pointer; margin: 0; }
+details summary { cursor: pointer; }
+details summary::marker { color: var(--muted); }
+.abstract { margin: .45rem 0 .2rem; color: var(--muted); font-size: .92rem; white-space: pre-line; max-width: 65ch; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* My programme */
+.toolbar { display: flex; flex-wrap: wrap; gap: .5rem; margin: .25rem 0 1rem; }
+.btn {
+  font: inherit; font-size: .95rem; cursor: pointer; padding: .45rem .9rem; border-radius: 8px;
+  border: 1px solid var(--accent); background: var(--accent); color: var(--accent-fg);
+}
+.btn.ghost { background: transparent; color: var(--accent); }
+.btn.danger { border-color: var(--warn); color: var(--warn); background: transparent; }
+.hint { color: var(--muted); font-size: .92rem; max-width: 65ch; }
+.empty { padding: 2rem 0; color: var(--muted); max-width: 60ch; }
+.banner { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; padding: .7rem .9rem; margin-bottom: 1rem; border-radius: 8px; background: var(--chip); border: 1px solid var(--line); }
+.banner p { margin: 0; flex: 1 1 18rem; }
+.share-out { display: flex; gap: .5rem; margin: .5rem 0 1rem; flex-wrap: wrap; }
+.share-out input { flex: 1 1 18rem; min-width: 0; font: inherit; font-size: .85rem; padding: .4rem .6rem; border: 1px solid var(--line); border-radius: 6px; background: var(--chip); color: var(--fg); }
+.status { color: var(--muted); font-size: .9rem; min-height: 1.4em; }
+.error { padding: 1rem; border-radius: 8px; background: var(--warn-bg); color: var(--warn); }
+footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+footer .wrap { padding-block: 1.25rem 2rem; }
+footer a, main a { color: var(--accent); }
+.warnings { margin-top: .75rem; font-size: .85rem; }
+
+/* Phones: rows become stacked cards */
+@media screen and (max-width: 720px) {
+  .talks thead { display: none; }
+  .talks, .talks tbody { display: block; }
+  .talks tr.talk {
+    display: grid; grid-template-columns: 2.5rem minmax(0, 1fr) auto;
+    grid-template-areas: "pick time room" "pick session session" "pick speaker speaker" "pick title title";
+    column-gap: .4rem; padding: .7rem 0; border-bottom: 1px solid var(--line);
+  }
+  .talks td { display: block; padding: 0; border: 0; width: auto !important; background: transparent !important; }
+  .talks tr.slot-row, .talks tr.slot-row th { display: block; }
+  .talks tr.slot-row th { padding: 1.1rem 0 .35rem; }
+  tr.is-picked { background: var(--picked); }
+  tr.is-clash { box-shadow: inset 3px 0 0 var(--warn); }
+  tr.is-clash td:first-child { box-shadow: none; }
+  .talks .c-pick { grid-area: pick; }
+  .talks .c-time { grid-area: time; font-weight: 600; }
+  .talks .c-room { grid-area: room; text-align: right; color: var(--muted); }
+  .talks .c-session { grid-area: session; font-size: .87rem; }
+  .talks .c-speaker { grid-area: speaker; font-weight: 600; margin-top: .1rem; }
+  .talks .c-speaker .aff { font-weight: 400; }
+  .talks .c-title { grid-area: title; margin-top: .15rem; }
+  .search { max-width: none; }
+  .bar { position: static; }        /* keep the whole phone screen for the programme */
+  .tab { padding: .35rem .75rem; font-size: .92rem; }
+}
+
+/* Printing (My programme → Print / save as PDF) */
+@media print {
+  .bar, .toolbar, .hint, .banner, .share-out, .status, .no-print, footer, .notice { display: none !important; }
+  .talks .c-pick { display: none; }
+  body { font-size: 11pt; background: #fff; color: #000; }
+  tr { break-inside: avoid; }
+  h2 { break-after: avoid; }
+  .abstract { display: none; }
+  tr.is-picked td { background: none; }
+  .talks td, .talks thead th { padding: .35rem .45rem; }
+  .table-wrap { overflow: visible; }
+  table.talks { table-layout: fixed; font-size: 10pt; }
+  .talks .c-time { width: 6.2rem; } .talks .c-session { width: 8.5rem; } .talks .c-speaker { width: 9.5rem; }
+  .talks .c-room { width: 6rem; white-space: normal; }
+  details summary { list-style: none; }
+  details summary::-webkit-details-marker { display: none; }
+  h2 { margin: 1rem 0 .4rem; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+
+<header class="top wrap">
+  <h1 id="conf-title">AustMS 2026 Programme</h1>
+  <p class="sub" id="conf-sub"></p>
+  <p class="notice" id="notice" hidden></p>
+</header>
+
+<nav class="bar no-print" aria-label="Programme views">
+  <div class="wrap">
+    <div class="tabs">
+      <button class="tab" type="button" data-view="session">By session</button>
+      <button class="tab" type="button" data-view="day">By day</button>
+      <button class="tab" type="button" data-view="mine">My programme <span class="count" id="pick-count">0</span></button>
+    </div>
+    <div class="search">
+      <label class="sr" for="search">Search speakers and titles</label>
+      <input id="search" type="search" placeholder="Search speaker, title or room" autocomplete="off">
+    </div>
+  </div>
+</nav>
+
+<main class="wrap" id="main" aria-live="polite">
+  <p>Loading the programme…</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>Tick the box next to a talk to add it to <strong>My programme</strong>. Your choices are saved in this browser on this device.</div>
+    <div id="site-link"></div>
+    <div class="warnings" id="data-warnings" hidden></div>
+  </div>
+</footer>
+
+<script>
+/* =====================================================================
+   SETTINGS — this is the only part you normally need to edit.
+   ===================================================================== */
+const CONFIG = {
+  // Where the programme comes from. Either a CSV file next to this page...
+  dataUrl: "programme.csv",
+  // ...or a Google Sheet: File → Share → Publish to web → pick the tab → "Comma-separated values (.csv)" → Publish,
+  // then paste the link it gives you here, e.g.
+  // dataUrl: "https://docs.google.com/spreadsheets/d/e/XXXXXXXX/pub?gid=0&single=true&output=csv",
+
+  title: "AustMS 2026 Programme",
+  subtitle: "70th Annual Meeting of the Australian Mathematical Society · The University of Western Australia · 1–4 December 2026",
+  siteUrl: "https://austms2026.org.au/",
+
+  // Shown in an orange box under the title. Set to "" once the real programme is in.
+  notice: "Sample data only: the speakers and titles below are made up for testing.",
+
+  // Conference days, used for the "By day" buttons and to read dates written as "Tuesday" or "Day 2".
+  conferenceDates: ["2026-12-01", "2026-12-02", "2026-12-03", "2026-12-04"],
+  utcOffset: "+08:00",          // Perth time (no daylight saving). Used for calendar files.
+  defaultTalkMinutes: 30,       // used when a row has no end time
+  pinnedSessions: ["Plenary lectures"],  // listed first in the session menu; the rest are alphabetical
+
+  storageKey: "austms2026-my-programme",
+  calendarFileName: "AustMS2026-my-programme.ics",
+  calendarName: "AustMS 2026 – my programme",
+  uidDomain: "austms2026.org.au",
+
+  showDataWarnings: true        // lists spreadsheet rows that couldn't be read (set false when the programme is final)
+};
+
+/* =====================================================================
+   Everything below is the viewer itself.
+   ===================================================================== */
+const $ = (sel, el = document) => el.querySelector(sel);
+const main = $("#main");
+const WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+let TALKS = [];             // all talks, sorted by date and time
+let BY_ID = new Map();
+let SESSIONS = [];          // session names in menu order
+let DATES = [];             // dates that have talks (plus conferenceDates)
+let picks = new Set();
+const state = { view: "session", session: "", day: "", query: "" };
+
+/* ---------- small helpers ---------- */
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+function fold(s) { return String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
+function pad(n) { return String(n).padStart(2, "0"); }
+function fmtTime(min) { return `${pad(Math.floor(min / 60))}:${pad(min % 60)}`; }
+function dateParts(iso) { const [y, m, d] = iso.split("-").map(Number); return { y, m, d, wd: new Date(Date.UTC(y, m - 1, d)).getUTCDay() }; }
+function dayLong(iso) { const p = dateParts(iso); return `${WEEKDAYS[p.wd]} ${p.d} ${MONTHS[p.m - 1]}`; }
+function dayShort(iso) { const p = dateParts(iso); return `${WEEKDAYS[p.wd].slice(0, 3)} ${p.d} ${MONTHS[p.m - 1].slice(0, 3)}`; }
+function isoOf(y, m, d) { return `${y}-${pad(m)}-${pad(d)}`; }
+function validDate(y, m, d) { const t = new Date(Date.UTC(y, m - 1, d)); return t.getUTCFullYear() === +y && t.getUTCMonth() === m - 1 && t.getUTCDate() === +d; }
+
+/* ---------- CSV ---------- */
+function parseCSV(text) {
+  const rows = []; let row = [], field = "", q = false;
+  text = text.replace(/^\uFEFF/, "");
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (q) {
+      if (c === '"') { if (text[i + 1] === '"') { field += '"'; i++; } else q = false; }
+      else field += c;
+    } else if (c === '"') q = true;
+    else if (c === ",") { row.push(field); field = ""; }
+    else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
+    else if (c !== "\r") field += c;
+  }
+  if (field !== "" || row.length) { row.push(field); rows.push(row); }
+  return rows.filter(r => r.some(f => f.trim() !== ""));
+}
+
+const COLUMN_NAMES = {
+  id: ["id", "talkid", "code", "ref"],
+  date: ["date", "day"],
+  start: ["start", "starttime", "from", "time", "begin"],
+  end: ["end", "endtime", "to", "finish", "until"],
+  session: ["session", "specialsession", "stream", "track"],
+  speaker: ["speaker", "name", "presenter", "speakers"],
+  affiliation: ["affiliation", "institution", "university", "organisation", "organization"],
+  title: ["title", "talktitle", "talk"],
+  room: ["room", "venue", "location"],
+  abstract: ["abstract", "summary", "description"]
+};
+
+/* Dates: 2026-12-01, 1/12/2026 (Australian order), "Tuesday 1 December 2026", "Tuesday", "Day 2". */
+function parseDate(raw) {
+  const s = raw.trim(); if (!s) return null;
+  let m = s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+  if (m && validDate(+m[1], +m[2], +m[3])) return isoOf(+m[1], +m[2], +m[3]);
+  m = s.match(/^(\d{1,2})[\/.](\d{1,2})[\/.](\d{2,4})$/);
+  if (m) {
+    const y = m[3].length === 2 ? 2000 + +m[3] : +m[3];
+    const dmy = validDate(y, +m[2], +m[1]) ? isoOf(y, +m[2], +m[1]) : null;
+    const mdy = validDate(y, +m[1], +m[2]) ? isoOf(y, +m[1], +m[2]) : null;
+    if (dmy && CONFIG.conferenceDates.includes(dmy)) return dmy;
+    if (mdy && CONFIG.conferenceDates.includes(mdy)) return mdy;   // sheet set to US date format
+    return dmy || mdy;
+  }
+  m = s.match(/(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]{3,})\.?,?\s+(\d{4})/) || null;
+  if (m) { const mi = MONTHS.findIndex(x => x.toLowerCase().startsWith(m[2].toLowerCase().slice(0, 3))); if (mi >= 0 && validDate(+m[3], mi + 1, +m[1])) return isoOf(+m[3], mi + 1, +m[1]); }
+  m = s.match(/([A-Za-z]{3,})\.?\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})/);
+  if (m) { const mi = MONTHS.findIndex(x => x.toLowerCase().startsWith(m[1].toLowerCase().slice(0, 3))); if (mi >= 0 && validDate(+m[3], mi + 1, +m[2])) return isoOf(+m[3], mi + 1, +m[2]); }
+  m = s.match(/^day\s*(\d+)$/i);
+  if (m && CONFIG.conferenceDates[+m[1] - 1]) return CONFIG.conferenceDates[+m[1] - 1];
+  const wd = WEEKDAYS.findIndex(w => fold(s).startsWith(w.slice(0, 3).toLowerCase()));
+  if (wd >= 0) { const hit = CONFIG.conferenceDates.find(iso => dateParts(iso).wd === wd); if (hit) return hit; }
+  return null;
+}
+
+/* Times: 13:30, 13.30, 13:30:00, 1:30 PM. A range "13:30–14:00" gives both. */
+function parseTime(raw) {
+  const m = String(raw).trim().match(/^(\d{1,2})[:.](\d{2})(?::\d{2})?\s*([ap])?\.?\s*m?\.?$/i);
+  if (!m) return null;
+  let h = +m[1]; const min = +m[2];
+  if (m[3]) { const pm = m[3].toLowerCase() === "p"; if (h === 12) h = pm ? 12 : 0; else if (pm) h += 12; }
+  if (h > 23 || min > 59) return null;
+  return h * 60 + min;
+}
+function splitRange(raw) {
+  const parts = String(raw).split(/\s*(?:–|—|-|to)\s*/i).filter(Boolean);
+  return parts.length === 2 ? parts : null;
+}
+
+function shortHash(s) { let h = 2166136261; for (const ch of s) { h ^= ch.codePointAt(0); h = Math.imul(h, 16777619); } return (h >>> 0).toString(36); }
+
+function buildTalks(rows) {
+  const warnings = [];
+  if (!rows.length) return { talks: [], warnings: ["The spreadsheet is empty."] };
+  const header = rows[0].map(h => fold(h).replace(/[^a-z0-9]/g, ""));
+  const col = {};
+  for (const [key, names] of Object.entries(COLUMN_NAMES)) {
+    const idx = header.findIndex(h => names.includes(h));
+    if (idx >= 0) col[key] = idx;
+  }
+  for (const need of ["date", "start", "title"]) if (col[need] === undefined) warnings.push(`No “${need}” column found in the header row.`);
+  const get = (r, k) => (col[k] === undefined ? "" : (r[col[k]] ?? "").trim());
+  const talks = [], seen = new Set();
+  rows.slice(1).forEach((r, i) => {
+    const line = i + 2;
+    const date = parseDate(get(r, "date"));
+    let startRaw = get(r, "start"), endRaw = get(r, "end");
+    const range = splitRange(startRaw);
+    if (range && !endRaw) { [startRaw, endRaw] = range; }
+    const start = parseTime(startRaw);
+    let end = endRaw ? parseTime(endRaw) : null;
+    const title = get(r, "title"), speaker = get(r, "speaker");
+    if (!date || start === null || (!title && !speaker)) {
+      warnings.push(`Row ${line}: skipped (couldn't read ${!date ? "the date" : start === null ? "the start time" : "a title or speaker"}).`);
+      return;
+    }
+    if (end === null || end <= start) end = start + CONFIG.defaultTalkMinutes;
+    let id = get(r, "id") || "x" + shortHash(fold(speaker + "|" + title));
+    if (seen.has(id)) { warnings.push(`Row ${line}: ID “${id}” is used twice; this row got a new ID.`); id = id + "-" + line; }
+    seen.add(id);
+    talks.push({
+      id, date, start, end,
+      session: get(r, "session") || "Other talks",
+      speaker, affiliation: get(r, "affiliation"), title, room: get(r, "room"), abstract: get(r, "abstract")
+    });
+  });
+  talks.sort((a, b) => a.date.localeCompare(b.date) || a.start - b.start || a.session.localeCompare(b.session) || a.end - b.end);
+  return { talks, warnings };
+}
+
+/* ---------- saved picks ---------- */
+function loadPicks() {
+  try { const v = JSON.parse(localStorage.getItem(CONFIG.storageKey) || "[]"); return new Set(Array.isArray(v) ? v.map(String) : []); }
+  catch { return new Set(); }
+}
+function savePicks() {
+  try { localStorage.setItem(CONFIG.storageKey, JSON.stringify([...picks])); } catch { /* storage blocked: picks last for this visit only */ }
+}
+function pickedTalks() { return TALKS.filter(t => picks.has(t.id)); }
+function updateCount() { $("#pick-count").textContent = pickedTalks().length; }
+
+/* ---------- rendering ---------- */
+function talkRow(t, opts) {
+  const on = picks.has(t.id);
+  const label = `${on ? "Remove" : "Add"} “${t.title || t.speaker}” ${on ? "from" : "to"} my programme`;
+  const title = t.abstract
+    ? `<details><summary>${esc(t.title)}</summary><div class="abstract">${esc(t.abstract)}</div></details>`
+    : esc(t.title);
+  const clash = opts.clashes && opts.clashes.get(t.id);
+  return `<tr class="talk${on ? " is-picked" : ""}${clash ? " is-clash" : ""}" data-id="${esc(t.id)}">
+    <td class="c-pick"><label class="pick"><input type="checkbox" data-id="${esc(t.id)}"${on ? " checked" : ""}><span class="sr">${esc(label)}</span></label></td>
+    <td class="c-time">${fmtTime(t.start)}–${fmtTime(t.end)}</td>
+    ${opts.session ? `<td class="c-session">${esc(t.session)}</td>` : ""}
+    <td class="c-speaker">${esc(t.speaker)}${t.affiliation ? `<span class="aff">${esc(t.affiliation)}</span>` : ""}</td>
+    <td class="c-title">${title}${clash ? `<div class="clash">Overlaps with ${clash.map(c => esc(c.speaker) + " (" + esc(c.session) + ")").join(", ")}</div>` : ""}</td>
+    <td class="c-room">${esc(t.room)}</td>
+  </tr>`;
+}
+function talkTable(talks, opts = {}) {
+  let body = "", last = null;
+  for (const t of talks) {
+    if (opts.slots && t.start !== last) {
+      body += `<tr class="slot-row"><th colspan="${opts.session ? 6 : 5}" scope="colgroup">${fmtTime(t.start)}</th></tr>`;
+      last = t.start;
+    }
+    body += talkRow(t, opts);
+  }
+  return `<div class="table-wrap"><table class="talks"><thead><tr>
+    <th class="c-pick"><span class="sr">Pick</span>✓</th><th class="c-time">Time</th>
+    ${opts.session ? `<th class="c-session">Session</th>` : ""}
+    <th class="c-speaker">Speaker</th><th class="c-title">Title</th><th class="c-room">Room</th>
+  </tr></thead><tbody>${body}</tbody></table></div>`;
+}
+function groupBy(arr, key) { const m = new Map(); for (const x of arr) { const k = key(x); if (!m.has(k)) m.set(k, []); m.get(k).push(x); } return m; }
+
+function renderSession() {
+  const options = SESSIONS.map(s => `<option value="${esc(s)}"${s === state.session ? " selected" : ""}>${esc(s)}</option>`).join("");
+  let html = `<label class="lead" for="session-select">Choose a session to see its talks, day by day.</label>
+    <select id="session-select"><option value="">— Select a session —</option>${options}</select>`;
+  if (!state.session || !SESSIONS.includes(state.session)) {
+    html += `<div class="chips">${SESSIONS.map(s => {
+      const n = TALKS.filter(t => t.session === s).length;
+      return `<button type="button" class="chip" data-session="${esc(s)}"><span>${esc(s)}</span><small>${n} talk${n === 1 ? "" : "s"}</small></button>`;
+    }).join("")}</div>`;
+  } else {
+    const days = groupBy(TALKS.filter(t => t.session === state.session), t => t.date);
+    for (const [date, talks] of days) html += `<h2>${esc(state.session)} — ${dayLong(date)}</h2>${talkTable(talks)}`;
+  }
+  return html;
+}
+
+function renderDay() {
+  if (!DATES.includes(state.day)) state.day = defaultDay();
+  let html = `<div class="days" role="group" aria-label="Conference day">${DATES.map(d =>
+    `<button type="button" class="tab" data-day="${d}"${d === state.day ? ' aria-current="page"' : ""}>${dayShort(d)}</button>`).join("")}</div>`;
+  const talks = TALKS.filter(t => t.date === state.day);
+  html += `<h2>${dayLong(state.day)}</h2>`;
+  if (!talks.length) return html + `<p class="empty">No talks on this day.</p>`;
+  return html + talkTable(talks, { session: true, slots: true });
+}
+
+function findClashes(talks) {
+  const clashes = new Map();
+  for (let i = 0; i < talks.length; i++) for (let j = i + 1; j < talks.length; j++) {
+    const a = talks[i], b = talks[j];
+    if (a.date !== b.date) continue;
+    if (a.start < b.end && b.start < a.end) {
+      if (!clashes.has(a.id)) clashes.set(a.id, []);
+      if (!clashes.has(b.id)) clashes.set(b.id, []);
+      clashes.get(a.id).push(b); clashes.get(b.id).push(a);
+    }
+  }
+  return clashes;
+}
+
+let incoming = null;   // talks from a shared link, waiting for the visitor to decide
+function renderMine() {
+  let html = "";
+  if (incoming) {
+    const fresh = incoming.filter(id => !picks.has(id)).length;
+    html += `<div class="banner" role="status"><p>This link contains <strong>${incoming.length}</strong> talk${incoming.length === 1 ? "" : "s"}${picks.size ? ` (${fresh} not yet in your programme)` : ""}.</p>
+      <button type="button" class="btn" data-act="incoming-add">Add them to my programme</button>
+      ${picks.size ? `<button type="button" class="btn ghost" data-act="incoming-replace">Replace my programme</button>` : ""}
+      <button type="button" class="btn ghost" data-act="incoming-ignore">Ignore</button></div>`;
+  }
+  const talks = pickedTalks();
+  const lost = [...picks].filter(id => !BY_ID.has(id)).length;
+  if (!talks.length) {
+    return html + `<h2>My programme</h2><p class="empty">You haven't picked any talks yet. Tick the box next to a talk in <a href="#" data-goto="session">By session</a> or <a href="#" data-goto="day">By day</a> and it will appear here, sorted by day and time.</p>`;
+  }
+  const clashes = findClashes(talks);
+  html += `<h2>My programme</h2>
+    <div class="toolbar">
+      <button type="button" class="btn" data-act="ics">Add to calendar (.ics)</button>
+      <button type="button" class="btn ghost" data-act="print">Print / save as PDF</button>
+      <button type="button" class="btn ghost" data-act="share">Copy link to this programme</button>
+      <button type="button" class="btn danger" data-act="clear">Clear all</button>
+    </div>
+    <div class="share-out" id="share-out" hidden><label class="sr" for="share-url">Link to your programme</label><input id="share-url" readonly></div>
+    <div class="status" id="status"></div>
+    <p class="hint">${talks.length} talk${talks.length === 1 ? "" : "s"} picked${clashes.size ? ` · <strong>${clashes.size}</strong> overlap with another pick` : ""}.
+      Your picks are saved in this browser only. To see them on your phone, use <em>Copy link</em> and open the link there, or add them to your calendar.</p>
+    ${lost ? `<p class="hint">${lost} talk${lost === 1 ? " you picked is" : "s you picked are"} no longer in the programme.</p>` : ""}`;
+  for (const [date, group] of groupBy(talks, t => t.date)) html += `<h2>${dayLong(date)}</h2>${talkTable(group, { session: true, clashes })}`;
+  return html;
+}
+
+function renderSearch() {
+  const q = fold(state.query.trim());
+  const terms = q.split(/\s+/).filter(Boolean);
+  const hits = TALKS.filter(t => { const hay = fold([t.speaker, t.title, t.session, t.affiliation, t.room].join(" ")); return terms.every(w => hay.includes(w)); });
+  let html = `<h2>${hits.length} talk${hits.length === 1 ? "" : "s"} matching “${esc(state.query.trim())}”</h2>`;
+  if (!hits.length) return html + `<p class="empty">Try a surname, a word from a title, or a room.</p>`;
+  for (const [date, group] of groupBy(hits, t => t.date)) html += `<h2>${dayLong(date)}</h2>${talkTable(group, { session: true })}`;
+  return html;
+}
+
+function render() {
+  const searching = state.query.trim().length >= 2;
+  document.querySelectorAll(".bar .tab").forEach(b => {
+    if (!searching && b.dataset.view === state.view) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current");
+  });
+  typesetClear();
+  main.innerHTML = searching ? renderSearch()
+    : state.view === "day" ? renderDay()
+    : state.view === "mine" ? renderMine()
+    : renderSession();
+  updateCount();
+  typeset();
+}
+
+/* ---------- MathJax (optional) ---------- */
+function typesetClear() { try { window.MathJax?.typesetClear?.([main]); } catch { } }
+function typeset() {
+  const MJ = window.MathJax;
+  if (!MJ || !MJ.startup || !MJ.startup.promise) return;   // not loaded yet: it typesets the page when it arrives
+  MJ.startup.promise = MJ.startup.promise.then(() => MJ.typesetPromise([main])).catch(() => { });
+}
+
+/* ---------- address bar (#session=…, #day=…, #mine) ---------- */
+function readHash() {
+  let h = location.hash.slice(1);
+  try { h = decodeURIComponent(h); } catch { }
+  if (h.startsWith("session=")) { state.view = "session"; state.session = h.slice(8); }
+  else if (h.startsWith("day=")) { state.view = "day"; state.day = h.slice(4); }
+  else if (h === "mine") state.view = "mine";
+  else if (h === "day") state.view = "day";
+  else if (h === "" || h === "session") { state.view = "session"; state.session = ""; }
+}
+function setHash(h) {
+  const target = h ? "#" + h : location.pathname + location.search;
+  if (("#" + h) === location.hash) return;
+  history.pushState(null, "", h ? "#" + h : target);
+}
+function defaultDay() {
+  const t = new Date(), today = isoOf(t.getFullYear(), t.getMonth() + 1, t.getDate());
+  return DATES.includes(today) ? today : DATES[0];
+}
+
+/* ---------- calendar file ---------- */
+function icsEscape(s) { return String(s ?? "").replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n"); }
+function icsFold(line) {
+  const enc = new TextEncoder(); let out = "", cur = "", bytes = 0;
+  for (const ch of line) {
+    const b = enc.encode(ch).length;
+    if (bytes + b > 74) { out += cur + "\r\n "; cur = ""; bytes = 1; }
+    cur += ch; bytes += b;
+  }
+  return out + cur;
+}
+function utcStamp(date, minutes) {
+  const { y, m, d } = dateParts(date);
+  const mm = CONFIG.utcOffset.match(/^([+-])(\d{2}):?(\d{2})$/);
+  const off = mm ? (mm[1] === "-" ? -1 : 1) * (+mm[2] * 60 + +mm[3]) : 0;
+  return new Date(Date.UTC(y, m - 1, d, 0, minutes - off)).toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
+}
+function buildICS(talks) {
+  const now = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//" + CONFIG.uidDomain + "//Programme//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:" + icsEscape(CONFIG.calendarName)];
+  for (const t of talks) {
+    const desc = [t.session, t.speaker + (t.affiliation ? " (" + t.affiliation + ")" : ""), t.abstract].filter(Boolean).join("\n\n");
+    lines.push("BEGIN:VEVENT", "UID:" + t.id + "@" + CONFIG.uidDomain, "DTSTAMP:" + now,
+      "DTSTART:" + utcStamp(t.date, t.start), "DTEND:" + utcStamp(t.date, t.end),
+      "SUMMARY:" + icsEscape(t.speaker ? `${t.speaker}: ${t.title}` : t.title),
+      "LOCATION:" + icsEscape(t.room), "DESCRIPTION:" + icsEscape(desc), "END:VEVENT");
+  }
+  lines.push("END:VCALENDAR");
+  return lines.map(icsFold).join("\r\n") + "\r\n";
+}
+function download(name, text, type) {
+  const url = URL.createObjectURL(new Blob([text], { type }));
+  const a = document.createElement("a"); a.href = url; a.download = name;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 2000);
+}
+function shareUrl() {
+  const ids = pickedTalks().map(t => encodeURIComponent(t.id)).join(",");
+  return location.origin + location.pathname + "?my=" + ids + "#mine";
+}
+function setStatus(msg) { const s = $("#status"); if (s) s.textContent = msg; }
+
+/* ---------- events ---------- */
+main.addEventListener("change", e => {
+  const box = e.target.closest('input[type="checkbox"][data-id]');
+  if (box) {
+    const id = box.dataset.id;
+    if (box.checked) picks.add(id); else picks.delete(id);
+    savePicks(); updateCount();
+    const t = BY_ID.get(id);
+    document.querySelectorAll(`tr[data-id="${CSS.escape(id)}"]`).forEach(tr => {
+      tr.classList.toggle("is-picked", box.checked);
+      if (state.view === "mine" && !state.query) tr.classList.toggle("is-removed", !box.checked);
+      const sr = tr.querySelector(".sr"); if (sr && t) sr.textContent = `${box.checked ? "Remove" : "Add"} “${t.title || t.speaker}” ${box.checked ? "from" : "to"} my programme`;
+      const other = tr.querySelector('input[type="checkbox"]'); if (other && other !== box) other.checked = box.checked;
+    });
+    return;
+  }
+  if (e.target.id === "session-select") { state.session = e.target.value; setHash(state.session ? "session=" + encodeURIComponent(state.session) : "session"); render(); }
+});
+
+let clearArmed = null;
+main.addEventListener("click", e => {
+  const chip = e.target.closest("[data-session]");
+  if (chip) { state.session = chip.dataset.session; setHash("session=" + encodeURIComponent(state.session)); render(); window.scrollTo({ top: 0 }); return; }
+  const day = e.target.closest("[data-day]");
+  if (day) { state.day = day.dataset.day; setHash("day=" + state.day); render(); return; }
+  const go = e.target.closest("[data-goto]");
+  if (go) { e.preventDefault(); showView(go.dataset.goto); return; }
+  const act = e.target.closest("[data-act]")?.dataset.act;
+  if (!act) return;
+  if (act === "ics") { download(CONFIG.calendarFileName, buildICS(pickedTalks()), "text/calendar;charset=utf-8"); setStatus("Calendar file downloaded. Open it to add the talks to your calendar."); }
+  if (act === "print") window.print();
+  if (act === "share") {
+    const url = shareUrl(), box = $("#share-out"), input = $("#share-url");
+    box.hidden = false; input.value = url;
+    const done = () => setStatus("Link copied. Open it on another device to see this programme there.");
+    const fallback = () => { input.focus(); input.select(); setStatus("Copy the link above to open this programme on another device."); };
+    if (navigator.clipboard?.writeText) navigator.clipboard.writeText(url).then(done, fallback); else fallback();
+  }
+  if (act === "clear") {
+    const btn = e.target.closest("[data-act]");
+    if (clearArmed) { clearTimeout(clearArmed); clearArmed = null; picks.clear(); savePicks(); render(); return; }
+    btn.textContent = "Click again to clear everything";
+    clearArmed = setTimeout(() => { clearArmed = null; btn.textContent = "Clear all"; }, 4000);
+  }
+  if (act === "incoming-add") { incoming.forEach(id => picks.add(id)); incoming = null; savePicks(); render(); }
+  if (act === "incoming-replace") { picks = new Set(incoming); incoming = null; savePicks(); render(); }
+  if (act === "incoming-ignore") { incoming = null; render(); }
+});
+
+function showView(view) {
+  state.view = view; state.query = ""; $("#search").value = "";
+  if (view === "session") setHash(state.session ? "session=" + encodeURIComponent(state.session) : "session");
+  else if (view === "day") setHash("day=" + (DATES.includes(state.day) ? state.day : defaultDay()));
+  else setHash("mine");
+  render();
+}
+document.querySelectorAll(".bar .tab").forEach(b => b.addEventListener("click", () => showView(b.dataset.view)));
+$("#search").addEventListener("input", e => {
+  const was = state.query.trim().length >= 2;
+  state.query = e.target.value;
+  if (was || state.query.trim().length >= 2) render();
+});
+window.addEventListener("popstate", () => { readHash(); render(); });
+window.addEventListener("hashchange", () => { readHash(); render(); });
+window.addEventListener("storage", e => { if (e.key === CONFIG.storageKey) { picks = loadPicks(); render(); } });
+
+/* ---------- start ---------- */
+async function start() {
+  document.title = CONFIG.title;
+  $("#conf-title").textContent = CONFIG.title;
+  $("#conf-sub").textContent = CONFIG.subtitle;
+  if (CONFIG.notice) { $("#notice").textContent = CONFIG.notice; $("#notice").hidden = false; }
+  if (CONFIG.siteUrl) $("#site-link").innerHTML = `Conference website: <a href="${esc(CONFIG.siteUrl)}">${esc(CONFIG.siteUrl.replace(/^https?:\/\//, "").replace(/\/$/, ""))}</a>`;
+  picks = loadPicks();
+
+  let text;
+  try {
+    const res = await fetch(CONFIG.dataUrl, { cache: "no-cache" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    text = await res.text();
+  } catch (err) {
+    const local = location.protocol === "file:";
+    main.innerHTML = `<div class="error"><strong>The programme couldn't be loaded.</strong><br>
+      ${local ? "This page was opened straight from a file on your computer, and browsers block it from reading the programme file that way. Upload it to GitHub Pages, or start a small local web server (see the README)."
+              : `Tried to read <code>${esc(CONFIG.dataUrl)}</code> (${esc(err.message)}). Check that the file exists, or that the Google Sheet is published to the web as CSV.`}</div>`;
+    return;
+  }
+  if (/^\s*<!doctype html|^\s*<html/i.test(text)) {
+    main.innerHTML = `<div class="error"><strong>The programme link returned a web page, not a CSV file.</strong><br>In Google Sheets, use File → Share → Publish to web and choose “Comma-separated values (.csv)”.</div>`;
+    return;
+  }
+
+  const { talks, warnings } = buildTalks(parseCSV(text));
+  TALKS = talks;
+  BY_ID = new Map(talks.map(t => [t.id, t]));
+  const names = [...new Set(talks.map(t => t.session))];
+  const pinned = CONFIG.pinnedSessions.filter(s => names.includes(s));
+  SESSIONS = pinned.concat(names.filter(s => !pinned.includes(s)).sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" })));
+  DATES = [...new Set(CONFIG.conferenceDates.concat(talks.map(t => t.date)))].sort();
+
+  if (warnings.length) {
+    console.warn("Programme data:\n" + warnings.join("\n"));
+    if (CONFIG.showDataWarnings) {
+      const w = $("#data-warnings");
+      w.innerHTML = `<strong>Data check (for organisers):</strong> ${warnings.length} problem${warnings.length === 1 ? "" : "s"} found in the spreadsheet.<br>${warnings.slice(0, 12).map(esc).join("<br>")}${warnings.length > 12 ? "<br>…" : ""}`;
+      w.hidden = false;
+    }
+  }
+
+  // A shared link: ?my=T001,T014,...
+  const params = new URLSearchParams(location.search);
+  if (params.has("my")) {
+    const ids = params.get("my").split(",").map(s => s.trim()).filter(id => BY_ID.has(id));
+    history.replaceState(null, "", location.pathname + "#mine");
+    if (ids.length) {
+      if (!picks.size) { ids.forEach(id => picks.add(id)); savePicks(); }
+      else if (!ids.every(id => picks.has(id))) incoming = ids;
+    }
+  }
+  readHash();
+  render();
+}
+start();
+</script>
+</body>
+</html>
