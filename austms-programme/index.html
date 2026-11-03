@@ -6,7 +6,7 @@
 <title>AustMS 2026 Programme</title>
 <meta name="description" content="Programme for the 70th Annual Meeting of the Australian Mathematical Society, The University of Western Australia, 1–4 December 2026.">
 
-<!-- Renders LaTeX ($...$) in titles and abstracts. Delete these two script tags if you don't need it. -->
+<!-- Renders LaTeX ($...$, \(...\), $$...$$, \begin{align}...) in titles and abstracts. -->
 <script>
   window.MathJax = {
     tex: { inlineMath: [["$", "$"], ["\\(", "\\)"]], processEscapes: true },
@@ -29,6 +29,7 @@
   --picked: #fbf0e4;    /* background of a ticked talk */
   --warn: #9a3f12;
   --warn-bg: #fdeee3;
+  --ok: #2f6b3a;
   --chip: #f5efed;
   --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color-scheme: light;
@@ -37,22 +38,19 @@
   :root:not([data-theme="light"]) {
     --bg: #17151a; --fg: #ece6e5; --muted: #a99ea1; --line: #3a3337; --head: #47313a;
     --accent: #e7a6b1; --accent-fg: #1b1016; --picked: #302720; --warn: #f2a878; --warn-bg: #3a2519;
-    --chip: #28232a; color-scheme: dark;
+    --ok: #8fd19e; --chip: #28232a; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #17151a; --fg: #ece6e5; --muted: #a99ea1; --line: #3a3337; --head: #47313a;
   --accent: #e7a6b1; --accent-fg: #1b1016; --picked: #302720; --warn: #f2a878; --warn-bg: #3a2519;
-  --chip: #28232a; color-scheme: dark;
+  --ok: #8fd19e; --chip: #28232a; color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; }
-body {
-  margin: 0; background: var(--bg); color: var(--fg);
-  font: 16px/1.5 var(--font);
-}
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 var(--font); }
 .wrap {
   max-width: 76rem; margin: 0 auto;
   padding-left: max(16px, env(safe-area-inset-left, 0px));
@@ -64,10 +62,7 @@ h1 { font-size: clamp(1.6rem, 1.2rem + 1.8vw, 2.4rem); line-height: 1.15; margin
 .notice { margin: .9rem 0 0; padding: .55rem .8rem; border-radius: 6px; background: var(--warn-bg); color: var(--warn); font-size: .9rem; }
 
 /* Tab bar + search */
-.bar {
-  position: sticky; top: 0; z-index: 5; background: var(--bg);
-  border-bottom: 1px solid var(--line);
-}
+.bar { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); }
 .bar .wrap { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; justify-content: space-between; padding-block: .6rem; }
 .tabs { display: flex; flex-wrap: wrap; gap: .35rem; }
 .tab {
@@ -88,6 +83,7 @@ h1 { font-size: clamp(1.6rem, 1.2rem + 1.8vw, 2.4rem); line-height: 1.15; margin
 main { padding-block: 1.25rem 3rem; min-height: 50vh; }
 h2 { font-size: clamp(1.2rem, 1.05rem + .7vw, 1.55rem); font-weight: 500; margin: 2rem 0 .75rem; text-wrap: balance; }
 h2:first-child { margin-top: .5rem; }
+h3 { font-size: 1.05rem; margin: 1.5rem 0 .5rem; }
 .lead { display: block; margin: 0 0 .6rem; }
 select {
   font: inherit; width: 100%; max-width: 36rem; padding: .5rem .7rem;
@@ -104,27 +100,27 @@ select {
 .chip:hover { border-color: var(--accent); }
 .chip small { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
 
-/* Day buttons */
 .days { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .5rem; }
 .days .tab { font-variant-numeric: tabular-nums; }
-.talks tr.slot-row th {
-  text-align: left; font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums;
-  padding: 1.1rem .7rem .4rem; border-bottom: 2px solid var(--head);
-}
 
 /* Talk tables */
 .table-wrap { overflow-x: auto; }
 table.talks { width: 100%; border-collapse: collapse; font-size: .97rem; }
 .talks thead th { background: var(--head); text-align: left; font-weight: 600; padding: .6rem .7rem; white-space: nowrap; }
 .talks td { padding: .6rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.talks tr.slot-row th {
+  text-align: left; font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums;
+  padding: 1.1rem .7rem .4rem; border-bottom: 2px solid var(--head);
+}
 .talks .c-pick { width: 2.75rem; padding-right: 0; }
 .talks .c-time { width: 7.5rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .talks .c-session { width: 13rem; }
 .talks td.c-session { color: var(--muted); }
 .talks .c-speaker { width: 15rem; }
 .talks .c-room { width: 8rem; text-align: right; white-space: nowrap; }
-.talks thead .c-room { text-align: right; }
 .aff { display: block; color: var(--muted); font-size: .85rem; }
+.tba { color: var(--muted); font-style: italic; }
+.badge { display: inline-block; margin-left: .35rem; padding: 0 .45rem; border-radius: 999px; font-size: .75rem; font-weight: 600; letter-spacing: .02em; vertical-align: .1em; background: var(--head); color: var(--fg); }
 tr.is-picked td { background: var(--picked); }
 tr.is-removed td { opacity: .45; }
 tr.is-clash td:first-child { box-shadow: inset 3px 0 0 var(--warn); }
@@ -133,7 +129,10 @@ tr.is-clash td:first-child { box-shadow: inset 3px 0 0 var(--warn); }
 .pick input { width: 1.15rem; height: 1.15rem; accent-color: var(--accent); cursor: pointer; margin: 0; }
 details summary { cursor: pointer; }
 details summary::marker { color: var(--muted); }
-.abstract { margin: .45rem 0 .2rem; color: var(--muted); font-size: .92rem; white-space: pre-line; max-width: 65ch; }
+.abstract { margin: .45rem 0 .2rem; color: var(--muted); font-size: .92rem; max-width: 70ch; overflow-x: auto; }
+.abstract p { margin: 0 0 .55rem; }
+.abstract .authors { color: var(--fg); }
+.abstract a { color: var(--accent); overflow-wrap: anywhere; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* My programme */
@@ -144,8 +143,9 @@ details summary::marker { color: var(--muted); }
 }
 .btn.ghost { background: transparent; color: var(--accent); }
 .btn.danger { border-color: var(--warn); color: var(--warn); background: transparent; }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
 .hint { color: var(--muted); font-size: .92rem; max-width: 65ch; }
-.empty { padding: 2rem 0; color: var(--muted); max-width: 60ch; }
+.empty { padding: 1.5rem 0; color: var(--muted); max-width: 60ch; }
 .banner { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; padding: .7rem .9rem; margin-bottom: 1rem; border-radius: 8px; background: var(--chip); border: 1px solid var(--line); }
 .banner p { margin: 0; flex: 1 1 18rem; }
 .share-out { display: flex; gap: .5rem; margin: .5rem 0 1rem; flex-wrap: wrap; }
@@ -155,7 +155,21 @@ details summary::marker { color: var(--muted); }
 footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
 footer .wrap { padding-block: 1.25rem 2rem; }
 footer a, main a { color: var(--accent); }
-.warnings { margin-top: .75rem; font-size: .85rem; }
+
+/* Organiser check */
+.stats { display: flex; flex-wrap: wrap; gap: .5rem; margin: .75rem 0 1rem; padding: 0; list-style: none; }
+.stats li { padding: .5rem .8rem; border-radius: 8px; background: var(--chip); border: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.stats strong { font-size: 1.15rem; margin-right: .3rem; }
+.problems { padding-left: 1.2rem; max-width: 75ch; }
+.problems li { margin-bottom: .35rem; }
+.problems .kind { font-weight: 600; color: var(--warn); }
+.problems .info { font-weight: 600; color: var(--muted); }
+.all-good { color: var(--ok); font-weight: 600; }
+table.grid { border-collapse: collapse; font-size: .92rem; font-variant-numeric: tabular-nums; }
+table.grid th, table.grid td { padding: .4rem .65rem; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
+table.grid th:first-child, table.grid td:first-child, table.grid th:nth-child(2), table.grid td:nth-child(2) { text-align: left; }
+table.grid thead th { background: var(--head); }
+.file-pick { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; padding: .8rem 1rem; border: 1px dashed var(--line); border-radius: 8px; margin: 1rem 0; }
 
 /* Phones: rows become stacked cards */
 @media screen and (max-width: 720px) {
@@ -190,17 +204,16 @@ footer a, main a { color: var(--accent); }
   .talks .c-pick { display: none; }
   body { font-size: 11pt; background: #fff; color: #000; }
   tr { break-inside: avoid; }
-  h2 { break-after: avoid; }
+  h2 { break-after: avoid; margin: 1rem 0 .4rem; }
   .abstract { display: none; }
   tr.is-picked td { background: none; }
-  .talks td, .talks thead th { padding: .35rem .45rem; }
   .table-wrap { overflow: visible; }
   table.talks { table-layout: fixed; font-size: 10pt; }
+  .talks td, .talks thead th { padding: .35rem .45rem; }
   .talks .c-time { width: 6.2rem; } .talks .c-session { width: 8.5rem; } .talks .c-speaker { width: 9.5rem; }
   .talks .c-room { width: 6rem; white-space: normal; }
   details summary { list-style: none; }
   details summary::-webkit-details-marker { display: none; }
-  h2 { margin: 1rem 0 .4rem; }
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
 </style>
@@ -221,7 +234,7 @@ footer a, main a { color: var(--accent); }
       <button class="tab" type="button" data-view="mine">My programme <span class="count" id="pick-count">0</span></button>
     </div>
     <div class="search">
-      <label class="sr" for="search">Search speakers and titles</label>
+      <label class="sr" for="search">Search speakers, authors and titles</label>
       <input id="search" type="search" placeholder="Search speaker, title or room" autocomplete="off">
     </div>
   </div>
@@ -235,7 +248,6 @@ footer a, main a { color: var(--accent); }
   <div class="wrap">
     <div>Tick the box next to a talk to add it to <strong>My programme</strong>. Your choices are saved in this browser on this device.</div>
     <div id="site-link"></div>
-    <div class="warnings" id="data-warnings" hidden></div>
   </div>
 </footer>
 
@@ -244,31 +256,62 @@ footer a, main a { color: var(--accent); }
    SETTINGS — this is the only part you normally need to edit.
    ===================================================================== */
 const CONFIG = {
-  // Where the programme comes from. Either a CSV file next to this page...
-  dataUrl: "programme.csv",
-  // ...or a Google Sheet: File → Share → Publish to web → pick the tab → "Comma-separated values (.csv)" → Publish,
-  // then paste the link it gives you here, e.g.
-  // dataUrl: "https://docs.google.com/spreadsheets/d/e/XXXXXXXX/pub?gid=0&single=true&output=csv",
+  // The programme data: the JSON export from the registration system (or the
+  // public-only copy made on the check page, …/#check). A CSV file also works.
+  dataUrl: "programme.json",
 
   title: "AustMS 2026 Programme",
   subtitle: "70th Annual Meeting of the Australian Mathematical Society · The University of Western Australia · 1–4 December 2026",
   siteUrl: "https://austms2026.org.au/",
 
-  // Shown in an orange box under the title. Set to "" once the real programme is in.
-  notice: "Sample data only: the speakers and titles below are made up for testing.",
+  // Shown in an orange box under the title. Set to "" to hide it.
+  notice: "Provisional programme. Times and rooms will appear as each session is timetabled.",
 
-  // Conference days, used for the "By day" buttons and to read dates written as "Tuesday" or "Day 2".
+  // Only talks with one of these values in the export's "accepted" field are shown.
+  // Use [] to show every talk.
+  showStatuses: ["Accepted"],
+
+  // Conference days. A timetable value such as "Wednesday 13:30:00" is placed on the matching date.
   conferenceDates: ["2026-12-01", "2026-12-02", "2026-12-03", "2026-12-04"],
   utcOffset: "+08:00",          // Perth time (no daylight saving). Used for calendar files.
-  defaultTalkMinutes: 30,       // used when a row has no end time
-  pinnedSessions: ["Plenary lectures"],  // listed first in the session menu; the rest are alphabetical
+
+  // Talk lengths in minutes, used to work out end times.
+  defaultMinutes: 30,           // a normal talk
+  keynoteMinutes: 60,           // talks with keynote = 1
+
+  // Session codes used in the export → the name shown on the page, the room, and (optionally) the talk length.
+  // The menu lists sessions in this order. Fill in rooms when they are known.
+  sessions: [
+    { code: "Plen",      name: "Plenary lectures",                              room: "", minutes: 60 },
+    { code: "Public",    name: "Public lecture",                                room: "", minutes: 60 },
+    { code: "Ed Aft",    name: "Education Afternoon",                           room: "" },
+    { code: "Al Comb",   name: "Algebra and Combinatorics",                     room: "" },
+    { code: "App Ind",   name: "Applied and industrial mathematics",            room: "" },
+    { code: "Categ",     name: "Category Theory, Homotopy Theory, and K-Theory", room: "" },
+    { code: "Comp Math", name: "Computational Mathematics",                     room: "" },
+    { code: "CED",       name: "Cryptography, elliptic curves and dynamics",    room: "" },
+    { code: "Geom Sym",  name: "Differential Geometry and Symmetry",            room: "" },
+    { code: "EDI",       name: "Equity, Diversity and Inclusion",               room: "" },
+    { code: "Dyn Erg",   name: "Ergodic Theory and Dynamical Systems",          room: "" },
+    { code: "Fun Anal",  name: "Functional Analysis",                           room: "" },
+    { code: "Geom Anal", name: "Geometric Analysis",                            room: "" },
+    { code: "Harm An",   name: "Harmonic Analysis and Hamiltonian PDE",         room: "" },
+    { code: "Math Phys", name: "Mathematical Physics",                          room: "" },
+    { code: "Math Edu",  name: "Mathematics Education",                         room: "" },
+    { code: "Outreach",  name: "Mathematics outreach and engagement",           room: "" },
+    { code: "NL PDE",    name: "Nonlinear PDEs and their applications",         room: "" },
+    { code: "Num Th",    name: "Number theory",                                 room: "" },
+    { code: "Opt",       name: "Optimisation",                                  room: "" },
+    { code: "Prob Stat", name: "Probability and Mathematical Statistics",       room: "" },
+    { code: "Rep",       name: "Representation Theory",                         room: "" },
+    { code: "SDE",       name: "Stochastic differential equations",             room: "" },
+    { code: "Top",       name: "Topology",                                      room: "" }
+  ],
 
   storageKey: "austms2026-my-programme",
   calendarFileName: "AustMS2026-my-programme.ics",
   calendarName: "AustMS 2026 – my programme",
-  uidDomain: "austms2026.org.au",
-
-  showDataWarnings: true        // lists spreadsheet rows that couldn't be read (set false when the programme is final)
+  uidDomain: "austms2026.org.au"
 };
 
 /* =====================================================================
@@ -279,18 +322,20 @@ const main = $("#main");
 const WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-let TALKS = [];             // all talks, sorted by date and time
+let DATA = null;            // the programme being shown (see analyse())
+let TALKS = [];             // talks shown on the page: scheduled first (by time), then unscheduled
 let BY_ID = new Map();
 let SESSIONS = [];          // session names in menu order
-let DATES = [];             // dates that have talks (plus conferenceDates)
+let DATES = [];
+let PUBLISHED = null;       // the analysed published file
+let CHECK = null;           // the file shown on the check page
+let previewName = "";
 let picks = new Set();
 const state = { view: "session", session: "", day: "", query: "" };
 
 /* ---------- small helpers ---------- */
-function esc(s) {
-  return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-}
-function fold(s) { return String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
+function esc(s) { return String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+function fold(s) { return String(s ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim(); }
 function pad(n) { return String(n).padStart(2, "0"); }
 function fmtTime(min) { return `${pad(Math.floor(min / 60))}:${pad(min % 60)}`; }
 function dateParts(iso) { const [y, m, d] = iso.split("-").map(Number); return { y, m, d, wd: new Date(Date.UTC(y, m - 1, d)).getUTCDay() }; }
@@ -298,41 +343,75 @@ function dayLong(iso) { const p = dateParts(iso); return `${WEEKDAYS[p.wd]} ${p.
 function dayShort(iso) { const p = dateParts(iso); return `${WEEKDAYS[p.wd].slice(0, 3)} ${p.d} ${MONTHS[p.m - 1].slice(0, 3)}`; }
 function isoOf(y, m, d) { return `${y}-${pad(m)}-${pad(d)}`; }
 function validDate(y, m, d) { const t = new Date(Date.UTC(y, m - 1, d)); return t.getUTCFullYear() === +y && t.getUTCMonth() === m - 1 && t.getUTCDate() === +d; }
+function plural(n, word) { return `${n} ${word}${n === 1 ? "" : "s"}`; }
+function shortHash(s) { let h = 2166136261; for (const ch of s) { h ^= ch.codePointAt(0); h = Math.imul(h, 16777619); } return (h >>> 0).toString(36); }
+const HONORIFICS = /^(?:(?:emeritus|emerita|adjunct|assoc|associate|asst|assistant|a\/prof|prof|professor|dr|mr|mrs|ms|miss|mx|sir|dame)\.?\s+)+/i;
+function bareName(name) { return String(name || "").replace(HONORIFICS, "").trim(); }
+function surname(name) { const w = bareName(name).split(/\s+/); return w[w.length - 1] || ""; }
 
-/* ---------- CSV ---------- */
+/* ---------- reading the data file ---------- */
 function parseCSV(text) {
   const rows = []; let row = [], field = "", q = false;
-  text = text.replace(/^\uFEFF/, "");
   for (let i = 0; i < text.length; i++) {
     const c = text[i];
-    if (q) {
-      if (c === '"') { if (text[i + 1] === '"') { field += '"'; i++; } else q = false; }
-      else field += c;
-    } else if (c === '"') q = true;
+    if (q) { if (c === '"') { if (text[i + 1] === '"') { field += '"'; i++; } else q = false; } else field += c; }
+    else if (c === '"') q = true;
     else if (c === ",") { row.push(field); field = ""; }
     else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
     else if (c !== "\r") field += c;
   }
   if (field !== "" || row.length) { row.push(field); rows.push(row); }
-  return rows.filter(r => r.some(f => f.trim() !== ""));
+  const [head, ...body] = rows.filter(r => r.some(f => f.trim() !== ""));
+  return body.map(r => Object.fromEntries((head || []).map((h, i) => [h, r[i] ?? ""])));
+}
+/* Returns an array of talk records from JSON ({"talks": [...]} or [...]) or CSV text. */
+function parseData(text) {
+  text = text.replace(/^\uFEFF/, "");
+  const t = text.trim();
+  if (/^<(!doctype|html)/i.test(t)) throw new Error("The link returned a web page, not a JSON or CSV file.");
+  if (t.startsWith("{") || t.startsWith("[")) {
+    let j;
+    try { j = JSON.parse(t); } catch (e) { throw new Error("The JSON file couldn't be read: " + e.message); }
+    const list = Array.isArray(j) ? j : (j.talks || j.programme || j.program || j.data || Object.values(j).find(Array.isArray));
+    if (!Array.isArray(list)) throw new Error("The JSON file has no list of talks (expected {\"talks\": [ … ]}).");
+    return list.filter(r => r && typeof r === "object");
+  }
+  return parseCSV(text);
 }
 
-const COLUMN_NAMES = {
-  id: ["id", "talkid", "code", "ref"],
+/* Field names accepted in the data (capitals, spaces and punctuation are ignored). */
+const FIELD_NAMES = {
+  id: ["id", "talkid", "ref"],
+  session: ["session", "sessioncode", "specialsession", "stream", "track"],
+  speaker: ["speaker", "presenter", "name", "speakers"],
+  authors: ["authors", "author", "coauthors"],
+  affiliation: ["affiliation", "institution", "university", "organisation", "organization"],
+  title: ["title", "talktitle", "talk"],
+  abstract: ["abstract", "summary", "description"],
+  room: ["room", "venue", "location"],
+  keynote: ["keynote", "invited"],
+  status: ["accepted", "status", "decision"],
+  slot: ["timetabled", "timeslot", "slot", "scheduled", "when"],
   date: ["date", "day"],
   start: ["start", "starttime", "from", "time", "begin"],
   end: ["end", "endtime", "to", "finish", "until"],
-  session: ["session", "specialsession", "stream", "track"],
-  speaker: ["speaker", "name", "presenter", "speakers"],
-  affiliation: ["affiliation", "institution", "university", "organisation", "organization"],
-  title: ["title", "talktitle", "talk"],
-  room: ["room", "venue", "location"],
-  abstract: ["abstract", "summary", "description"]
+  minutes: ["minutes", "duration", "length"],
+  days: ["days", "availability", "available"]
 };
+function normalise(rec) {
+  const byKey = {};
+  for (const [k, v] of Object.entries(rec)) byKey[fold(k).replace(/[^a-z0-9]/g, "")] = v;
+  const r = {};
+  for (const [field, names] of Object.entries(FIELD_NAMES)) {
+    const k = names.find(n => byKey[n] !== undefined && byKey[n] !== null);
+    r[field] = k === undefined ? "" : String(byKey[k]).trim();
+  }
+  return r;
+}
 
-/* Dates: 2026-12-01, 1/12/2026 (Australian order), "Tuesday 1 December 2026", "Tuesday", "Day 2". */
+/* Dates: 2026-12-01, 1/12/2026, "Tuesday 1 December 2026", "Tuesday", "Day 2". */
 function parseDate(raw) {
-  const s = raw.trim(); if (!s) return null;
+  const s = String(raw).trim(); if (!s) return null;
   let m = s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
   if (m && validDate(+m[1], +m[2], +m[3])) return isoOf(+m[1], +m[2], +m[3]);
   m = s.match(/^(\d{1,2})[\/.](\d{1,2})[\/.](\d{2,4})$/);
@@ -341,73 +420,269 @@ function parseDate(raw) {
     const dmy = validDate(y, +m[2], +m[1]) ? isoOf(y, +m[2], +m[1]) : null;
     const mdy = validDate(y, +m[1], +m[2]) ? isoOf(y, +m[1], +m[2]) : null;
     if (dmy && CONFIG.conferenceDates.includes(dmy)) return dmy;
-    if (mdy && CONFIG.conferenceDates.includes(mdy)) return mdy;   // sheet set to US date format
+    if (mdy && CONFIG.conferenceDates.includes(mdy)) return mdy;
     return dmy || mdy;
   }
-  m = s.match(/(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]{3,})\.?,?\s+(\d{4})/) || null;
+  m = s.match(/(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]{3,})\.?,?\s+(\d{4})/);
   if (m) { const mi = MONTHS.findIndex(x => x.toLowerCase().startsWith(m[2].toLowerCase().slice(0, 3))); if (mi >= 0 && validDate(+m[3], mi + 1, +m[1])) return isoOf(+m[3], mi + 1, +m[1]); }
-  m = s.match(/([A-Za-z]{3,})\.?\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})/);
-  if (m) { const mi = MONTHS.findIndex(x => x.toLowerCase().startsWith(m[1].toLowerCase().slice(0, 3))); if (mi >= 0 && validDate(+m[3], mi + 1, +m[2])) return isoOf(+m[3], mi + 1, +m[2]); }
   m = s.match(/^day\s*(\d+)$/i);
   if (m && CONFIG.conferenceDates[+m[1] - 1]) return CONFIG.conferenceDates[+m[1] - 1];
   const wd = WEEKDAYS.findIndex(w => fold(s).startsWith(w.slice(0, 3).toLowerCase()));
   if (wd >= 0) { const hit = CONFIG.conferenceDates.find(iso => dateParts(iso).wd === wd); if (hit) return hit; }
   return null;
 }
-
-/* Times: 13:30, 13.30, 13:30:00, 1:30 PM. A range "13:30–14:00" gives both. */
+/* Times: 13:30, 13.30, 13:30:00, 1:30 PM. */
 function parseTime(raw) {
   const m = String(raw).trim().match(/^(\d{1,2})[:.](\d{2})(?::\d{2})?\s*([ap])?\.?\s*m?\.?$/i);
   if (!m) return null;
   let h = +m[1]; const min = +m[2];
   if (m[3]) { const pm = m[3].toLowerCase() === "p"; if (h === 12) h = pm ? 12 : 0; else if (pm) h += 12; }
-  if (h > 23 || min > 59) return null;
-  return h * 60 + min;
+  return h > 23 || min > 59 ? null : h * 60 + min;
 }
-function splitRange(raw) {
-  const parts = String(raw).split(/\s*(?:–|—|-|to)\s*/i).filter(Boolean);
-  return parts.length === 2 ? parts : null;
+/* A timetable slot such as "Wednesday 13:30:00", "2026-12-02 13:30", "Wed 13:30–14:00". */
+function parseSlot(raw) {
+  let s = String(raw).trim(); if (!s) return null;
+  let date = null;
+  const dm = s.match(/\d{4}-\d{1,2}-\d{1,2}|\b\d{1,2}\/\d{1,2}\/\d{2,4}\b/);
+  if (dm) { date = parseDate(dm[0]); s = s.replace(dm[0], " "); }
+  if (!date) { const w = s.match(/\b(mon|tue|wed|thu|fri|sat|sun)[a-z]*\.?/i); if (w) date = parseDate(w[0]); }
+  if (!date) { const d = s.match(/\bday\s*\d+\b/i); if (d) { date = parseDate(d[0]); s = s.replace(d[0], " "); } }
+  const times = [...s.matchAll(/\b\d{1,2}[:.]\d{2}(?::\d{2})?(?:\s*[ap]\.?m\.?)?/gi)].map(m => parseTime(m[0])).filter(t => t !== null);
+  return { date, start: times.length ? times[0] : null, end: times.length > 1 ? times[1] : null };
 }
 
-function shortHash(s) { let h = 2166136261; for (const ch of s) { h ^= ch.codePointAt(0); h = Math.imul(h, 16777619); } return (h >>> 0).toString(36); }
-
-function buildTalks(rows) {
-  const warnings = [];
-  if (!rows.length) return { talks: [], warnings: ["The spreadsheet is empty."] };
-  const header = rows[0].map(h => fold(h).replace(/[^a-z0-9]/g, ""));
-  const col = {};
-  for (const [key, names] of Object.entries(COLUMN_NAMES)) {
-    const idx = header.findIndex(h => names.includes(h));
-    if (idx >= 0) col[key] = idx;
-  }
-  for (const need of ["date", "start", "title"]) if (col[need] === undefined) warnings.push(`No “${need}” column found in the header row.`);
-  const get = (r, k) => (col[k] === undefined ? "" : (r[col[k]] ?? "").trim());
-  const talks = [], seen = new Set();
-  rows.slice(1).forEach((r, i) => {
-    const line = i + 2;
-    const date = parseDate(get(r, "date"));
-    let startRaw = get(r, "start"), endRaw = get(r, "end");
-    const range = splitRange(startRaw);
-    if (range && !endRaw) { [startRaw, endRaw] = range; }
-    const start = parseTime(startRaw);
-    let end = endRaw ? parseTime(endRaw) : null;
-    const title = get(r, "title"), speaker = get(r, "speaker");
-    if (!date || start === null || (!title && !speaker)) {
-      warnings.push(`Row ${line}: skipped (couldn't read ${!date ? "the date" : start === null ? "the start time" : "a title or speaker"}).`);
-      return;
+/* ---------- LaTeX in titles and abstracts ----------
+   Maths ($…$, \(…\), $$…$$, \[…\], equation/align/… environments) is left for MathJax.
+   Text-mode LaTeX (accents, \emph, \textbf, \href, ``quotes'', --, ~, lists, thebibliography, …)
+   is turned into ordinary text and HTML. */
+const MATH_ENVS = /^\\begin\{(equation|align|alignat|gather|multline|eqnarray|displaymath|flalign|split|math)(\*?)\}/;
+function splitMath(s) {
+  const out = []; let i = 0, buf = "";
+  const flush = () => { if (buf) out.push({ math: false, text: buf }); buf = ""; };
+  while (i < s.length) {
+    const c = s[i];
+    if (c === "\\") {
+      const nx = s[i + 1];
+      if (nx === "(" || nx === "[") {
+        const j = s.indexOf(nx === "(" ? "\\)" : "\\]", i + 2);
+        if (j > 0) { flush(); out.push({ math: true, text: s.slice(i, j + 2) }); i = j + 2; continue; }
+      }
+      const env = s.slice(i, i + 40).match(MATH_ENVS);
+      if (env) {
+        const end = `\\end{${env[1]}${env[2]}}`, j = s.indexOf(end, i);
+        if (j > 0) { flush(); out.push({ math: true, text: s.slice(i, j + end.length) }); i = j + end.length; continue; }
+      }
+      buf += c + (nx ?? ""); i += 2; continue;
     }
-    if (end === null || end <= start) end = start + CONFIG.defaultTalkMinutes;
-    let id = get(r, "id") || "x" + shortHash(fold(speaker + "|" + title));
-    if (seen.has(id)) { warnings.push(`Row ${line}: ID “${id}” is used twice; this row got a new ID.`); id = id + "-" + line; }
+    if (c === "$") {
+      const delim = s[i + 1] === "$" ? "$$" : "$";
+      let j = i + delim.length;
+      while (j < s.length && !s.startsWith(delim, j)) j += s[j] === "\\" ? 2 : 1;
+      if (j < s.length && j > i + delim.length) { flush(); out.push({ math: true, text: s.slice(i, j + delim.length) }); i = j + delim.length; continue; }
+    }
+    buf += c; i++;
+  }
+  flush();
+  return out;
+}
+/* Lists and reference lists become paragraphs with bullets or numbers. */
+function texStructure(s) {
+  const stack = [], loose = { env: "thebibliography", n: 0 };
+  return s.replace(/\\begin\{(itemize|enumerate|description|thebibliography)\}(?:\{[^}]*\})?|\\end\{(itemize|enumerate|description|thebibliography)\}|\\item(?![a-zA-Z])\s*(?:\[([^\]]*)\])?\s*|\\bibitem\s*(?:\[([^\]]*)\])?\s*\{[^}]*\}\s*/g,
+    (m, begin, end, itemLabel, bibLabel) => {
+      if (begin) { stack.push({ env: begin, n: 0 }); return begin === "thebibliography" ? "\n\n\\textbf{References}\n\n" : "\n\n"; }
+      if (end) { stack.pop(); return "\n\n"; }
+      const top = stack[stack.length - 1] || loose;
+      if (m.startsWith("\\bibitem")) { top.n++; return `\n\n[${bibLabel ?? top.n}] `; }
+      if (itemLabel !== undefined) return `\n\n\\textbf{${itemLabel}} `;
+      if (top.env === "enumerate") { top.n++; return `\n\n${top.n}. `; }
+      return "\n\n• ";
+    });
+}
+const ACCENTS = { "`": "\u0300", "'": "\u0301", "^": "\u0302", "~": "\u0303", "=": "\u0304", u: "\u0306", ".": "\u0307", '"': "\u0308", r: "\u030A", H: "\u030B", v: "\u030C", c: "\u0327", k: "\u0328", d: "\u0323", b: "\u0331" };
+const LETTERS = { ss: "ß", o: "ø", O: "Ø", l: "ł", L: "Ł", aa: "å", AA: "Å", ae: "æ", AE: "Æ", oe: "œ", OE: "Œ", i: "ı", j: "ȷ" };
+const SYMBOLS = { ldots: "…", dots: "…", textendash: "–", textemdash: "—", textquotedblleft: "“", textquotedblright: "”", textquoteleft: "‘", textquoteright: "’", LaTeX: "LaTeX", TeX: "TeX", textbullet: "•", copyright: "©", pounds: "£", euro: "€", textasciitilde: "~", textbackslash: "\\", today: "" };
+const WRAP = { emph: "em", textit: "em", textsl: "em", textbf: "strong", underline: "u", texttt: "code" };
+const DECL = { bf: "strong", bfseries: "strong", it: "em", itshape: "em", em: "em", sl: "em", tt: "code", sc: "", rm: "", sf: "", normalfont: "", upshape: "", mdseries: "", small: "", footnotesize: "", large: "", Large: "" };
+const NOARG = { noindent: "", par: "\n\n", newline: "<br>", linebreak: "<br>", medskip: "\n\n", bigskip: "\n\n", smallskip: "\n\n", quad: " ", qquad: " ", centering: "", indent: "", maketitle: "", hfill: " ", vfill: "", clearpage: "", newpage: "", raggedright: "" };
+function texCommand(cmd, arg) {
+  if (WRAP[cmd]) return `<${WRAP[cmd]}>${arg}</${WRAP[cmd]}>`;
+  if (/^(sub)*section$|^(sub)?paragraph$/.test(cmd)) return `\n\n<strong>${arg}</strong>\n\n`;
+  if (/^cite[a-z]*$/.test(cmd)) return `[${arg.split(",").map(x => x.trim()).join(", ")}]`;
+  if (cmd === "eqref") return `(${arg})`;
+  if (cmd === "footnote") return ` (${arg})`;
+  if (/^(label|vspace|vskip|addvspace|thanks|hspace|phantom|begin|end)$/.test(cmd)) return cmd === "hspace" ? " " : (cmd === "begin" || cmd === "end") ? "\n\n" : "";
+  return arg;                                   // \text{…}, \mbox{…}, \textsc{…}, \ref{…} and anything unknown: keep the text
+}
+function texText(t, keep) {
+  const hold = html => { keep.push(html); return "\u0000" + (keep.length - 1) + "\u0000"; };
+  const link = (url, textHtml) => {
+    url = url.trim();
+    if (/^10\.\d{4,}\//.test(url)) url = "https://doi.org/" + url;
+    if (/^www\./i.test(url)) url = "https://" + url;
+    return /^https?:\/\//i.test(url) ? hold(`<a href="${esc(url)}" target="_blank" rel="noopener">${textHtml}</a>`) : textHtml;
+  };
+  t = t.replace(/\\href\s*\{([^{}]*)\}\s*\{((?:[^{}]|\{[^{}]*\})*)\}/g, (m, url, text) => link(url, texText(text, keep)));
+  t = t.replace(/\\url\s*\{([^{}]*)\}/g, (m, url) => link(url, esc(url)));
+  t = t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  t = t.replace(/\\\\\*?(\[[^\]]*\])?/g, "<br>");
+  t = t.replace(/\\\{/g, () => hold("{")).replace(/\\\}/g, () => hold("}")).replace(/\\\$/g, () => hold("\\$"))
+       .replace(/\\&amp;/g, "&amp;").replace(/\\([%#_])/g, "$1");
+  t = t.replace(/\\(ss|aa|AA|ae|AE|oe|OE|o|O|l|L|i|j)(?![a-zA-Z])\s?/g, (m, k) => LETTERS[k]);
+  t = t.replace(/\\([`'^"~=.])\s*(?:\{\s*([^{}\s])\s*\}|([a-zA-Zıȷ]))/g, (m, a, x, y) => (x || y) + ACCENTS[a]);
+  t = t.replace(/\\([uvHcdbrk])(?:\s*\{\s*([^{}\s])\s*\}|\s+([a-zA-Zıȷ]))/g, (m, a, x, y) => (x || y) + ACCENTS[a]);
+  t = t.replace(/\\(ldots|dots|textendash|textemdash|textquotedblleft|textquotedblright|textquoteleft|textquoteright|LaTeX|TeX|textbullet|copyright|pounds|euro|textasciitilde|textbackslash|today)(?![a-zA-Z])\s*(\{\})?/g, (m, k) => SYMBOLS[k]);
+  // Commands with a {…} argument and plain {…} groups, innermost first.
+  for (let n = 0, prev = ""; n < 30 && prev !== t; n++) {
+    prev = t;
+    t = t.replace(/(\\([a-zA-Z]+)\*?\s*(?:\[[^\[\]{}]*\])?\s*)?\{([^{}]*)\}/g, (m, cmdPart, cmd, arg) => {
+      if (cmd) return texCommand(cmd, arg);
+      const d = arg.match(/^\s*\\([a-zA-Z]+)(?![a-zA-Z])\s*([\s\S]*)$/);
+      if (d && d[1] in DECL) return DECL[d[1]] ? `<${DECL[d[1]]}>${d[2]}</${DECL[d[1]]}>` : d[2];
+      return arg;
+    });
+  }
+  t = t.replace(/\\([a-zA-Z]+)\*?(?![a-zA-Z])\s?/g, (m, k) => k in NOARG ? NOARG[k] : k in DECL ? "" : m);
+  t = t.replace(/\\([,;:! @\/-])/g, (m, c) => c === "," ? "\u2009" : c === " " || c === ";" || c === ":" ? " " : "");
+  t = t.replace(/``/g, "“").replace(/''/g, "”").replace(/`/g, "‘").replace(/---/g, "—").replace(/--/g, "–").replace(/~/g, "\u00a0");
+  return t.replace(/[{}]/g, "");
+}
+function texToHtml(src, inline) {
+  if (!src) return "";
+  let s = String(src).replace(/\r\n?/g, "\n").replace(/[\u0000\u0004]/g, "");
+  if (!inline) s = texStructure(s);
+  // Maths is swapped for placeholders, so text commands such as \emph{… $x$ …} can wrap around it.
+  const maths = [], keep = [];
+  s = splitMath(s).map(p => p.math ? (maths.push(p.text), "\u0004" + (maths.length - 1) + "\u0004") : p.text).join("");
+  let out = texText(s, keep);
+  for (let n = 0; n < 5 && /\u0000\d+\u0000/.test(out); n++) out = out.replace(/\u0000(\d+)\u0000/g, (m, k) => keep[+k]);
+  out = out.replace(/\u0004(\d+)\u0004/g, (m, k) =>
+    maths[+k].replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n[ \t]*\n/g, "\n")).normalize("NFC");
+  if (inline) return out.replace(/[ \t\n]+/g, " ").replace(/<br>/g, " ").trim();
+  return out.split(/\n[ \t\u00a0]*\n/)
+    .map(p => p.replace(/[ \t\n]+/g, " ").replace(/^(\s*<br>)+|(<br>\s*)+$/g, "").trim())
+    .filter(p => p && p !== "<br>")
+    .map(p => `<p>${p}</p>`).join("");
+}
+function htmlToText(html) {
+  return html.replace(/<\/p>/g, "\n\n").replace(/<br>/g, "\n").replace(/<[^>]+>/g, "")
+    .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, "&").trim();
+}
+
+/* ---------- turning records into talks ---------- */
+function sessionInfo(code) {
+  return CONFIG.sessions.find(s => s.code === code) || CONFIG.sessions.find(s => fold(s.name) === fold(code) || fold(s.code) === fold(code));
+}
+function isYes(v) { return /^(1|y|yes|true|keynote)$/i.test(String(v).trim()); }
+
+function analyse(records, name) {
+  const talks = [], hidden = [], issues = [], seen = new Set();
+  const showAll = !CONFIG.showStatuses || !CONFIG.showStatuses.length;
+  records.forEach((rec, i) => {
+    const r = normalise(rec);
+    const code = r.session || "(no session)";
+    const info = sessionInfo(code);
+    if (!(showAll || !r.status || CONFIG.showStatuses.some(s => fold(s) === fold(r.status)))) { hidden.push({ code, status: r.status, r }); return; }
+    if (!r.title && !r.speaker) { issues.push(["Unreadable entry", `Entry ${i + 1} has no speaker or title, so it was left out.`]); return; }
+
+    let date = null, start = null, end = null, slotProblem = "";
+    if (r.slot) {
+      const p = parseSlot(r.slot);
+      if (p && p.date && p.start !== null) ({ date, start, end } = p); else slotProblem = r.slot;
+    } else if (r.date || r.start) {
+      const range = r.start.split(/\s*(?:–|—|-|to)\s*/i).filter(Boolean);
+      date = parseDate(r.date);
+      start = parseTime(range[0] || "");
+      end = parseTime(r.end || range[1] || "");
+      if (!date || start === null) { slotProblem = [r.date, r.start].filter(Boolean).join(" "); date = null; start = null; }
+    }
+    const keynote = isYes(r.keynote);
+    const scheduled = !!date && start !== null;
+    if (scheduled && (end === null || end <= start)) {
+      const minutes = +r.minutes || (keynote ? CONFIG.keynoteMinutes : (info && info.minutes) || CONFIG.defaultMinutes);
+      end = start + minutes;
+    }
+    let id = r.id || "t" + shortHash(fold(bareName(r.speaker) || r.title) + "|" + fold(code));
+    if (seen.has(id)) { issues.push(["Duplicate ID", `${r.speaker}: the ID “${id}” is used twice; this talk was given a new one.`]); id += "-" + (i + 1); }
     seen.add(id);
+
+    const titleHtml = texToHtml(r.title, true);
+    const abstractHtml = texToHtml(r.abstract, false);
+    const coauthors = !!r.authors && !fold(r.speaker).endsWith(fold(r.authors));
     talks.push({
-      id, date, start, end,
-      session: get(r, "session") || "Other talks",
-      speaker, affiliation: get(r, "affiliation"), title, room: get(r, "room"), abstract: get(r, "abstract")
+      id, code, session: info ? info.name : code, known: !!info,
+      speaker: r.speaker, authors: r.authors, coauthors, affiliation: r.affiliation,
+      title: r.title, titleHtml, titleText: htmlToText(titleHtml), abstract: r.abstract, abstractHtml,
+      keynote, room: r.room || (info && info.room) || "", ownRoom: r.room,
+      date: scheduled ? date : null, start: scheduled ? start : null, end: scheduled ? end : null, scheduled,
+      slot: r.slot, slotProblem, days: r.days, minutes: r.minutes,
+      search: fold([r.speaker, r.authors, htmlToText(titleHtml), info ? info.name : code, r.room || (info && info.room) || "", r.affiliation].join(" "))
     });
   });
-  talks.sort((a, b) => a.date.localeCompare(b.date) || a.start - b.start || a.session.localeCompare(b.session) || a.end - b.end);
-  return { talks, warnings };
+  const order = new Map(CONFIG.sessions.map((s, i) => [s.name, i]));
+  const rank = t => order.has(t.session) ? order.get(t.session) : 1000;
+  talks.sort((a, b) =>
+    (b.scheduled - a.scheduled) ||
+    (a.scheduled ? a.date.localeCompare(b.date) || a.start - b.start || rank(a) - rank(b) || a.end - b.end
+                 : rank(a) - rank(b) || a.session.localeCompare(b.session) || (b.keynote - a.keynote) || surname(a.speaker).localeCompare(surname(b.speaker))));
+  return { name, records, talks, hidden, issues };
+}
+
+function applyData(a) {
+  DATA = a;
+  TALKS = a.talks;
+  BY_ID = new Map(TALKS.map(t => [t.id, t]));
+  const names = [...new Set(TALKS.map(t => t.session))];
+  const known = CONFIG.sessions.map(s => s.name).filter(n => names.includes(n));
+  SESSIONS = known.concat(names.filter(n => !known.includes(n)).sort((x, y) => x.localeCompare(y)));
+  DATES = [...new Set(CONFIG.conferenceDates.concat(TALKS.filter(t => t.scheduled).map(t => t.date)))].sort();
+}
+
+/* ---------- checks for organisers ---------- */
+function overlaps(a, b) { return a.scheduled && b.scheduled && a.date === b.date && a.start < b.end && b.start < a.end; }
+function slotText(t) { return `${dayShort(t.date)} ${fmtTime(t.start)}–${fmtTime(t.end)}`; }
+function findProblems(a) {
+  const out = a.issues.map(([kind, text]) => ({ kind, text }));
+  const add = (kind, text) => out.push({ kind, text });
+  const unknown = new Map();
+  for (const t of a.talks) if (!t.known) unknown.set(t.code, (unknown.get(t.code) || 0) + 1);
+  for (const [code, n] of unknown) add("Unknown session code", `“${code}” (${plural(n, "talk")}) isn't in the sessions list in the settings, so it is shown under its code.`);
+  for (const t of a.talks) {
+    if (t.slotProblem) add("Unreadable time", `${t.speaker} (${t.session}): “${t.slotProblem}” couldn't be read as a day and time.`);
+    if (t.scheduled && !CONFIG.conferenceDates.includes(t.date)) add("Outside the conference", `${t.speaker} (${t.session}) is scheduled on ${dayLong(t.date)}.`);
+    if (t.scheduled && t.days) {
+      const wd = WEEKDAYS[dateParts(t.date).wd];
+      if (!fold(t.days).includes(fold(wd).slice(0, 3))) add("Speaker not available", `${t.speaker} (${t.session}) is scheduled on ${wd} but listed as available: ${t.days}.`);
+    }
+    if (fold(t.title) === fold(bareName(t.speaker)) || /^(tba|tbc|tbd|title)$/i.test(t.title)) add("Placeholder title", `${t.speaker} (${t.session}): the title is “${t.title}”.`);
+  }
+  const sched = a.talks.filter(t => t.scheduled);
+  for (let i = 0; i < sched.length; i++) for (let j = i + 1; j < sched.length; j++) {
+    const x = sched[i], y = sched[j];
+    if (!overlaps(x, y)) continue;
+    if (fold(bareName(x.speaker)) === fold(bareName(y.speaker))) add("Speaker double-booked", `${x.speaker}: ${x.session} ${slotText(x)} and ${y.session} ${slotText(y)}.`);
+    else if (x.session === y.session && fold(x.room) === fold(y.room)) add("Overlap in a session", `${x.session}${x.room ? ", " + x.room : ""}: ${x.speaker} (${slotText(x)}) and ${y.speaker} (${slotText(y)}).`);
+  }
+  const absent = [...new Set(a.hidden.map(h => h.code))].filter(code => !a.talks.some(t => t.code === code));
+  if (absent.length) out.push({ kind: "Not on the website yet", info: true, text: absent.map(c => (sessionInfo(c) || { name: c }).name).join("; ") + ". None of their talks has an accepted status, so these sessions don't appear." });
+  const noAbstract = a.talks.filter(t => !t.abstract.trim());
+  if (noAbstract.length) out.push({ kind: "No abstract", info: true, text: noAbstract.map(t => `${t.speaker} (${t.session})`).join("; ") + "." });
+  const ORDER = ["Speaker double-booked", "Overlap in a session", "Speaker not available", "Unreadable time", "Outside the conference", "Unknown session code", "Duplicate ID", "Unreadable entry", "Placeholder title"];
+  const rank = p => { const i = ORDER.indexOf(p.kind); return i < 0 ? 99 : i; };
+  return out.map((p, i) => [p, i]).sort((x, y) => rank(x[0]) - rank(y[0]) || x[1] - y[1]).map(x => x[0]);
+}
+/* The public copy of the data: only shown talks, only the fields the page uses. */
+function publicCopy(a) {
+  const talks = a.talks.map(t => {
+    const o = { id: t.id, session: t.code, speaker: t.speaker, authors: t.authors, title: t.title, abstract: t.abstract, keynote: t.keynote ? "1" : "0" };
+    if (t.affiliation) o.affiliation = t.affiliation;
+    o.timetabled = t.slot || (t.scheduled ? `${t.date} ${fmtTime(t.start)}` : null);
+    if (t.scheduled && !t.slot) o.end = fmtTime(t.end);
+    if (t.minutes) o.minutes = t.minutes;
+    if (t.ownRoom) o.room = t.ownRoom;
+    return o;
+  });
+  return JSON.stringify({ source: a.name, created: new Date().toISOString(), talks }, null, 1);
 }
 
 /* ---------- saved picks ---------- */
@@ -415,42 +690,39 @@ function loadPicks() {
   try { const v = JSON.parse(localStorage.getItem(CONFIG.storageKey) || "[]"); return new Set(Array.isArray(v) ? v.map(String) : []); }
   catch { return new Set(); }
 }
-function savePicks() {
-  try { localStorage.setItem(CONFIG.storageKey, JSON.stringify([...picks])); } catch { /* storage blocked: picks last for this visit only */ }
-}
+function savePicks() { try { localStorage.setItem(CONFIG.storageKey, JSON.stringify([...picks])); } catch { } }
 function pickedTalks() { return TALKS.filter(t => picks.has(t.id)); }
 function updateCount() { $("#pick-count").textContent = pickedTalks().length; }
 
 /* ---------- rendering ---------- */
 function talkRow(t, opts) {
   const on = picks.has(t.id);
-  const label = `${on ? "Remove" : "Add"} “${t.title || t.speaker}” ${on ? "from" : "to"} my programme`;
-  const title = t.abstract
-    ? `<details><summary>${esc(t.title)}</summary><div class="abstract">${esc(t.abstract)}</div></details>`
-    : esc(t.title);
+  const label = `${on ? "Remove" : "Add"} “${t.titleText || t.speaker}” ${on ? "from" : "to"} my programme`;
+  const head = t.titleHtml + (t.keynote ? ` <span class="badge no-math">Keynote</span>` : "");
+  const extra = (t.coauthors ? `<p class="authors">Authors: ${esc(t.authors)}</p>` : "") + t.abstractHtml;
+  const title = extra ? `<details><summary>${head}</summary><div class="abstract">${extra}</div></details>` : head;
   const clash = opts.clashes && opts.clashes.get(t.id);
   return `<tr class="talk${on ? " is-picked" : ""}${clash ? " is-clash" : ""}" data-id="${esc(t.id)}">
     <td class="c-pick"><label class="pick"><input type="checkbox" data-id="${esc(t.id)}"${on ? " checked" : ""}><span class="sr">${esc(label)}</span></label></td>
-    <td class="c-time">${fmtTime(t.start)}–${fmtTime(t.end)}</td>
+    ${opts.time ? `<td class="c-time">${t.scheduled ? `${fmtTime(t.start)}–${fmtTime(t.end)}` : `<span class="tba">Time TBA</span>`}</td>` : ""}
     ${opts.session ? `<td class="c-session">${esc(t.session)}</td>` : ""}
     <td class="c-speaker">${esc(t.speaker)}${t.affiliation ? `<span class="aff">${esc(t.affiliation)}</span>` : ""}</td>
     <td class="c-title">${title}${clash ? `<div class="clash">Overlaps with ${clash.map(c => esc(c.speaker) + " (" + esc(c.session) + ")").join(", ")}</div>` : ""}</td>
-    <td class="c-room">${esc(t.room)}</td>
+    ${opts.room ? `<td class="c-room">${esc(t.room)}</td>` : ""}
   </tr>`;
 }
 function talkTable(talks, opts = {}) {
+  opts = { time: true, ...opts, room: talks.some(t => t.room) };
+  const cols = 3 + !!opts.time + !!opts.session + !!opts.room;
   let body = "", last = null;
   for (const t of talks) {
-    if (opts.slots && t.start !== last) {
-      body += `<tr class="slot-row"><th colspan="${opts.session ? 6 : 5}" scope="colgroup">${fmtTime(t.start)}</th></tr>`;
-      last = t.start;
-    }
+    if (opts.slots && t.start !== last) { body += `<tr class="slot-row"><th colspan="${cols}" scope="colgroup">${fmtTime(t.start)}</th></tr>`; last = t.start; }
     body += talkRow(t, opts);
   }
   return `<div class="table-wrap"><table class="talks"><thead><tr>
-    <th class="c-pick"><span class="sr">Pick</span>✓</th><th class="c-time">Time</th>
+    <th class="c-pick"><span class="sr">Pick</span>✓</th>${opts.time ? `<th class="c-time">Time</th>` : ""}
     ${opts.session ? `<th class="c-session">Session</th>` : ""}
-    <th class="c-speaker">Speaker</th><th class="c-title">Title</th><th class="c-room">Room</th>
+    <th class="c-speaker">Speaker</th><th class="c-title">Title</th>${opts.room ? `<th class="c-room">Room</th>` : ""}
   </tr></thead><tbody>${body}</tbody></table></div>`;
 }
 function groupBy(arr, key) { const m = new Map(); for (const x of arr) { const k = key(x); if (!m.has(k)) m.set(k, []); m.get(k).push(x); } return m; }
@@ -460,24 +732,32 @@ function renderSession() {
   let html = `<label class="lead" for="session-select">Choose a session to see its talks, day by day.</label>
     <select id="session-select"><option value="">— Select a session —</option>${options}</select>`;
   if (!state.session || !SESSIONS.includes(state.session)) {
-    html += `<div class="chips">${SESSIONS.map(s => {
+    return html + `<div class="chips">${SESSIONS.map(s => {
       const n = TALKS.filter(t => t.session === s).length;
-      return `<button type="button" class="chip" data-session="${esc(s)}"><span>${esc(s)}</span><small>${n} talk${n === 1 ? "" : "s"}</small></button>`;
+      return `<button type="button" class="chip" data-session="${esc(s)}"><span>${esc(s)}</span><small>${plural(n, "talk")}</small></button>`;
     }).join("")}</div>`;
-  } else {
-    const days = groupBy(TALKS.filter(t => t.session === state.session), t => t.date);
-    for (const [date, talks] of days) html += `<h2>${esc(state.session)} — ${dayLong(date)}</h2>${talkTable(talks)}`;
+  }
+  const all = TALKS.filter(t => t.session === state.session);
+  const sched = all.filter(t => t.scheduled), later = all.filter(t => !t.scheduled);
+  for (const [date, talks] of groupBy(sched, t => t.date)) html += `<h2>${esc(state.session)} — ${dayLong(date)}</h2>${talkTable(talks)}`;
+  if (later.length) {
+    html += sched.length
+      ? `<h2>${esc(state.session)} — not yet scheduled</h2><p class="hint">These talks don't have a time yet.</p>`
+      : `<h2>${esc(state.session)}</h2><p class="hint">${plural(later.length, "talk")}. Times and rooms will appear here once this session is timetabled. You can already tick the talks you want to hear.</p>`;
+    html += talkTable(later, { time: false });
   }
   return html;
 }
 
 function renderDay() {
   if (!DATES.includes(state.day)) state.day = defaultDay();
+  const later = TALKS.filter(t => !t.scheduled).length;
   let html = `<div class="days" role="group" aria-label="Conference day">${DATES.map(d =>
     `<button type="button" class="tab" data-day="${d}"${d === state.day ? ' aria-current="page"' : ""}>${dayShort(d)}</button>`).join("")}</div>`;
-  const talks = TALKS.filter(t => t.date === state.day);
   html += `<h2>${dayLong(state.day)}</h2>`;
-  if (!talks.length) return html + `<p class="empty">No talks on this day.</p>`;
+  if (later) html += `<p class="hint">${plural(later, "talk")} ${later === 1 ? "doesn't" : "don't"} have a time yet. You'll find them under <a href="#" data-goto="session">By session</a>.</p>`;
+  const talks = TALKS.filter(t => t.scheduled && t.date === state.day);
+  if (!talks.length) return html + `<p class="empty">${TALKS.some(t => t.scheduled) ? "Nothing is scheduled on this day yet." : "The timetable hasn't been published yet."}</p>`;
   return html + talkTable(talks, { session: true, slots: true });
 }
 
@@ -485,17 +765,15 @@ function findClashes(talks) {
   const clashes = new Map();
   for (let i = 0; i < talks.length; i++) for (let j = i + 1; j < talks.length; j++) {
     const a = talks[i], b = talks[j];
-    if (a.date !== b.date) continue;
-    if (a.start < b.end && b.start < a.end) {
-      if (!clashes.has(a.id)) clashes.set(a.id, []);
-      if (!clashes.has(b.id)) clashes.set(b.id, []);
-      clashes.get(a.id).push(b); clashes.get(b.id).push(a);
-    }
+    if (!overlaps(a, b)) continue;
+    if (!clashes.has(a.id)) clashes.set(a.id, []);
+    if (!clashes.has(b.id)) clashes.set(b.id, []);
+    clashes.get(a.id).push(b); clashes.get(b.id).push(a);
   }
   return clashes;
 }
 
-let incoming = null;   // talks from a shared link, waiting for the visitor to decide
+let incoming = null;
 function renderMine() {
   let html = "";
   if (incoming) {
@@ -510,31 +788,82 @@ function renderMine() {
   if (!talks.length) {
     return html + `<h2>My programme</h2><p class="empty">You haven't picked any talks yet. Tick the box next to a talk in <a href="#" data-goto="session">By session</a> or <a href="#" data-goto="day">By day</a> and it will appear here, sorted by day and time.</p>`;
   }
-  const clashes = findClashes(talks);
+  const sched = talks.filter(t => t.scheduled), later = talks.filter(t => !t.scheduled);
+  const clashes = findClashes(sched);
   html += `<h2>My programme</h2>
     <div class="toolbar">
-      <button type="button" class="btn" data-act="ics">Add to calendar (.ics)</button>
+      <button type="button" class="btn" data-act="ics"${sched.length ? "" : " disabled"}>Add to calendar (.ics)</button>
       <button type="button" class="btn ghost" data-act="print">Print / save as PDF</button>
       <button type="button" class="btn ghost" data-act="share">Copy link to this programme</button>
       <button type="button" class="btn danger" data-act="clear">Clear all</button>
     </div>
     <div class="share-out" id="share-out" hidden><label class="sr" for="share-url">Link to your programme</label><input id="share-url" readonly></div>
     <div class="status" id="status"></div>
-    <p class="hint">${talks.length} talk${talks.length === 1 ? "" : "s"} picked${clashes.size ? ` · <strong>${clashes.size}</strong> overlap with another pick` : ""}.
-      Your picks are saved in this browser only. To see them on your phone, use <em>Copy link</em> and open the link there, or add them to your calendar.</p>
+    <p class="hint">${plural(talks.length, "talk")} picked${later.length ? ` · ${later.length} not yet scheduled` : ""}${clashes.size ? ` · <strong>${clashes.size}</strong> overlap with another pick` : ""}.
+      Your picks are saved in this browser only. To see them on your phone, use <em>Copy link</em> and open the link there${sched.length ? ", or add them to your calendar" : ""}.</p>
     ${lost ? `<p class="hint">${lost} talk${lost === 1 ? " you picked is" : "s you picked are"} no longer in the programme.</p>` : ""}`;
-  for (const [date, group] of groupBy(talks, t => t.date)) html += `<h2>${dayLong(date)}</h2>${talkTable(group, { session: true, clashes })}`;
+  for (const [date, group] of groupBy(sched, t => t.date)) html += `<h2>${dayLong(date)}</h2>${talkTable(group, { session: true, clashes })}`;
+  if (later.length) {
+    html += `<h2>Not yet scheduled</h2><p class="hint">These talks will move into place here once they have a time.${sched.length ? " The calendar file only includes talks that have a time, so download it again after the timetable is complete." : ""}</p>`;
+    html += talkTable(later, { session: true, time: false });
+  }
   return html;
 }
 
 function renderSearch() {
-  const q = fold(state.query.trim());
-  const terms = q.split(/\s+/).filter(Boolean);
-  const hits = TALKS.filter(t => { const hay = fold([t.speaker, t.title, t.session, t.affiliation, t.room].join(" ")); return terms.every(w => hay.includes(w)); });
-  let html = `<h2>${hits.length} talk${hits.length === 1 ? "" : "s"} matching “${esc(state.query.trim())}”</h2>`;
+  const terms = fold(state.query).split(/\s+/).filter(Boolean);
+  const hits = TALKS.filter(t => terms.every(w => t.search.includes(w)));
+  let html = `<h2>${plural(hits.length, "talk")} matching “${esc(state.query.trim())}”</h2>`;
   if (!hits.length) return html + `<p class="empty">Try a surname, a word from a title, or a room.</p>`;
-  for (const [date, group] of groupBy(hits, t => t.date)) html += `<h2>${dayLong(date)}</h2>${talkTable(group, { session: true })}`;
+  for (const [date, group] of groupBy(hits.filter(t => t.scheduled), t => t.date)) html += `<h2>${dayLong(date)}</h2>${talkTable(group, { session: true })}`;
+  const later = hits.filter(t => !t.scheduled);
+  if (later.length) html += `<h2>Not yet scheduled</h2>${talkTable(later, { session: true, time: false })}`;
   return html;
+}
+
+function renderCheck() {
+  const a = CHECK || PUBLISHED;
+  if (!a) return `<p>Loading…</p>`;
+  const probs = findProblems(a);
+  const real = probs.filter(p => !p.info), info = probs.filter(p => p.info);
+  const sched = a.talks.filter(t => t.scheduled).length;
+  const hasDays = a.talks.some(t => t.days);
+  const rank = name => { const i = CONFIG.sessions.findIndex(s => s.name === name); return i < 0 ? 1000 : i; };
+  const rows = [...groupBy(a.talks, t => t.session)].sort((x, y) => rank(x[0]) - rank(y[0]) || x[0].localeCompare(y[0])).map(([name, ts]) => {
+    const s = ts.filter(t => t.scheduled).length;
+    const hid = a.hidden.filter(h => (sessionInfo(h.code) || { name: h.code }).name === name).length;
+    return `<tr><td>${esc(name)}</td><td>${esc(ts[0].code)}</td><td>${ts.length}</td><td>${s}</td><td>${ts.length - s}</td><td>${hid || ""}</td></tr>`;
+  }).join("");
+  const hiddenOnly = [...groupBy(a.hidden, h => h.code)].filter(([code]) => !a.talks.some(t => t.code === code))
+    .map(([code, hs]) => `<tr><td>${esc((sessionInfo(code) || { name: code }).name)}</td><td>${esc(code)}</td><td>0</td><td></td><td></td><td>${hs.length}</td></tr>`).join("");
+  const statuses = [...new Set(a.hidden.map(h => h.status || "blank"))].join(", ");
+  return `<h2>Programme check</h2>
+    <p class="hint">For organisers. This page checks the programme data for timetable problems. Nothing here is saved or published.</p>
+    <div class="file-pick">
+      <label for="check-file">Check a new export from your computer:</label>
+      <input type="file" id="check-file" accept=".json,.csv,application/json,text/csv">
+    </div>
+    <p>Checking <strong>${esc(a.name)}</strong>${CHECK ? " from your computer" : ", the file the website is using now"}.</p>
+    <ul class="stats">
+      <li><strong>${a.talks.length}</strong>shown on the website</li>
+      <li><strong>${a.hidden.length}</strong>hidden${a.hidden.length ? ` (status: ${esc(statuses)})` : ""}</li>
+      <li><strong>${sched}</strong>with a time</li>
+      <li><strong>${a.talks.length - sched}</strong>without a time</li>
+    </ul>
+    <h3>Problems</h3>
+    ${real.length ? `<ul class="problems">${real.map(p => `<li><span class="kind">${esc(p.kind)}:</span> ${esc(p.text)}</li>`).join("")}</ul>` : `<p class="all-good">No timetable problems found.</p>`}
+    ${info.length ? `<ul class="problems">${info.map(p => `<li><span class="info">${esc(p.kind)}:</span> ${esc(p.text)}</li>`).join("")}</ul>` : ""}
+    ${hasDays ? "" : `<p class="hint">Speaker availability can't be checked with this file. Choose the full export from the registration system above to include that check.</p>`}
+    <h3>Sessions</h3>
+    <div class="table-wrap"><table class="grid"><thead><tr><th>Session</th><th>Code</th><th>Shown</th><th>With a time</th><th>Without a time</th><th>Hidden</th></tr></thead>
+      <tbody>${rows}${hiddenOnly}</tbody></table></div>
+    <h3>Publish</h3>
+    <p class="hint">The website file should contain only what the programme shows. This copy keeps the shown talks with their speaker, authors, title, abstract, session, keynote flag and time. It leaves out student status, availability and talks that aren't accepted.</p>
+    <div class="toolbar">
+      <button type="button" class="btn" data-act="tidy">Download programme.json for the website</button>
+      ${CHECK ? `<button type="button" class="btn ghost" data-act="preview">Preview the website with this file</button>` : ""}
+    </div>
+    <div class="status" id="status"></div>`;
 }
 
 function render() {
@@ -543,51 +872,45 @@ function render() {
     if (!searching && b.dataset.view === state.view) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current");
   });
   typesetClear();
-  main.innerHTML = searching ? renderSearch()
+  const banner = previewName ? `<div class="banner"><p>Previewing <strong>${esc(previewName)}</strong>. This isn't published. Reload the page to see the published programme.</p></div>` : "";
+  main.innerHTML = banner + (searching ? renderSearch()
     : state.view === "day" ? renderDay()
     : state.view === "mine" ? renderMine()
-    : renderSession();
+    : state.view === "check" ? renderCheck()
+    : renderSession());
   updateCount();
   typeset();
 }
 
-/* ---------- MathJax (optional) ---------- */
+/* ---------- MathJax ---------- */
 function typesetClear() { try { window.MathJax?.typesetClear?.([main]); } catch { } }
 function typeset() {
   const MJ = window.MathJax;
-  if (!MJ || !MJ.startup || !MJ.startup.promise) return;   // not loaded yet: it typesets the page when it arrives
+  if (!MJ || !MJ.startup || !MJ.startup.promise) return;
   MJ.startup.promise = MJ.startup.promise.then(() => MJ.typesetPromise([main])).catch(() => { });
 }
 
-/* ---------- address bar (#session=…, #day=…, #mine) ---------- */
+/* ---------- address bar (#session=…, #day=…, #mine, #check) ---------- */
 function readHash() {
   let h = location.hash.slice(1);
   try { h = decodeURIComponent(h); } catch { }
   if (h.startsWith("session=")) { state.view = "session"; state.session = h.slice(8); }
   else if (h.startsWith("day=")) { state.view = "day"; state.day = h.slice(4); }
-  else if (h === "mine") state.view = "mine";
-  else if (h === "day") state.view = "day";
+  else if (h === "mine" || h === "day" || h === "check") state.view = h;
   else if (h === "" || h === "session") { state.view = "session"; state.session = ""; }
 }
-function setHash(h) {
-  const target = h ? "#" + h : location.pathname + location.search;
-  if (("#" + h) === location.hash) return;
-  history.pushState(null, "", h ? "#" + h : target);
-}
+function setHash(h) { if ("#" + h !== location.hash) history.pushState(null, "", "#" + h); }
 function defaultDay() {
   const t = new Date(), today = isoOf(t.getFullYear(), t.getMonth() + 1, t.getDate());
-  return DATES.includes(today) ? today : DATES[0];
+  if (DATES.includes(today)) return today;
+  return TALKS.find(x => x.scheduled)?.date || DATES[0];
 }
 
 /* ---------- calendar file ---------- */
 function icsEscape(s) { return String(s ?? "").replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n"); }
 function icsFold(line) {
   const enc = new TextEncoder(); let out = "", cur = "", bytes = 0;
-  for (const ch of line) {
-    const b = enc.encode(ch).length;
-    if (bytes + b > 74) { out += cur + "\r\n "; cur = ""; bytes = 1; }
-    cur += ch; bytes += b;
-  }
+  for (const ch of line) { const b = enc.encode(ch).length; if (bytes + b > 74) { out += cur + "\r\n "; cur = ""; bytes = 1; } cur += ch; bytes += b; }
   return out + cur;
 }
 function utcStamp(date, minutes) {
@@ -600,10 +923,10 @@ function buildICS(talks) {
   const now = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
   const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//" + CONFIG.uidDomain + "//Programme//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:" + icsEscape(CONFIG.calendarName)];
   for (const t of talks) {
-    const desc = [t.session, t.speaker + (t.affiliation ? " (" + t.affiliation + ")" : ""), t.abstract].filter(Boolean).join("\n\n");
+    const desc = [t.session, t.coauthors ? "Authors: " + t.authors : t.speaker, htmlToText(t.abstractHtml)].filter(Boolean).join("\n\n");
     lines.push("BEGIN:VEVENT", "UID:" + t.id + "@" + CONFIG.uidDomain, "DTSTAMP:" + now,
       "DTSTART:" + utcStamp(t.date, t.start), "DTEND:" + utcStamp(t.date, t.end),
-      "SUMMARY:" + icsEscape(t.speaker ? `${t.speaker}: ${t.title}` : t.title),
+      "SUMMARY:" + icsEscape(t.speaker ? `${t.speaker}: ${t.titleText}` : t.titleText),
       "LOCATION:" + icsEscape(t.room), "DESCRIPTION:" + icsEscape(desc), "END:VEVENT");
   }
   lines.push("END:VCALENDAR");
@@ -615,14 +938,11 @@ function download(name, text, type) {
   document.body.appendChild(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(url), 2000);
 }
-function shareUrl() {
-  const ids = pickedTalks().map(t => encodeURIComponent(t.id)).join(",");
-  return location.origin + location.pathname + "?my=" + ids + "#mine";
-}
+function shareUrl() { return location.origin + location.pathname + "?my=" + pickedTalks().map(t => encodeURIComponent(t.id)).join(",") + "#mine"; }
 function setStatus(msg) { const s = $("#status"); if (s) s.textContent = msg; }
 
 /* ---------- events ---------- */
-main.addEventListener("change", e => {
+main.addEventListener("change", async e => {
   const box = e.target.closest('input[type="checkbox"][data-id]');
   if (box) {
     const id = box.dataset.id;
@@ -631,13 +951,17 @@ main.addEventListener("change", e => {
     const t = BY_ID.get(id);
     document.querySelectorAll(`tr[data-id="${CSS.escape(id)}"]`).forEach(tr => {
       tr.classList.toggle("is-picked", box.checked);
-      if (state.view === "mine" && !state.query) tr.classList.toggle("is-removed", !box.checked);
-      const sr = tr.querySelector(".sr"); if (sr && t) sr.textContent = `${box.checked ? "Remove" : "Add"} “${t.title || t.speaker}” ${box.checked ? "from" : "to"} my programme`;
-      const other = tr.querySelector('input[type="checkbox"]'); if (other && other !== box) other.checked = box.checked;
+      if (state.view === "mine" && !state.query.trim()) tr.classList.toggle("is-removed", !box.checked);
+      const sr = tr.querySelector(".sr"); if (sr && t) sr.textContent = `${box.checked ? "Remove" : "Add"} “${t.titleText || t.speaker}” ${box.checked ? "from" : "to"} my programme`;
     });
     return;
   }
-  if (e.target.id === "session-select") { state.session = e.target.value; setHash(state.session ? "session=" + encodeURIComponent(state.session) : "session"); render(); }
+  if (e.target.id === "session-select") { state.session = e.target.value; setHash(state.session ? "session=" + encodeURIComponent(state.session) : "session"); render(); return; }
+  if (e.target.id === "check-file" && e.target.files[0]) {
+    const file = e.target.files[0];
+    try { CHECK = analyse(parseData(await file.text()), file.name); render(); }
+    catch (err) { render(); setStatus(`${file.name}: ${err.message}`); }
+  }
 });
 
 let clearArmed = null;
@@ -650,7 +974,11 @@ main.addEventListener("click", e => {
   if (go) { e.preventDefault(); showView(go.dataset.goto); return; }
   const act = e.target.closest("[data-act]")?.dataset.act;
   if (!act) return;
-  if (act === "ics") { download(CONFIG.calendarFileName, buildICS(pickedTalks()), "text/calendar;charset=utf-8"); setStatus("Calendar file downloaded. Open it to add the talks to your calendar."); }
+  if (act === "ics") {
+    const sched = pickedTalks().filter(t => t.scheduled), later = pickedTalks().length - sched.length;
+    download(CONFIG.calendarFileName, buildICS(sched), "text/calendar;charset=utf-8");
+    setStatus(`Calendar file downloaded with ${plural(sched.length, "talk")}. Open it to add them to your calendar.${later ? ` ${plural(later, "talk")} without a time ${later === 1 ? "isn't" : "aren't"} included yet.` : ""}`);
+  }
   if (act === "print") window.print();
   if (act === "share") {
     const url = shareUrl(), box = $("#share-out"), input = $("#share-url");
@@ -668,13 +996,19 @@ main.addEventListener("click", e => {
   if (act === "incoming-add") { incoming.forEach(id => picks.add(id)); incoming = null; savePicks(); render(); }
   if (act === "incoming-replace") { picks = new Set(incoming); incoming = null; savePicks(); render(); }
   if (act === "incoming-ignore") { incoming = null; render(); }
+  if (act === "tidy") {
+    const a = CHECK || PUBLISHED;
+    download("programme.json", publicCopy(a), "application/json");
+    setStatus(`programme.json downloaded with ${plural(a.talks.length, "talk")}. Upload it to the website folder, replacing the old one.`);
+  }
+  if (act === "preview" && CHECK) { previewName = CHECK.name; applyData(CHECK); showView("session"); }
 });
 
 function showView(view) {
   state.view = view; state.query = ""; $("#search").value = "";
   if (view === "session") setHash(state.session ? "session=" + encodeURIComponent(state.session) : "session");
   else if (view === "day") setHash("day=" + (DATES.includes(state.day) ? state.day : defaultDay()));
-  else setHash("mine");
+  else setHash(view);
   render();
 }
 document.querySelectorAll(".bar .tab").forEach(b => b.addEventListener("click", () => showView(b.dataset.view)));
@@ -689,48 +1023,29 @@ window.addEventListener("storage", e => { if (e.key === CONFIG.storageKey) { pic
 
 /* ---------- start ---------- */
 async function start() {
-  document.title = CONFIG.title;
   $("#conf-title").textContent = CONFIG.title;
   $("#conf-sub").textContent = CONFIG.subtitle;
   if (CONFIG.notice) { $("#notice").textContent = CONFIG.notice; $("#notice").hidden = false; }
   if (CONFIG.siteUrl) $("#site-link").innerHTML = `Conference website: <a href="${esc(CONFIG.siteUrl)}">${esc(CONFIG.siteUrl.replace(/^https?:\/\//, "").replace(/\/$/, ""))}</a>`;
   picks = loadPicks();
 
-  let text;
+  let records;
   try {
     const res = await fetch(CONFIG.dataUrl, { cache: "no-cache" });
-    if (!res.ok) throw new Error("HTTP " + res.status);
-    text = await res.text();
+    if (!res.ok) throw new Error(`couldn't find ${CONFIG.dataUrl} (HTTP ${res.status})`);
+    records = parseData(await res.text());
   } catch (err) {
     const local = location.protocol === "file:";
     main.innerHTML = `<div class="error"><strong>The programme couldn't be loaded.</strong><br>
       ${local ? "This page was opened straight from a file on your computer, and browsers block it from reading the programme file that way. Upload it to GitHub Pages, or start a small local web server (see the README)."
-              : `Tried to read <code>${esc(CONFIG.dataUrl)}</code> (${esc(err.message)}). Check that the file exists, or that the Google Sheet is published to the web as CSV.`}</div>`;
+              : esc(err.message)}</div>`;
     return;
   }
-  if (/^\s*<!doctype html|^\s*<html/i.test(text)) {
-    main.innerHTML = `<div class="error"><strong>The programme link returned a web page, not a CSV file.</strong><br>In Google Sheets, use File → Share → Publish to web and choose “Comma-separated values (.csv)”.</div>`;
-    return;
-  }
+  PUBLISHED = analyse(records, CONFIG.dataUrl);
+  applyData(PUBLISHED);
+  const probs = findProblems(PUBLISHED).filter(p => !p.info);
+  if (probs.length) console.warn(`Programme data: ${plural(probs.length, "problem")}. Open #check for details.`);
 
-  const { talks, warnings } = buildTalks(parseCSV(text));
-  TALKS = talks;
-  BY_ID = new Map(talks.map(t => [t.id, t]));
-  const names = [...new Set(talks.map(t => t.session))];
-  const pinned = CONFIG.pinnedSessions.filter(s => names.includes(s));
-  SESSIONS = pinned.concat(names.filter(s => !pinned.includes(s)).sort((a, b) => a.localeCompare(b, "en", { sensitivity: "base" })));
-  DATES = [...new Set(CONFIG.conferenceDates.concat(talks.map(t => t.date)))].sort();
-
-  if (warnings.length) {
-    console.warn("Programme data:\n" + warnings.join("\n"));
-    if (CONFIG.showDataWarnings) {
-      const w = $("#data-warnings");
-      w.innerHTML = `<strong>Data check (for organisers):</strong> ${warnings.length} problem${warnings.length === 1 ? "" : "s"} found in the spreadsheet.<br>${warnings.slice(0, 12).map(esc).join("<br>")}${warnings.length > 12 ? "<br>…" : ""}`;
-      w.hidden = false;
-    }
-  }
-
-  // A shared link: ?my=T001,T014,...
   const params = new URLSearchParams(location.search);
   if (params.has("my")) {
     const ids = params.get("my").split(",").map(s => s.trim()).filter(id => BY_ID.has(id));
