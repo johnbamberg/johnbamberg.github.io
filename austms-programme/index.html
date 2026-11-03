@@ -117,7 +117,7 @@ table.talks { width: 100%; border-collapse: collapse; font-size: .97rem; }
 .talks .c-session { width: 13rem; }
 .talks td.c-session { color: var(--muted); }
 .talks .c-speaker { width: 15rem; }
-.talks .c-room { width: 8rem; text-align: right; white-space: nowrap; }
+.talks .c-room { width: 10rem; text-align: right; }
 .aff { display: block; color: var(--muted); font-size: .85rem; }
 .tba { color: var(--muted); font-style: italic; }
 .badge { display: inline-block; margin-left: .35rem; padding: 0 .45rem; border-radius: 999px; font-size: .75rem; font-weight: 600; letter-spacing: .02em; vertical-align: .1em; background: var(--head); color: var(--fg); }
@@ -665,6 +665,8 @@ function findProblems(a) {
   }
   const absent = [...new Set(a.hidden.map(h => h.code))].filter(code => !a.talks.some(t => t.code === code));
   if (absent.length) out.push({ kind: "Not on the website yet", info: true, text: absent.map(c => (sessionInfo(c) || { name: c }).name).join("; ") + ". None of their talks has an accepted status, so these sessions don't appear." });
+  const noAffil = a.talks.filter(t => !t.affiliation);
+  if (noAffil.length && noAffil.length < a.talks.length) out.push({ kind: "No affiliation", info: true, text: noAffil.map(t => `${t.speaker} (${t.session})`).join("; ") + "." });
   const noAbstract = a.talks.filter(t => !t.abstract.trim());
   if (noAbstract.length) out.push({ kind: "No abstract", info: true, text: noAbstract.map(t => `${t.speaker} (${t.session})`).join("; ") + "." });
   const ORDER = ["Speaker double-booked", "Overlap in a session", "Speaker not available", "Unreadable time", "Outside the conference", "Unknown session code", "Duplicate ID", "Unreadable entry", "Placeholder title"];
@@ -858,7 +860,7 @@ function renderCheck() {
     <div class="table-wrap"><table class="grid"><thead><tr><th>Session</th><th>Code</th><th>Shown</th><th>With a time</th><th>Without a time</th><th>Hidden</th></tr></thead>
       <tbody>${rows}${hiddenOnly}</tbody></table></div>
     <h3>Publish</h3>
-    <p class="hint">The website file should contain only what the programme shows. This copy keeps the shown talks with their speaker, authors, title, abstract, session, keynote flag and time. It leaves out student status, availability and talks that aren't accepted.</p>
+    <p class="hint">The website file should contain only what the programme shows. This copy keeps the shown talks with their speaker, affiliation, authors, title, abstract, session, keynote flag, time and room. It leaves out student status, availability and talks that aren't accepted.</p>
     <div class="toolbar">
       <button type="button" class="btn" data-act="tidy">Download programme.json for the website</button>
       ${CHECK ? `<button type="button" class="btn ghost" data-act="preview">Preview the website with this file</button>` : ""}

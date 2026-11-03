@@ -9,7 +9,7 @@ The page reads `programme.json`, the talk list exported from the registration sy
 | File | What it is |
 |---|---|
 | `index.html` | The page. The settings are at the top of the `<script>` section (`CONFIG`). |
-| `programme.json` | The public copy of the 3 November export: 297 accepted talks, 13 of them with a time. |
+| `programme.json` | The public copy of the 3 November export: 297 accepted talks with affiliations, 13 of them with a time (7 with a room). |
 | `README.md` | This file. |
 
 ## 1. Put it on GitHub Pages
@@ -26,7 +26,7 @@ Do this each time the talks or the timetable change:
 4. Click **Download programme.json for the website**.
 5. Upload that `programme.json` to the repository, replacing the old one.
 
-**Why not upload the export directly?** The page can read it as it is, but the export also contains each speaker's student status, their available days, and talks that are "Not Reviewed". Anyone can open a file on a public website. The downloaded copy keeps only what the programme shows: session, speaker, authors, title, abstract, keynote flag and time. It also leaves out talks that aren't accepted.
+**Why not upload the export directly?** The page can read it as it is, but the export also contains each speaker's student status, their available days, and talks that are "Not Reviewed". Anyone can open a file on a public website. The downloaded copy keeps only what the programme shows: session, speaker, affiliation, authors, title, abstract, keynote flag, time and room. It also leaves out talks that aren't accepted.
 
 ## 3. Timetabling
 
@@ -35,7 +35,8 @@ The page takes the time of each talk from the export's `timetabled` field, for e
 - **No time yet:** the talk is listed under its session as *not yet scheduled*. People can tick it, and it shows in their programme under "Not yet scheduled" until it gets a time.
 - **End times** are the start time plus the talk length: `defaultMinutes` (30) for an ordinary talk, `keynoteMinutes` (60) for talks with `keynote` = 1, or a session's own `minutes` (plenaries and the public lecture are set to 60). A value like `Wed 15:30-16:30` sets the end time directly.
 - **Other formats that work:** `Wed 13:30`, `2026-12-02 13:30`, `1:30 PM Wednesday`.
-- **Rooms** are set per session in the settings (`room: ""` for now). If the export ever includes a `room` field for individual talks, that is used instead. The Room column only appears once rooms are known.
+- **Rooms** come from each talk's `room` field in `programme.json`. A session's `room` in the settings is used for any of its talks whose `room` is empty, which saves typing the same room 20 times. The Room column only appears once rooms are known.
+- **Affiliations** come from each talk's `affiliation` field and are shown under the speaker's name. `add_fields.py` in the LaTeX booklet folder adds both fields to `programme.json` and fills in affiliations from `registrants.tex`.
 
 ## 4. What the check page looks for
 
@@ -48,6 +49,7 @@ The page takes the time of each talk from the export's `timetabled` field, for e
 | Unknown session code | A session code isn't in the `sessions` list in the settings. |
 | Placeholder title | The title is "TBA" or just the speaker's name. |
 | Not on the website yet *(note)* | Sessions where no talk is accepted yet, so they don't appear. |
+| No affiliation *(note)* | Talks whose `affiliation` field is empty. |
 | No abstract *(note)* | Talks with an empty abstract. |
 
 In the 3 November export, **Geometric Analysis, Functional Analysis, Ergodic Theory and Dynamical Systems** and the **EDI panel** are entirely "Not Reviewed", so they don't appear on the website yet. They'll appear once their talks are accepted, or straight away if you set `showStatuses: []`.
