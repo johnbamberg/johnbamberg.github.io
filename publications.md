@@ -277,6 +277,7 @@ with Jake Rigg. [arxiv](https://arxiv.org/abs/2606.19820)
 with Ethan Kealley. [arxiv](https://arxiv.org/abs/2607.08135)
 - There are no sharply transitive subsets of $\mathrm{SL}(2,q)$ for $q\geqslant 13$,  
 with Sam Mattheus. [arxiv](https://arxiv.org/abs/2608.17371)
+- On configurations that are nearly generalised polygons, with Sam Adriaensen and Jason Williford. [arxiv](https://arxiv.org/abs/2608.17371)
 
 ## Preprints
 
@@ -287,7 +288,6 @@ with Anton Betten, Philippe Cara, Jan De Beule, Max Neunhoeffer, and Michel Lavr
 ## In preparation
 
 - Hyperovals and whisks, with Gordon Royle and Jason Williford.
-- On configurations that are nearly generalised polygons, with Sam Adriaensen and Jason Williford.
 - Euclidean geometry is incidence geometry, 
 with Tim Penttila.
 - On m-ovoids of dual twisted triality hexagons
