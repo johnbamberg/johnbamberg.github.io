@@ -5,8 +5,12 @@ title: Teaching
 
 # Teaching
 
-**Note: I am not a Unit Coordinator for MATH1720 in 2026.**
+### 2027
 
+- [MATH3035](http://handbooks.uwa.edu.au/unitdetails?code=MATH3035) (Algebraic Geometry and Ring Theory), Semester 2
+- [MATH2065](http://handbooks.uwa.edu.au/unitdetails?code=MATH2065) (Number Theory and Cryptography), Semester 2
+
+I'm teaching half of MATH20265; the other half will be taught by [Adrian Dudek](https://awdudek.github.io).
 
 ### 2026
 
