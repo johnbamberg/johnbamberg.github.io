@@ -277,7 +277,7 @@ with Jake Rigg. [arxiv](https://arxiv.org/abs/2606.19820)
 with Ethan Kealley. [arxiv](https://arxiv.org/abs/2607.08135)
 - There are no sharply transitive subsets of $\mathrm{SL}(2,q)$ for $q\geqslant 13$,  
 with Sam Mattheus. [arxiv](https://arxiv.org/abs/2608.17371)
-- On configurations that are nearly generalised polygons, with Sam Adriaensen and Jason Williford. [arxiv](https://arxiv.org/abs/2608.17371)
+- On configurations that are nearly generalised polygons, with Sam Adriaensen and Jason Williford. [arxiv](https://arxiv.org/abs/2611.17855)
 
 ## Preprints
 
