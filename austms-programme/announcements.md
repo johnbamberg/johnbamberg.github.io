@@ -1,4 +1,8 @@
-# Announcements
+---
+layout: austms
+title: AustMS 2026 Announcements
+permalink: /austms-programme/announcements.html
+---
 
 Here is where you will find up to date changes to the schedule, programme, and other conference events.
 Information such as cancellations and timetable changes will be listed on this page.
