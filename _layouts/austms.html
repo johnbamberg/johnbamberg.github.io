@@ -3,9 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
 <title>{{ page.title | default: "AustMS 2026" }}</title>
 <!--
-  Stand-alone layout for the AustMS 2026 pages (no menus from the rest of the website).
+  Minimal stand-alone layout for the AustMS 2026 pages (no menus from the rest of the website).
   Use it from a Markdown file by starting the file with:
     ---
     layout: austms
@@ -17,97 +18,38 @@
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
 <style>
-/* Same colours and type as the programme page (austms-programme/index.html). */
-:root {
-  --bg: #ffffff;
-  --fg: #1d1a1c;
-  --muted: #675d60;
-  --line: #e4dcda;
-  --head: #ead6d1;
-  --accent: #7b2d3b;
-  --accent-fg: #ffffff;
-  --chip: #f5efed;
-  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #17151a; --fg: #ece6e5; --muted: #a99ea1; --line: #3a3337; --head: #47313a;
-    --accent: #e7a6b1; --accent-fg: #1b1016; --chip: #28232a; color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #17151a; --fg: #ece6e5; --muted: #a99ea1; --line: #3a3337; --head: #47313a;
-  --accent: #e7a6b1; --accent-fg: #1b1016; --chip: #28232a; color-scheme: dark;
-}
-* { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
-body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 var(--font); }
-.wrap {
-  max-width: 76rem; margin: 0 auto;
-  padding-left: max(16px, env(safe-area-inset-left, 0px));
-  padding-right: max(16px, env(safe-area-inset-right, 0px));
+body {
+  margin: 0; background: #ffffff; color: #1d1a1c;
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-header.top { padding-block: 1.75rem 0.5rem; }
-header.top h1 { font-size: clamp(1.6rem, 1.2rem + 1.8vw, 2.4rem); line-height: 1.15; margin: 0 0 .35rem; font-weight: 600; text-wrap: balance; }
-.sub { margin: 0; color: var(--muted); }
-.bar { border-bottom: 1px solid var(--line); }
-.bar .wrap { display: flex; flex-wrap: wrap; gap: .35rem; padding-block: .6rem; }
-.tab {
-  font-size: .95rem; padding: .4rem .85rem; border-radius: 999px; border: 1px solid var(--line);
-  color: var(--fg); text-decoration: none;
+.page {
+  max-width: 42rem; margin: 0 auto;
+  padding: 2.5rem max(20px, env(safe-area-inset-right, 0px)) 4rem max(20px, env(safe-area-inset-left, 0px));
 }
-.tab:hover { border-color: var(--accent); }
-.tab[aria-current="page"] { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-
-/* The Markdown content */
-main { padding-block: 1.25rem 3rem; }
-.content { max-width: 46rem; }
-.content > :first-child { margin-top: .5rem; }
-.content h1 { font-size: 1.6rem; font-weight: 500; margin: 1.5rem 0 .75rem; }
-.content h2 { font-size: clamp(1.2rem, 1.05rem + .7vw, 1.45rem); font-weight: 500; margin: 2.25rem 0 .5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); text-wrap: balance; }
-.content h2:first-child, .content h1 + h2 { border-top: 0; padding-top: 0; }
-.content h3 { font-size: 1.05rem; margin: 1.5rem 0 .4rem; }
-.content p, .content ul, .content ol { margin: 0 0 .9rem; }
-.content li { margin-bottom: .25rem; }
-.content a { color: var(--accent); }
-.content img { max-width: 100%; height: auto; border-radius: 6px; }
-.content blockquote { margin: 1rem 0; padding: .6rem 1rem; border-left: 3px solid var(--accent); background: var(--chip); border-radius: 0 6px 6px 0; }
-.content blockquote > :last-child { margin-bottom: 0; }
-.content code { font-size: .9em; padding: .1em .3em; border-radius: 4px; background: var(--chip); }
-.content hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
-.content table { border-collapse: collapse; width: 100%; margin: 0 0 1rem; font-size: .95rem; display: block; overflow-x: auto; }
-.content th { background: var(--head); text-align: left; font-weight: 600; }
-.content th, .content td { padding: .5rem .7rem; border-bottom: 1px solid var(--line); vertical-align: top; }
-footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
-footer .wrap { padding-block: 1.25rem 2rem; }
-footer a { color: var(--accent); }
+nav { font-size: .95rem; margin-bottom: 1.75rem; }
+a { color: #7b2d3b; }
+h1 { font-size: 1.9rem; line-height: 1.2; font-weight: 600; margin: 0 0 1.5rem; }
+h2 { font-size: 1.2rem; font-weight: 600; margin: 2.25rem 0 .4rem; }
+h3 { font-size: 1.05rem; margin: 1.5rem 0 .4rem; }
+p, ul, ol { margin: 0 0 1rem; }
+li { margin-bottom: .25rem; }
+img { max-width: 100%; height: auto; }
+blockquote { margin: 1rem 0; padding-left: 1rem; border-left: 3px solid #e4dcda; color: #4a4245; }
+code { font-size: .9em; }
+hr { border: 0; border-top: 1px solid #e4dcda; margin: 2rem 0; }
+table { border-collapse: collapse; margin: 0 0 1rem; display: block; overflow-x: auto; }
+th, td { padding: .4rem .8rem .4rem 0; border-bottom: 1px solid #e4dcda; text-align: left; vertical-align: top; }
+:focus-visible { outline: 2px solid #7b2d3b; outline-offset: 2px; }
 </style>
 </head>
 <body>
-
-<header class="top wrap">
+<div class="page">
+  <nav><a href="index.html">← Programme</a></nav>
   <h1>{{ page.title | default: "AustMS 2026" }}</h1>
-  <p class="sub">70th Annual Meeting of the Australian Mathematical Society · The University of Western Australia · 1–4 December 2026</p>
-</header>
-
-<nav class="bar" aria-label="Conference pages">
-  <div class="wrap">
-    <a class="tab" href="index.html">Programme</a>
-    <a class="tab" href="announcements.html"{% if page.url contains "announcements" %} aria-current="page"{% endif %}>Announcements</a>
-  </div>
-</nav>
-
-<main class="wrap">
-  <div class="content">
+  <main>
 {{ content }}
-  </div>
-</main>
-
-<footer>
-  <div class="wrap">Conference website: <a href="https://austms2026.org.au/">austms2026.org.au</a></div>
-</footer>
-
+  </main>
+</div>
 </body>
 </html>
